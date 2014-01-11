@@ -1,3 +1,15 @@
+---
+title: Wintersmith and Prose
+date: 2012-11-21
+template: article.jade
+description: Bringing the beauty and simplicity of iA Writer to Sublime Text 2
+background: sublime-writer.jpg
+feature: sublime-writer-feature.png
+thumbnail: sublime-writer-thumb.jpg
+canvas: navy mesh
+spot: cyan
+---
+
 ## A New Post
 
 Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
