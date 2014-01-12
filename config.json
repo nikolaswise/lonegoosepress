@@ -1,9 +1,10 @@
 {
   "locals": {
     "url": "",
-    "build": "http://paulcpederson.com",
-    "description": "I'm a web designer and developer living in Portland, OR. I write about art, maps, design, and the internet.",
-    "name": "Paul C Pederson"
+    "build": "http://lonegoosepress.com",
+    "description": "lone goose press is a fine publishing and lettpress studio in Eugene, Oregon run by Sandy Tilcock",
+    "name": "lone goose press",
+    "section": "broadsides"
   },
   "plugins": [
     "./plugins/paginator.coffee"

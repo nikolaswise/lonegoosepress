@@ -2,8 +2,4 @@
 view: none
 ---
 
-## Hi, I'm Paul.
-
-I design and develop digital experiences. I work at a research and development office in Portland, Oregon focused on location-based technologies. You can find me online just about everywhere as @paulcpederson.
-
-This site was built using [Node](http://nodejs.org/), [Wintersmith](https://github.com/jnordberg/wintersmith), [Grunt](http://gruntjs.com/), and [GitHub Pages](http://pages.github.com/). You can find the source on [my github](https://github.com/paulcpederson/).
+lone goose press is dedicated to excellence in the crafts of typographic design, letterpress printing and bookbinding. Over the last two decades, proprietor Sandy Tilcock’s work has been recognized for its impeccable and imaginative craftsmanship and design.
