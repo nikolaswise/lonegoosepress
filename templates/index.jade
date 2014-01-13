@@ -17,12 +17,14 @@ block latest
   div.constrain
     each article, i in articles
       if i === 0
-        h2= article.title
+        h2
+          a(href= locals.url + article.url)= article.title
         p= article.date
         p= article.metadata.description
 
   div.constrain
     - var project = contents['broadsides.json'].metadata.collection[0]
-    h2= project.title
+    h2
+      a(href= locals.url + project.url)= project.title
     p= project.author
     p= project.description

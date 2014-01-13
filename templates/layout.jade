@@ -25,12 +25,33 @@ html(lang='en')
           - } else {
             a.left(href=locals.url)= locals.name
           - }
-          a.right(href=locals.url + '/archive/') Archive
+
+          span.right.hide-mobile
+          - if (locals.url == ''){
+            a.right.hide-mobile(href="/") About
+          - } else {
+            a.right.hide-mobile(href=locals.url) About
+          - }
+
           span.right.hide-mobile /
           - if (locals.url == ''){
             a.right.hide-mobile(href="/") Blog
           - } else {
             a.right.hide-mobile(href=locals.url) Blog
+          - }
+
+          span.right.hide-mobile /
+          - if (locals.url == ''){
+            a.right.hide-mobile(href="/") Services
+          - } else {
+            a.right.hide-mobile(href=locals.url) Services
+          - }
+
+          span.right.hide-mobile
+          - if (locals.url == ''){
+            a.right.hide-mobile(href="/") Publications
+          - } else {
+            a.right.hide-mobile(href=locals.url) Publications
           - }
 
     block hero
