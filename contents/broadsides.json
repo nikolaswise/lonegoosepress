@@ -4,6 +4,24 @@
   "collection":[
     {
       "date": "2014-01-14",
+      "title": "Broadside Five",
+      "author": "Tester Dude",
+      "author_link": "url",
+      "artist": "Artist Somebody",
+      "artist_link": "anotherurl",
+      "edition": "13",
+      "price": "$130",
+      "description": "Testing using Prose.io to add projects to winterpress",
+      "thumbnail": "image/broadsides/one/thumb.jpg",
+      "images": [
+          "image/broadsides/one/one.jpg",
+          "image/broadsides/one/two.jpg",
+          "image/broadsides/one/three.jpg"
+        ],
+      "available": true
+    },        
+    {
+      "date": "2014-01-14",
       "title": "Broadside Four",
       "author": "Tester Dude",
       "author_link": "url",
