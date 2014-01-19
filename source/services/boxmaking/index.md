@@ -1,5 +1,5 @@
 ---
-title: lone goose press - boxmaking
+title: boxmaking
 layout: collection
 ---
 # Boxmaking

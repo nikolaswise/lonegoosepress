@@ -1,0 +1,31 @@
+<div class="col col1of3">
+  <h1><%= link_to publication.data.title, publication.url %></h1>
+
+  <% if publication.data.author %>
+    <% if publication.data.author_link %>
+      <p>by <%= link_to publication.data.author, publication.data.author_link %></p>
+    <% else %>
+      <p>by <%= publication.data.author %></p>
+    <% end %>
+  <% end %>
+
+  <% if publication.data.artist %>
+    <% if publication.data.artist_link %>
+      <p>art by <%= link_to publication.data.artist, publication.data.artist_link %></p>
+    <% else %>
+      <p>art by <%= publication.data.artist %></p>
+    <% end %>
+  <% end %>
+
+  <% if publication.data.description %>
+    <p><%= publication.data.description%></p>
+  <% end %>
+
+  <%= link_to 'Examine', publication.url %>
+
+  <%# if publication.data.available === true %>
+    <%# link_to 'Buy', "/" %>
+  <%# else %>
+    <%# link_to 'Out of Print', "/" %>
+  <%# end %>
+</div>

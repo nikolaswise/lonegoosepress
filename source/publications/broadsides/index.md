@@ -1,5 +1,5 @@
 ---
-title: lone goose press - broadsides
+title: broadsides
 layout: collection
 ---
 # Broadsides

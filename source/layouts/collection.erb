@@ -1,4 +1,39 @@
 <% wrap_layout :layout do %>
-  <%= yield %>
+<div class="container">
+  <div class="col-group">
+    <div class="col col7of12 pre1of6">
+    <%= yield %>
+    </div>
+
+    <% if current_page.data.title == 'books' %>
+      <% @books.each do |publication| %>
+        <%= partial 'partials/publication_in_list', locals: {publication: publication} %>
+      <% end %>
+    <% elsif current_page.data.title == 'broadsides'%>
+      <% @broadsides.each do |publication| %>
+        <%= partial 'partials/publication_in_list', locals: {publication: publication} %>
+      <% end %>
+    <% elsif current_page.data.title == 'ephemera'%>
+      <% @ephemera.each do |publication| %>
+        <%= partial 'partials/publication_in_list', locals: {publication: publication} %>
+      <% end %>
+    <% elsif current_page.data.title == 'design'%>
+      <% @design.each do |publication| %>
+        <%= partial 'partials/publication_in_list', locals: {publication: publication} %>
+      <% end %>
+    <% elsif current_page.data.title == 'binding'%>
+      <% @bookbinding.each do |publication| %>
+        <%= partial 'partials/publication_in_list', locals: {publication: publication} %>
+      <% end %>
+    <% elsif current_page.data.title == 'boxmaking'%>
+      <% @boxmaking.each do |publication| %>
+        <%= partial 'partials/publication_in_list', locals: {publication: publication} %>
+      <% end %>
+    <% else %>
+      <p>Sorry, we don't really know what your looking for.</p>
+    <% end %>
+    </div>
+  </div>
+</div>
 <% end %>
 

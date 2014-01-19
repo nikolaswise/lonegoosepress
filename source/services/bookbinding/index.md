@@ -1,5 +1,5 @@
 ---
-title: lone goose press - binding
+title: binding
 layout: collection
 ---
 # Binding

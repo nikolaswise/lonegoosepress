@@ -1,6 +1,18 @@
 <% wrap_layout :layout do %>
-  <%= yield %>
-  <% page_articles.each_with_index do |article, i| %>
-    <%= partial 'partials/blog_in_list', locals: {article: article} %>
-  <% end %>
+  <div class="container">
+    <div class="col-group">
+      <div class="col col7of12">
+        <%= yield %>
+        <% page_articles.each_with_index do |article, i| %>
+          <%= partial 'partials/blog_in_list', locals: {article: article} %>
+        <% end %>
+      </div>
+      <div class="col pre1of12 col1of3">
+        <ul>
+          <li><a href="/">2014</a></li>
+          <li><a href="/">2013</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 <% end %>

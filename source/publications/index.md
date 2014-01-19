@@ -1,5 +1,6 @@
 ---
-title: lone goose press - publications
+title: publications
 layout: typology
 ---
+
 # Publications

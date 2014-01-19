@@ -1,5 +1,5 @@
 ---
-title: lone goose press - services
+title: services
 layout: typology
 ---
 # Services

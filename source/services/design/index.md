@@ -1,5 +1,5 @@
 ---
-title: lone goose press - design
+title: design
 layout: collection
 ---
 # Design

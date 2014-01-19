@@ -1,5 +1,5 @@
 ---
-title: lone goose press - ephemera
+title: ephemera
 layout: collection
 ---
 # Ephemera
