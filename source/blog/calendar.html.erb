@@ -1,31 +1,46 @@
 ---
 pageable: true
 ---
-<h1>
-  <% case page_type
-     when 'day' %>
-    <%= Date.new(year, month, day).strftime('%b %e %Y') %>
-  <% when 'month' %>
-    <%= Date.new(year, month, 1).strftime('%b %Y') %>
-  <% when 'year' %>
-    <%= year %>
-  <% end %>
-</h1>
+<div class="container">
+  <div class="col-group">
+    <main class="col col7of12">
+      <h1>
+        <% case page_type
+           when 'day' %>
+          <%= Date.new(year, month, day).strftime('%b %e %Y') %>
+        <% when 'month' %>
+          <%= Date.new(year, month, 1).strftime('%b %Y') %>
+        <% when 'year' %>
+          <%= year %>
+        <% end %>
+      </h1>
+      <% if paginate && num_pages > 1 %>
+        <p>Page <%= page_number %> of <%= num_pages %></p>
 
-<% if paginate && num_pages > 1 %>
-  <p>Page <%= page_number %> of <%= num_pages %></p>
+        <% if prev_page %>
+          <p><%= link_to 'Previous page', prev_page %></p>
+        <% end %>
+      <% end %>
 
-  <% if prev_page %>
-    <p><%= link_to 'Previous page', prev_page %></p>
-  <% end %>
-<% end %>
+      <% page_articles.each_with_index do |article, i| %>
+        <%= partial 'partials/blog_in_list', locals: {article: article} %>
+      <% end %>
 
-<% page_articles.each_with_index do |article, i| %>
-  <%= partial 'partials/blog_in_list', locals: {article: article} %>
-<% end %>
-
-<% if paginate %>
-  <% if next_page %>
-    <p><%= link_to 'Next page', next_page %></p>
-  <% end %>
-<% end %>
+      <% if paginate %>
+        <% if next_page %>
+          <p><%= link_to 'Next page', next_page %></p>
+        <% end %>
+      <% end %>
+    </main>
+    <aside class="col col5of12">
+      <% case page_type
+         when 'day' %>
+        <%= Date.new(year, month, day).strftime('%b %e %Y') %>
+      <% when 'month' %>
+        <%= Date.new(year, month, 1).strftime('%b %Y') %>
+      <% when 'year' %>
+        <h3>Months In Year</h3>
+      <% end %>
+    </aside>
+  </div>
+</div>
