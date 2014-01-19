@@ -1,4 +1,4 @@
-// UI Colors
+// Colors
 $white:          #ffffff !default;
 $off-white:      #efefef !default;
 $lighter-gray:   #dddddd !default;
@@ -8,70 +8,6 @@ $dark-gray:      #30302F !default;
 $darker-gray:    #242323 !default;
 $darkest-gray:   #222222 !default;
 
-// Reset Neutrals
-$dark-gray:      #373737;
-$gray:           #7A7A7A;
-$light-gray:     #E0E0E0;
-$lighter-gray:   #F0F0F0;
-$lightest-gray:  #FAFAFA;
-$white:          #FFFFFF;
-
-
-// Solarized colors
-$base03:       #002b36 !default;
-$base02:       #073642 !default;
-$base01:       #586e75 !default;
-$base00:       #657b83 !default;
-$base0:        #839496 !default;
-$base1:        #93a1a1 !default;
-$base2:        #eee8d5 !default;
-$base3:        #fdf6e3 !default;
-// $yellow:    #b58900 !default;
-// $orange:    #cb4b16 !default;
-// $red:       #dc322f !default;
-$magenta:      #d33682 !default;
-$violet:       #6c71c4 !default;
-// $blue:      #268bd2 !default;
-// $cyan:      #6B9345 !default;
-// $green:     #6B9345 !default;
-
-
-// Red Shift Colors
-$darker-blue:    #1C3665 !default;
-$dark-blue:      #2C4C84 !default;
-$blue:           #4A6496 !default;
-$light-blue:     #487C96 !default;
-$cyan:           #358581 !default;
-$green:          #6B9345 !default;
-$light-green:    #9E9837 !default;
-$yellow:         #F0BA1E !default;
-$orange:         #F37021 !default;
-$lighter-red:    #EF4724 !default;
-$light-red:      #ED212B !default;
-$red:            #C32026 !default;
-$dark-red:       #901A1E !default;
-
-$cream:          #ECE9D8 !default;
-
-//  See TypeCabinet for in-depth Font Config
-
-// // Font Families
-// $body-font:      "Karla", Arial, Helvetica, sans !default;
-// $header-font:    "Facit", Arial, Helvetica, sans !default;
-// $button-font:    "Inconsolata", "Courier New", courier, monospace !default;
-
-// // Font Weights
-// $body-weight:    400 !default;
-// $header-weight:  400 !default;
-
-// // Font Sizes
-// $body-size:      1.125em;
-// $header-size:    1.5em;
-
-// Font Colors
-$body-color:     $darker-gray;
-$header-color:   $dark-gray;
-
 // Breakpoints
 $phone:        300px !default;
 $phone-wide:   480px !default;
@@ -79,3 +15,8 @@ $tablet:       720px !default;
 $tablet-wide:  1080px !default;
 $desktop:      1280px !default;
 $desktop-wide: 1920px !default;
+
+// Grid
+$container-width:   100% !default;
+$container-max:     1280px !default;
+$container-min:     0 !default;
