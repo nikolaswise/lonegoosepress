@@ -9,8 +9,10 @@
       </div>
       <div class="col pre1of12 col1of3">
         <ul>
-          <li><a href="/">2014</a></li>
-          <li><a href="/">2013</a></li>
+          <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
+            <li>
+              <h5><%= link_to year, blog_year_path(year) %></h5>
+          <% end %>
         </ul>
       </div>
     </div>
