@@ -1,0 +1,6 @@
+<section>
+  <% @publications[0..0].each_with_index do |publication| %>
+    <h1><%= publication.data.title %></h1>
+    <p><%= publication.data.description%></p>
+  <% end %>
+</section>

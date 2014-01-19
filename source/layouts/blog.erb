@@ -1,0 +1,6 @@
+<% wrap_layout :layout do %>
+  <%= yield %>
+  <% page_articles.each_with_index do |article, i| %>
+    <%= partial 'partials/blog_in_list', locals: {article: article} %>
+  <% end %>
+<% end %>

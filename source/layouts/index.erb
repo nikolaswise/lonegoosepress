@@ -1,0 +1,9 @@
+<% wrap_layout :layout do %>
+  <%= partial 'partials/header' %>
+  <main>
+    <%= yield %>
+  </main>
+  <%= partial 'partials/latest_post' %>
+  <%= partial 'partials/latest_publication' %>
+<% end %>
+

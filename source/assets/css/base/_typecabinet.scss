@@ -1,0 +1,118 @@
+// Baseline and Pica Measures
+
+$pica: 1rem;            // Pica is the same thins as a REM. Trying to make the term not phsycial on screens.
+$point: $pica/12;       // Pica also allows points - ties units to Base REM font size. Removes "pixel" which is a problematic thing on screen densities.
+$p: $point;             // Abbreviation.
+$baseline: 18*$point;   // Baseliine is set once, references to REM, and can be used as a structural layout unit. Used for vertical text padding and margin a lot.
+
+// Tonal Ratios For Stranded Scale Point Sizes
+$minor7th: 1/1.778;
+$minor3rd: 1/1.2;
+
+// Another tonal ratio for layout
+$fourth: 1/1.33;
+
+// PT Mono
+@import url(http://fonts.googleapis.com/css?family=PT+Mono);
+
+@mixin PTMono {font-family: 'PT Mono', sans-serif;};
+
+// Whitney
+@mixin WhitneyBook {
+  font-family: 'Whitney SSm A', 'Whitney SSm B'; font-weight: 400; font-style: normal;
+  strong { @include WhitneySemibold}
+  em { @include WhitneyBookItalic}
+}
+
+@mixin WhitneyBookItalic {
+  font-family: 'Whitney SSm A', 'Whitney SSm B'; font-weight: 400; font-style: italic;
+  strong { @include WhitneySemiboldItalic}
+}
+
+@mixin WhitneyExt{
+  font-family: 'Whitney SSm Secondary A', 'Whitney SSm Secondary B'; font-weight: 400; font-style: normal;
+  strong { @include WhitneySemibold}
+  em { @include WhitneyBookItalic}
+}
+
+@mixin WhitneyExtItalic {
+  font-family: 'Whitney SSm Secondary A', 'Whitney SSm Secondary B'; font-weight: 400; font-style: italic;
+  strong { @include WhitneySemiboldItalic}
+}
+
+@mixin WhitneySemibold {
+  font-family: 'Whitney SSm A', 'Whitney SSm B'; font-weight: 600; font-style: normal;
+  strong { @include WhitneyBold}
+  em { @include WhitneyBoldItalic}
+}
+
+@mixin WhitneySemiboldItalic {
+  font-family: 'Whitney SSm A', 'Whitney SSm B'; font-weight: 600; font-style: italic;
+  strong { @include WhitneyBoldItalic}
+}
+
+@mixin WhitneyBold {
+  font-family: 'Whitney SSm A', 'Whitney SSm B'; font-weight: 700; font-style: normal;
+}
+
+@mixin WhitneyBoldItalic {
+  font-family: 'Whitney SSm A', 'Whitney SSm B'; font-weight: 700; font-style: italic;
+}
+
+// Knockout no.29
+@mixin KnockoutNo29 {
+  font-family: 'Knockout 29 A', 'Knockout 29 B'; font-weight: 400; font-style: normal;
+}
+
+
+// Case Options
+@mixin UpperCase(){
+  text-transform: uppercase;
+}
+
+// Tracking Options
+@mixin tracking($width) {
+  letter-spacing: $width*$point;
+}
+
+// Leading Options
+@mixin leading($height) {
+  line-height: $height*$baseline;
+}
+
+// Point Sizes - Reference
+// Double Stranded Modular Scale
+
+// 45.000 = 2.813rem
+// 37.500 = 2.344rem
+// 31.250 = 1.953rem
+// 26.042 = 1.628rem
+// 21.702 = 1.356rem
+// 18.000 = 1.125rem
+// 15.000 = 0.938rem
+// 12.500 = 0.781rem
+
+@mixin p45{
+  font-size: 2.813rem;
+  line-height: 2*$baseline; }
+@mixin p37{
+  font-size: 2.344rem;
+  line-height: 2*$baseline; }
+@mixin p31{
+  font-size: 1.953rem;
+  line-height: 2*$baseline; }
+@mixin p26{
+  font-size: 1.628rem;
+  line-height: 2*$baseline; }
+@mixin p21{
+  font-size: 1.356rem;
+  line-height: 2*$baseline; }
+@mixin p18{
+  font-size: 1.125rem;
+  line-height: 1.33*$baseline; }
+@mixin p15{
+  font-size: 0.938rem;
+  line-height: 1*$baseline; }
+@mixin p12{
+  font-size: 0.781rem;
+  line-height: 1*$baseline; }
