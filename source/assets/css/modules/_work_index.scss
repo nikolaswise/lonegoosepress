@@ -1,0 +1,60 @@
+.work-legend,
+.typology-group {
+  padding: 0;
+  list-style-type: none;
+  @extend %WhitneyBook;
+}
+
+.work-legend {
+  margin-top: 2*$baseline;
+  magin-bottom: 1*$baseline;
+  span {
+    @extend %p10-5;
+    @extend %upperCase;
+    @include tracking(1);
+    color: $darkest-gray;
+    border-bottom: 1px solid $darkest-gray;
+  }
+  .index-location {
+    @include respond-to($tablet-mid) {
+      display: none;
+    }
+  }
+  .index-typology {
+    @include respond-to($phone) {
+      display: none;
+    }
+  }
+}
+
+.typology {
+  @include opacity(0);
+}
+
+.typology-group {
+  li:first-child {
+    .typology {
+      @include opacity(1);
+    }
+  }
+  a {
+    color: $darkest-gray;
+    &:hover {
+      color: $blue;
+      .typology {
+        color: $darkest-gray;
+      }
+    }
+  }
+
+  .location {
+    @include respond-to($tablet-mid) {
+      display: none;
+    }
+  }
+  .typology {
+    @include respond-to($phone) {
+      display: none;
+    }
+  }
+}

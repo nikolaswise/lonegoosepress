@@ -1,0 +1,10 @@
+// ┌─────────────────┐
+// │ TYPE MODIFERS   │
+// └─────────────────┘
+%upperCase {
+  text-transform: uppercase;
+}
+
+@mixin tracking($space) {
+  letter-spacing: $space*$p
+}

@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba($off-white, 0.2);
+}
+
+.container {
+  @include clearfix;
+  @include box-sizing(border-box);
+  width: $container-width;
+  max-width: $container-max;
+  margin: auto;
+  padding: 0 4rem;
+  @include respond-to($tablet-tall){
+    padding: 0 1rem;
+  }
+}
+
+
+
+main {
+  @include clearfix;
+  margin: auto;
+  max-width: $width;
+  @include respond-to($tablet-mid) {
+    max-width: 100%;
+  }
+}
+
+img {
+  width: 100%;
+}
+
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}

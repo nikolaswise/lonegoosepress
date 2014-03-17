@@ -1,0 +1,58 @@
+%fixed-button {
+  $size: 1*$baseline;
+  position: fixed;
+  height: $size;
+  width: $size;
+  top: 0.75*$baseline;
+  border: 2px solid $darkest-gray;
+  @include border-radius($size);
+  text-align: center;
+  z-index: 100;
+  @include transition(all 105ms ease-in);
+  span {
+    @include transition(opacity 105ms ease-in);
+    color: $blue;
+    @include opacity(0)
+  }
+
+  &:hover {
+    @include transition(all 105ms ease-in);
+    border: 2px solid $blue;
+    span {
+      @include transition(opacity 105ms ease-in);
+      @include opacity(1);
+    }
+  }
+}
+
+.back-to-top {
+  a {
+    @extend %fixed-button;
+    right: 3rem;
+    span {
+      margin-left: -1px;
+    }
+  }
+}
+
+.quick-index {
+  @extend %fixed-button;
+  left: 3rem;
+}
+
+.invisible {
+  .back-to-top,
+  .quick-index {
+    @include opacity(0);
+    @include transition(opacity 105ms ease-in);
+  }
+}
+
+.visible {
+  @include transition(opacity 105ms ease-in);
+  .back-to-top,
+  .quick-index {
+    @include opacity(1);
+    @include transition(opacity 105ms ease-in);
+  }
+}

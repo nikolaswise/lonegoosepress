@@ -1,22 +1,88 @@
-// Colors
-$white:          #ffffff !default;
-$off-white:      #efefef !default;
-$lighter-gray:   #dddddd !default;
-$light-gray:     #999999 !default;
-$gray:           #666666 !default;
-$dark-gray:      #30302F !default;
-$darker-gray:    #242323 !default;
-$darkest-gray:   #222222 !default;
+$container-width:    100% !default;
+$container-max:     112rem !default;
+$total-columns:        24 !default;
+$column-gutter:       4em !default;
 
-// Breakpoints
-$phone:        300px !default;
-$phone-wide:   480px !default;
-$tablet:       720px !default;
-$tablet-wide:  1080px !default;
-$desktop:      1280px !default;
-$desktop-wide: 1920px !default;
+$white:                 hsl(0, 0, 100) !default;
+$off-white:             #fffcf1  !default;
+// $lightest-gray:         hsl(0, 0, 92)  !default;
+$lightest-gray:         #dde0db;
+$lighter-gray:          hsl(0, 0, 80)  !default;
+// $light-gray:            hsl(0, 0, 65)  !default;
+$light-gray:            #acb2a7;
+$gray:                  hsl(0, 0, 50)  !default;
+// $dark-gray:             hsl(0, 0, 35)  !default;
+$dark-gray:             #53554d;
+$darker-gray:           hsl(0, 0, 20)  !default;
+// $darkest-gray:          hsl(0, 0, 12)  !default;
+$darkest-gray:          #153023;
+$off-black:             hsl(0, 0, 2)   !default;
+$black:                 hsl(0, 0, 0)   !default;
 
-// Grid
-$container-width:   100% !default;
-$container-max:     1280px !default;
-$container-min:     0 !default;
+$blue:                  hsl(214, 25, 78);
+$blue:                  #97acc8;
+$blue-gray:             hsl(214, 25, 28);
+
+$orange:                hsl(28, 47, 94);
+// $bright-orange:         hsl(35, 75, 94);
+$bright-orange:         #f0a53b;
+// $bright-orange:         rgb(240, 165, 59);
+
+$yellow:                hsl(49, 31, 100);
+$yellow:                #fff1af;
+
+$warm-yellow:           hsl(48, 45, 94);
+
+$brown:                 hsl(34, 25, 77);
+
+
+$desktop:       1280px !default;
+$laptop-large:  1180px !default;
+$laptop:        1080px !default;
+$tablet-wide:   1024px !default;
+$tablet-mid:    960px  !default;
+$tablet-tall:   768px  !default;
+$phone-large:   662px  !default;
+$phone:         480px  !default;
+$phone-tall:    320px  !default;
+
+$text-color: $darker-gray;
+$text-tonal: $darkest-gray;
+
+$link-color: $blue;
+$link-hover: rgba($link-color, 0.75);
+
+$selection-background: false !default;
+$selection-color: false !default;
+
+$all-text-inputs: "
+input[type='email'],
+input[type='number'],
+input[type='password'],
+input[type='search'],
+input[type='tel'],
+input[type='text'],
+input[type='url'],
+input[type='color'],
+input[type='date'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='month'],
+input[type='time'],
+input[type='week'],
+select,
+textarea";
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  &:hover {
+    color: $link-hover;
+  }
+  &:visited {
+    color: $link-color;
+  }
+  &:active {
+    color: $link-color;
+  }
+}

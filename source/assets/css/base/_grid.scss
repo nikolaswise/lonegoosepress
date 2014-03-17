@@ -1,0 +1,67 @@
+ // Mini Inline-Block Grid
+.col {
+  display: block;
+  float: left;
+  position: relative;
+  @include box-sizing(border-box);
+}
+
+.col-group {
+  font-family: 'Courier New', Monospace;
+  letter-spacing: -.65em;
+  margin-left: -0.5*$column-gutter;
+  margin-right: -0.5*$column-gutter;
+  text-align: left;
+  .col {
+    display: inline-block;
+    float: none;
+    letter-spacing: normal;
+    padding-left: 0.5*$column-gutter;
+    padding-right: 0.5*$column-gutter;
+    position: relative;
+    text-align: left;
+    vertical-align: top;
+    @extend %WhitneyBook;
+  }
+  &.no-padding {
+    margin-left: 0;
+    margin-right: 0;
+    .col {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  &.table {
+    dispay: table;
+    .table-cell {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+}
+
+@function grid-calc($span) {
+  @return percentage(($span / $total-columns));
+}
+
+@mixin column-width($span) {
+  width: grid-calc($span);
+}
+
+@mixin _inline-grid ($prefix: "") {
+  @for $i from 1 through $total-columns {
+    .#{$prefix}col-#{$i} {
+      @include column-width($i);
+    }
+  }
+}
+
+@include _inline-grid();
+
+@include respond-to($tablet-mid){
+  @include _inline-grid("tablet-");
+}
+
+@include respond-to($phone){
+  @include _inline-grid("phone-");
+}

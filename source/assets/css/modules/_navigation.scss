@@ -1,11 +1,129 @@
-.horizontal-nav {
-  li {
-    // Position
-    float: left;
-    // BoxModel
-    margin: 0 0.5rem;
-    // Type + Appearance
-    // Jazz
-    list-style-type: none;
+$nav-panel: 0.4*$tonal*$measure;
+
+%panel {
+  @include box-sizing(border-box);
+  // margin-left: -0.3*$nav-panel;
+  border: 2*$p solid $darkest-gray;
+  background: rgba($white, 0.5);
+}
+
+%panel-row {
+  @include box-sizing(border-box);
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.nav-container{
+  position: relative;
+  max-width: $container-max;
+  margin: auto;
+  a {
+    color: $darkest-gray;
   }
 }
+
+.nav-panel {
+  width: $spine;
+  top: 0.5*$baseline;
+  margin-left: 0;
+  position: absolute;
+  // SWAP when other two sections added
+  // top: 6*$baseline;
+  // background: $off-white;
+  @extend %panel;
+
+  .title {
+    @extend %panel-row;
+    @extend %p12;
+    @extend %upperCase;
+    @include tracking(1);
+    @include box-sizing(border-box);
+    //
+    float: left;
+    width: 50%;
+    // SWAP when other two sections added
+    padding: 0.5rem 0 0.25rem 0;
+    // padding: 1rem 0;
+    border: none;
+    color: $darkest-gray;
+    border-bottom: 2*$p solid $darkest-gray;
+    &:hover {
+      background-color: $darkest-gray;
+      color: $off-white;
+    }
+  }
+
+  .portfolio {
+   @extend %panel-row;
+   @extend %p12;
+   @extend %upperCase;
+   @include tracking(1);
+   //
+    float: right;
+    width: 25%;
+    padding: 0.5rem 0 0.25rem 0;
+    border-left: 2*$p solid $darkest-gray;
+    border-bottom: 2*$p solid $darkest-gray;
+    &:hover {
+      background-color: $darkest-gray;
+      color: $off-white;
+   }
+  }
+  .about {
+   @extend %panel-row;
+   @extend %p12;
+   @extend %upperCase;
+   @include tracking(1);
+   //
+    float: right;
+    width: 25%;
+    margin: 0;
+    padding: 0.5rem 0 0.25rem 0;
+    border-bottom: none;
+    border-left: 2*$p solid $darkest-gray;
+    &:hover {
+      background-color: $darkest-gray;
+      color: $off-white;
+    }
+  }
+  .contact {
+    @extend %panel-row;
+    @extend %p12;
+    @extend %upperCase;
+    @include tracking(1);
+    //
+    float: right;
+    width: 25%;
+    margin: 0;
+    border-left: 2*$p solid $darkest-gray;
+    padding: 0.5rem 0 0.25rem 0;
+    &:hover {
+     background-color: $darkest-gray;
+     color: $off-white;
+    }
+  }
+}
+
+@include respond-to($container-max) {
+  .nav-panel {
+    @include clearfix();
+    position: relative;
+    width: $measure;
+    margin: auto;
+    margin-bottom: -3*$baseline;
+  }
+}
+
+@include respond-to(780px) {
+  .nav-panel {
+    width: $width;
+  }
+}
+
+@include respond-to(500px) {
+  .nav-panel {
+    width: 98%;
+  }
+}
+

@@ -1,0 +1,25 @@
+footer{
+  padding: 1*$baseline;
+  background-color: $blue;
+  color: $off-white;
+  border-top: 4px solid rgba($blue-gray, .1);
+  p {
+    @extend %WhitneyBook;
+    @extend %p12;
+    @extend %upperCase;
+    @include tracking(1);
+    max-width: $container-max;
+    margin: auto;
+  }
+  a {
+    margin-right: 2rem;
+    color: $off-white;
+    &:visited {
+      color: $off-white;
+    }
+    &:hover {
+      color: $off-white;
+      border-bottom: 2px solid $off-white;
+    }
+  }
+}

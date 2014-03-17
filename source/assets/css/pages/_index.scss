@@ -1,0 +1,75 @@
+.index {
+  header {
+    padding-top: 4*$baseline;
+    padding-bottom: 4*$baseline;
+  }
+}
+
+.title {
+  @extend %WhitneyBook;
+  margin-bottom: 1*$baseline;
+  text-align: center;
+}
+
+.introduction {
+  max-width: $measure;
+  margin: auto;
+  margin-top: 3*$baseline;
+  @include respond-to(780px) {
+    max-width: 100%;
+    padding: 0 1em;
+  }
+}
+
+.index-block {
+  @include column-width(12);
+  @include respond-to(1440px) {
+    @include column-width(24);
+  }
+  figure {
+    @include box-sizing(border-box);
+    margin: 0 0 2*$baseline 0;
+    // display: table;
+    background-color: $blue;
+    &:hover {
+      img {
+        @include transition(opacity 105ms ease-in);
+        @include opacity(0.25);
+      }
+      .project-def {
+        @include opacity(1);
+      }
+    }
+  }
+  img {
+    display: block;
+    @include transition(opacity 105ms ease-in);
+  }
+  a {
+    color: rgba($off-white, 1);
+  }
+}
+
+.project-def {
+  @extend %IdealExtraLight;
+  @extend %p13-5;
+  @extend %upperCase;
+  @include tracking(1);
+  @include opacity(0.6);
+  position: absolute;
+  text-align:center;
+  white-space:nowrap;
+  padding: 0;
+  margin: 0;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%); /* IE 9 */
+  -webkit-transform: translate(-50%,-50%); /* Safari and Chrome */
+  @include respond-to($tablet-tall) {
+    white-space: normal;
+  }
+  span {
+    margin: 0.5rem;
+  }
+}

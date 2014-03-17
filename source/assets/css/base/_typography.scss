@@ -1,0 +1,24 @@
+body {
+  @extend %WhitneyBook;
+  @extend %p13-5;
+  color: $text-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @extend %IdealExtraLight;
+  color: $text-tonal;
+}
+
+h1 {
+ @extend %p28-5;
+}
+h2 {
+  @extend %p24;
+}
+h3 {
+  @extend %p18;
+}
+
+.center-text {
+  text-align: center;
+}

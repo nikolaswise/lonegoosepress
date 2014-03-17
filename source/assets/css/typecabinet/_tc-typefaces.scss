@@ -1,0 +1,39 @@
+// ┌───────────┐
+// │ TYPEFACES │
+// └───────────┘
+
+// ┌─────────┐
+// │ WHITNEY │
+// └─────────┘
+%WhitneyBook {
+  font-family: 'Whitney SSm A', 'Whitney SSm B'; font-weight: 400; font-style: normal;
+  strong { @extend %WhitneySemibold}
+  em { @extend %WhitneyBookItalic}}
+%WhitneyBookItalic {
+  font-family: 'Whitney SSm A', 'Whitney SSm B'; font-weight: 400; font-style: italic;
+  strong { @extend %WhitneySemiboldItalic}}
+
+%WhitneySemibold {
+  font-family: 'Whitney SSm A', 'Whitney SSm B'; font-weight: 600; font-style: normal;
+  strong { @extend %WhitneyBold}
+  em { @extend %WhitneyBoldItalic}}
+%WhitneySemiboldItalic {
+  font-family: 'Whitney SSm A', 'Whitney SSm B'; font-weight: 600; font-style: italic;
+  strong { @extend %WhitneyBoldItalic}}
+
+%WhitneyBold {font-family: 'Whitney SSm A', 'Whitney SSm B'; font-weight: 700; font-style: normal;}
+%WhitneyBoldItalic {font-family: 'Whitney SSm A', 'Whitney SSm B'; font-weight: 700; font-style: italic;}
+
+// ┌────────────┐
+// │ IDEAL SANS │
+// └────────────┘
+%IdealExtraLight {font-family: 'Ideal Sans SSm A', 'Ideal Sans SSm B'; font-weight: 200; font-style: normal;}
+%IdealExtraLightItalic {font-family: 'Ideal Sans SSm A', 'Ideal Sans SSm B'; font-weight: 200; font-style: italic;}
+
+%IdealBold {font-family: 'Ideal Sans SSm A', 'Ideal Sans SSm B'; font-weight: 700; font-style: normal;}
+%IdealBoldItalic {font-family: 'Ideal Sans SSm A', 'Ideal Sans SSm B'; font-weight: 700; font-style: italic;}
+
+// ┌─────────────────┐
+// │ KNOCKOUT NO. 29 │
+// └─────────────────┘
+%Knockout29 {font-family: 'Knockout 29 A', 'Knockout 29 B'; font-weight: 400; font-style: normal;}

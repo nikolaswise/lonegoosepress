@@ -1,0 +1,46 @@
+// ┌────────┐
+// │ CONFIG │
+// └────────┘
+html {
+  font-size: 16px;
+}
+// ┌─────────────────┐
+// │ PICA + BASELINE │
+// └─────────────────┘
+$pica: 1rem;
+$point: $pica/12;
+$p: $point;
+$baseline: 24*$point;
+
+// ┌─────────────────┐
+// │ SCALE:  MUSICAL │
+// └─────────────────┘
+$octave: 1/2;
+$major7th: 1/1.875;
+$minor7th: 1/1.778;
+$major6th: 1/1.667;
+$minor6th: 1/1.6;
+$fifth: 1/1.5;
+$dim5th: 1/1.414;
+$aug4th: 1/1.414;
+$fourth: 1/1.33;
+$major3rd: 1/1.25;
+$minor3rd: 1/1.2;
+$major2nd: 1/1.125;
+$minor2nd: 1/1.067;
+$unison: 1/1;
+
+// ┌─────────────────┐
+// │ PROPORTIONS     │
+// └─────────────────┘
+$proportion: $major7th;
+$tonal: $minor3rd;
+
+// ┌─────────────────┐
+// │ PER CENT        │
+// └─────────────────┘
+$width: $tonal*100%;
+$measure: $proportion*100%;
+$un-measure: (100%/$measure)*100%;
+$edge: (100%-$measure);
+$spine: $tonal*(100%-$measure);
