@@ -1,7 +1,7 @@
 <% wrap_layout :layout do %>
 <div class="container">
   <div class="col-group">
-    <div class="col col7of12 pre1of6">
+    <div class="col col-24">
     <%= yield %>
     </div>
 
@@ -21,11 +21,11 @@
       <% @design.each do |publication| %>
         <%= partial 'partials/publication_in_list', locals: {publication: publication} %>
       <% end %>
-    <% elsif current_page.data.title == 'binding'%>
+    <% elsif current_page.data.title == 'production'%>
       <% @bookbinding.each do |publication| %>
         <%= partial 'partials/publication_in_list', locals: {publication: publication} %>
       <% end %>
-    <% elsif current_page.data.title == 'boxmaking'%>
+    <% elsif current_page.data.title == 'trade-publication'%>
       <% @boxmaking.each do |publication| %>
         <%= partial 'partials/publication_in_list', locals: {publication: publication} %>
       <% end %>

@@ -1,31 +1,33 @@
 <footer>
   <div class="container">
     <div class="col-group">
-      <div class="col col1of3">
-        <p>lone goose press is dedicated to excellence in the crafts of typographic design, letterpress printing and bookbinding. Over the last two decades, proprietor Sandy Tilcock’s work has been recognized for its impeccable and imaginative craftsmanship and design.</p>
+      <div class="col col-6">
+        <p>lone goose press is dedicated to excellence in the crafts of typographic design, letterpress printing and bookbinding.</p>
       </div>
-      <div class="col col1of6 pre1of12">
+      <div class="col col-6">
         <ul>
-          <li>Publications</li>
-          <li>Books</li>
-          <li>Broadsides</li>
-          <li>Ephemera</li>
+          <li><%= link_to 'Publications', '/publications' %></li>
+          <li><%= link_to 'Broadsides', '/publications/broadsides' %></li>
+          <li><%= link_to 'Books', '/publications/books' %></li>
+          <li><%= link_to 'Poetic Prayer Flags', '/publications/prayer-flags' %></li>
+          <li><%= link_to 'Chapbooks, Ephemera', '/publications/ephemera' %></li>
+        </ul>
         </ul>
       </div>
-      <div class="col col1of6">
+      <div class="col col-6">
         <ul>
-          <li>Services</li>
-          <li>Design</li>
-          <li>Boxmaking</li>
-          <li>Bookbinding</li>
+          <li><%= link_to 'Commision Work', '/services' %></li>
+          <li><%= link_to 'Design Service', '/services/design' %></li>
+          <li><%= link_to 'Production Services', '/services/production' %></li>
+          <li><%= link_to 'Trade Publications', '/services/trade-publication' %></li>
         </ul>
       </div>
-      <div class="col col1of6">
+      <div class="col col-6">
         <ul>
           <li>2580 Augusta Street</li>
           <li>Eugene, OR 97403</li>
           <li>541-465-9079</li>
-          <li>info@lonegoosepress.com</li>
+          <li><a href="mailto:info@lonegoosepress.com">info@lonegoosepress.com</a></li>
         </ul>
       </div>
     </div>

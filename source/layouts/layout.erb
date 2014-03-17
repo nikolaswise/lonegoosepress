@@ -13,16 +13,17 @@
   <meta name="description" content="<%= current_page.data.description %>">
   <% end %>
   <link rel="shortcut icon" href="<%= base_url %>favicon.ico">
-  <%= stylesheet_link_tag "all" %>
-  <%= javascript_include_tag "jquery-1.9.1.min.js" %>
-  <!--[if lt IE 9]>
-    <%= javascript_include_tag "html5shiv.js" %>
-  <![endif]-->
+  <%= stylesheet_link_tag "lonegoose" %>
 <head>
 <body>
-  <%= partial 'partials/navigation' %>
-  <%= yield %>
-  <%= partial 'partials/footer' %>
-  <%= javascript_include_tag "all" %>
+  <div class="drawer">
+    <%= partial 'partials/drawer' %>
+  </div>
+  <div class="wrapper">
+    <%= partial 'partials/navigation' %>
+    <%= yield %>
+    <%= partial 'partials/footer' %>
+  </div>
+  <%= javascript_include_tag "peacoat" %>
 </body>
 </html>

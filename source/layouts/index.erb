@@ -1,13 +1,11 @@
 <% wrap_layout :layout do %>
   <%= partial 'partials/header' %>
   <div class="container">
-    <main class="col-group">
-      <div class="col col2of3 pre1of6">
-        <%= yield %>
-      </div>
+    <div class="col-group">
+      <%= yield %>
       <%= partial 'partials/latest_post' %>
       <%= partial 'partials/latest_publication' %>
-    </main>
+    </div>
   </div>
 <% end %>
 
