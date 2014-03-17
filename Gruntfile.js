@@ -24,7 +24,7 @@ module.exports = function(grunt) {
     'gh-pages': {
       options: {
         base: 'build',
-        repo: 'https://github.com/ArcGIS/pdx.git'
+        repo: 'https://github.com/nikolaswise/lonegoosepress.git'
       },
       src: ['**']
     }
