@@ -8,6 +8,7 @@ lib-cov
 *.gz
 .sass-cache
 .grunt
+.DS_Store
 
 pids
 logs

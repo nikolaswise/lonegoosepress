@@ -2,24 +2,32 @@
   <h1><%= link_to publication.data.title, publication.url %></h1>
 
   <% if publication.data.author %>
-    <% if publication.data.author_link %>
-      <p>by <%= link_to publication.data.author, publication.data.author_link %></p>
+    <% if publication.data.author_site %>
+      <p>by <%= link_to publication.data.author, publication.data.author_site %></p>
     <% else %>
       <p>by <%= publication.data.author %></p>
     <% end %>
   <% end %>
 
   <% if publication.data.artist %>
-    <% if publication.data.artist_link %>
-      <p>art by <%= link_to publication.data.artist, publication.data.artist_link %></p>
+    <% if publication.data.artist_site %>
+      <p>art by <%= link_to publication.data.artist, publication.data.artist_site %></p>
     <% else %>
       <p>art by <%= publication.data.artist %></p>
     <% end %>
   <% end %>
 
-  <% if publication.data.description %>
-    <p><%= publication.data.description%></p>
+  <% if publication.data.thumbnail %>
+    <figure>
+      <% link_to publication.url do %>
+        <%= image_tag publication.data.thumbnail %>
+      <% end %>
+    </figure>
   <% end %>
+
+  <%# if publication.data.description %>
+    <!-- <p><%# publication.data.description%></p> -->
+  <%# end %>
 
   <%= link_to 'Examine', publication.url %>
 

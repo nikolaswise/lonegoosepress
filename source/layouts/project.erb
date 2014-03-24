@@ -1,3 +1,56 @@
 <% wrap_layout :layout do %>
+<div>
+
+  <% if current_page.data.description %>
+    <figure>
+      <%= image_tag current_page.data.image %>
+    </figure>
+  <% end %>
+
+  <h1><%= current_page.data.title %></h1>
+
+  <% if current_page.data.author %>
+    <% if current_page.data.author_site %>
+      <p>by <%= link_to current_page.data.author, current_page.data.author_site %></p>
+    <% else %>
+      <p>by <%= current_page.data.author %></p>
+    <% end %>
+  <% end %>
+
+  <% if current_page.data.artist %>
+    <% if current_page.data.artist_site %>
+      <p>art by <%= link_to current_page.data.artist, current_page.data.artist_site %></p>
+    <% else %>
+      <p>art by <%= current_page.data.artist %></p>
+    <% end %>
+  <% end %>
+
+  <% if current_page.data.description %>
+    <p><%= current_page.data.description%></p>
+  <% end %>
+
+  <% if current_page.data.release %>
+    <p>Released: <%= current_page.data.release %></p>
+  <% end %>
+  <% if current_page.data.edition %>
+    <p>Edition Size: <%= current_page.data.edition %></p>
+  <% end %>
+  <% if current_page.data.edition_notes %>
+    <p><%= current_page.data.edition_notes %></p>
+  <% end %>
+  <% if current_page.data.dimentions %>
+    <p>dimentions: <%= current_page.data.dimentions %></p>
+  <% end %>
+  <% if current_page.data.price %>
+    <p>Price <%= current_page.data.price %></p>
+  <% end %>
+
+  <% if current_page.data.available === true %>
+    <%= link_to 'Buy', "/" %>
+  <% else %>
+    <p>Out of Print</p>
+  <% end %>
+</div>
+
   <%= yield %>
 <% end %>
