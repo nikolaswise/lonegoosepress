@@ -10,7 +10,7 @@ html {
 $pica: 1rem;
 $point: $pica/12;
 $p: $point;
-$baseline: 24*$point;
+$baseline: 20*$point;
 
 // ┌─────────────────┐
 // │ SCALE:  MUSICAL │
@@ -33,8 +33,8 @@ $unison: 1/1;
 // ┌─────────────────┐
 // │ PROPORTIONS     │
 // └─────────────────┘
-$proportion: $major7th;
-$tonal: $minor3rd;
+$proportion: $major6th;
+$tonal: $fourth;
 
 // ┌─────────────────┐
 // │ PER CENT        │

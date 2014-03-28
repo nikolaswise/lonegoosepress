@@ -10,17 +10,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
- @extend %p28-5;
+ @extend %p37-5;
+ padding-bottom: 1*$baseline;
 }
 h2 {
-  @extend %p24;
+  @extend %p26;
+  padding-bottom: 1*$baseline;
 }
 h3 {
-  @extend %p18;
+  @extend %p22-5;
+  padding-bottom: 1*$baseline;
 }
 
 p {
-  @extend  %GillSans
+  @extend  %GillSans;
+  padding-bottom: 1*$baseline;
+}
+
+blockquote p {
+  @extend %p16;
 }
 
 .center-text {

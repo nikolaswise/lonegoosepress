@@ -4,31 +4,31 @@
 │ Point Sizes - Reference                         │
 ├─────────────────────────────────────────────────┤
 ├─────────────────────────────────────────────────┤
-│ PIXELS                                    REMS  │
+│ PIXELS                                   POINTS │
 ├─────────────────────────────────────────────────┤
-│ 97.000                                    6.063 │
+│ 97.000                                   72.75  │
 ├─────────────────────────────────────────────────┤
-│ 83.383                                    5.211 │
+│ 83.383                                   62.5   │
 ├─────────────────────────────────────────────────┤
-│ 58.188                                    3.637 │
+│ 58.188                                   43.64  │
 ├─────────────────────────────────────────────────┤
-│ 50.020                                    3.126 │
+│ 50.020                                   37.5   │
 ├─────────────────────────────────────────────────┤
-│ 34.906                                    2.182 │
+│ 34.906                                   26.18  │
 ├─────────────────────────────────────────────────┤
-│ 30.006                                    1.875 │
+│ 30.006                                   22.5   │
 ├─────────────────────────────────────────────────┤
-│ 20.939                                    1.309 │
+│ 20.939                                   15.7   │
 ├─────────────────────────────────────────────────┤
-│ 18.000                                    1.125 │
+│ 18.000                                   13.5   │
 ├─────────────────────────────────────────────────┤
-│ 12.561                                    0.785 │
+│ 12.561                                   9.42   │
 ├─────────────────────────────────────────────────┤
 └─────────────────────────────────────────────────┘
 */
 
 // ┌─────────────────┐
-// │ TO REM          │
+// │ PX TO REM       │
 // └─────────────────┘
 @function calculateRem($size) {
   $remSize: $size / 16;
@@ -47,45 +47,66 @@
 // ┌─────────────────┐
 // │ POINTSIZES      │
 // └─────────────────┘
-%p9 {
-  font-size: 9*$point;
+%p9-5 {
+  $shift: 0;
+  font-size: 9.42*$point;
   line-height: 1*$baseline;
   margin-top: 0;
-  padding-top: 7*$p;
-  margin-bottom: -7*$p;}
-%p10-5 {
-  font-size:10.5*$point;
-  line-height: 1*$baseline;
-  margin-top: 0;
-  padding-top: 5.5*$p;
-  margin-bottom: -5.5*$p;}
-%p12 {
-  font-size:12*$point;
-  line-height: 1*$baseline;
-  margin-top: 0;
-  padding-top: 4*$p;
-  margin-bottom: -4*$p;}
+  padding-top: $shift*$p;
+  margin-bottom: -$shift*$p;}
 %p13-5 {
+  $shift: 0;
   font-size:13.5*$point;
-    line-height: 1*$baseline;
+  line-height: 1*$baseline;
   margin-top: 0;
-  padding-top: 4.5*$p;
-  margin-bottom: -4.5*$p;}
-%p18 {
-  font-size:18*$point;
-  line-height: 1.66*$baseline;
+  padding-top: $shift*$p;
+  margin-bottom: -$shift*$p;}
+%p16 {
+  $shift: 0;
+  font-size:15.7*$point;
+  line-height: 1*$baseline;
   margin-top: 0;
-  padding-top: 3*$p;
-  margin-bottom: -3*$p;}
-%p24 {
-  font-size:24*$point;
+  padding-top: $shift*$p;
+  margin-bottom: -$shift*$p;}
+%p22-5 {
+  $shift: 0;
+  font-size:22.5*$point;
   line-height: 2*$baseline;
   margin-top: 0;
-  padding-top: 9*$p;
-  margin-bottom: -9*$p;}
-%p28-5 {
-  font-size:28.5*$point;
+  padding-top: $shift*$p;
+  margin-bottom: -$shift*$p;}
+%p26 {
+  $shift: 0;
+  font-size:26.18*$point;
   line-height: 2*$baseline;
   margin-top: 0;
-  padding-top: 8.5*$p;
-  margin-bottom: -8.5*$p;}
+  padding-top: $shift*$p;
+  margin-bottom: -$shift*$p;}
+%p37-5 {
+  $shift: 0;
+  font-size:37.5*$point;
+  line-height: 2*$baseline;
+  margin-top: 0;
+  padding-top: $shift*$p;
+  margin-bottom: -$shift*$p;}
+%p44 {
+  $shift: 0;
+  font-size:43.64*$point;
+  line-height: 2*$baseline;
+  margin-top: 0;
+  padding-top: $shift*$p;
+  margin-bottom: -$shift*$p;}
+%p62-5 {
+  $shift: 0;
+  font-size:62.5*$point;
+  line-height: 2*$baseline;
+  margin-top: 0;
+  padding-top: $shift*$p;
+  margin-bottom: -$shift*$p;}
+%p73 {
+  $shift: 0;
+  font-size:72.55*$point;
+  line-height: 2*$baseline;
+  margin-top: 0;
+  padding-top: $shift*$p;
+  margin-bottom: -$shift*$p;}
