@@ -1,9 +1,9 @@
-<section class="col col-12 tablet-col-24">
+<section class="col col-12">
   <% blog.articles[0...1].each do |article| %>
     <article>
-      <h1>
+      <h2>
         <a href="<%= article.url %>"><%= article.title %></a>
-      </h1>
+      </h2>
       <time><%= article.date.strftime('%b %e %Y') %></time>
       <p><%= article.summary %></p>
       <a href="<%= article.url %>">Read more</a>

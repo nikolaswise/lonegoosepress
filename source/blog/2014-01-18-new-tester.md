@@ -7,10 +7,6 @@ spot: cyan
 image: "2013-10-21/mountains.jpg"
 published: false
 ---
-
-# Pack my box with five dozen liquor jugs.
-## By Mark Down--Pangram
-
 > "Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse id sem consectetuer libero luctus adipiscing."
 
 ### "Lorem ipsum dolor sit amet", consectetur adipisicing elit ...

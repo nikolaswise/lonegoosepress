@@ -46,6 +46,7 @@
 
 @mixin column-width($span) {
   width: grid-calc($span);
+  // max-width: grid-calc($span);
 }
 
 @mixin _inline-grid ($prefix: "") {

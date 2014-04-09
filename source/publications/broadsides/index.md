@@ -4,4 +4,6 @@ layout: collection
 ---
 # Broadsides
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+From the earliest days of movable type, printers have worked with the limits presented by the size and format of the press, producing a single sheet of printed paper at a time. While this process was quickly adapted for the printing of books, the single­sheet format was often used for official announcements and proclamations. As the technology became more widely available, it also became a vehicle for polital agitaion. Dissident printers in back­alley shops sometimes cranked out calls for insurrection or reproduced scaffold speeches by condemned prisoners. The term broadside continues to carry the connotation of challenging the prevailing stuctures of power and ideology.
+
+While lone goose press’s approach to broadsides may be more reflective than inflammatory, we tend to seek poems or short prose essays that challenge us to perceive a deeper understanding of citezenship in this world.
