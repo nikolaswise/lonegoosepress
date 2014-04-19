@@ -1,15 +1,23 @@
-<section class="col col-12">
-  <% @publications[0..0].each_with_index do |publication| %>
-    <h2><%= link_to publication.data.title publication.data.url%></h2>
+<section class="preview-section">
+  <% @featured.each do |f| %>
+      <h4> <%= link_to f[1].title, f[1].url %></h4>
+      <h5>
+        <%= link_to f[1].author, f[1].author_url %> |
+        <%= link_to f[1].artist, f[1].artist_url %>
+      </h5>
+      <p>
+        <%= f[1].release %>,
+        Edition of <%= f[1].edition %>.
+         <%= f[1].edition_notes %>
+      </p>
+      <p>
+        <%= f[1].description %>
+      </p>
 
-    <% if publication.data.thumbnail %>
-      <figure>
-        <% link_to publication.url do %>
-          <%= image_tag publication.data.thumbnail %>
-        <% end %>
-      </figure>
-    <% end %>
-
-    <p><%= publication.data.description%></p>
   <% end %>
+
+  <h5 class="center">
+    <%= link_to "View All Publications", base_url + 'publications/' %>
+  </h5>
+
 </section>

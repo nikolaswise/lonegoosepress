@@ -1,68 +1,42 @@
- // Mini Inline-Block Grid
-.col {
-  display: block;
-  float: left;
-  position: relative;
-  @include box-sizing(border-box);
-}
-
-.col-group {
-  font-family: 'Courier New', Monospace;
+.block-grid {
+  font-family: monospace;
   letter-spacing: -.65em;
-  margin-left: -0.5*$column-gutter;
-  margin-right: -0.5*$column-gutter;
+  margin-left: -1em;
+  margin-right: -1em;
   text-align: left;
-  .col {
-    display: inline-block;
-    float: none;
-    letter-spacing: normal;
-    padding-left: 0.5*$column-gutter;
-    padding-right: 0.5*$column-gutter;
-    position: relative;
-    text-align: left;
-    vertical-align: top;
-    @extend %WhitneyBook;
-  }
-  &.no-padding {
-    margin-left: 0;
-    margin-right: 0;
-    .col {
-      padding-left: 0;
-      padding-right: 0;
-    }
-  }
-  &.table {
-    dispay: table;
-    .table-cell {
-      display: table-cell;
-      vertical-align: middle;
-    }
+  display: block;
+  &.center {
+    text-align: center;
   }
 }
 
-@function grid-calc($span) {
-  @return percentage(($span / $total-columns));
+.block {
+  @extend %GillSans;
+  position: relative;
+  display: inline-block;
+  float: none;
+  @include box-sizing(border-box);
+  padding-left: 1em;
+  padding-right: 1em;
+  letter-spacing: normal;
+  text-align: left;
+  vertical-align: top;
 }
 
-@mixin column-width($span) {
-  width: grid-calc($span);
-  // max-width: grid-calc($span);
+@mixin _block-grid ($prefix: "") {
+  .#{$prefix}block-grid-1-up .block { width: 100%; }
+  .#{$prefix}block-grid-2-up .block { width: 50%; }
+  .#{$prefix}block-grid-3-up .block { width: 33.33333%; }
+  .#{$prefix}block-grid-4-up .block { width: 25%; }
+  .#{$prefix}block-grid-5-up .block { width: 20%; }
 }
 
-@mixin _inline-grid ($prefix: "") {
-  @for $i from 1 through $total-columns {
-    .#{$prefix}col-#{$i} {
-      @include column-width($i);
-    }
-  }
-}
-
-@include _inline-grid();
+@include _block-grid();
 
 @include respond-to($tablet-mid){
-  @include _inline-grid("tablet-");
+  @include _block-grid("tablet-");
 }
 
 @include respond-to($phone){
-  @include _inline-grid("phone-");
+  @include _block-grid("phone-");
 }

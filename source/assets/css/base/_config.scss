@@ -35,6 +35,9 @@ $warm-yellow:           hsl(48, 45, 94);
 
 $brown:                 hsl(34, 25, 77);
 
+$casal:  #39555D;
+$maroon: #782D20;
+$onyx:   #171717;
 
 $desktop:       1280px !default;
 $laptop-large:  1180px !default;
@@ -49,8 +52,8 @@ $phone-tall:    320px  !default;
 $text-color: $darker-gray;
 $text-tonal: $darkest-gray;
 
-$link-color: $blue;
-$link-hover: rgba($link-color, 0.75);
+$link-color: $maroon;
+$link-hover: $casal;
 
 $selection-background: false !default;
 $selection-color: false !default;

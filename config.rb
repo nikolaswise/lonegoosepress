@@ -68,6 +68,8 @@ set :fonts_dir, 'assets/fonts'
 set :images_dir, 'assets/img'
 set :js_dir, 'assets/js'
 
+set :relative_links, true
+
 # Projects Pages
 
 def get_publications
@@ -118,6 +120,10 @@ def reload_pages
   @pages.sort! { |a,b| a.data['order'].to_i <=> b.data['order'].to_i }
 end
 
+def get_featured
+  @featured = data.featured.find_all
+end
+
 ready do
   get_books
   get_broadsides
@@ -126,6 +132,7 @@ ready do
   get_boxmaking
   get_design
   get_publications
+  get_featured
   reload_pages
   AuthorPages.configure self, data
 end
@@ -140,6 +147,7 @@ end
 helpers ApplicationHelpers
 
 configure :build do
+  activate :relative_assets
   activate :minify_css
   #activate :minify_javascript
   #set :http_prefix, ''

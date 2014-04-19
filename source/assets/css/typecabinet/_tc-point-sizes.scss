@@ -47,63 +47,63 @@
 // ┌─────────────────┐
 // │ POINTSIZES      │
 // └─────────────────┘
-%p9-5 {
+@mixin p9-5() {
   $shift: 0;
   font-size: 9.42*$point;
   line-height: 1*$baseline;
   margin-top: 0;
   padding-top: $shift*$p;
   margin-bottom: -$shift*$p;}
-%p13-5 {
+@mixin p13-5() {
   $shift: 0;
   font-size:13.5*$point;
   line-height: 1*$baseline;
   margin-top: 0;
   padding-top: $shift*$p;
   margin-bottom: -$shift*$p;}
-%p16 {
+@mixin p16() {
   $shift: 0;
   font-size:15.7*$point;
-  line-height: 1*$baseline;
+  line-height: 1.25*$baseline;
   margin-top: 0;
   padding-top: $shift*$p;
   margin-bottom: -$shift*$p;}
-%p22-5 {
+@mixin p22-5() {
   $shift: 0;
   font-size:22.5*$point;
-  line-height: 2*$baseline;
+  line-height: 1.33*$baseline;
   margin-top: 0;
   padding-top: $shift*$p;
   margin-bottom: -$shift*$p;}
-%p26 {
+@mixin p26() {
   $shift: 0;
   font-size:26.18*$point;
-  line-height: 2*$baseline;
+  line-height: 1.33*$baseline;
   margin-top: 0;
   padding-top: $shift*$p;
   margin-bottom: -$shift*$p;}
-%p37-5 {
+@mixin p37-5() {
   $shift: 0;
   font-size:37.5*$point;
   line-height: 2*$baseline;
   margin-top: 0;
   padding-top: $shift*$p;
   margin-bottom: -$shift*$p;}
-%p44 {
+@mixin p44() {
   $shift: 0;
   font-size:43.64*$point;
-  line-height: 2*$baseline;
+  line-height: 3*$baseline;
   margin-top: 0;
   padding-top: $shift*$p;
   margin-bottom: -$shift*$p;}
-%p62-5 {
+@mixin p62-5() {
   $shift: 0;
   font-size:62.5*$point;
   line-height: 2*$baseline;
   margin-top: 0;
   padding-top: $shift*$p;
   margin-bottom: -$shift*$p;}
-%p73 {
+@mixin p73() {
   $shift: 0;
   font-size:72.55*$point;
   line-height: 2*$baseline;

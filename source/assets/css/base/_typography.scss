@@ -1,6 +1,6 @@
 body {
   @extend %GillSans;
-  @extend %p13-5;
+  @include p13-5();
   color: $text-color;
 }
 
@@ -19,25 +19,30 @@ h6 {
 }
 
 h1 {
- @extend %p37-5;
- padding-bottom: 1*$baseline;
+ @include p44();
 }
 h2 {
-  @extend %p26;
-  padding-bottom: 1*$baseline;
+  @include p37-5();
 }
 h3 {
-  @extend %p22-5;
-  padding-bottom: 1*$baseline;
+  @include p26();
+}
+h4 {
+  @include p22-5();
+}
+h5 {
+  @include p16();
+}
+h6 {
+ @include p13-5();
 }
 
 p {
   @extend  %GillSans;
-  padding-bottom: 1*$baseline;
 }
 
 blockquote p {
-  @extend %p16;
+  @include p16();
 }
 
 .center-text {
