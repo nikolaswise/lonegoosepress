@@ -47,3 +47,13 @@ figure {
 .center {
   text-align: center;
 }
+
+.blog,
+.about,
+.collection,
+.post,
+.project,
+.typology {
+  border-top: 2.5*$baseline solid $dark-gray;
+  padding-top: 1*$baseline;
+}

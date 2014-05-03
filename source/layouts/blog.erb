@@ -1,19 +1,10 @@
 <% wrap_layout :layout do %>
-  <div class="container">
-    <div class="col-group">
-      <div class="col col7of12">
+  <div class="container blog">
+      <div class="content-area">
         <%= yield %>
         <% page_articles.each_with_index do |article, i| %>
           <%= partial 'partials/blog_in_list', locals: {article: article} %>
         <% end %>
-      </div>
-      <div class="col pre1of12 col1of3">
-        <ul>
-          <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
-            <li>
-              <h5><%= link_to year, blog_year_path(year) %></h5>
-          <% end %>
-        </ul>
       </div>
     </div>
   </div>

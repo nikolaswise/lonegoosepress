@@ -25,6 +25,17 @@
     @include respond-to(55rem){
       max-width: 100%;
     }
+
+    &.no-margin {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    &.no-margin-top {
+      margin-top: 0;
+    }
+    &.no-margin-bottom {
+      margin-bottom: 0;
+    }
   }
 
   ol ul,
@@ -60,4 +71,6 @@
     width: 10%;
     border-bottom: 2px solid $dark-gray;
   }
+
+
 }
