@@ -70,6 +70,8 @@ set :js_dir, 'assets/js'
 
 set :relative_links, true
 
+set :build_dir, 'www'
+
 # Projects Pages
 
 def get_publications
