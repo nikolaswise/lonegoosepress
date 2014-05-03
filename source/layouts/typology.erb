@@ -1,8 +1,7 @@
 <% wrap_layout :layout do %>
 <div class="container">
-  <div class="col-group">
-    <div class="col col7of12 pre1of6">
-      <%= yield %>
+  <div class="content-area">
+  <%= yield %>
       <% if current_page.data.title == 'publications' %>
         <section>
           <h2>
@@ -72,7 +71,6 @@
       <% else %>
         <p>Sorry, we don't really know what your looking for.</p>
       <% end %>
-    </div>
   </div>
 </div>
 <% end %>

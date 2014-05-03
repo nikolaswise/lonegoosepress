@@ -1,5 +1,15 @@
-<div class="col col-8">
-  <h1><%= link_to publication.data.title, publication.url %></h1>
+<% if publication.data.title %>
+<div class="block">
+
+  <h2><%= link_to publication.data.title, publication.url %></h2>
+
+  <% if publication.data.thumbnail %>
+    <figure>
+      <% link_to publication.url do %>
+        <%= image_tag publication.data.thumbnail %>
+      <% end %>
+    </figure>
+  <% end %>
 
   <% if publication.data.author %>
     <% if publication.data.author_site %>
@@ -17,14 +27,6 @@
     <% end %>
   <% end %>
 
-  <% if publication.data.thumbnail %>
-    <figure>
-      <% link_to publication.url do %>
-        <%= image_tag publication.data.thumbnail %>
-      <% end %>
-    </figure>
-  <% end %>
-
   <%# if publication.data.description %>
     <!-- <p><%# publication.data.description%></p> -->
   <%# end %>
@@ -37,3 +39,4 @@
     <%# link_to 'Out of Print', "/" %>
   <%# end %>
 </div>
+<% end %>
