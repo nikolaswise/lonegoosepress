@@ -8,7 +8,7 @@ footer{
     list-style-type: none;
   }
   p {
-    @extend %WhitneyBook;
+    @extend %GillSans;
     @include p13-5();
     @include tracking(1);
     max-width: $container-max;

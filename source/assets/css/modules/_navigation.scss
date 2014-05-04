@@ -24,7 +24,7 @@ nav {
 .horizontal-nav {
   list-style-type: none;
   z-index: 3;
-  @extend GillSans;
+  @extend %GillSans;
   text-transform: uppercase;
   @include tracking(2);
   a {
