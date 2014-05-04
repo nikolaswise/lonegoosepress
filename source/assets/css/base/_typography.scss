@@ -1,3 +1,4 @@
+
 body {
   @extend %GillSans;
   @include p13-5();
@@ -56,5 +57,9 @@ blockquote p {
 }
 
 .center-text {
+  text-align: center;
+}
+
+.typology h1 {
   text-align: center;
 }

@@ -54,6 +54,6 @@ figure {
 .post,
 .project,
 .typology {
-  border-top: 2.5*$baseline solid $dark-gray;
+  border-top: 2.5*$baseline solid rgba($onyx, 0.85);;
   padding-top: 1*$baseline;
 }

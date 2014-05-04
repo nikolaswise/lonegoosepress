@@ -4,6 +4,11 @@
   <%= yield %>
     <% if current_page.data.title == 'publications' %>
       <section>
+        <figure>
+          <p>
+            <%= image_tag 'publication.png' %>
+          </p>
+        </figure>
         <h2>
           <%= link_to 'Books', base_url + 'publications/books/' %>
         </h2>
@@ -13,6 +18,11 @@
       </section>
 
       <section>
+        <figure>
+          <p>
+            <%= image_tag 'publication.png' %>
+          </p>
+        </figure>
         <h2>
           <%= link_to 'Broadsides', base_url + 'publications/broadsides/' %>
         </h2>
@@ -25,6 +35,11 @@
       </section>
 
       <section>
+        <figure>
+          <p>
+            <%= image_tag 'publication.png' %>
+          </p>
+        </figure>
         <h2>
           <%= link_to 'Poetic Prayer Flags', base_url + 'publications/prayer-flags/' %>
         </h2>
@@ -34,6 +49,11 @@
       </section>
 
       <section>
+        <figure>
+          <p>
+            <%= image_tag 'publication.png' %>
+          </p>
+        </figure>
         <h2>
           <%= link_to 'Ephemera', base_url + 'publications/ephemera/' %>
         </h2>
@@ -43,6 +63,11 @@
       </section>
     <% elsif current_page.data.title == 'services'%>
       <section>
+        <figure>
+          <p>
+            <%= image_tag 'design.png' %>
+          </p>
+        </figure>
         <h2>
           <%= link_to 'Design', base_url + 'services/design/' %>
         </h2>
@@ -52,6 +77,11 @@
       </section>
 
       <section>
+        <figure>
+          <p>
+            <%= image_tag 'design.png' %>
+          </p>
+        </figure>
         <h2>
           <%= link_to 'Bookbinding', base_url + 'services/bookbinding/' %>
         </h2>
@@ -61,6 +91,11 @@
       </section>
 
       <section>
+        <figure>
+          <p>
+            <%= image_tag 'design.png' %>
+          </p>
+        </figure>
         <h2>
           <%= link_to 'Boxmaking', base_url + 'services/boxmaking/' %>
         </h2>

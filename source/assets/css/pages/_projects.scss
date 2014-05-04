@@ -1,11 +1,8 @@
-// main.project-image {
-//   width: 50%;
-//   margin: 0;
-//   padding: 0;
-// }
+main.project-image {
+  margin: 2*$baseline 0;
+  max-width: 100%;
+}
 
-// aside.project-information {
-//   width: 50%;
-//   margin: 0;
-//   padding: 0;
-// }
+aside.project-information {
+  margin: 2*$baseline 0;
+}

@@ -2,6 +2,9 @@
 title: lone goose press
 layout: about
 ---
+
+![Sandy Tilcock](/assets/img/about.png "Sandy Tilcock At the Press")
+
 # About the Press
 
 lone goose press is dedicated to excellence in the crafts of typographic design, letterpress printing and bookbinding. Over the last two decades, proprietor Sandy Tilcock’s work has been recognized for its impeccable and imaginative craftsmanship and design. The subtlety and refinement of her work keeps it understated, in keeping with her philosophy, “Do good work and allow the work to speak for itself.” Sandy has been involved with traditional book arts for over 25 years. Her quest to explore more deeply the craft of hand bookbinding led her to enroll at the University of Alabama’s Book Arts Institute, where she completed a Master of Fine arts degree in 1987. While at Alabama, she developed an interest in printing and typography, studying letterpress printing with the Institute’s director, Richard-Gabriel Rummonds. Sandy was founding Director of Knight Library Press at the University of Oregon and served in that position for seven years.
