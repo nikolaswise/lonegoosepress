@@ -4,7 +4,7 @@ date: 2014-01-18
 author: nk
 spot: cyan
 image: "2013-10-21/mountains.jpg"
-published: false
+published: true
 
 summary: "Markdown elements for typographic testing. Sed do eiusmod [tempor incididunt](/..) ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 15--28 commodo consequat"
 ---

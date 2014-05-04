@@ -2,11 +2,9 @@
   <div class="container blog">
       <div class="content-area">
         <%= yield %>
-        <% page_articles.each_with_index do |article, i| %>
-          <%= partial 'partials/blog_in_list', locals: {article: article} %>
-        <% end %>
 
         <% blog.articles.each do |article| %>
+          <h1>hey</h1>
           <%= partial 'partials/blog_in_list', locals: {article: article} %>
         <% end %>
 
