@@ -2,29 +2,27 @@
   <div class="container">
     <div class="nav-index content-area">
       <ul>
+        <%= link_to "View All Publications", base_url + 'publications/' %>
         <li><%= link_to 'Home', '/' %></li>
-        <li><%= link_to 'Publications', '/publications' %>
+        <li><%= link_to 'Publications', base_url + 'publications' %>
           <ul>
-            <li><%= link_to 'Broadsides', '/publications/broadsides' %></li>
-            <li><%= link_to 'Books', '/publications/books' %></li>
-            <li><%= link_to 'Poetic Prayer Flags', '/publications/prayer-flags' %></li>
-            <li><%= link_to 'Chapbooks, Ephemera', '/publications/ephemera' %></li>
+            <li><%= link_to 'Broadsides', base_url + 'publications/broadsides' %></li>
+            <li><%= link_to 'Books', base_url + 'publications/books' %></li>
+            <li><%= link_to 'Poetic Prayer Flags', base_url + 'publications/prayer-flags' %></li>
+            <li><%= link_to 'Chapbooks, Ephemera', base_url + 'publications/ephemera' %></li>
           </ul>
         </li>
-        <li><%= link_to 'Commision Work', '/services' %>
+        <li><%= link_to 'Commision Work', base_url + 'services' %>
           <ul>
-            <li><%= link_to 'Design Service', '/services/design' %></li>
-            <li><%= link_to 'Production Services', '/services/production' %></li>
-            <li><%= link_to 'Trade Publications', '/services/trade-publication' %></li>
+            <li><%= link_to 'Design Service', base_url + 'services/design' %></li>
+            <li><%= link_to 'Production Services', base_url + 'services/production' %></li>
+            <li><%= link_to 'Trade Publications', base_url + 'services/trade-publication' %></li>
           </ul>
         </li>
-        <li><%= link_to 'Blog', '/blog' %></li>
-        <li><%= link_to 'About the Press', '/about' %></li>
-        <li><%= link_to 'Contact', '/contact' %></li>
+        <li><%= link_to 'Blog', base_url + 'blog' %></li>
+        <li><%= link_to 'About the Press', base_url + 'about' %></li>
+        <li><%= link_to 'Contact', base_url + 'contact' %></li>
       </ul>
-    </div>
-    <div class="col col-12 tablet-hide">
-      <!-- <h2>page specific content</h2> -->
     </div>
   </div>
 </div>
