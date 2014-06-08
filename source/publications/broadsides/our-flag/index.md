@@ -13,7 +13,7 @@ image: broadsides/our_flag.jpg
 thumbnail: broadsides/our_flag_TN.jpg
 available: false
 layout: project
-no: 16
+num: 16
 ---
 
 

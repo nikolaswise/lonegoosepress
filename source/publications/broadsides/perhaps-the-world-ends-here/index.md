@@ -13,7 +13,7 @@ image: broadsides/perhaps_the_world_ends_here.jpg
 thumbnail: broadsides/perhaps_the_world_ends_here_TN.jpg
 available: false
 layout: project
-no: 09
+num: 09
 ---
 
 The world begins at a kitchen table. No matter what, we must eat to live.

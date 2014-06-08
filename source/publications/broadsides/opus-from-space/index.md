@@ -13,7 +13,7 @@ image: broadsides/Opus_from_Space.jpg
 thumbnail: broadsides/Opus_from_Space_TN.jpg
 available: false
 layout: project
-no: 02
+num: 02
 ---
 
 Almost everything I know is glad

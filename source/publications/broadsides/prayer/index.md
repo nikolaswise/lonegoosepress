@@ -13,7 +13,7 @@ image: broadsides/prayer.jpg
 thumbnail: broadsides/prayer_TN.jpg
 available: false
 layout: project
-no: 17
+num: 17
 ---
 
 I’m cutting my swallows from black silk,

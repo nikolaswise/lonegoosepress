@@ -14,7 +14,7 @@ image: broadsides/Dependence_Day.jpg
 thumbnail: broadsides/Dependence_Day_TN.jpg
 available: false
 layout: project
-no: 07
+num: 07
 ---
 
 It would be a quieter holiday, no ﬁreworks

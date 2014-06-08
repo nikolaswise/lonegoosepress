@@ -13,7 +13,7 @@ image: broadsides/Snow.jpg
 thumbnail: broadsides/Snow_TN.jpg
 available: false
 layout: project
-no: 08
+num: 08
 ---
 
 Flake by flake

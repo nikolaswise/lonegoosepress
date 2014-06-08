@@ -12,7 +12,7 @@ image: broadsides/To_the_Book.jpg
 thumbnail: broadsides/To_the_Book_TN.jpg
 available: false
 layout: project
-no: 06
+num: 06
 ---
 
 Go on then

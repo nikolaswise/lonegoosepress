@@ -13,7 +13,7 @@ image: broadsides/About_Ursula.jpg
 thumbnail: broadsides/About_Ursula_TN.jpg
 available: false
 layout: project
-no: 04
+num: 04
 ---
 
 My guardian angel has shining eyes.

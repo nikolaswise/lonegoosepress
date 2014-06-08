@@ -11,7 +11,7 @@ image: broadsides/eclipsed.jpg
 thumbnail: broadsides/eclipsed_TN.jpg
 available: false
 layout: project
-no: 15
+num: 15
 ---
 
 As I’m walking down the street,

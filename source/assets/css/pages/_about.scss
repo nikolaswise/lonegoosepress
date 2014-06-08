@@ -1,7 +1,0 @@
-.beauchamp-and-wise {
-  .container {
-    margin-top: 1*$baseline;
-    @include respond-to($container-max) {
-      margin-top: 4*$baseline;
-  }
-}

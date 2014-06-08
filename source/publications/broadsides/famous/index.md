@@ -11,7 +11,7 @@ image: broadsides/famous.jpg
 thumbnail: broadsides/famous_TN.jpg
 available: false
 layout: project
-no: 10
+num: 10
 ---
 
 The river is famous to the fish.

@@ -83,13 +83,13 @@ end
 def get_books
   @books = sitemap.resources.find_all { |page| page.url.match(/\/publications\/books\/.*\/.*/) }
   # Sort by date of project
-  @books.sort! { |a,b| a.data['order'].to_i <=> b.data['order'].to_i }
+  @books.sort! { |a,b| b.data['num'].to_i <=> a.data['num'].to_i }
 end
 
 def get_broadsides
   @broadsides = sitemap.resources.find_all { |page| page.url.match(/\/publications\/broadsides\/.*\/.*/) }
   # Sort by date of project
-  @broadsides.sort! { |a,b| a.data['order'].to_i <=> b.data['order'].to_i }
+  @broadsides.sort! { |a,b| b.data['num'].to_i <=> a.data['num'].to_i }
 end
 
 def get_ephemera

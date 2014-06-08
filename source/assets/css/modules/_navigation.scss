@@ -17,6 +17,7 @@ $nav-panel: 0.4*$tonal*$measure;
 nav {
   position: absolute;
   top: 0;
+  background-color: $darker-gray;
   z-index: 3;
   width: 100%;
 }
@@ -47,5 +48,11 @@ nav {
 .nav-index {
   ul {
     list-style-type: none;
+  }
+}
+
+.index {
+  nav {
+    background: transparent;
   }
 }

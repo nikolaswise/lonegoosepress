@@ -11,7 +11,7 @@ image: broadsides/tallest_brother.jpg
 thumbnail: broadsides/tallest_brother_TN.jpg
 available: false
 layout: project
-no: 13
+num: 13
 ---
 
 Among my pencil peers in the cup

@@ -12,7 +12,7 @@ image: broadsides/Servants_of_Memory.jpg
 thumbnail: broadsides/Servants_of_Memory_TN.jpg
 available: false
 layout: project
-no: 03
+num: 03
 ---
 
 We regard ourselves as servants of memory.  We will not be the servants of your progress. We seek a politics that goes beyond nation and race. We advocate for air and water without contamination, even if the contamination be called harmless or is to be placed there for our own good. We believe in the imagination and in the variety of its architectures, not in one plan for all, even if it is God’s plan. We believe in the divinity of life, in all its human variety. We believe that everything can be remembered in time, that anyone may be redeemed, that no hierarchy is worth figuring out, that no flower or animal or body of water or star is common, that poetry is the key to a lock worth springing, that what is called for is not subjugation but genuflection.
