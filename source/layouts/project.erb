@@ -50,7 +50,7 @@
         <% end %>
 
         <% if current_page.data.available === true %>
-          <%= link_to 'Buy', "/" %>
+          <%= link_to 'Purchase a Print', "/" %>
         <% else %>
           <p>Out of Print</p>
         <% end %>
@@ -63,7 +63,7 @@
   </div>
   <% if current_page.data.description %>
     <figure>
-      <%= image_tag current_page.data.image %>
+      <%# image_tag current_page.data.image %>
     </figure>
   <% end %>
 </div>

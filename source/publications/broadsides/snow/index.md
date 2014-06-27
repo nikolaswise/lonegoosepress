@@ -11,11 +11,11 @@ Dimentions: 8.5 x 8.5 inches.
 price: $18
 image: broadsides/Snow.jpg
 thumbnail: broadsides/Snow_TN.jpg
-available: false
+available: true
 layout: project
 num: 08
 ---
-
+```
 Flake by flake
 falling softly,
 covering the ground in a white blanket.
@@ -33,6 +33,7 @@ I get into bed
 as I hear the chimes of winter.
 I shut my eyes
 and go to sleep.
+```
 
-Copyright 2008 by Lucie Jan Thu Carmin (age 7).
+>> Copyright 2008 by Lucie Jan Thu Carmin (age 7).
 

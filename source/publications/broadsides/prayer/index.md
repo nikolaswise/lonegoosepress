@@ -11,11 +11,11 @@ Dimentions: 16 x 20 inches
 price: $160
 image: broadsides/prayer.jpg
 thumbnail: broadsides/prayer_TN.jpg
-available: false
+available: true
 layout: project
 num: 17
 ---
-
+```
 I’m cutting my swallows from black silk,
 China’s best, Father, so that when flying
 they meet with the least amount of resistance
@@ -43,5 +43,6 @@ where light around the grey heron,
 alone in the water,
 dies down, in time, to black
 and what the imagination can rescue.
+```
 
-From The Temple on Monday by Tom Crawford, published by Eastern Washington University Press, copyright 2001 by Tom Crawford.
+>> From *The Temple on Monday* by Tom Crawford, published by Eastern Washington University Press, copyright 2001 by Tom Crawford.

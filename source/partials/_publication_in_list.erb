@@ -9,23 +9,25 @@
     </figure>
   <% end %>
 
-  <h3><%= link_to publication.data.title, publication.url %></h3>
+  <section class="publication-description">
+    <h3><%= link_to publication.data.title, publication.url %></h3>
 
-  <% if publication.data.author %>
-    <% if publication.data.author_site %>
-      <p class="no-margin">by <%= link_to publication.data.author, publication.data.author_site %></p>
-    <% else %>
-      <p class="no-margin">by <%= publication.data.author %></p>
+    <% if publication.data.author %>
+      <% if publication.data.author_site %>
+        <p class="no-margin">by <%= link_to publication.data.author, publication.data.author_site %></p>
+      <% else %>
+        <p class="no-margin">by <%= publication.data.author %></p>
+      <% end %>
     <% end %>
-  <% end %>
 
-  <% if publication.data.artist %>
-    <% if publication.data.artist_site %>
-      <p class="no-margin-top">art by <%= link_to publication.data.artist, publication.data.artist_site %></p>
-    <% else %>
-      <p class="no-margin-top">art by <%= publication.data.artist %></p>
+    <% if publication.data.artist %>
+      <% if publication.data.artist_site %>
+        <p class="no-margin-top">art by <%= link_to publication.data.artist, publication.data.artist_site %></p>
+      <% else %>
+        <p class="no-margin-top">art by <%= publication.data.artist %></p>
+      <% end %>
     <% end %>
-  <% end %>
+  </section>
 
   <%# if publication.data.available === true %>
     <%# link_to 'Buy', "/" %>

@@ -12,31 +12,31 @@ Dimentions: 11.5 x 18 inches.
 price: $105
 image: broadsides/Dependence_Day.jpg
 thumbnail: broadsides/Dependence_Day_TN.jpg
-available: false
+available: true
 layout: project
 num: 07
 ---
 
-It would be a quieter holiday, no ﬁreworks
-or loud parades, no speeches, no salutes to any ﬂag,
-a day of staying home instead of crowding away,
-a day we celebrate nothing gained in war
-but what we’re given—how the sun’s warmth
-is democratic, touching everyone,
-and the rain is democratic too,
-how the strongest branches in the wind
-give themselves as they resist, resist
-and give themselves, how birds could have no freedom
-without the planet’s weight to wing against,
-how Earth itself could come to be
-only when a whirling cloud of dust
-pledged allegiance as a world
-circling dependently around a star, and the star
-blossomed into ﬁre from the ash of other stars,
-and once, at the dark zero of our time,
-a blaze of revolutionary light
-exploded out of nowhere, out of nothing,
-because nothing needed the light,
-as the brilliance of the light itself needs nothing.
+It would be a quieter holiday, no ﬁreworks<br>
+or loud parades, no speeches, no salutes to any ﬂag,<br>
+a day of staying home instead of crowding away,<br>
+a day we celebrate nothing gained in war<br>
+but what we’re given—how the sun’s warmth<br>
+is democratic, touching everyone,<br>
+and the rain is democratic too,<br>
+how the strongest branches in the wind<br>
+give themselves as they resist, resist<br>
+and give themselves, how birds could have no freedom<br>
+without the planet’s weight to wing against,<br>
+how Earth itself could come to be<br>
+only when a whirling cloud of dust<br>
+pledged allegiance as a world<br>
+circling dependently around a star, and the star<br>
+blossomed into ﬁre from the ash of other stars,<br>
+and once, at the dark zero of our time,<br>
+a blaze of revolutionary light<br>
+exploded out of nowhere, out of nothing,<br>
+because nothing needed the light,<br>
+as the brilliance of the light itself needs nothing.<br>
 
-From All Things Touched By Wind by John Daniel, copyright 1994, Salmon Run Press.
+>> From *All Things Touched By Wind* by John Daniel, copyright 1994, Salmon Runnbsp;Press.

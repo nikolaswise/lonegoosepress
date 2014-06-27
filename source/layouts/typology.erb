@@ -4,11 +4,11 @@
   <%= yield %>
     <% if current_page.data.title == 'publications' %>
       <section>
-        <!-- <figure>
+        <figure>
           <p>
             <%= image_tag 'publication.png' %>
           </p>
-        </figure -->>
+        </figure>
         <h2>
           <%= link_to 'Books', base_url + 'publications/books/' %>
         </h2>
@@ -16,15 +16,15 @@
           lone goose press owner Sandy Tilcock achieved recognition as a bookbinder and designer of limited­edition books prior to her introduction to letterpress printing. Her books reflect her priority for honoring the text. All the elements— typography, design, imagery, materials and binding methods are integrated in service to the author’s words. lone goose press books are conceived as collaborations with authors, and where commissioned artwork is used, with artists. Sandy’s limited edition books have achieved international recognition for their design, creative use of materials, precise typography and attention to detail.
       </p>
       <h5 class="center-text"><a href="#">View All Projects</a></h5>
-      <hr>
+
       </section>
 
       <section>
-        <!-- <figure>
+        <figure>
           <p>
-            <%= image_tag 'publication.png' %>
+            <%= image_tag 'design.png' %>
           </p>
-        </figure -->>
+        </figure>
         <h2>
           <%= link_to 'Broadsides', base_url + 'publications/broadsides/' %>
         </h2>
@@ -35,15 +35,15 @@
           While lone goose press’s approach to broadsides may be more reflective than inflammatory, we tend to seek poems or short prose essays that challenge us to perceive a deeper understanding of citezenship in this world.
         </p>
         <h5 class="center-text"><a href="#">View All Projects</a></h5>
-        <hr>
+
       </section>
 
       <section>
-        <!-- <figure>
+        <figure>
           <p>
-            <%= image_tag 'publication.png' %>
+            <%= image_tag 'Press_Crank.jpg' %>
           </p>
-        </figure -->>
+        </figure>
         <h2>
           <%= link_to 'Poetic Prayer Flags', base_url + 'publications/prayer-flags/' %>
         </h2>
@@ -51,15 +51,15 @@
           This special project of the press brings together brief pieces of writing by various authors in a format inspired by the Tibetan tradition of prayer flags. The writings may be new or excerpted from previous works. We ask the authors to consider themes of hope, peace, reconciliation, and respect for nature. The series is ongoing, each piece having the same format so that several flags may be strung ogether. This effort springs from a desire to cultivate visions for the future that counterbalance the despair and cynicism that often seem to prevail in our society.
         </p>
         <h5 class="center-text"><a href="#">View All Projects</a></h5>
-        <hr>
+
       </section>
 
       <section>
-        <!-- <figure>
+        <figure>
           <p>
-            <%= image_tag 'publication.png' %>
+            <%= image_tag 'Ink_Can.jpg' %>
           </p>
-        </figure -->>
+        </figure>
         <h2>
           <%= link_to 'Ephemera', base_url + 'publications/ephemera/' %>
         </h2>
@@ -71,45 +71,45 @@
 
     <% elsif current_page.data.title == 'services'%>
       <section>
-        <!-- <figure>
+        <figure>
           <p>
-            <%= image_tag 'design.png' %>
+            <%= image_tag 'Standing_Press.jpg' %>
           </p>
-        </figure -->>
+        </figure>
         <h2>
-          <%= link_to 'Design', base_url + 'services/design/' %>
+          <%= link_to 'Design Services', base_url + 'services/design/' %>
         </h2>
         <p>
           "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         </p>
         <h5 class="center-text"><a href="#">View All Projects</a></h5>
-        <hr>
+
       </section>
 
       <section>
-        <!-- <figure>
+        <figure>
           <p>
-            <%= image_tag 'design.png' %>
+            <%= image_tag 'Inking_Plate.jpg' %>
           </p>
-        </figure -->>
+        </figure>
         <h2>
-          <%= link_to 'Bookbinding', base_url + 'services/bookbinding/' %>
+          <%= link_to 'Production Services', base_url + 'services/production/' %>
         </h2>
         <p>
           "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         </p>
         <h5 class="center-text"><a href="#">View All Projects</a></h5>
-        <hr>
+
       </section>
 
       <section>
-        <!-- <figure>
+        <figure>
           <p>
-            <%= image_tag 'design.png' %>
+            <%= image_tag 'Stack_of_Prints.jpg' %>
           </p>
-        </figure -->>
+        </figure>
         <h2>
-          <%= link_to 'Boxmaking', base_url + 'services/boxmaking/' %>
+          <%= link_to 'Publication Services', base_url + 'services/publication/' %>
         </h2>
         <p>
           "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
@@ -122,4 +122,3 @@
   </div>
 </div>
 <% end %>
-

@@ -53,10 +53,11 @@ While it is rare for members of the canine contingent to take an active role in 
 
 **Sadie** has witnessed a number of lone goose publications in her eleven years with the press. Both staff and visitors have come to appreciate her enthusiastic and cordial manner, and her willingness to offer her opinions on a variety of topics, especially those touching on treats or exercise.
 
-<img title="Sandy Tilcock At the Press" alt="Sandy Tilcock" class="small" src="/assets/img/assistants/Rosie.JPG">
-
-**Rosie**, often appearing aloof is quite playful She has dreams of developing a career as a comedienne.
-
 <img title="Sandy Tilcock At the Press" alt="Sandy Tilcock" class="small" src="/assets/img/assistants/Samantha.JPG">
 
-**Samantha**, the newest member of the lone goose team, is working at completing her apprenticeship and mastering the difference between tools and toys.
+**Samantha**, the newest member of the lone goose team, is working at completing her apprenticeship and mastering the difference between tools and&nbsp;toys.
+
+<img title="Sandy Tilcock At the Press" alt="Sandy Tilcock" class="small" src="/assets/img/assistants/Rosie2.jpg">
+
+**Rosie**, the elegant member of the contingent, often finds herself in some interesting positions and locations as she finds a spot to view the activities. These reflect her true personality which is comedienne in training
+

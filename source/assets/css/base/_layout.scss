@@ -56,12 +56,27 @@ figure {
   text-align: center;
 }
 
-.blog,
 .about,
 .collection,
-.post,
 .project,
 .typology {
   // border-top: 2.5*$baseline solid rgba($onyx, 0.85);;
   padding-top: 2.5*$baseline;
+}
+
+.blog {
+  padding-top: 1*$baseline;
+}
+
+.post {
+  padding-top: 2*$baseline;
+}
+
+.block {
+  margin-bottom: 2*$baseline;
+}
+
+
+.publication-description {
+  padding-left: 2rem;
 }

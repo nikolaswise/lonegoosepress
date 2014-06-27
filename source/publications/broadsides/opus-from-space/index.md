@@ -15,7 +15,7 @@ available: false
 layout: project
 num: 02
 ---
-
+```
 Almost everything I know is glad
 to be born—not only the desert orangetip,
 on the twist flower or tansy, shaking
@@ -57,5 +57,6 @@ in the coming bone harps and ladders,
 the heart-thrusts, vessels and voices
 of all those speeding with clear and total
 fury toward this singular honor.
+```
 
-Copyright 1997 by Pattiann Rogers, Milkweed Editions of Minneapolis, Minnesota.
+>> Copyright 1997 by Pattiann Rogers, Milkweed Editions of Minneapolis, Minnesota.

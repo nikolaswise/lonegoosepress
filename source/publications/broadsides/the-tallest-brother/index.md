@@ -9,11 +9,11 @@ Dimentions: 6.5 x 14 inches
 price: $22
 image: broadsides/tallest_brother.jpg
 thumbnail: broadsides/tallest_brother_TN.jpg
-available: false
+available: true
 layout: project
 num: 13
 ---
-
+```
 Among my pencil peers in the cup
 I am freshly sharpened
 
@@ -36,9 +36,9 @@ Among the mirrors of superstition
 I am shattered
 
 Among friendships, I am alone
+```
 
-
-Copyright 2009 by Zoe Duncan-Doroff (age 10)
+>> Copyright 2009 by Zoe Duncan-Doroff (age 10)
 
 
 *Cambium: A layer of formative cells, between the bark and wood of a tree, that each year produces additional wood and bark cells. This layer holds the potential for the future growth of the tree.

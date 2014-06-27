@@ -10,11 +10,11 @@ Dimentions: 6.5 x 13 inches.
 price: $60
 image: broadsides/To_the_Book.jpg
 thumbnail: broadsides/To_the_Book_TN.jpg
-available: false
+available: true
 layout: project
 num: 06
 ---
-
+```
 Go on then
 in your own time
 this is as far
@@ -40,5 +40,6 @@ that the fault was all mine
 
 whoever I was
 when I made you up
+```
 
-from Present Company, Copper Canyon Press, 2005.
+>> from *Present Company*, Copper Canyon Press, 2005.

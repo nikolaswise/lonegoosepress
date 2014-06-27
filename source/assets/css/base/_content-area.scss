@@ -39,15 +39,16 @@
     max-width: 100%;
   }
 
+  h1,
   h2 {
     text-align: center;
   }
 
-  img {
-    width: $un-measure;
-    max-width: $un-measure;
-    margin-left: - ($un-measure - 100%) / 2;
-  }
+  // img {
+  //   width: $un-measure;
+  //   max-width: $un-measure;
+  //   margin-left: - ($un-measure - 100%) / 2;
+  // }
 
   blockquote p {
     @include p22-5();
@@ -58,6 +59,24 @@
     margin-bottom: 2*$baseline;
     &:first-letter {
       margin-left: -0.45em;
+    }
+  }
+
+
+  blockquote blockquote {
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+  blockquote blockquote p {
+    @include p9-5();
+    font-style: normal;
+    max-width: 100%;
+    color: $gray;
+    margin-top: 2*$baseline;
+    margin-bottom: 2*$baseline;
+    &:first-letter {
+      margin-left: 0;
     }
   }
 
@@ -98,4 +117,11 @@
       max-width: 20%;
     }
   }
+
+  code,
+  pre {
+    @include p13-5();
+    @extend %GillSans;
+  }
+
 }

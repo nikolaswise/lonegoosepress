@@ -11,7 +11,7 @@ Dimentions: 19.375 x 13 inches.
 price: $150
 image: broadsides/perhaps_the_world_ends_here.jpg
 thumbnail: broadsides/perhaps_the_world_ends_here_TN.jpg
-available: false
+available: true
 layout: project
 num: 09
 ---
@@ -41,5 +41,5 @@ We give thanks.
 Perhaps the world will end at the kitchen table, while we are laughing and
 crying, eating of the last sweet bite.
 
-From How We Became Human: New and Selected Poems: 1975 - 2001, copyright 2002 by Joy Harjo, W. W. Norton & Company.
+>> From *How We Became Human: New and Selected Poems: 1975 - 2001*, copyright 2002 by Joy Harjo, W. W. Norton & Company.
 

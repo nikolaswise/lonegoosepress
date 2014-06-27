@@ -10,28 +10,28 @@ Dimentions: 13.25 x 19.75 inches
 price: $135
 image: broadsides/mercy_tear_it_down.jpg
 thumbnail: broadsides/mercy_tear_it_down_TN.jpg
-available: false
+available: true
 layout: project
 num: 14
 ---
-
+```
 We were contracted with the prison crew
-	 to take the ridge. Tear it down.
+	to take the ridge. Tear it down.
  Trees, Scotch broom, fence posts.
-	 It was too hot to smoke cigarettes.
+	It was too hot to smoke cigarettes.
  My chainsaw touched a whole world
-	 of yellow jackets in a beetle-rotten stump
+	of yellow jackets in a beetle-rotten stump
  and my skin went tight. I lay facedown
-	 in the duff after the crew boss shot me
+	in the duff after the crew boss shot me
  full of something he kept in his saw bag.
-	 An inmate carried half a hunting dog
+	An inmate carried half a hunting dog
  like an armful of cedar bolts
-	 from the last stand of brush.
+	from the last stand of brush.
  What was left was swollen with ants.
-	 The vise in my throat bore down,
+	The vise in my throat bore down,
  daylight broke its bones across the ridge.
-	 Tear it down. From there you could see
+	Tear it down. From there you could see
  the whole town. Tear it down, tear it down.
+```
 
-
-From Dismantling the Hills, University of Pittsburgh Press, copyright 2008 by Michael McGriV.
+>> From *Dismantling the Hills*, University of Pittsburgh Press, copyright 2008 by Michael McGriV.

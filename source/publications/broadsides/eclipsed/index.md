@@ -9,25 +9,25 @@ Dimentions: 10 x 10 inches
 price: $25
 image: broadsides/eclipsed.jpg
 thumbnail: broadsides/eclipsed_TN.jpg
-available: false
+available: true
 layout: project
 num: 15
 ---
 
-As I’m walking down the street,
-Darkness closes 'round my feet,
-Still at noon and stars are bright,
-Just one thin ring of sun sheds light
+As I’m walking down the street,<br>
+Darkness closes 'round my feet,<br>
+Still at noon and stars are bright,<br>
+Just one thin ring of sun sheds light<br>
 
-Stars appear and fireflies gleam
-Is this real or a crazy dream?
-Moon is powerful for a day,
-Blocking the light of the sun away
+Stars appear and fireflies gleam<br>
+Is this real or a crazy dream?<br>
+Moon is powerful for a day,<br>
+Blocking the light of the sun away<br>
 
-One small thing hides all we see,
-Real life hidden in obscurity,
-What spot eclipses your real-world view?
-What moon conceals the sun that’s you?
+One small thing hides all we see,<br>
+Real life hidden in obscurity,<br>
+What spot eclipses your real-world view?<br>
+What moon conceals the sun that’s you?<br>
 
 
-Copyright 2009 by Dylan Troyer (age 10)
+>> Copyright 2009 by Dylan Troyer (age 10)

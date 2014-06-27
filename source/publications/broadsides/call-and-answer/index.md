@@ -12,33 +12,32 @@ Dimentions: 12 x 12 inches.
 price: $80
 image: broadsides/Call_and_Answer.jpg
 thumbnail: broadsides/Call_and_Answer_TN.jpg
-available: false
+available: true
 layout: project
 num: 05
 ---
 
-Tell me why it is we don’t lift our voices these days
-And cry over what is happening. Have you noticed
-The plans are made for Iraq and the ice cap is melting?
+Tell me why it is we don’t lift our voices these days<br>
+And cry over what is happening. Have you noticed<br>
+The plans are made for Iraq and the ice cap is melting?<br>
+I say to myself: “Go on, cry. What’s the sense<br>
+Of being an adult and having no voice? Cry out!<br>
+See who will answer! This is Call and Answer!”<br>
 
-I say to myself: “Go on, cry. What’s the sense
-Of being an adult and having no voice? Cry out!
-See who will answer! This is Call and Answer!”
+We will have to call especially loud to reach<br>
+Our angels, who are hard of hearing; they are hiding<br>
+In the jugs of silence filled during our wars.<br>
 
-We will have to call especially loud to reach
-Our angels, who are hard of hearing; they are hiding
-In the jugs of silence filled during our wars.
+Have we agreed to so many wars that we can’t<br>
+Escape from silence? If we don’t lift our voices, we allow<br>
+Others (who are ourselves) to rob the house.<br>
 
-Have we agreed to so many wars that we can’t
-Escape from silence? If we don’t lift our voices, we allow
-Others (who are ourselves) to rob the house.
+How come we’ve listened to the great criers—Neruda,<br>
+Akhmatova, Thoreau, Frederick Douglass—and now<br>
+We’re silent as sparrows in the little bushes?<br>
 
-How come we’ve listened to the great criers—Neruda,
-Akhmatova, Thoreau, Frederick Douglass—and now
-We’re silent as sparrows in the little bushes?
+Some masters say our life lasts only seven days.<br>
+Where are we in the week? Is it Thursday yet?<br>
+Hurry, cry now! Soon Sunday night will come.<br>
 
-Some masters say our life lasts only seven days.
-Where are we in the week? Is it Thursday yet?
-Hurry, cry now! Soon Sunday night will come.
-
-From My Sentence Was a Thousand Years of Joy, copyright 2005 by Robert Bly.
+>> From *My Sentence Was a Thousand Years of Joy*, copyright 2005 by Robert&nbsp;Bly.

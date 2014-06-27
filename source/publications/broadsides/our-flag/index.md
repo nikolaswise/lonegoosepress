@@ -11,79 +11,77 @@ Dimentions: 8.25 x 25 inches.
 price: $135
 image: broadsides/our_flag.jpg
 thumbnail: broadsides/our_flag_TN.jpg
-available: false
+available: true
 layout: project
 num: 16
 ---
+Our flag<br>
+should be green<br>
+to represent an ocean.<br>
+It should have two stars<br>
+in the first canton,<br>
+for us and navigation.<br>
+They should be of gold thread,<br>
+placed diagonally,<br>
+and not solid,<br>
+but comprised of lines.<br>
+Our flag should be silky jet.<br>
+It should have a wound,<br>
+a red river the sun must ford<br>
+when flown at half-mast.<br>
+It should have the first letter<br>
+of every alphabet ever.<br>
+When folded into a triangle<br>
+an embroidered eighth note<br>
+should rest on top<br>
+or an odd-pinnate,<br>
+with an argentine stem,<br>
+a fiery leaf, a small branch<br>
+signifying the impossible song.<br>
+Or maybe honey and blue<br>
+with a centered white pinion.<br>
+Our flag should be a veil<br>
+that makes the night weep<br>
+when it comes to dance,<br>
+a birthday present we open<br>
+upon death, the abyss we sleep<br>
+under. Our flag should hold<br>
+failure like light glinting<br>
+in a headdress of water.<br>
+It should hold the moon<br>
+as the severed head<br>
+of a white animal<br>
+and we should carry it<br>
+to hospitals and funerals,<br>
+to police stations and law offices.<br>
+It should live, divided,<br>
+deepening its yellows<br>
+and reds, flaunting itself<br>
+in a dead gray afternoon sky.<br>
+Our flag should be seen<br>
+at weddings well after<br>
+we've departed.<br>
+It should stir in the heat<br>
+above the tables and music.<br>
+It should watch our friends<br>
+join and separate<br>
+and laugh as they go out<br>
+under the clouded night<br>
+for cold air and cigarettes.<br>
+Our flag should sing<br>
+when we cannot,<br>
+praise when we cannot,<br>
+rejoice when we cannot.<br>
+Let it be a reminder.<br>
+Let it be the aperture,<br>
+the net, the rope of dark stars.<br>
+Let it be mathematics.<br>
+Let it be the eloquence<br>
+of the process shining<br>
+on the page, a beacon<br>
+on the edge of a continent.<br>
+Let its warnings be dismissed.<br>
+Let it be insignificant<br>
+and let its insignificance shine.<br>
 
-
-Our flag
-should be green
-to represent an ocean.
-It should have two stars
-in the first canton,
-for us and navigation.
-They should be of gold thread,
-placed diagonally,
-and not solid,
-but comprised of lines.
-Our flag should be silky jet.
-It should have a wound,
-a red river the sun must ford
-when flown at half-mast.
-It should have the first letter
-of every alphabet ever.
-When folded into a triangle
-an embroidered eighth note
-should rest on top
-or an odd-pinnate,
-with an argentine stem,
-a fiery leaf, a small branch
-signifying the impossible song.
-Or maybe honey and blue
-with a centered white pinion.
-Our flag should be a veil
-that makes the night weep
-when it comes to dance,
-a birthday present we open
-upon death, the abyss we sleep
-under. Our flag should hold
-failure like light glinting
-in a headdress of water.
-It should hold the moon
-as the severed head
-of a white animal
-and we should carry it
-to hospitals and funerals,
-to police stations and law offices.
-It should live, divided,
-deepening its yellows
-and reds, flaunting itself
-in a dead gray afternoon sky.
-Our flag should be seen
-at weddings well after
-we've departed.
-It should stir in the heat
-above the tables and music.
-It should watch our friends
-join and separate
-and laugh as they go out
-under the clouded night
-for cold air and cigarettes.
-Our flag should sing
-when we cannot,
-praise when we cannot,
-rejoice when we cannot.
-Let it be a reminder.
-Let it be the aperture,
-the net, the rope of dark stars.
-Let it be mathematics.
-Let it be the eloquence
-of the process shining
-on the page, a beacon
-on the edge of a continent.
-Let its warnings be dismissed.
-Let it be insignificant
-and let its insignificance shine.
-
-From CURSES AND WISHES by Carl Adamshick, published by Louisiana State University Press, copyright 2011 by Carl Adamshick.
+>> From *Curses and Wishes* by Carl Adamshick, published by Louisiana State University Press, copyright 2011 by Carl Adamshick.
