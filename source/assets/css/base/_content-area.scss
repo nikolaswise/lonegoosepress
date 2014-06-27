@@ -27,6 +27,11 @@
     }
   }
 
+  h3,
+  h4 {
+    margin-top: 2*$baseline;
+  }
+
   ol ul,
   ol ol,
   ul ul,
@@ -61,5 +66,30 @@
     border-bottom: 2px solid $dark-gray;
   }
 
+  &.two-column {
+    margin-right: 0;
+    @include respond-to(55rem){
+      margin: auto;
+    }
 
+    h2 {
+      text-align: left;
+      @include respond-to(55rem){
+        text-align: center;
+      }
+    }
+    img {
+      float: left;
+      width: 60%;
+      max-width: 60%;
+      margin-left: - ($un-measure - 100%);
+      margin-bottom: 1*$baseline;
+      @include respond-to(55rem){
+        float: none;
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+      }
+    }
+  }
 }
