@@ -1,7 +1,7 @@
 ---
 title: Famous
 author: Naomi Shihab Nye
-description: With a graphic from the lone goose press archives. The paper is Canal, from the Saint-Armand mill in Montreal, Québec, Canada and is made using a variety of recycled fibers. The types are Optima for text and Donatello for display, printed from polymer plates on a Vandercook 219 proofing press.
+description: With a graphic from the lone goose press archives. The paper is Canal Sisal, from the Saint-Armand mill in Montreal, Québec, Canada and is made using a variety of recycled fibers. The types are Optima for text and Donatello for display, printed from polymer plates on a Vandercook 219 proofing press.
 release: Fall 2008
 edition: 97
 edition_notes: Numbered and signed by the poet.
@@ -45,4 +45,4 @@ or a buttonhole, not because it did anything spectacular,<br>
 but because it never forgot what it could do.<br>
 
 
->> From *Words Under the Words: Selected Poems*. Far Corner Books, Portland, Oregon, 1995. Copyright 1995 by Naomi Shihab Nye.
+>> From *Words Under the Words: Selected Poems*. Eighth Mountain Press, A Far Corner Book, Portland, Oregon, 1995. Copyright 1995 by Naomi Shihab Nye.
