@@ -2,7 +2,7 @@
 title: We Regard Ourselves as Servants of Memory
 author: Barry Lopez
 author_site: http://www.barrylopez.com
-description: by Barry Lopez with a typographic rendering of the Declaration of Independence as the graphic. Printed on Hahnemüle Bugra paper. The types are Gill San, printed on a Vandercook 219 proofing press.
+description: by Barry Lopez with a typographic rendering of the Declaration of Independence as the graphic. Printed on Hahnemüle Bugra paper. The types are Gill Sans, printed on a Vandercook 219 proofing press.
 release: Summer 2005
 edition: 100
 edition_notes: Numbered and signed by the author
@@ -22,4 +22,4 @@ We trace the line of our testament back beyond Agamemnon, past Ur, past the root
 We are not twelve or twenty but numerous as the motes of dust lining the early morning shafts of city light. We are unquenchable and stark in the same moment that we are ordinary. We incorporate damage and compassion, exaltation and weariness-to-the-bone.
 ```
 
->> Excerpted from *Apocalypse* which appears in Resistance, copyright 2004 by Barry Lopez.
+>> Excerpted from "Apocalypse" which appears in *Resistance*, Knopf, copyright 2004 by Barry Lopez.
