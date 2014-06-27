@@ -43,12 +43,20 @@ In her work as in her life, Sandy values not just the elegant solution, but peac
 
 Joining Sandy in the studio are Patrick, Sadie, Rosie and Samantha.
 
+<img title="Sandy Tilcock At the Press" alt="Sandy Tilcock" class="small" src="/assets/img/assistants/Patrick.jpg">
+
 **Patrick**, Sandy’s partner for more than 40 years, has been actively engaged in the work of lone goose press since its beginning. Besides providing support services such as great meals, insistence on taking time for fun and helping maintain the studio he also works as the press’s editor and copy writer.
 
 While it is rare for members of the canine contingent to take an active role in production at the press, they provide an important service in reminding the human staff to rest and play from time to time.
 
+<img title="Sandy Tilcock At the Press" alt="Sandy Tilcock" class="small" src="/assets/img/assistants/Sadie.JPG">
+
 **Sadie** has witnessed a number of lone goose publications in her eleven years with the press. Both staff and visitors have come to appreciate her enthusiastic and cordial manner, and her willingness to offer her opinions on a variety of topics, especially those touching on treats or exercise.
 
+<img title="Sandy Tilcock At the Press" alt="Sandy Tilcock" class="small" src="/assets/img/assistants/Rosie.JPG">
+
 **Rosie**, often appearing aloof is quite playful She has dreams of developing a career as a comedienne.
+
+<img title="Sandy Tilcock At the Press" alt="Sandy Tilcock" class="small" src="/assets/img/assistants/Samantha.JPG">
 
 **Samantha**, the newest member of the lone goose team, is working at completing her apprenticeship and mastering the difference between tools and toys.
