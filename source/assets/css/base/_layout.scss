@@ -17,6 +17,14 @@ body {
 }
 
 
+.narrow {
+  width: $width;
+  max-width: 68*$pica;
+  margin: auto;
+  @include respond-to(37.5rem) {
+    width: 100%;
+  }
+}
 
 main {
   @include clearfix;
