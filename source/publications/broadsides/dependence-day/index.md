@@ -4,7 +4,7 @@ author: John Daniel
 artist: Margot Voorhies
 author_site: http://www.www.johndaniel-author.net
 artist_site: http://www.margotvoorhiesthompson.com
-description: Printed on black Somerset Velvet paper. The text type is handset Perpetua with the display type Charlemagne as a polymer plate. Both the type and graphic were printed on a Vandercook 219 proofing press. The top of the graphic was brushed silver pearl dry pigment as it came off the press.
+description: Printed on black Somerset Velvet paper. The text type is handset Perpetua with the display type Charlemagne and printed from a polymer plate. Both the type and graphic were printed on a Vandercook 219 proofing press. The top of the graphic was brushed silver pearl dry pigment as it came off the press.
 release: Fall 2007
 edition: 103
 edition_notes: Numbered and signed by both the poet and the artist.
@@ -39,4 +39,4 @@ exploded out of nowhere, out of nothing,<br>
 because nothing needed the light,<br>
 as the brilliance of the light itself needs nothing.<br>
 
->> From *All Things Touched By Wind* by John Daniel, copyright 1994, Salmon Runnbsp;Press.
+>> From *All Things Touched By Wind* by John Daniel, copyright 1994, Salmon&Runnbsp;Press.
