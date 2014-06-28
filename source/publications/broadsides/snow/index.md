@@ -37,3 +37,4 @@ and go to sleep.
 
 >> Copyright 2008 by Lucie Jan Thu Carmin (age 7).
 
+*Cambium: A layer of formative cells, between the bark and wood of a tree, that each year produces additional wood and bark cells. This layer holds the potential for the future growth of the tree.

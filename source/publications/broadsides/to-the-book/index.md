@@ -42,4 +42,4 @@ whoever I was
 when I made you up
 ```
 
->> from *Present Company*, Copper Canyon Press, 2005.
+>> From *Present Company*, Copper Canyon Press, copyright 2005.

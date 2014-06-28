@@ -11,7 +11,7 @@ Dimentions: 12 x 20 inches.
 price: $125
 image: broadsides/Opus_from_Space.jpg
 thumbnail: broadsides/Opus_from_Space_TN.jpg
-available: false
+available: true
 layout: project
 num: 02
 ---

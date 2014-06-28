@@ -2,7 +2,7 @@
 title: Mercy, Tear it Down
 author: Michael McGriff
 artist: Keith Achepohl
-description: The paper is Canal, from the Saint-Armand mill in Montreal, Québec, Canada and is made using a variety of recycled fibers. The text type is Gill Sans and the display type is Charlemagne Bold. Both the type and images are printed from polymer plates on a Vandercook 219 proofing press.
+description: The paper is CanalSlate Gray, from the Saint-Armand mill in Montreal, Québec, Canada and is made using a variety of recycled fibers. The text type is Gill Sans and the display type is Charlemagne Bold. Both the type and images are printed from polymer plates on a Vandercook 219 proofing press.
 release: Fall 2009
 edition: 107
 edition_notes: Numbered and signed by both the poet and the artist.
@@ -34,4 +34,4 @@ We were contracted with the prison crew
  the whole town. Tear it down, tear it down.
 ```
 
->> From *Dismantling the Hills*, University of Pittsburgh Press, copyright 2008 by Michael McGriV.
+>> From *Dismantling the Hills*, University of Pittsburgh Press, copyright 2008 by Michael McGriff.
