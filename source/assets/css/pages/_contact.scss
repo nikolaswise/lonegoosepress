@@ -1,0 +1,33 @@
+.contact {
+  margin-top: 3.5*$baseline;
+  aside {
+    width: $edge;
+    float: left;
+    margin-bottom: 3*$baseline;
+    @include respond-to(55rem) {
+      width: 100%;
+      figure {
+        width: $edge;
+        margin: auto;
+      }
+    }
+  }
+  main {
+    width: $measure;
+    h4 {
+      margin-bottom: 0*$baseline;
+      &:first-child {
+        margin-top: 1*$baseline;
+      }
+    }
+    h4, h5, pre {
+      padding-left: 2rem;
+    }
+    @include respond-to(55rem) {
+      width: 100%;
+    }
+  }
+  .studio-image {
+    margin-bottom: 3*$baseline;
+  }
+}
