@@ -22,11 +22,11 @@
           <%= partial 'partials/publication_in_list', locals: {publication: publication} %>
         <% end %>
       <% elsif current_page.data.title == 'production'%>
-        <% @bookbinding.each do |publication| %>
+        <% @production.each do |publication| %>
           <%= partial 'partials/publication_in_list', locals: {publication: publication} %>
         <% end %>
       <% elsif current_page.data.title == 'trade-publication'%>
-        <% @boxmaking.each do |publication| %>
+        <% @publication.each do |publication| %>
           <%= partial 'partials/publication_in_list', locals: {publication: publication} %>
         <% end %>
       <% else %>

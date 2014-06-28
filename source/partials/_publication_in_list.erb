@@ -20,6 +20,15 @@
       <% end %>
     <% end %>
 
+    <% if publication.data.commisioned_by %>
+      <% if publication.data.commisioner_link %>
+        <p class="no-margin">by <%= link_to publication.data.commisioned_by, publication.data.commisioner_link %></p>
+      <% else %>
+        <p class="no-margin">Commisioned by <%= publication.data.commisioned_by %></p>
+      <% end %>
+    <% end %>
+
+
     <% if publication.data.artist %>
       <% if publication.data.artist_site %>
         <p class="no-margin-top">art by <%= link_to publication.data.artist, publication.data.artist_site %></p>

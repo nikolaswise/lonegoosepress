@@ -14,8 +14,10 @@
   <% end %>
   <link rel="shortcut icon" href="<%= base_url %>favicon.ico">
   <%= stylesheet_link_tag "lonegoose" %>
+
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script>
 <head>
-<body class="<%= page_classes %>">
+<body class="<%= page_classes %>" ng-app="lgpCommerce" ng-controller="storeController">
   <div class="drawer">
     <%= partial 'partials/drawer' %>
   </div>
@@ -25,5 +27,10 @@
     <%= partial 'partials/footer' %>
   </div>
   <%= javascript_include_tag "peacoat" %>
+  <%= javascript_include_tag "app" %>
+  <%= javascript_include_tag "services" %>
+  <%= javascript_include_tag "controllers" %>
+  <%= javascript_include_tag "shoppingCart" %>
+  <%= javascript_include_tag "product" %>
 </body>
 </html>
