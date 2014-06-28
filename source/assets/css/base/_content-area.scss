@@ -11,6 +11,7 @@
   h4,
   h5,
   h6,
+  table,
   blockquote,
   ol,
   ul,
@@ -73,8 +74,8 @@
     font-style: normal;
     max-width: 100%;
     color: $gray;
-    margin-top: 2*$baseline;
-    margin-bottom: 2*$baseline;
+    margin-top: 1*$baseline;
+    margin-bottom: 1*$baseline;
     &:first-letter {
       margin-left: 0;
     }
@@ -111,10 +112,15 @@
       }
     }
     img.small {
-      // margin-left: 20%;
       margin-left: -28%;
       width: 20%;
       max-width: 20%;
+      @include respond-to(55rem){
+        float: none;
+        width: 50%;
+        max-width: 50%;
+        margin-left: 25%;
+      }
     }
   }
 
@@ -124,4 +130,12 @@
     @extend %GillSans;
   }
 
+
+  table {
+    width: 100%;
+    max-width: 100%;
+    th {
+      text-align: left;
+    }
+  }
 }

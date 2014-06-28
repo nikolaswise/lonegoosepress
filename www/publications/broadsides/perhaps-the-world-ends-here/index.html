@@ -14,8 +14,10 @@
   
   <link rel="shortcut icon" href="/favicon.ico">
   <link href="../../../assets/css/lonegoose.css" media="screen" rel="stylesheet" type="text/css" />
+
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script>
 <head>
-<body class="publications publications_broadsides publications_broadsides_perhaps-the-world-ends-here publications_broadsides_perhaps-the-world-ends-here_index">
+<body class="publications publications_broadsides publications_broadsides_perhaps-the-world-ends-here publications_broadsides_perhaps-the-world-ends-here_index" ng-app="lgpCommerce" ng-controller="storeController">
   <div class="drawer">
     <div class="drawer-nav drawer-top">
   <div class="container">
@@ -27,11 +29,11 @@
           <ul>
             <li><a href="/publications/broadsides/">Broadsides</a></li>
             <li><a href="/publications/books/">Books</a></li>
-            <li><a href="/publications/prayer-flags/">Poetic Prayer Flags</a></li>
+            <li><a href="/publications/poetic-prayer-flags/">Poetic Prayer Flags</a></li>
             <li><a href="/publications/ephemera/">Chapbooks, Ephemera</a></li>
           </ul>
         </li>
-        <li><a href="/services/">Commision Work</a>
+        <li><a href="/services/">Services</a>
           <ul>
             <li><a href="/services/design/">Design Service</a></li>
             <li><a href="/services/production/">Production Services</a></li>
@@ -40,7 +42,7 @@
         </li>
         <li><a href="/blog/">Blog</a></li>
         <li><a href="/contact/">Contact</a></li>
-        <li><a href="/contact/">Cart / Orders</a></li>
+        <li><a href="/cart/">Cart / Orders</a></li>
       </ul>
     </div>
   </div>
@@ -147,6 +149,14 @@ crying, eating of the last sweet bite.</p>
   
 </div>
 
+    <p class="center-text">
+  <a href="/">Home</a> |
+  <a href="/about/"> About the Press</a> |
+  <a href="/publications/"> Publications</a> |
+  <a href="/services/"> Services</a> |
+  <a href="/blog/"> Blog</a> |
+  <a href="/contact/"> Contact</a>
+</p>
     <footer>
   <div class="container">
     <div class="content-area">
@@ -162,5 +172,10 @@ crying, eating of the last sweet bite.</p>
 </footer>
   </div>
   <script src="../../../assets/js/peacoat.js" type="text/javascript"></script>
+  <script src="../../../assets/js/app.js" type="text/javascript"></script>
+  <script src="../../../assets/js/services.js" type="text/javascript"></script>
+  <script src="../../../assets/js/controllers.js" type="text/javascript"></script>
+  <script src="../../../assets/js/shoppingCart.js" type="text/javascript"></script>
+  <script src="../../../assets/js/product.js" type="text/javascript"></script>
 </body>
 </html>

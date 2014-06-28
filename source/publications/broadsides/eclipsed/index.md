@@ -31,3 +31,5 @@ What moon conceals the sun that’s you?<br>
 
 
 >> Copyright 2009 by Dylan Troyer (age 10)
+
+*Cambium: A layer of formative cells, between the bark and wood of a tree, that each year produces additional wood and bark cells. This layer holds the potential for the future growth of the tree.

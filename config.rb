@@ -77,7 +77,7 @@ set :build_dir, 'www'
 def get_publications
   @publications = sitemap.resources.find_all { |page| page.url.match(/\/publications\/.*\/.*\/.*/) }
   #sort by date of publications
-  @publications.sort! { |a,b| a.data['order'].to_i <=> b.data['order'].to_i}
+  @publications.sort! { |a,b| a.data['num'].to_i <=> b.data['num'].to_i}
 end
 
 def get_books
@@ -95,25 +95,25 @@ end
 def get_ephemera
   @ephemera = sitemap.resources.find_all { |page| page.url.match(/\/publications\/ephemera\/.*\/.*/) }
   # Sort by date of project
-  @ephemera.sort! { |a,b| a.data['order'].to_i <=> b.data['order'].to_i }
-end
-
-def get_bookbinding
-  @bookbinding = sitemap.resources.find_all { |page| page.url.match(/\/services\/bookbinding\/.*\/.*/) }
-  # Sort by date of project
-  @bookbinding.sort! { |a,b| a.data['order'].to_i <=> b.data['order'].to_i }
-end
-
-def get_boxmaking
-  @boxmaking = sitemap.resources.find_all { |page| page.url.match(/\/services\/boxmaking\/.*\/.*/) }
-  # Sort by date of project
-  @boxmaking.sort! { |a,b| a.data['order'].to_i <=> b.data['order'].to_i }
+  @ephemera.sort! { |a,b| a.data['num'].to_i <=> b.data['num'].to_i }
 end
 
 def get_design
   @design = sitemap.resources.find_all { |page| page.url.match(/\/services\/design\/.*\/.*/) }
   # Sort by date of project
-  @design.sort! { |a,b| a.data['order'].to_i <=> b.data['order'].to_i }
+  @design.sort! { |b,a| a.data['num'].to_i <=> b.data['num'].to_i }
+end
+
+def get_production
+  @production = sitemap.resources.find_all { |page| page.url.match(/\/services\/production\/.*\/.*/) }
+  # Sort by date of project
+  @production.sort! { |a,b| a.data['num'].to_i <=> b.data['num'].to_i }
+end
+
+def get_publication
+  @publication = sitemap.resources.find_all { |page| page.url.match(/\/services\/trade-publication\/.*\/.*/) }
+  # Sort by date of project
+  @publication.sort! { |a,b| a.data['num'].to_i <=> b.data['num'].to_i }
 end
 
 def reload_pages
@@ -130,8 +130,8 @@ ready do
   get_books
   get_broadsides
   get_ephemera
-  get_bookbinding
-  get_boxmaking
+  get_publication
+  get_production
   get_design
   get_publications
   get_featured

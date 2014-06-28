@@ -1,7 +1,7 @@
 ---
 title: Grandfather Was a Good Witch; Growing Up Cherokee
 author: Rennard Strickland and Jack Gregory
-artist: Margot Voorhies
+artist: Margot Voorhies Thompson
 
 description: Michael Bixler’s monotype-cast Gill Sans type, then passed through the composing stick for justification; computer-set Neuland for the display type and printed using polymer plates on Nideggen paper.
 
@@ -15,7 +15,7 @@ Dimentions: 10 x 8.4 inches, 36 pages
 
 image: books/Grandfather_cover.jpg
 thumbnail: books/Grandfather_strawberry_TN.jpg
-available: false
+available: true
 layout: project
 num: 02
 ---

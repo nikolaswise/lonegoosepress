@@ -9,7 +9,7 @@ Dimentions: 11.8 x 11 inches, 24 pages
 price: $2500.00
 image: books/Lopez_Apologia.jpg
 thumbnail: books/Lopez_Apologia_TN.jpg
-available: false
+available: true
 layout: project
 num: 01
 ---

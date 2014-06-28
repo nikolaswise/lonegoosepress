@@ -56,6 +56,10 @@ figure {
   text-align: center;
 }
 
+.case-study {
+  padding-top: 3.5*$baseline;
+}
+
 .about,
 .collection,
 .project,
@@ -68,6 +72,7 @@ figure {
   padding-top: 1*$baseline;
 }
 
+.cart,
 .post {
   padding-top: 2*$baseline;
 }
