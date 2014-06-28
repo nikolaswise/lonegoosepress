@@ -2,7 +2,9 @@
   <div class="container case-study">
       <div class="content-area">
         <h2><%= current_page.data.title %></h2>
-        <h5 class="center-text">Commisioned by <%= current_page.data.commisioned_by %></h5>
+        <% if current_page.data.commisioned_by %>
+          <h5 class="center-text">Commisioned by <%= current_page.data.commisioned_by %></h5>
+        <% end %>
         <%= yield %>
         <h5 class='center-text'><a href="mailto:info@lonegoosepress.com">Contact the Press</a></h5>
       </div>

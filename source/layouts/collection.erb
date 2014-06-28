@@ -25,12 +25,12 @@
         <% @production.each do |publication| %>
           <%= partial 'partials/publication_in_list', locals: {publication: publication} %>
         <% end %>
-      <% elsif current_page.data.title == 'trade-publication'%>
+      <% elsif current_page.data.title == 'publishing-services'%>
         <% @publication.each do |publication| %>
           <%= partial 'partials/publication_in_list', locals: {publication: publication} %>
         <% end %>
       <% else %>
-        <p>Sorry, we don't really know what your looking for.</p>
+        <h5 class='center-text'><a href="mailto:info@lonegoosepress.com">Contact the Press</a></h5>
       <% end %>
       </div>
     </div>
