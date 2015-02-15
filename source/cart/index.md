@@ -1,4 +1,0 @@
----
-title: publications
-layout: cart
----
