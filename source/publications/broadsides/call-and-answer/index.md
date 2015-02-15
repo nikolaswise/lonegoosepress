@@ -8,7 +8,7 @@ description: Printed on Somerset Book paper. Type is hand set Gill Sans. Both ty
 release: Fall 2006
 edition: 97
 edition_notes: Numbered and signed by both the poet and the artist.
-Dimentions: 12 x 12 inches.
+dimensions: 12 x 12 inches.
 price: $80
 image: broadsides/Call_and_Answer.jpg
 thumbnail: broadsides/Call_and_Answer_TN.jpg

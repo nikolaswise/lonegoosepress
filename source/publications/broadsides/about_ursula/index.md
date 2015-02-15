@@ -7,7 +7,7 @@ description: By W. Patrick Tilcock with relief engraving by Susan Lowdermilk. Pr
 release: Winter 2005
 edition: 110
 edition_notes: Numbered and signed by both the poet and artist.
-Dimentions: 12.5 x 6 inches.
+dimensions: 12.5 x 6 inches.
 price: $48
 image: broadsides/About_Ursula.jpg
 thumbnail: broadsides/About_Ursula_TN.jpg

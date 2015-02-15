@@ -5,7 +5,7 @@ description: Printed on Somerset Velvet Black paper. The type is Stone Sans, pri
 release: Fall 2010
 edition: 73
 edition_notes: Numbered and signed by the author.
-Dimentions: 10 x 10 inches
+dimensions: 10 x 10 inches
 price: $25
 image: broadsides/eclipsed.jpg
 thumbnail: broadsides/eclipsed_TN.jpg

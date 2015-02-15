@@ -3,10 +3,14 @@
   <div class="block-grid block-grid-2-up tablet-block-grid-1-up">
     <div class="block">
       <main class="project-image">
-        <% if current_page.data.description %>
-          <figure>
-            <%= image_tag current_page.data.image %>
-          </figure>
+        <% if current_page.data.image %>
+          <% if current_page.data.narrow_image %>
+            <small>small image</small>
+          <% else %>
+            <figure>
+              <%= image_tag current_page.data.image %>
+            </figure>
+          <% end %>
         <% end %>
       </main>
     </div>
@@ -42,8 +46,8 @@
         <% if current_page.data.edition_notes %>
           <p><%= current_page.data.edition_notes %></p>
         <% end %>
-        <% if current_page.data.dimentions %>
-          <p>dimentions: <%= current_page.data.dimentions %></p>
+        <% if current_page.data.dimensions %>
+          <p>Dimensions: <%= current_page.data.dimensions %></p>
         <% end %>
         <% if current_page.data.price %>
           <p>Price <%= current_page.data.price %></p>

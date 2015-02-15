@@ -6,7 +6,7 @@ description: The type is handset Centaur and the collograph is of a historical t
 release: Summer 2007
 edition: 113
 edition_notes: Numbered and signed by the poet.
-Dimentions: 6.5 x 13 inches.
+dimensions: 6.5 x 13 inches.
 price: $60
 image: broadsides/To_the_Book.jpg
 thumbnail: broadsides/To_the_Book_TN.jpg

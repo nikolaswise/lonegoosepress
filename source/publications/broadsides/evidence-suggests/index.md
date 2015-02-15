@@ -5,7 +5,7 @@ description: Printed on Kitakata, a handmade paper from Japan. The background im
 release: Fall 2008
 edition: 83
 edition_notes: Numbered and signed by the poet.
-Dimentions: 7.5 x 16 inches
+dimensions: 7.5 x 16 inches
 price: $50
 image: broadsides/evidence.jpg
 thumbnail: broadsides/evidence_TN.jpg

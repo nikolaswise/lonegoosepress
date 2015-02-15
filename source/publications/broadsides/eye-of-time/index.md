@@ -8,7 +8,7 @@ description: The types are handset Perpetua and the paper is grey Rives BFK. Bot
 released: Spring 1996
 edition: 100
 edition_notes: Numbered and signed by both the author and the artist.
-Dimentions: 14.25 x 10 inches.
+dimensions: 14.25 x 10 inches.
 price: $70
 image: broadsides/eye_of_time.jpg
 thumbnail: broadsides/eye_of_time_TN.jpg

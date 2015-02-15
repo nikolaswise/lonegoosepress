@@ -5,7 +5,7 @@ artist: Robin Eschner
 description: Computer-set Poppi Laudatio Regular and Trajan, printed using polymer plates on Stonehenge paper.
 release: 1997
 edition_notes: 50 numbered copies and 16 lettered copies for the participants and those who supported the publication, signed by the author and the artist.
-Dimentions: 11.8 x 11 inches, 24 pages
+dimensions: 11.8 x 11 inches, 24 pages
 price: $2500.00
 image: books/Lopez_Apologia.jpg
 thumbnail: books/Lopez_Apologia_TN.jpg

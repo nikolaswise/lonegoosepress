@@ -5,7 +5,7 @@ description: Excerpted from Eisenhower’s address, “The Chance for Peace” w
 release: Summer 2009
 edition: 131
 edition_notes: Numbered.
-Dimentions: 7 x 14.25 inches
+dimensions: 7 x 14.25 inches
 price: $28
 image: broadsides/cross_of_iron.jpg
 thumbnail: broadsides/cross_of_iron_TN.jpg

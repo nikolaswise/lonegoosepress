@@ -4,7 +4,7 @@
     <%= yield %>
   </div>
   <div class="narrow">
-    <div class="block-grid block-grid-2-up tablet-block-grid-2-up phone-block-grid-1-up">
+    <div class="block-grid block-grid-4-up tablet-block-grid-2-up phone-block-grid-1-up">
       <% if current_page.data.title == 'books' %>
         <% @books.each do |publication| %>
           <%= partial 'partials/publication_in_list', locals: {publication: publication} %>

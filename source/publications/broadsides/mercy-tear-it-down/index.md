@@ -6,7 +6,7 @@ description: The paper is CanalSlate Gray, from the Saint-Armand mill in Montrea
 release: Fall 2009
 edition: 107
 edition_notes: Numbered and signed by both the poet and the artist.
-Dimentions: 13.25 x 19.75 inches
+dimensions: 13.25 x 19.75 inches
 price: $135
 image: broadsides/mercy_tear_it_down.jpg
 thumbnail: broadsides/mercy_tear_it_down_TN.jpg

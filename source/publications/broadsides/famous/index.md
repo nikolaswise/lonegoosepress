@@ -5,7 +5,7 @@ description: With a graphic from the lone goose press archives. The paper is Can
 release: Fall 2008
 edition: 97
 edition_notes: Numbered and signed by the poet.
-Dimentions: 10.375 x 17 inches.
+dimensions: 10.375 x 17 inches.
 price: $90
 image: broadsides/famous.jpg
 thumbnail: broadsides/famous_TN.jpg

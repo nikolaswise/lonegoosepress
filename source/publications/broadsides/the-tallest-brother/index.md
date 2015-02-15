@@ -5,7 +5,7 @@ description: With artwork derived from a photograph of shattered glass. The type
 release: Fall 2009
 edition: 97
 edition_notes: Numbered and signed by the poet
-Dimentions: 6.5 x 14 inches
+dimensions: 6.5 x 14 inches
 price: $22
 image: broadsides/tallest_brother.jpg
 thumbnail: broadsides/tallest_brother_TN.jpg

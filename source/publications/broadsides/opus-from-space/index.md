@@ -7,7 +7,7 @@ description: Printed  from handset Centaur types on handmade Twinrocker paper us
 release: Winter 1998
 edition: 75
 edition_notes: Numbered and signed by both the author and poet.
-Dimentions: 12 x 20 inches.
+dimensions: 12 x 20 inches.
 price: $125
 image: broadsides/Opus_from_Space.jpg
 thumbnail: broadsides/Opus_from_Space_TN.jpg

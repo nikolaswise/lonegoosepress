@@ -7,7 +7,7 @@ description: Printed on Rives BFK paper. The original pencil drawing was scanned
 release: Summer 2008
 edition: 101
 edition_notes: Numbered and signed by both the poet and the artist.
-Dimentions: 19.375 x 13 inches.
+dimensions: 19.375 x 13 inches.
 price: $150
 image: broadsides/perhaps_the_world_ends_here.jpg
 thumbnail: broadsides/perhaps_the_world_ends_here_TN.jpg

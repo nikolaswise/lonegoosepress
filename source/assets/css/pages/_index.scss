@@ -31,7 +31,7 @@
 
 .introduction {
   @include p16();
-  padding-bottom: 2*$baseline;
+  // padding-bottom: 2*$baseline;
 }
 
 .preview-section {

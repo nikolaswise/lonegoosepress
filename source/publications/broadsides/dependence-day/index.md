@@ -8,7 +8,7 @@ description: Printed on black Somerset Velvet paper. The text type is handset Pe
 release: Fall 2007
 edition: 103
 edition_notes: Numbered and signed by both the poet and the artist.
-Dimentions: 11.5 x 18 inches.
+dimensions: 11.5 x 18 inches.
 price: $105
 image: broadsides/Dependence_Day.jpg
 thumbnail: broadsides/Dependence_Day_TN.jpg

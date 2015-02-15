@@ -7,7 +7,7 @@ This is the first in the Cambium* Broadside Series which honors the work of youn
 release: Summer 2008
 edition: 71
 edition_notes: Numbered and signed by the poet.
-Dimentions: 8.5 x 8.5 inches.
+dimensions: 8.5 x 8.5 inches.
 price: $18
 image: broadsides/Snow.jpg
 thumbnail: broadsides/Snow_TN.jpg

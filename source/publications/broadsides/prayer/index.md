@@ -7,7 +7,7 @@ description: Printed on Kitakata (green) paper, handmade in Japan. A digital sca
 release: Winter 2012
 edition: 79
 edition_notes: Numbered and signed by both the poet and the artist.
-Dimentions: 16 x 20 inches
+dimensions: 16 x 20 inches
 price: $160
 image: broadsides/prayer.jpg
 thumbnail: broadsides/prayer_TN.jpg

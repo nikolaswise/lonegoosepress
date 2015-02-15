@@ -6,7 +6,7 @@ description: by Barry Lopez with a typographic rendering of the Declaration of I
 release: Summer 2005
 edition: 100
 edition_notes: Numbered and signed by the author
-Dimentions: 10 x 11.5 inches
+dimensions: 10 x 11.5 inches
 price: $90
 image: broadsides/Servants_of_Memory.jpg
 thumbnail: broadsides/Servants_of_Memory_TN.jpg

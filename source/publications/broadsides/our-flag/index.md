@@ -7,7 +7,7 @@ description: Printed on the Japanese paper Seikosen, handmade by Shigeru Ozaki i
 release: Spring 2011
 edition: 53
 edition_notes: Numbered and signed by both the poet and the artist.
-Dimentions: 8.25 x 25 inches.
+dimensions: 8.25 x 25 inches.
 price: $135
 image: broadsides/our_flag.jpg
 thumbnail: broadsides/our_flag_TN.jpg
