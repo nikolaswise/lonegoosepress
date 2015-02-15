@@ -1,0 +1,13 @@
+.inline-menu-link {
+  border-right: $baseline/12 solid $blue-gray;
+  padding-right: $baseline/2;
+  padding-left: $baseline/2;
+  padding-bottom: $baseline/9;
+  &:first-of-type {
+    padding-left: 0;
+  }
+  &:last-of-type {
+    border-right: 0;
+    padding-right: 0;
+  }
+}

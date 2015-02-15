@@ -1,0 +1,49 @@
+.header {
+  background: url(/assets/img/cover-banner.png) no-repeat no-repeat center;
+  background-size: cover;
+  padding: 8*$baseline 0 8*$baseline 0;
+  z-index: 1;
+  position: relative;
+
+  &:before {
+    background: url(/assets/img/dot-grid.png);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  h1 {
+    position: relative;
+    z-index: 2;
+    color: $white;
+  }
+}
+
+
+
+.site-nav {
+  position: absolute;
+  top: 0;
+  background-color: $onyx;
+  z-index: 4;
+  width: 100%;
+}
+
+.site-nav-homepage {
+  background-color: transparent;
+}
+
+.site-nav-toggle {
+  z-index: 3;
+  text-transform: uppercase;
+  @include tracking(200);
+  color: $white;
+  padding: 0.33rem 0.5rem;
+  border-bottom: 2px solid $white;
+  &:hover {
+     border-bottom: 2px solid $blue-gray;
+  }
+}

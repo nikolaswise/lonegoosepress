@@ -1,0 +1,46 @@
+---
+title: books
+---
+
+<div class="container leader-3">
+  <main class="column-12 pre-6 post-6 trailer-2">
+    <h2 class="text-center trailer-2">Books</h2>
+
+    <p>lone goose press owner Sandy Tilcock achieved recognition as a bookbinder and designer of limited­edition books prior to her introduction to letterpress printing. Her books reflect her priority for honoring the text. All the elements— typography, design, imagery, materials and binding methods are integrated in service to the author’s words. lone goose press books are conceived as collaborations with authors, and where commissioned artwork is used, with artists. Sandy’s limited edition books have achieved international recognition for their design, creative use of materials, precise typography and attention to detail.</p>
+  </main>
+
+
+  {% for item in items %}
+    <section class="column-10 pre-2 trailer-1 phone-trailer-3">
+      <div class="column-6">
+        <a href="/publications/books/{{item.title|lower()|replace(' ','-')|replace(',', '')|replace(';', '')}}">
+          <img src="/assets/img/{{item.thumbnail}}" alt="{{ item.title }}">
+        </a>
+      </div>
+      <div class="column-4">
+        <h5 class="body-face phone-leader-0">
+          <a href="/publications/{{item.title|lower()|replace(' ','-')|replace(',', '')|replace(';', '')}}">
+            {{ item.title }}
+          </a>
+        </h5>
+
+        {% if item.commisioned_by %}
+          {% if item.author_site %}
+            <p class="trailer-0">By <a href="{{item.author_site}}">{{ item.commisioned_by }}</a></p>
+          {% else %}
+            <p class="trailer-0">By {{ item.author }}</p>
+          {% endif %}
+        {% endif %}
+
+        {% if item.artist %}
+          {% if item.artist_site %}
+            <p class="trailer-0">Art by <a href="{{item.artist_site}}">{{ item.artist }}</a></p>
+          {% else %}
+            <p class="trailer-0">Art by {{ item.artist }}</p>
+          {% endif %}
+        {% endif %}
+
+      </div>
+    </section>
+  {% endfor %}
+</div>

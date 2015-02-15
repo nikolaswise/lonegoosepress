@@ -1,0 +1,49 @@
+---
+title: ephemera
+---
+
+<div class="container leader-3">
+  <main class="column-12 pre-6 post-6 trailer-2">
+     <h2 class="text-center trailer-2">Chapbooks, Keepsakes and Ephemera</h2>
+
+      <p>Some lone goose press publications take the form of small booklets or chapbooks. In earlier centuries such inexpensive works, featuring illustrated poems and stories, were sold by itinerant peddlers, outside the mainstream of commercial book production. Keepsakes may be various kinds of small, intimate printed items produced in editions for specific events, or just for the sheer pleasure of setting ink on paper. The press also produces ephemera such as our traditional “Weathergrams” which are shared among friends and may be given to guests at studio events or receptions.</p>
+  </main>
+
+
+  {% for item in items %}
+    <section class="column-10 pre-2 trailer-1 phone-trailer-3">
+      <div class="column-6">
+        <a href="/publications/ephemera/{{item.title|lower()|replace(' ','-')|replace(',', '')|replace(';', '')}}">
+          <img src="/assets/img/{{item.thumbnail}}" alt="{{ item.title }}">
+        </a>
+      </div>
+      <div class="column-4">
+        <h5 class="body-face phone-leader-0">
+          <a href="/publications/ephemera/{{item.title|lower()|replace(' ','-')|replace(',', '')|replace(';', '')}}">
+            {{ item.title }}
+          </a>
+        </h5>
+
+        {% if item.author %}
+          {% if item.author_site %}
+            <p class="trailer-0">By <a href="{{item.author_site}}">{{ item.author }}</a></p>
+          {% else %}
+            <p class="trailer-0">By {{ item.author }}</p>
+          {% endif %}
+        {% endif %}
+
+        {% if item.artist %}
+          {% if item.artist_site %}
+            <p class="trailer-0">Art by <a href="{{item.artist_site}}">{{ item.artist }}</a></p>
+          {% else %}
+            <p class="trailer-0">Art by {{ item.artist }}</p>
+          {% endif %}
+        {% endif %}
+
+      </div>
+    </section>
+  {% endfor %}
+
+
+
+</div>

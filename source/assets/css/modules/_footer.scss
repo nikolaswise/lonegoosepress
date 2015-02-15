@@ -1,0 +1,20 @@
+footer {
+  padding: 1*$baseline;
+  background-color: rgba($onyx, 0.85);
+  color: $off-white;
+  border-top: 4px solid rgba($blue-gray, .1);
+  position: relative;
+  ul {
+    list-style-type: none;
+  }
+  a {
+    color: $off-white;
+    &:visited {
+      color: $off-white;
+    }
+    &:hover {
+      color: $off-white;
+      border-bottom: 2px solid $off-white;
+    }
+  }
+}

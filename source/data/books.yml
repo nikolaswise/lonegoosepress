@@ -1,0 +1,26 @@
+- title: 'Grandfather Was a Good Witch; Growing Up Cherokee'
+  author: 'Rennard Strickland and Jack Gregory'
+  artist: 'Margot Voorhies Thompson'
+  description: 'Michael Bixler’s monotype-cast Gill Sans type, then passed through the composing stick for justification; computer-set Neuland for the display type and printed using polymer plates on Nideggen paper.'
+  release: '2006'
+  edition: '101 numbered copies and 10 lettered copies for participants, signed by the authors and the artist.'
+  edition_notes: 'Illustrations by Margot Voorhies Thompson reproduced using polymer plates signed by the author and the artist.'
+  dimensions: '10 by 8.4 inches, 36 pages'
+  image: 'books/Grandfather_cover.jpg'
+  additional_images:
+    - url: 'books/Grandfather_title_page.jpg'
+    - url: 'books/Grandfather_strawberry.jpg'
+  thumbnail: 'books/Grandfather_strawberry_TN.jpg'
+  available: false
+
+- title: 'Apologia'
+  author: 'Barry Lopez'
+  artist: 'Robin Eschner'
+  description: 'Computer-set Poppi Laudatio Regular and Trajan, printed using polymer plates on Stonehenge paper.'
+  release: '1997'
+  edition_notes: '50 numbered copies and 16 lettered copies for the participants and those who supported the publication, signed by the author and the artist.'
+  dimensions: '11.8 by 11 inches, 24 pages'
+  price: 2500
+  image: 'books/Lopez_Apologia.jpg'
+  thumbnail: 'books/Lopez_Apologia_TN.jpg'
+  available: true

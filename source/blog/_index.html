@@ -1,0 +1,33 @@
+{% extends 'layouts/_layout' %}
+
+{% block content %}
+  <div class="container">
+    <main class="column-12 pre-6 post-6 leader-3">
+      {% for group in blog.groups %}
+        {% for page in group.pages|sort('true') %}
+          <article class="leader-1">
+            <h3>
+              <a href="{{relativePath}}{{page.url}}">{{ page.title }}</a>
+            </h3>
+            <p>
+              {{ page.author }} – {{ page.date }}
+            </p>
+            <p>
+              {% markdown %}
+{{ page.summary }}
+              {% endmarkdown %}
+            </p>
+            <h5 class="text-center body-face">
+              <a href="{{relativePath}}{{page.url}}">Read More</a>
+            </h5>
+            <div class="column-4 pre-4 post-4 trailer-2">
+              <hr>
+            </div>
+          </article>
+        {% endfor %}
+      {% endfor %}
+    </main>
+  </div>
+
+{% endblock %}
+

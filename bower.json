@@ -1,0 +1,21 @@
+{
+  "name": "lone-goose-press",
+  "version": "0.0.0",
+  "homepage": "https://github.com/nikolaswise/lone-goose-press",
+  "authors": [
+    "Nikolas Wise <nikolaswise@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "typecabinet": "~0.0.2",
+    "viewport-grid": "*",
+    "rye": "~0.0.1"
+  }
+}
