@@ -51,7 +51,7 @@ function config(acetate) {
   });
 
   acetate.src = 'source';
-  acetate.dest = 'build';
+  acetate.dest = 'www';
 }
 
 module.exports = config;
