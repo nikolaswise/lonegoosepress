@@ -21,7 +21,7 @@
     
   </head>
 
-  <body>
+  <body ng-app="myApp">
     <div class="expanding-nav js-expanding">
       <section class="expanding-nav-menu js-expanding-nav" data-expanding-nav="menu">
         <div class="container padding-trailer-half">
@@ -135,6 +135,21 @@
           <p class="leader-1">By W. Patrick Tilcock with relief engraving by Susan Lowdermilk. Printed on Mulberry paper from Japan. The type is handset Centaur. Both the type and engraving were printed using a Vandercook 219 proofing press.</p>
         
 
+        <div ng-controller="myCtrl">
+            <h3>Summary (ngcart-summary)</h3>
+            <ngcart-summary> </ngcart-summary>
+
+            <h3>Add to Cart (ngcart-addtocart)</h3>
+            <h5>My Item $10.99</h5>
+
+            <ngcart-addtocart id="item1" name="My Item" price="10.99" quantity="3"> Add to Cart</ngcart-addtocart>
+
+            <h3>Cart (ngcart-cart)</h3>
+            <ngcart-cart> </ngcart-cart>
+        </div>
+
+
+
         <img class="tablet-show trailer-1" src="/assets/img/broadsides/About_Ursula.jpg" alt="About Ursula">
 
 
@@ -193,6 +208,7 @@
     <script src="/assets/js/lib/angular/angular.min.js"></script>
     <script src="/assets/js/lib/ngcart/dist/ngCart.js"></script>
     <script src="/assets/js/all.js"></script>
+    <script src="/assets/js/cart.js"></script>
 
   </body>
 </html>

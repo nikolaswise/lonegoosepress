@@ -21,7 +21,7 @@
     
   </head>
 
-  <body>
+  <body ng-app="myApp">
     <div class="expanding-nav js-expanding">
       <section class="expanding-nav-menu js-expanding-nav" data-expanding-nav="menu">
         <div class="container padding-trailer-half">
@@ -121,6 +121,21 @@
           <p class="leader-1">With a graphic from the lone goose press archives. The paper is Canal Sisal, from the Saint-Armand mill in Montreal, Québec, Canada and is made using a variety of recycled fibers. The types are Optima for text and Donatello for display, printed from polymer plates on a Vandercook 219 proofing press.</p>
         
 
+        <div ng-controller="myCtrl">
+            <h3>Summary (ngcart-summary)</h3>
+            <ngcart-summary> </ngcart-summary>
+
+            <h3>Add to Cart (ngcart-addtocart)</h3>
+            <h5>My Item $10.99</h5>
+
+            <ngcart-addtocart id="item1" name="My Item" price="10.99" quantity="3"> Add to Cart</ngcart-addtocart>
+
+            <h3>Cart (ngcart-cart)</h3>
+            <ngcart-cart> </ngcart-cart>
+        </div>
+
+
+
         <img class="tablet-show trailer-1" src="/assets/img/broadsides/famous.jpg" alt="Famous">
 
 
@@ -183,6 +198,7 @@
     <script src="/assets/js/lib/angular/angular.min.js"></script>
     <script src="/assets/js/lib/ngcart/dist/ngCart.js"></script>
     <script src="/assets/js/all.js"></script>
+    <script src="/assets/js/cart.js"></script>
 
   </body>
 </html>

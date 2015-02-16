@@ -21,7 +21,7 @@
     
   </head>
 
-  <body>
+  <body ng-app="myApp">
     <div class="expanding-nav js-expanding">
       <section class="expanding-nav-menu js-expanding-nav" data-expanding-nav="menu">
         <div class="container padding-trailer-half">
@@ -105,6 +105,21 @@
           <p class="leader-1">I was asked by the University of Oregon's Jordan Schnitzer Museum of Art to design and produce an award that the Museum would give annually to those who made a significant contribution to the museum, either as a volunteer or in another capacity. It was to be named the Gertrude Bass Warner Award, honoring the history of the building. The museum was built in 1933 to house the Murray Warner Collection of Oriental Art—more than 3,700 works of art given to the University of Oregon by Gertrude Bass Warner. The award was to be of an intimate scale, and either be hung on a wall or easily tucked into a bookshelf. It was also to incorporate a photo of Gertrude Bass Warner taken on her travels, and text provided by museum staff. They also wanted a logo-like image designed for the museum that was contemporary but evoked the look of an east Asian “chop” or signature. I had 3 weeks to design and execute this award.</p>
         
 
+        <div ng-controller="myCtrl">
+            <h3>Summary (ngcart-summary)</h3>
+            <ngcart-summary> </ngcart-summary>
+
+            <h3>Add to Cart (ngcart-addtocart)</h3>
+            <h5>My Item $10.99</h5>
+
+            <ngcart-addtocart id="item1" name="My Item" price="10.99" quantity="3"> Add to Cart</ngcart-addtocart>
+
+            <h3>Cart (ngcart-cart)</h3>
+            <ngcart-cart> </ngcart-cart>
+        </div>
+
+
+
         <img class="tablet-show trailer-1" src="/assets/img/" alt="Jordan Schnitzer Museum of Art">
 
 
@@ -158,6 +173,7 @@
     <script src="/assets/js/lib/angular/angular.min.js"></script>
     <script src="/assets/js/lib/ngcart/dist/ngCart.js"></script>
     <script src="/assets/js/all.js"></script>
+    <script src="/assets/js/cart.js"></script>
 
   </body>
 </html>

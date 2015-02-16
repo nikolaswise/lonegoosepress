@@ -21,7 +21,7 @@
     
   </head>
 
-  <body>
+  <body ng-app="myApp">
     <div class="expanding-nav js-expanding">
       <section class="expanding-nav-menu js-expanding-nav" data-expanding-nav="menu">
         <div class="container padding-trailer-half">
@@ -111,6 +111,21 @@
           <p class="leader-1">Printed on Somerset Velvet Black paper. The type is Stone Sans, printed from polymer plates on a Vandercook 219 proofing press. This is the third in the Cambium* Broadside Series which honors the work of young writers and acknowledges the fresh insights of growing minds.</p>
         
 
+        <div ng-controller="myCtrl">
+            <h3>Summary (ngcart-summary)</h3>
+            <ngcart-summary> </ngcart-summary>
+
+            <h3>Add to Cart (ngcart-addtocart)</h3>
+            <h5>My Item $10.99</h5>
+
+            <ngcart-addtocart id="item1" name="My Item" price="10.99" quantity="3"> Add to Cart</ngcart-addtocart>
+
+            <h3>Cart (ngcart-cart)</h3>
+            <ngcart-cart> </ngcart-cart>
+        </div>
+
+
+
         <img class="tablet-show trailer-1" src="/assets/img/broadsides/eclipsed.jpg" alt="Eclipsed">
 
 
@@ -183,6 +198,7 @@
     <script src="/assets/js/lib/angular/angular.min.js"></script>
     <script src="/assets/js/lib/ngcart/dist/ngCart.js"></script>
     <script src="/assets/js/all.js"></script>
+    <script src="/assets/js/cart.js"></script>
 
   </body>
 </html>

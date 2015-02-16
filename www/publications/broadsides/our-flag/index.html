@@ -21,7 +21,7 @@
     
   </head>
 
-  <body>
+  <body ng-app="myApp">
     <div class="expanding-nav js-expanding">
       <section class="expanding-nav-menu js-expanding-nav" data-expanding-nav="menu">
         <div class="container padding-trailer-half">
@@ -113,6 +113,21 @@
           <p class="leader-1">Printed on the Japanese paper Seikosen, handmade by Shigeru Ozaki in Kochi prefecture from Mitsumata that is cultivated in the local mountains surrounding the Ozaki home. The original artwork consisted on line drawings and etchings. The etchings were scanned and digitally manipulated to create relief plates to render the flag textures. The type is Kabel. Both text and artwork were printed from polymer plates on a Vandercook 219 proofing press.</p>
         
 
+        <div ng-controller="myCtrl">
+            <h3>Summary (ngcart-summary)</h3>
+            <ngcart-summary> </ngcart-summary>
+
+            <h3>Add to Cart (ngcart-addtocart)</h3>
+            <h5>My Item $10.99</h5>
+
+            <ngcart-addtocart id="item1" name="My Item" price="10.99" quantity="3"> Add to Cart</ngcart-addtocart>
+
+            <h3>Cart (ngcart-cart)</h3>
+            <ngcart-cart> </ngcart-cart>
+        </div>
+
+
+
         <img class="tablet-show trailer-1" src="/assets/img/broadsides/our_flag.jpg" alt="Our Flag">
 
 
@@ -186,6 +201,7 @@
     <script src="/assets/js/lib/angular/angular.min.js"></script>
     <script src="/assets/js/lib/ngcart/dist/ngCart.js"></script>
     <script src="/assets/js/all.js"></script>
+    <script src="/assets/js/cart.js"></script>
 
   </body>
 </html>

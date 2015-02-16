@@ -48,7 +48,7 @@ module.exports = function(grunt) {
           loadPath: 'bower_components'
         },
         files: {
-          'build/assets/css/style.css': 'source/assets/css/style.scss'
+          'www/assets/css/style.css': 'source/assets/css/style.scss'
         }
       }
     },
@@ -60,7 +60,7 @@ module.exports = function(grunt) {
           expand: true,
           cwd: 'source/assets/img',
           src: ['**/*.{png,jpg,svg}'],
-          dest: 'build/assets/img/'
+          dest: 'www/assets/img/'
         }]
       }
     },
@@ -70,7 +70,7 @@ module.exports = function(grunt) {
         expand: true,
         cwd: 'source/',
         src: 'assets/js/**/*',
-        dest: 'build/'
+        dest: 'www/'
       }
     },
 
