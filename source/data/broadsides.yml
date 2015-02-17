@@ -11,6 +11,7 @@
   image: 'broadsides/prayer.jpg'
   thumbnail: 'broadsides/prayer_TN.jpg'
   available: true
+  poem: true
 
 - title: 'Our Flag'
   author: 'Carl Adamschick'
@@ -25,6 +26,7 @@
   thumbnail: 'broadsides/our_flag_TN.jpg'
   author_site: 'http://carladamshick.wordpress.com/about/'
   available: true
+  poem: true
 
 - title: 'Eclipsed'
   author: 'Dylan Troyer'
@@ -37,6 +39,7 @@
   image: 'broadsides/eclipsed.jpg'
   thumbnail: 'broadsides/eclipsed_TN.jpg'
   available: true
+  poem: true
 
 - title: 'Mercy, Tear it Down'
   author: 'Michael McGriff'
@@ -50,6 +53,7 @@
   image: 'broadsides/mercy_tear_it_down.jpg'
   thumbnail: 'broadsides/mercy_tear_it_down_TN.jpg'
   available: true
+  poem: true
 
 - title: 'The Tallest Brother'
   author: 'Zoe Duncan-Doroff'
@@ -62,6 +66,7 @@
   image: 'broadsides/tallest_brother.jpg'
   thumbnail: 'broadsides/tallest_brother_TN.jpg'
   available: true
+  poem: true
 
 - title: 'Cross of Iron'
   author: 'Dwight D. Eisenhower'
@@ -74,6 +79,7 @@
   image: 'broadsides/cross_of_iron.jpg'
   thumbnail: 'broadsides/cross_of_iron_TN.jpg'
   available: true
+  poem: true
 
 - title: 'Evidence Suggests That Dirt Is Beneficial To Your Health'
   author: 'W. Patrick Tilcock'
@@ -86,6 +92,7 @@
   image: 'broadsides/evidence.jpg'
   thumbnail: 'broadsides/evidence_TN.jpg'
   available: true
+  poem: true
 
 - title: 'Famous'
   author: 'Naomi Shihab Nye'
@@ -98,6 +105,7 @@
   image: 'broadsides/famous.jpg'
   thumbnail: 'broadsides/famous_TN.jpg'
   available: true
+  poem: true
 
 - title: 'Perhaps the World Ends Here'
   author: 'Joy Harjo'
@@ -112,6 +120,7 @@
   image: 'broadsides/perhaps_the_world_ends_here.jpg'
   thumbnail: 'broadsides/perhaps_the_world_ends_here_TN.jpg'
   available: true
+  poem: true
 
 - title: 'Dependence Day'
   author: 'John Daniel'
@@ -127,6 +136,7 @@
   image: 'broadsides/Dependence_Day.jpg'
   thumbnail: 'broadsides/Dependence_Day_TN.jpg'
   available: true
+  poem: true
 
 - title: 'To the Book'
   author: 'by W. S. Merwin'
@@ -140,6 +150,7 @@
   image: 'broadsides/To_the_Book.jpg'
   thumbnail: 'broadsides/To_the_Book_TN.jpg'
   available: true
+  poem: true
 
 - title: 'Call and Answer'
   author: 'Robert Bly'
@@ -155,6 +166,7 @@
   image: 'broadsides/Call_and_Answer.jpg'
   thumbnail: 'broadsides/Call_and_Answer_TN.jpg'
   available: true
+  poem: true
 
 - title: 'About Ursula'
   author: 'W. Patrick Tilcock'
@@ -169,6 +181,7 @@
   image: 'broadsides/About_Ursula.jpg'
   thumbnail: 'broadsides/About_Ursula_TN.jpg'
   available: true
+  poem: true
 
 - title: 'We Regard Ourselves as Servants of Memory'
   author: 'Barry Lopez'
@@ -182,6 +195,7 @@
   image: 'broadsides/Servants_of_Memory.jpg'
   thumbnail: 'broadsides/Servants_of_Memory_TN.jpg'
   available: true
+  poem: true
 
 - title: 'Opus From Space'
   author: 'Pattiann Rogers'
@@ -196,6 +210,7 @@
   image: 'broadsides/Opus_from_Space.jpg'
   thumbnail: 'broadsides/Opus_from_Space_TN.jpg'
   available: true
+  poem: true
 
 - title: 'Eye of Time'
   author: 'Ivan Doig'
@@ -211,3 +226,4 @@
   image: 'broadsides/eye_of_time.jpg'
   thumbnail: 'broadsides/eye_of_time_TN.jpg'
   available: true
+  poem: true

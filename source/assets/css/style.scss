@@ -12,6 +12,8 @@
 @import "modules/footer";
 @import "modules/inline-menu";
 @import "modules/header";
+@import "modules/table";
+@import "modules/buttons";
 
 @import "base/text-helpers";
 
@@ -22,4 +24,13 @@ a {
 
 h2 {
   line-height: 2*$baseline;
+}
+
+.poems pre {
+  @extend .body-face;
+}
+
+cite {
+  color: $gray;
+  @include font-size(-1);
 }

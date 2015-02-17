@@ -51,23 +51,22 @@
           <p>{{ item.edition_notes }}</p>
         {% endif %}
 
+        {% if item.available %}
+          <p>$ {{ item.price }}</p>
+          <div ng-controller="myCtrl" class="leader-1 trailer-1">
+            <ngcart-addtocart id="{{url}}" name="{{item.title}}" price="{{item.price}}" quantity="1"> Add to Cart</ngcart-addtocart>
+          </div>
+        {% endif %}
+
         {% if item.description %}
           <p class="leader-1">{{ item.description }}</p>
         {% endif %}
 
-        <div ng-controller="myCtrl">
-            <h3>Summary (ngcart-summary)</h3>
-            <ngcart-summary> </ngcart-summary>
-
-            <h3>Add to Cart (ngcart-addtocart)</h3>
-            <h5>My Item $10.99</h5>
-
-            <ngcart-addtocart id="item1" name="My Item" price="10.99" quantity="3"> Add to Cart</ngcart-addtocart>
-
-            <h3>Cart (ngcart-cart)</h3>
-            <ngcart-cart> </ngcart-cart>
-        </div>
-
+        {% if item.poem %}
+          <p>
+            <a href="/poems/#{{item.title|lower()|replace(' ','-')|replace(',', '')}}">Read Text</a>
+          </p>
+        {% endif %}
 
 
         <img class="tablet-show trailer-1" src="/assets/img/{{item.image}}" alt="{{item.title}}">

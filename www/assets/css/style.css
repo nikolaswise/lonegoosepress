@@ -10,6 +10,9 @@ html {
 body {
   min-height: 100%;
   margin: 0;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
 }
 
 article,
@@ -1842,16 +1845,16 @@ h6 strong {
   font-weight: 600;
 }
 
-.body-face, body, .body-italic, .body-bold, dl dt, .body-bold-italic {
+.body-face, body, .poems pre, .body-italic, .body-bold, dl dt, .table-head, .table-total, .body-bold-italic {
   letter-spacing: 0.03em;
 }
 
-.body-face, body {
+.body-face, body, .poems pre {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-.body-face b, body b, .body-face strong, body strong {
+.body-face b, body b, .poems pre b, .body-face strong, body strong, .poems pre strong {
   font-weight: 700;
 }
 
@@ -1864,12 +1867,12 @@ h6 strong {
   font-weight: 700;
 }
 
-.body-bold, dl dt {
+.body-bold, dl dt, .table-head, .table-total {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
   font-weight: 700;
   font-style: normal;
 }
-.body-bold b, dl dt b, .body-bold strong, dl dt strong {
+.body-bold b, dl dt b, .table-head b, .table-total b, .body-bold strong, dl dt strong, .table-head strong, .table-total strong {
   font-weight: 700;
 }
 
@@ -2161,12 +2164,17 @@ mark {
   color: #fffcf1;
 }
 
+.wrapper {
+  flex: 1 0 auto;
+}
+
 footer {
   padding: 1.5rem;
-  background-color: rgba(23, 23, 23, 0.85);
+  background-color: #171717;
   color: #fffcf1;
   border-top: 4px solid rgba(54, 69, 89, 0.1);
   position: relative;
+  flex: none;
 }
 footer ul {
   list-style-type: none;
@@ -2218,6 +2226,22 @@ footer a:hover {
   color: white;
 }
 
+.cart-summary {
+  color: #fffcf1;
+  padding-top: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.75rem;
+  line-height: 1.5rem;
+  line-height: 2rem;
+}
+.cart-summary small, .cart-summary sup, .cart-summary sub {
+  font-size: 0.59988rem;
+}
+.cart-summary:hover {
+  color: white;
+}
+
 .site-nav {
   position: absolute;
   top: 0;
@@ -2234,12 +2258,87 @@ footer a:hover {
   z-index: 3;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  color: white;
+  color: #fffcf1;
   padding: 0.33rem 0.5rem;
-  border-bottom: 2px solid white;
+  margin-bottom: 0.375rem;
+  border-bottom: 2px solid #fffcf1;
 }
 .site-nav-toggle:hover {
   border-bottom: 2px solid #364559;
+}
+
+.table-head {
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.table-head:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.table-body:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.table-row {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.table-row:nth-child(even) {
+  background-color: rgba(221, 224, 219, 0.2);
+}
+
+.table-foot {
+  margin-top: 0.75rem;
+}
+.table-foot:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.table-total {
+  margin-top: 0.75rem;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 0.3rem 0.9rem;
+  width: auto;
+  color: white;
+  border: 1px solid #782D20;
+  background-color: #782D20;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.05s linear;
+  transition: all 0.05s linear;
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 0.75rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+.btn small, .btn sup, .btn sub {
+  font-size: 0.59988rem;
+}
+.btn:hover, .btn:focus {
+  background-color: #782D20;
+  color: white;
+}
+
+.btn-primary {
+  background-color: #782D20;
+  border-color: #364559;
+}
+.btn-primary:hover {
+  background-color: #364559;
 }
 
 .link-red a, a.link-red {
@@ -2438,4 +2537,13 @@ a:hover {
 
 h2 {
   line-height: 3rem;
+}
+
+cite {
+  color: gray;
+  font-size: 0.75rem;
+  line-height: 1.5rem;
+}
+cite small, cite sup, cite sub {
+  font-size: 0.59988rem;
 }

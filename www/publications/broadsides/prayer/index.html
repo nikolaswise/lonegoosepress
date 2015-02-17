@@ -22,49 +22,55 @@
   </head>
 
   <body ng-app="myApp">
-    <div class="expanding-nav js-expanding">
-      <section class="expanding-nav-menu js-expanding-nav" data-expanding-nav="menu">
-        <div class="container padding-trailer-half">
-          <div class="column-24 text-center leader-half trailer-1">
-            <a href="#" class="site-nav-toggle js-expanding-toggle" data-expanding-nav="menu">close</a>
+    <div class="wrapper">
+      <div class="expanding-nav js-expanding">
+        <section class="expanding-nav-menu js-expanding-nav" data-expanding-nav="menu">
+          <div class="container padding-trailer-half">
+            <div class="column-24 text-center leader-half trailer-1">
+              <a href="#" class="site-nav-toggle js-expanding-toggle" data-expanding-nav="menu">close</a>
+            </div>
+            <div class="column-5 pre-9 leader-2">
+              <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about/">About the Press</a></li>
+                <li><a href="/publications/">Publications</a>
+                  <ul>
+                    <li><a href="/publications/broadsides/">Broadsides</a></li>
+                    <li><a href="/publications/books/">Books</a></li>
+                    <li><a href="/publications/poetic-prayer-flags/">Poetic Prayer Flags</a></li>
+                    <li><a href="/publications/ephemera/">Chapbooks, Ephemera</a></li>
+                  </ul>
+                </li>
+                <li><a href="/commisions/">Commisions</a>
+                  <ul>
+                    <li><a href="/commisions/design/">Design</a></li>
+                    <li><a href="/commisions/publishing/">Publishing</a></li>
+                    <li><a href="/commisions/realization/">Realization</a></li>
+                  </ul>
+                </li>
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/contact/">Contact</a></li>
+                <li><a href="/cart/">Cart / Orders</a></li>
+              </ul>
+            </div>
           </div>
-          <div class="column-5 pre-9 leader-2">
-            <ul>
-              <li><a href="/">Home</a></li>
-              <li><a href="/about/">About the Press</a></li>
-              <li><a href="/publications/">Publications</a>
-                <ul>
-                  <li><a href="/publications/broadsides/">Broadsides</a></li>
-                  <li><a href="/publications/books/">Books</a></li>
-                  <li><a href="/publications/poetic-prayer-flags/">Poetic Prayer Flags</a></li>
-                  <li><a href="/publications/ephemera/">Chapbooks, Ephemera</a></li>
-                </ul>
-              </li>
-              <li><a href="/commisions/">Commisions</a>
-                <ul>
-                  <li><a href="/commisions/design/">Design</a></li>
-                  <li><a href="/commisions/publishing/">Publishing</a></li>
-                  <li><a href="/commisions/realization/">Realization</a></li>
-                </ul>
-              </li>
-              <li><a href="/blog/">Blog</a></li>
-              <li><a href="/contact/">Contact</a></li>
-              <li><a href="/cart/">Cart / Orders</a></li>
-            </ul>
+        </section>
+      </div>
+
+      
+        <nav class='site-nav trailer-2'>
+      
+        <div class="container text-center leader-half trailer-half" >
+          <div class="column-12 pre-6">
+            <a href="#" class="site-nav-toggle js-expanding-toggle" data-expanding-nav="menu">menu</a>
+          </div>
+          <div class="column-6 text-right">
+            <ngcart-summary> </ngcart-summary>
           </div>
         </div>
-      </section>
-    </div>
+      </nav>
 
-    
-      <nav class='site-nav trailer-2'>
-    
-      <div class="container text-center leader-half trailer-1">
-        <a href="#" class="site-nav-toggle js-expanding-toggle" data-expanding-nav="menu">menu</a>
-      </div>
-    </nav>
-
-    
+      
 
 <div class="container leader-3">
   <div class="column-24">
@@ -108,22 +114,21 @@
         
 
         
+          <p>$ 160</p>
+          <div ng-controller="myCtrl" class="leader-1 trailer-1">
+            <ngcart-addtocart id="publications/broadsides/prayer/index.html" name="Prayer" price="160" quantity="1"> Add to Cart</ngcart-addtocart>
+          </div>
+        
+
+        
           <p class="leader-1">Printed on Kitakata (green) paper, handmade in Japan. A digital scan of the original pencil drawing was used to make a polymer photogravure plate, allowing the image to be reproduced on an etching press. The text types are Optima with Donatello for display types, and printed from polymer plates on a Vandercook 219 proofing press.</p>
         
 
-        <div ng-controller="myCtrl">
-            <h3>Summary (ngcart-summary)</h3>
-            <ngcart-summary> </ngcart-summary>
-
-            <h3>Add to Cart (ngcart-addtocart)</h3>
-            <h5>My Item $10.99</h5>
-
-            <ngcart-addtocart id="item1" name="My Item" price="10.99" quantity="3"> Add to Cart</ngcart-addtocart>
-
-            <h3>Cart (ngcart-cart)</h3>
-            <ngcart-cart> </ngcart-cart>
-        </div>
-
+        
+          <p>
+            <a href="/poems/#prayer">Read Text</a>
+          </p>
+        
 
 
         <img class="tablet-show trailer-1" src="/assets/img/broadsides/prayer.jpg" alt="Prayer">
@@ -173,8 +178,8 @@
 </div>
 
 
-    <div class="container">
-      <div class="column-24 leader-1 trailer-1">
+      <div class="container">
+        <div class="column-24 leader-1 trailer-1">
   <p class='text-center'>
     <a class='inline-menu-link link-red' href="/">Home</a>
     <a class='inline-menu-link link-red' href="/about/"> About the Press</a>
@@ -184,6 +189,7 @@
     <a class='inline-menu-link link-red' href="/contact/"> Contact</a>
   </p>
 </div>
+      </div>
     </div>
 
     <footer>
@@ -198,10 +204,22 @@
   </div>
 </footer>
 
+
     <script src="/assets/js/lib/angular/angular.min.js"></script>
     <script src="/assets/js/lib/ngcart/dist/ngCart.js"></script>
     <script src="/assets/js/all.js"></script>
     <script src="/assets/js/cart.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-59828723-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
 
   </body>
 </html>

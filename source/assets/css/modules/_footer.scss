@@ -1,9 +1,16 @@
+.wrapper {
+  flex: 1 0 auto;
+}
+
+
 footer {
   padding: 1*$baseline;
-  background-color: rgba($onyx, 0.85);
+  background-color: $onyx;
   color: $off-white;
   border-top: 4px solid rgba($blue-gray, .1);
   position: relative;
+  flex: none;
+
   ul {
     list-style-type: none;
   }

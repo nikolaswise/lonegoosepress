@@ -23,6 +23,17 @@
 }
 
 
+.cart-summary {
+  color: $off-white;
+  padding-top: $baseline/3;
+  text-transform: uppercase;
+  @include tracking(200);
+  @include font-size(-1);
+  line-height: 2rem;
+  &:hover {
+    color: $white;
+  }
+}
 
 .site-nav {
   position: absolute;
@@ -40,9 +51,10 @@
   z-index: 3;
   text-transform: uppercase;
   @include tracking(200);
-  color: $white;
+  color: $off-white;
   padding: 0.33rem 0.5rem;
-  border-bottom: 2px solid $white;
+  margin-bottom: $baseline/4;
+  border-bottom: 2px solid $off-white;
   &:hover {
      border-bottom: 2px solid $blue-gray;
   }

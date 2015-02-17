@@ -31,12 +31,17 @@ module.exports = function(grunt) {
       },
       img: {
         files: ['source/assets/img/**/*'],
-        tasks: ['newer:imagemin']
+        tasks: ['newer:imagemin:work']
       },
       layout: {
         files: ['source/layouts/**/*'],
         tasks: ['acetate:build']
+      },
+      blog: {
+        files: ['source/blog/images/**/*'],
+        tasks: ['newer:imagemin:blog']
       }
+
     },
 
     // Build site sass
@@ -55,14 +60,23 @@ module.exports = function(grunt) {
 
     // Optimize images
     'imagemin': {
-      doc: {
+      work: {
         files: [{
           expand: true,
           cwd: 'source/assets/img',
           src: ['**/*.{png,jpg,svg}'],
           dest: 'www/assets/img/'
         }]
-      }
+      },
+      blog: {
+        files: [{
+          expand: true,
+          cwd: 'source/blog/images',
+          src: ['**/*.{png,jpg,svg}'],
+          dest: 'www/blog/images/'
+        }]
+      },
+
     },
 
     'copy': {
