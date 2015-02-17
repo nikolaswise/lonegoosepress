@@ -22,7 +22,7 @@
   </head>
 
   <body ng-app="myApp">
-    <div class="wrapper">
+    <div class="wrapper" ng-controller="myCtrl">
       <div class="expanding-nav js-expanding">
         <section class="expanding-nav-menu js-expanding-nav" data-expanding-nav="menu">
           <div class="container padding-trailer-half">
@@ -137,7 +137,7 @@
 
         
           <p>$ 80</p>
-          <div ng-controller="myCtrl" class="leader-1 trailer-1">
+          <div class="leader-1 trailer-1">
             <ngcart-addtocart id="publications/broadsides/call-and-answer/index.html" name="Call and Answer" price="80" quantity="1"> Add to Cart</ngcart-addtocart>
           </div>
         

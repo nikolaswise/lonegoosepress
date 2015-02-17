@@ -53,7 +53,7 @@
 
         {% if item.available %}
           <p>$ {{ item.price }}</p>
-          <div ng-controller="myCtrl" class="leader-1 trailer-1">
+          <div class="leader-1 trailer-1">
             <ngcart-addtocart id="{{url}}" name="{{item.title}}" price="{{item.price}}" quantity="1"> Add to Cart</ngcart-addtocart>
           </div>
         {% endif %}
