@@ -1,0 +1,107 @@
+
+<div class="alert alert-warning" role="alert" ng-show="ngCart.totalItems() === 0">
+  <div class="column-12 pre-6 post-6">
+    <h4 class="text-center">Your cart is empty</h4>
+  </div>
+
+</div>
+
+<div ng-show="ngCart.totalItems() > 0">
+
+  <div class="table">
+    <div class="table-head">
+      <div class="column-24 first-column">
+        <div class="column-11 pre-4">
+          <span>In Your Cart</span>
+        </div>
+        <div class="column-3 text-center">
+          <span>Quantity</span>
+        </div>
+        <div class="column-4 text-right">
+          Total
+        </div>
+      </div>
+    </div>
+
+    <div class="table-body">
+      <div class="column-24 table-row first-column" ng-repeat="item in ngCart.getCart().items track by $index">
+        <div class="column-1 pre-2 text-center">
+          <span ng-click="ngCart.removeItem($index)" class="glyphicon glyphicon-remove">X</span>
+        </div>
+
+        <div class="column-11 pre-1">
+          <span><a href="/{{item.getId()}}">{{ item.getName() }}</a></span>
+        </div>
+
+        <div class="column-1 text-right">
+          <span class="glyphicon glyphicon-minus" ng-class="{'disabled':item.getQuantity()==1}" ng-click="item.setQuantity(-1, true)">-</span>
+        </div>
+        <div class="column-1 text-center">
+          </span>{{ item.getQuantity() | number }}</span>
+        </div>
+        <div class="column-1 ">
+          <span class="glyphicon glyphicon-plus" ng-click="item.setQuantity(1, true)">+</span>
+        </div>
+
+        <div class="column-2 pre-2 text-right">
+          <span>{{ item.getTotal() | currency }}</span>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="table-foot">
+      <div class="column-24 first-column">
+        <div class="column-3 pre-15 post-2 text-center">
+          <span>Shipping:</span>
+        </div>
+        <div class="column-2 text-right">
+          <span>{{ ngCart.getShipping() | currency }}</span>
+        </div>
+      </div>
+
+
+      <div class="column-24 first-column">
+        <!-- <div class="column-4 pre-16 text-right">
+          <span>Total:</span>
+        </div> -->
+        <div class="column-2 pre-20 text-right table-total">
+          <span>{{ ngCart.totalCost() | currency }}</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="column-4 pre-19 text-center leader-1">
+
+    <form action="/charge" method="POST">
+      <script
+        src="https://checkout.stripe.com/checkout.js"
+        class="stripe-button"
+        data-key="pk_test_6pRNASCoBOKtIshFeQd4XMUh"
+        data-name="Demo Site"
+        data-description="2 widgets ($20.00)"
+        data-amount="2000">
+      </script>
+    </form>
+
+    <a href="#" class="btn">check out</a>
+
+
+
+
+  </div>
+</div>
+
+
+
+<style>
+    .ngCart.cart span[ng-click] {
+        cursor: pointer;
+    }
+    .ngCart.cart .glyphicon.disabled {
+        color:#aaa;
+    }
+</style>

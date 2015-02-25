@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <!-- Set encoding -->
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+
+    <!-- Use title from page frontmatter -->
+    <title> | lone goose press</title>
+
+    <!-- Link to favicon -->
+    <!-- <link rel="shortcut icon" href="../../../../../assets/img/favicon.ico"> -->
+
+    <!-- stylesheets -->
+    
+      <link rel="stylesheet" href="../../../../../assets/css/style.css">
+    
+  </head>
+
+  <body ng-app="myApp">
+    <div class="wrapper" ng-controller="myCtrl">
+      <div class="expanding-nav js-expanding">
+        <section class="expanding-nav-menu js-expanding-nav" data-expanding-nav="menu">
+          <div class="container padding-trailer-half">
+            <div class="column-24 text-center leader-half trailer-1">
+              <a href="#" class="site-nav-toggle js-expanding-toggle" data-expanding-nav="menu">close</a>
+            </div>
+            <div class="column-5 pre-9 leader-2">
+              <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about/">About the Press</a></li>
+                <li><a href="/publications/">Publications</a>
+                  <ul>
+                    <li><a href="/publications/broadsides/">Broadsides</a></li>
+                    <li><a href="/publications/books/">Books</a></li>
+                    <li><a href="/publications/poetic-prayer-flags/">Poetic Prayer Flags</a></li>
+                    <li><a href="/publications/ephemera/">Chapbooks, Ephemera</a></li>
+                  </ul>
+                </li>
+                <li><a href="/commisions/">Commisions</a>
+                  <ul>
+                    <li><a href="/commisions/design/">Design</a></li>
+                    <li><a href="/commisions/publishing/">Publishing</a></li>
+                    <li><a href="/commisions/realization/">Realization</a></li>
+                  </ul>
+                </li>
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/contact/">Contact</a></li>
+                <li><a href="/cart/">Cart / Orders</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      
+        <nav class='site-nav trailer-2'>
+      
+        <div class="container text-center leader-half trailer-half" >
+          <div class="column-12 pre-6">
+            <a href="#" class="site-nav-toggle js-expanding-toggle" data-expanding-nav="menu">menu</a>
+          </div>
+          <div class="column-6 text-right">
+            <ngcart-summary> </ngcart-summary>
+          </div>
+        </div>
+      </nav>
+
+      <h1 id="ngcart">ngCart</h1>
+<h2 id="really-simple-shopping-cart-for-angularjs">Really simple shopping cart for AngularJS</h2>
+<p>AngularJS module consists of a set of directives to help you quickly impliment a shopping cart on your AngularJS app</p>
+<h2 id="demo">Demo</h2>
+<p>To view a demo go here:
+<a href="http://ngcart.snapjay.com/">http://ngcart.snapjay.com/</a>
+You can see all 3 directive active on the page - Add items to the cart and change the quantities.</p>
+<h2 id="setup">Setup</h2>
+<ol>
+<li><p>Get the package:</p>
+<ul>
+<li>bower install ngcart</li>
+</ul>
+</li>
+<li><p>Include the  <code>dist/ngCart.js</code> file in your index.html</p>
+</li>
+<li>Include add <code>ngCart</code> as a dependency in your app in the angular.module</li>
+</ol>
+<p>Something like this:</p>
+<pre><code><span class="hljs-doctype">&lt;!doctype html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">html</span> <span class="hljs-attribute">ng-app</span>=<span class="hljs-value">"myApp"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"//ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="javascript">
+        <span class="hljs-keyword">var</span> myApp = angular.module(<span class="hljs-string">'myApp'</span>, [<span class="hljs-string">'ngCart'</span>]);
+    </span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+    ...
+<span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+    ...
+<span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span>
+</code></pre><h1 id="directives">Directives</h1>
+<hr>
+<h2 id="addtocart">addtocart</h2>
+<p>Renders an &#39;Add To Cart&#39; Button</p>
+<pre><code><span class="hljs-subst">&lt;</span>ngcart<span class="hljs-attribute">-addtocart</span> id<span class="hljs-subst">=</span><span class="hljs-string">""</span> name<span class="hljs-subst">=</span><span class="hljs-string">""</span> price<span class="hljs-subst">=</span><span class="hljs-string">""</span> <span class="hljs-built_in">data</span><span class="hljs-subst">=</span><span class="hljs-string">"item"</span><span class="hljs-subst">&gt;</span>Add <span class="hljs-keyword">To</span> Cart<span class="hljs-subst">&lt;</span>/ngcart<span class="hljs-attribute">-addtocart</span><span class="hljs-subst">&gt;</span>
+</code></pre><table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>*id</td>
+<td>Unique identifier for this item.</td>
+</tr>
+<tr>
+<td>*name</td>
+<td>Text description of item</td>
+</tr>
+<tr>
+<td>*price</td>
+<td>Numerical value representing the value of the item</td>
+</tr>
+<tr>
+<td>quantity</td>
+<td>Numerical value representing the quantity of the item to add to cart, defaults to 1</td>
+</tr>
+<tr>
+<td>data</td>
+<td>This can be an object that may store additional information about the item to be uses later e.g. image, options etc.</td>
+</tr>
+</tbody>
+</table>
+<p>*Required Attributes</p>
+<h2 id="cart">cart</h2>
+<p>Renders a view of the cart</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-title">ngcart-cart</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">ngcart-cart</span>&gt;</span>
+</code></pre><h2 id="summary">summary</h2>
+<p>Renders a summary  of the content of the cart (Typically used in the header bar of a website</p>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-title">ngcart-summary</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">ngcart-summary</span>&gt;</span>
+</code></pre><h2 id="grunt">Grunt</h2>
+<p>This project is built with GruntJS. To contribute to this project make sure to install node.js and npm.
+Assuming npm is installed, run <code>$ npm install</code> inside the project directory to install the dependencies and you should
+be ready to go.
+Once you make a change, use <code>$ grunt build</code> inside the project folder to build the distribution files.
+The version number is determined from the <code>package.json</code> file inside the project directory.</p>
+<h2 id="download-on-github">Download on Github</h2>
+<p><a href="https://github.com/snapjay/ngCart.git">https://github.com/snapjay/ngCart.git</a></p>
+<h2 id="license">License</h2>
+<p>This module is licensed using the MIT License:</p>
+<pre><code>The MIT License (MIT)
+
+Copyright (c) <span class="hljs-number">2013</span> Dan Shreim
+
+Permission <span class="hljs-keyword">is</span> hereby granted, free <span class="hljs-keyword">of</span> charge, <span class="hljs-keyword">to</span> any person obtaining a copy <span class="hljs-keyword">of</span>
+this software <span class="hljs-keyword">and</span> associated documentation files (the <span class="hljs-string">"Software"</span>), <span class="hljs-keyword">to</span> deal <span class="hljs-keyword">in</span>
+the Software without restriction, including without limitation the rights <span class="hljs-keyword">to</span>
+<span class="hljs-keyword">use</span>, copy, modify, merge, publish, distribute, sublicense, <span class="hljs-keyword">and</span>/<span class="hljs-keyword">or</span> sell copies <span class="hljs-keyword">of</span>
+the Software, <span class="hljs-keyword">and</span> <span class="hljs-keyword">to</span> permit persons <span class="hljs-keyword">to</span> whom the Software <span class="hljs-keyword">is</span> furnished <span class="hljs-keyword">to</span> do so,
+subject <span class="hljs-keyword">to</span> the following conditions:
+
+The above copyright notice <span class="hljs-keyword">and</span> this permission notice shall be included <span class="hljs-keyword">in</span> <span class="hljs-keyword">all</span>
+copies <span class="hljs-keyword">or</span> substantial portions <span class="hljs-keyword">of</span> the Software.
+
+THE SOFTWARE <span class="hljs-keyword">IS</span> PROVIDED <span class="hljs-string">"AS IS"</span>, WITHOUT WARRANTY <span class="hljs-keyword">OF</span> ANY KIND, EXPRESS <span class="hljs-keyword">OR</span>
+IMPLIED, INCLUDING BUT <span class="hljs-keyword">NOT</span> LIMITED <span class="hljs-keyword">TO</span> THE WARRANTIES <span class="hljs-keyword">OF</span> MERCHANTABILITY, FITNESS
+<span class="hljs-keyword">FOR</span> A PARTICULAR PURPOSE <span class="hljs-keyword">AND</span> NONINFRINGEMENT. <span class="hljs-keyword">IN</span> NO EVENT SHALL THE AUTHORS <span class="hljs-keyword">OR</span>
+COPYRIGHT HOLDERS BE LIABLE <span class="hljs-keyword">FOR</span> ANY CLAIM, DAMAGES <span class="hljs-keyword">OR</span> OTHER LIABILITY, WHETHER
+<span class="hljs-keyword">IN</span> AN ACTION <span class="hljs-keyword">OF</span> CONTRACT, TORT <span class="hljs-keyword">OR</span> OTHERWISE, ARISING FROM, <span class="hljs-keyword">OUT</span> <span class="hljs-keyword">OF</span> <span class="hljs-keyword">OR</span> <span class="hljs-keyword">IN</span>
+CONNECTION <span class="hljs-keyword">WITH</span> THE SOFTWARE <span class="hljs-keyword">OR</span> THE <span class="hljs-keyword">USE</span> <span class="hljs-keyword">OR</span> OTHER DEALINGS <span class="hljs-keyword">IN</span> THE SOFTWARE.
+</code></pre><h2 id="credit">Credit</h2>
+<p>Dan Shreim <br />
+<a href="http://www.twitter.com/snapjay/">@snapjay</a> <br />
+<a href="http://snapjay.com">http://snapjay.com</a>
+If you use the script, please let me know @snapjay;  Don&#39;t worry, I won&#39;t ask for anything!</p>
+
+
+      <div class="container">
+        <div class="column-24 leader-1 trailer-1">
+  <p class='text-center'>
+    <a class='inline-menu-link link-red' href="/">Home</a>
+    <a class='inline-menu-link link-red' href="/about/"> About the Press</a>
+    <a class='inline-menu-link link-red' href="/publications/"> Publications</a>
+    <a class='inline-menu-link link-red' href="/commisions/"> Commisions</a>
+    <a class='inline-menu-link link-red' href="/blog/"> Blog</a>
+    <a class='inline-menu-link link-red' href="/contact/"> Contact</a>
+  </p>
+</div>
+      </div>
+    </div>
+
+    <footer>
+  <div class="container">
+    <div class="column-14 pre-5 text-center trailer-4">
+      <p class='trailer-0'>2580 Augusta Street</p>
+      <p class='trailer-0'>Eugene, OR 97403</p>
+      <p class='trailer-0'>541-465-9079</p>
+      <p><a href="mailto:info@lonegoosepress.com">info@lonegoosepress.com</a></p>
+      <p class='font-size-1'>lone goose press is dedicated to excellence in the crafts of typographic design, letterpress printing and bookbinding.</p>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="/assets/js/lib/angular/angular.min.js"></script>
+    <script src="/assets/js/lib/ngcart/dist/ngCart.js"></script>
+    <script src="/assets/js/all.js"></script>
+    <script src="/assets/js/cart.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-59828723-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,11 @@
+<div ng-hide="inCart()">
+<a class="btn btn-lg btn-primary"
+   ng-click="ngCart.addItem(id, name, price, quantity, data)"
+   ng-transclude></a>
+</div>
+
+<div class="alert alert-info"  ng-show="inCart()">
+    <p>This item in in your cart.</p>
+    <a href="/cart/" class="btn btn-lg btn-secondary">Checkout</a>
+</div>
+
