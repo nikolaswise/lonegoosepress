@@ -17,8 +17,5 @@
     "typecabinet": "~0.0.2",
     "viewport-grid": "*",
     "rye": "~0.0.1"
-  },
-  "dependencies": {
-    "ngcart": "~0.0.2-rc.1.0"
   }
 }
