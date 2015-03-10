@@ -74,25 +74,17 @@
     </div>
   </div>
 
-  <div class="column-4 pre-19 text-center leader-1">
-
-    <form action="/charge" method="POST">
-      <script
-        src="https://checkout.stripe.com/checkout.js"
-        class="stripe-button"
-        data-key="pk_test_6pRNASCoBOKtIshFeQd4XMUh"
-        data-name="Demo Site"
-        data-description="2 widgets ($20.00)"
-        data-amount="2000">
-      </script>
-    </form>
-
-    <a href="#" class="btn">check out</a>
-
-
-
-
-  </div>
+  <form action="" method="POST">
+  <script
+      src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+      data-key="pk_test_6chGmDIc3ftpiOH7C5bQl6pW"
+      data-amount="2000"
+      data-name="Demo Site"
+      data-description="2 widgets ($20.00)"
+      data-image="/128x128.png">
+    </script>
+  </form>
+  <button class="btn btn-primary" ng-click="showCart()">Checkout</button>
 </div>
 
 
