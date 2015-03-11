@@ -15,29 +15,28 @@
     "calcite-web": "Esri/calcite-web",
     "fsmonitor": "^0.2.4",
     "imagemin": "^3.1.0",
-    "imageoptim-cli": "^1.11.4",
-    "live-server": "^0.6.3",
     "node-sass": "^2.0.0-beta",
     "parallelshell": "^1.0.4",
     "scss-cli": "0.0.4",
-    "standard": "*",
     "calcite-web": "git+ssh://git@github.com:Esri/calcite-web",
     "glob": "~4.4.1",
-    "acetate": "0.0.11"
+    "acetate": "git+ssh://git@github.com:patrickarlt/acetate"
   },
   "dependencies": {
     "hapi": "~8.2.0"
   },
+  "browser": {
+    "calcite-web": "./node_modules/calcite-web/lib/js/calcite-web.js"
+  },
   "scripts": {
     "compile": "browserify -e source/assets/js/index.js -d -t [ babelify --sourceMapRelative .] -o www/assets/js/bundle.js",
-    "dev": "parallelshell 'live-server www' 'npm run watch:js' 'npm run watch:sass' 'npm run watch:html'",
+    "dev": "parallelshell 'node server.js' 'npm run watch:js' 'npm run watch:sass' 'npm run watch:html'",
     "fmt": "standard --format",
     "img": "imageoptim -d source/assets/img/",
     "predev": "npm run prepublish",
     "prepublish": "npm run compile && npm run sass && npm run build",
-    "sass": "scss-cli --include-path node_modules/calcite-web/lib/sass/ 'source/assets/sass/style.scss' -o www/assets/css",
+    "sass": "scss-cli --include-path bower_components/ 'source/assets/css/style.scss' -o www/assets/css",
     "build": "acetate build",
-    "test": "standard",
     "watch:js": "fsmonitor -d source/assets/js/ npm run compile",
     "watch:sass": "fsmonitor -d source/assets/sass/ npm run sass ",
     "watch:html": "fsmonitor -d source/ npm run build"
