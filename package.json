@@ -20,6 +20,7 @@
     "scss-cli": "0.0.4",
     "calcite-web": "git+ssh://git@github.com:Esri/calcite-web",
     "glob": "~4.4.1",
+    "tinystore": "git+ssh://git@github.com:ngoldman/tinystore",
     "acetate": "git+ssh://git@github.com:patrickarlt/acetate"
   },
   "dependencies": {
