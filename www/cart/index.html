@@ -76,7 +76,7 @@
 <div class="container">
   <main class="column-24 leader-3">
 
-  <div class="table">
+  <div class="tinycart table">
     <div class="table-head">
       <div class="column-24 first-column trailer-half">
         <div class="column-9 pre-4">
@@ -128,6 +128,18 @@
         <p>lone goose press has standing order plans available for both broadsides and books. Standing order participants receive a 20% discount on all purchases plus gifts of ephemera, etc. during the year. Please inquire to learn how to sign on.</p>
 
         <p>Dealer discounts of 35% are available.</p>
+
+        <form action="/charge" method="POST">
+          <script
+            src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+            data-key="pk_test_6chGmDIc3ftpiOH7C5bQl6pW"
+            data-image="/img/documentation/checkout/marketplace.png"
+            data-name="Sandy Tillcock"
+            data-description="2 widgets"
+            data-zip-code="true"
+            data-amount="2000">
+          </script>
+        </form>
     </div>
 
   </main>
