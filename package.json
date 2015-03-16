@@ -43,7 +43,7 @@
     "sass": "scss-cli --include-path bower_components/ 'source/assets/css/style.scss' -o www/assets/css",
     "build": "acetate build",
     "watch:js": "fsmonitor -d source/assets/js/ npm run compile",
-    "watch:sass": "fsmonitor -d source/assets/sass/ npm run sass ",
+    "watch:sass": "fsmonitor -d source/assets/css/ npm run sass ",
     "watch:html": "fsmonitor -d source/ npm run build"
   }
 }

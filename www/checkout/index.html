@@ -10,15 +10,20 @@
     <meta name="viewport" content="width=device-width, user-scalable=no">
 
     <!-- Use title from page frontmatter -->
-    <title>We Regard Ourselves as Servants of Memory | lone goose press</title>
+    <title>Checkout | lone goose press</title>
 
     <!-- Link to favicon -->
-    <!-- <link rel="shortcut icon" href="../../../assets/img/favicon.ico"> -->
+    <!-- <link rel="shortcut icon" href="../assets/img/favicon.ico"> -->
 
     <!-- stylesheets -->
-    <link rel="stylesheet" href="../../../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 
     
+<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="/assets/js/form.js"></script>
+
   </head>
 
   <body ng-app="myApp">
@@ -73,107 +78,46 @@
       
 
 <div class="container leader-3">
-  <div class="column-24">
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-      <div class="column-12 leader-1 trailer-1 tablet-hide">
-        <img class="trailer-1" src="/assets/img/broadsides/Servants_of_Memory.jpg" alt="We Regard Ourselves as Servants of Memory">
+  <div class="column-11 pre-1">
+    <form action="/charge" method="POST" id="payment-form">
+      <h6>Shipping Information</h6>
 
-        
+      <h6>Billing Information</h6>
+      <span class="payment-errors"></span>
 
+      <div class="form-row">
+        <label>
+          <span>Card Number</span>
+          <input pattern="[0-9]{13,16}" type="text" size="20" data-stripe="number"/>
+        </label>
       </div>
 
-      <div class="column-10 pre-1 tablet-pre-1">
-        <h2 class="trailer-1 font-size-2 leader-2">We Regard Ourselves as Servants of Memory</h2>
-        
-          
-            <p class="trailer-0">By <a href="http://www.barrylopez.com">Barry Lopez</a></p>
-          
-        
+      <div class="form-row">
+        <label>
+          <span>CVC</span>
+          <input pattern="[0-9]{3}" type="text" size="4" data-stripe="cvc"/>
+        </label>
+      </div>
 
-        
+      <div class="form-row">
+        <label>
+          <span>Expiration (MM/YY)</span>
+          <input pattern="[0-9]{1,2}" type="text" size="2" data-stripe="exp-month"/>
+        </label>
+        <span> / </span>
+        <input pattern="[0-9]{1,2}" type="text" size="4" data-stripe="exp-year"/>
+      </div>
 
-        
-          <p class="trailer-0">Summer 2005</p>
-        
+      <button type="submit">Submit Payment</button>
+    </form>
 
-        
-          <p class="trailer-0">10 by 11.5 inches</p>
-        
-
-        
-          <p>Edition size 100</p>
-        
-
-        
-          <p>Numbered and signed by the author</p>
-        
-
-        
-          <p>$ 90</p>
-
-          <div class="leader-1 trailer-1">
-            <a href="#" class="btn" onclick="cart.addItem('We Regard Ourselves as Servants of Memory', 'we-regard-ourselves-as-servants-of-memory', 90, 1);">Add to Cart</a>
-          </div>
-
-        
-
-        
-          <p class="leader-1">by Barry Lopez with a typographic rendering of the Declaration of Independence as the graphic. Printed on Hahnemüle Bugra paper. The types are Gill Sans, printed on a Vandercook 219 proofing press.</p>
-        
-
-        
-          <p>
-            <a href="/poems/#we-regard-ourselves-as-servants-of-memory">Read Text</a>
-          </p>
-        
-
-
-        <img class="tablet-show trailer-1" src="/assets/img/broadsides/Servants_of_Memory.jpg" alt="We Regard Ourselves as Servants of Memory">
-
-
-        
-
-
-        
-    </div>
-
-
-    
-  
-    
-  
-    
-  
+    <p>All transactions are secure and encrypted, and we never store your credit card information. Payments are processed through Stripe. Payment information is also governed by Stripe's <a href="https://stripe.com/us/privacy">privacy policy.</a></p>
   </div>
 
+  <div class="column-11 pre-1">
+    <h6>Order Summary</h6>
 
+  </div>
 </div>
 
 

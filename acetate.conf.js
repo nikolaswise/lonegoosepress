@@ -4,6 +4,7 @@ function config(acetate) {
   });
 
   acetate.layout('**/*', 'layouts/_layout:content');
+  acetate.layout('checkout/*', 'layouts/_layout');
   acetate.layout('blog/**/*', 'layouts/_post:body');
 
   acetate.layout('publications/books/**/*', 'layouts/_project:body');
