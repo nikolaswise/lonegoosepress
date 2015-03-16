@@ -10,61 +10,45 @@ server.connection({
 
 // Add the route
 server.route({
-    method: 'GET',
-    path:'/{params*}',
-    handler: {
-      directory: {
-        path: 'www',
-        index: true
-      }
+  method: 'GET',
+  path:'/{params*}',
+  handler: {
+    directory: {
+      path: 'www',
+      index: true
     }
+  }
 });
 
 server.route({
-    method: 'POST',
-    path: '/charge',
-    handler: function (request, reply) {
-      console.log(request)
+  method: 'POST',
+  path: '/charge',
+  handler: function (request, reply) {
+    var cartString = request.payload.cart;
+    var cart = JSON.parse(cartString);
+    var stripeToken = request.payload.stripeToken;
 
-      // var stripeToken = request.body.stripeToken;
-      // var charge = stripe.charges.create({
-      //   amount: 1000, // amount in cents, again
-      //   currency: "usd",
-      //   source: stripeToken,
-      //   description: "payinguser@example.com"
-      // }, function(err, charge) {
-      //   if (err && err.type === 'StripeCardError') {
-      //     // The card has been declined
-      //   }
-      // });
+    console.log(cart, cart.total)
 
-      reply(request);
-    }
+    stripe.charges.create({
+      amount: cart.total * 100, // amount in cents, again
+      currency: "usd",
+      source: stripeToken,
+      description: "Charge for test@example.com"
+    }, function(err, charge) {
+      // asynchronously called
+      if (err) {
+        console.log(err)
+        reply('okay').redirect('/problem');
+      } else  {
+        console.log(charge)
+        reply('okay').redirect('/thanks');
+      }
+    });
+
+
+  }
 });
 
 // Start the server
 server.start();
-
-
-// var stripeToken = request.body.stripeToken;
-
-// server.post('/charge', function(req, res) {
-//     var stripeToken = req.body.stripeToken;
-//     console.log(stripeToken)
-    // var amount = 1000;
-
-    // stripe.charges.create({
-    //     card: stripeToken,
-    //     currency: 'usd',
-    //     amount: amount
-    // },
-    // function(err, charge) {
-    //     if (err) {
-    //         res.send(500, err);
-    //     } else {
-    //         res.send(204);
-    //     }
-    // });
-// });
-
-// hey!

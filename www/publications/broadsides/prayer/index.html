@@ -18,7 +18,10 @@
     <!-- stylesheets -->
     
       <link rel="stylesheet" href="../../../assets/css/style.css">
-      <script src="https://checkout.stripe.com/checkout.js"></script>
+      <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+      <!-- TMP -->
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
     
   </head>
 
@@ -118,7 +121,7 @@
           <p>$ 160</p>
 
           <div class="leader-1 trailer-1">
-            <a href="#" class="btn" onclick="cart.addItem('Prayer', '', 160, 1);">Add to Cart</a>
+            <a href="#" class="btn" onclick="cart.addItem('Prayer', 'prayer', 160, 1);">Add to Cart</a>
           </div>
 
         
