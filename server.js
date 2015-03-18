@@ -1,5 +1,5 @@
 var Hapi = require('hapi')
-var stripe = require("stripe")("sk_test_X78x8VBuswMiH3g4xW8EfM0S")
+var stripe = require("stripe")(process.env.SKEY)
 
 // Create a server with a host and port
 var server = new Hapi.Server();
@@ -28,13 +28,30 @@ server.route({
     var cart = JSON.parse(cartString);
     var stripeToken = request.payload.stripeToken;
 
-    console.log(cart, cart.total)
+    var first       = request.payload.first
+    var last        = request.payload.last
+    var street1     = request.payload.street1
+    var street2     = request.payload.street2
+    var city        = request.payload.city
+    var state       = request.payload.state
+    var postcode    = request.payload.postcode
+    var email       = request.payload.email
+
+    var items = cart.items
+    var itemList
+    for (i = 0; i < items.length; i++) {
+      var itemList = itemList + 'Item: ' + items[i].title + '; Num: ' + items[i].quantity + '. '
+    }
+
+    var description = first + ' ' + last + '; ' + itemList + '; ' + street1 + ' ' + street2 + ' ' + city + ' ' + state + ' ' + postcode + '; ' + email
+
+    console.log(request)
 
     stripe.charges.create({
       amount: cart.total * 100, // amount in cents, again
       currency: "usd",
       source: stripeToken,
-      description: "Charge for test@example.com"
+      description: description
     }, function(err, charge) {
       // asynchronously called
       if (err) {

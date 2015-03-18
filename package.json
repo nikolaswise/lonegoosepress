@@ -35,7 +35,8 @@
   },
   "scripts": {
     "compile": "browserify -e source/assets/js/index.js -d -t [ babelify --sourceMapRelative .] -o www/assets/js/bundle.js",
-    "dev": "parallelshell 'node server.js' 'npm run watch:js' 'npm run watch:sass' 'npm run watch:html'",
+    "form": "browserify -e source/assets/js/form.js -d -t [ babelify --sourceMapRelative .] -o www/assets/js/form.js",
+    "dev": "parallelshell 'node server.js' 'npm run watch:js' 'npm run watch:form' 'npm run watch:sass' 'npm run watch:html'",
     "fmt": "standard --format",
     "img": "imageoptim -d source/assets/img/",
     "predev": "npm run prepublish",
@@ -43,6 +44,7 @@
     "sass": "scss-cli --include-path bower_components/ 'source/assets/css/style.scss' -o www/assets/css",
     "build": "acetate build",
     "watch:js": "fsmonitor -d source/assets/js/ npm run compile",
+    "watch:form": "fsmonitor -d source/assets/js/form.js npm run form",
     "watch:sass": "fsmonitor -d source/assets/css/ npm run sass ",
     "watch:html": "fsmonitor -d source/ npm run build"
   }
