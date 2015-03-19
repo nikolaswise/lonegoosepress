@@ -19,7 +19,8 @@ results
 npm-debug.log
 node_modules
 bower_components
+Gruntfile.js
+acetate.conf.js
+bower.json
 
-build
-www
 source

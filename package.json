@@ -2,10 +2,7 @@
   "name": "lone-goose-press",
   "version": "0.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "server.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/nikolaswise/lone-goose-press.git"
@@ -13,16 +10,43 @@
   "author": "",
   "license": "BSD-2-Clause",
   "devDependencies": {
-    "acetate": "0.0.11",
-    "grunt": "~0.4.5",
-    "grunt-acetate": "^0.0.6",
-    "grunt-contrib-imagemin": "^0.8.1",
-    "grunt-contrib-sass": "^0.8.1",
-    "grunt-contrib-watch": "~0.6.1",
-    "grunt-contrib-copy": "^0.5.0",
-    "grunt-gh-pages": "^0.9.1",
-    "grunt-newer": "^0.7.0",
-    "load-grunt-tasks": "~0.6.0",
-    "minimist": "~1.1.0"
+    "babelify": "^5.0.3",
+    "browserify": "^9.0.3",
+    "calcite-web": "git+ssh://git@github.com:Esri/calcite-web",
+    "fsmonitor": "^0.2.4",
+    "imagemin": "^3.1.0",
+    "node-sass": "^2.0.0-beta",
+    "parallelshell": "^1.0.4",
+    "scss-cli": "0.0.4",
+    "glob": "~4.4.1",
+    "tinystore": "git+ssh://git@github.com:ngoldman/tinystore",
+    "acetate": "git+ssh://git@github.com:patrickarlt/acetate"
+  },
+  "dependencies": {
+    "hapi": "~8.2.0",
+    "stripe": "~3.3.2",
+    "request": "~2.53.0",
+    "observable": "~2.1.3",
+    "ampersand-events": "~1.0.1",
+    "diff-dom": "~1.0.0"
+  },
+  "browser": {
+    "calcite-web": "./node_modules/calcite-web/lib/js/calcite-web.js"
+  },
+  "scripts": {
+    "start": "node server.js"
+    "compile": "browserify -e source/assets/js/index.js -d -t [ babelify --sourceMapRelative .] -o www/assets/js/bundle.js",
+    "form": "browserify -e source/assets/js/form.js -d -t [ babelify --sourceMapRelative .] -o www/assets/js/form.js",
+    "dev": "parallelshell 'node server.js' 'npm run watch:js' 'npm run watch:form' 'npm run watch:sass' 'npm run watch:html'",
+    "fmt": "standard --format",
+    "img": "imageoptim -d source/assets/img/",
+    "predev": "npm run prepublish",
+    "prepublish": "npm run compile && npm run sass && npm run build",
+    "sass": "scss-cli --include-path bower_components/ 'source/assets/css/style.scss' -o www/assets/css",
+    "build": "acetate build",
+    "watch:js": "fsmonitor -d source/assets/js/ npm run compile",
+    "watch:form": "fsmonitor -d source/assets/js/form.js npm run form",
+    "watch:sass": "fsmonitor -d source/assets/css/ npm run sass ",
+    "watch:html": "fsmonitor -d source/ npm run build"
   }
 }
