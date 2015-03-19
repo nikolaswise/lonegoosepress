@@ -1,4 +1,6 @@
+// Init Hapi
 var Hapi = require('hapi')
+// Init Stripe
 var stripe = require("stripe")(process.env.SKEY)
 
 // Create a server with a host and port
