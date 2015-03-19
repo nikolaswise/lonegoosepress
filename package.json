@@ -34,7 +34,7 @@
     "calcite-web": "./node_modules/calcite-web/lib/js/calcite-web.js"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
     "compile": "browserify -e source/assets/js/index.js -d -t [ babelify --sourceMapRelative .] -o www/assets/js/bundle.js",
     "form": "browserify -e source/assets/js/form.js -d -t [ babelify --sourceMapRelative .] -o www/assets/js/form.js",
     "dev": "parallelshell 'node server.js' 'npm run watch:js' 'npm run watch:form' 'npm run watch:sass' 'npm run watch:html'",
