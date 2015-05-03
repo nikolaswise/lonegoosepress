@@ -10,17 +10,18 @@
   "author": "",
   "license": "BSD-2-Clause",
   "devDependencies": {
+    "acetate": "git+ssh://git@github.com:patrickarlt/acetate",
+    "acetate-cli": "0.0.3",
     "babelify": "^5.0.3",
     "browserify": "^9.0.3",
-    "calcite-web": "git+ssh://git@github.com:Esri/calcite-web",
+    "calcite-web": "git+ssh://git@github.com/esri/calcite-web.git",
     "fsmonitor": "^0.2.4",
+    "glob": "~4.4.1",
     "imagemin": "^3.1.0",
     "node-sass": "^2.0.0-beta",
     "parallelshell": "^1.0.4",
     "scss-cli": "0.0.4",
-    "glob": "~4.4.1",
-    "tinystore": "git+ssh://git@github.com:ngoldman/tinystore",
-    "acetate": "git+ssh://git@github.com:patrickarlt/acetate"
+    "tinystore": "git+ssh://git@github.com:ngoldman/tinystore"
   },
   "dependencies": {
     "hapi": "~8.2.0",
