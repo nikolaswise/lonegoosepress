@@ -18,9 +18,11 @@
     "imagemin": "^3.1.0",
     "node-sass": "^2.0.0-beta",
     "parallelshell": "^1.0.4",
+    "rye": "git://github.com/nikolaswise/rye.git",
     "scss-cli": "0.0.4",
     "static-site": "^1.0.2",
-    "tinystore": "git+ssh://git@github.com:ngoldman/tinystore"
+    "tinystore": "git+ssh://git@github.com:ngoldman/tinystore",
+    "viewport-grid": "git://github.com/esripdx/viewport-grid.git"
   },
   "dependencies": {
     "hapi": "~8.2.0",
