@@ -1,0 +1,342 @@
+books:
+  - title: 'Grandfather Was a Good Witch; Growing Up Cherokee'
+    author: 'Rennard Strickland and Jack Gregory'
+    artist: 'Margot Voorhies Thompson'
+    description: 'Michael Bixler’s monotype-cast Gill Sans type, then passed through the composing stick for justification; computer-set Neuland for the display type and printed using polymer plates on Nideggen paper.'
+    release: '2006'
+    edition: '101 numbered copies and 10 lettered copies for participants, signed by the authors and the artist.'
+    edition_notes: 'Illustrations by Margot Voorhies Thompson reproduced using polymer plates signed by the author and the artist.'
+    dimensions: '10 by 8.4 inches, 36 pages'
+    image: 'books/Grandfather_cover.jpg'
+    additional_images:
+      - url: 'books/Grandfather_title_page.jpg'
+      - url: 'books/Grandfather_strawberry.jpg'
+    thumbnail: 'books/Grandfather_strawberry_TN.jpg'
+    available: false
+
+  - title: 'Apologia'
+    author: 'Barry Lopez'
+    artist: 'Robin Eschner'
+    description: 'Computer-set Poppi Laudatio Regular and Trajan, printed using polymer plates on Stonehenge paper.'
+    release: '1997'
+    edition_notes: '50 numbered copies and 16 lettered copies for the participants and those who supported the publication, signed by the author and the artist.'
+    dimensions: '11.8 by 11 inches, 24 pages'
+    price: 2500
+    image: 'books/Lopez_Apologia.jpg'
+    thumbnail: 'books/Lopez_Apologia_TN.jpg'
+    available: true
+
+ephemera:
+  - title: 'A Prayer by the Tigris'
+    author: 'Kim Stafford'
+    description: 'Single folio pamphlet sewn to a paper tri-fold cover made of Canson Mi-Teintes. The right fold of the cover sits on top and is torn. The edge of the tear was colored using a silver Prismacolor pencil. Handset Bembo types on mulberry paper.'
+    release: 'March 2004'
+    edition: '220 numbered copies signed by the author'
+    dimensions: '7.5 by 5 inches, 4 pages'
+    image: '/ephemera/prayer-by-the-tigris/Tigris_closed.jpg'
+    thumbnail: 'ephemera/prayer-by-the-tigris/Tigris_open_TN.jpg'
+
+  - title: 'Weathergrams'
+    author: 'lone goose press'
+    release: 'Ongoing'
+    thumbnail: 'ephemera/weathergrams/Weathergram_2010_TN.png'
+
+design:
+  - title: 'Oregon Bach Festival Farewell Gift'
+    release: '2013'
+    image: 'design/obf/Rilling_Box_Cover.jpg'
+    additional_images:
+     - url: 'design/obf/Rilling_Box_open.jpg" alt="Oregon Bach Festival'
+     - url: 'design/obf/Rilling_title.jpg" alt="Oregon Bach Festival'
+     - url: 'design/obf/Rilling_Half_title.jpg" alt="Oregon Bach Festival'
+     - url: 'design/obf/Rilling_Open.jpg" alt="Oregon Bach Festival'
+     - url: 'design/obf/Rilling_Backing_Page.jpg" alt="Oregon Bach Festival'
+    thumbnail: 'design/obf/obf_open_TN.jpg'
+
+  - title: 'String Theory'
+    author: 'Helen Hiebert'
+    edition: 10
+    dimensions: '22.5 by 16 in'
+    release: '2010'
+    description: 'I was asked to design a box that houses 5 custom prints which are strings with knots embedded between 2 sheets of handmade abaca paper by the artist, the strings going beyond the edges of the paper at random points. Print a commissioned poem by Carl Adamshick on a sheet of the abaca paper for the colophon page. '
+    image: 'design/stronach/String_Theory_1.JPG'
+    additional_images:
+      - url: 'design/stronach/String_Theory 2.JPG'
+      - url: 'design/stronach/String_Theory_3.JPG'
+    thumbnail: 'design/stronach/String_Theory_TN.jpg'
+    author_site: 'helenhiebertstudio.com'
+
+  - title: 'Jordan Schnitzer Museum of Art'
+    release: '2009'
+    edition: 50
+    dimensions: '4 by 9 in closed, 24 by 9 inches open'
+    image: 'design/jsma/JSMA_1.jpg'
+    additional_images:
+      - url: 'design/jsma/JSMA_2.jpg'
+    thumbnail: 'design/jsma/JSMA_TN.jpg'
+    description: "I was asked by the University of Oregon's Jordan Schnitzer Museum of Art to design and produce an award that the Museum would give annually to those who made a significant contribution to the museum, either as a volunteer or in another capacity. It was to be named the Gertrude Bass Warner Award, honoring the history of the building. The museum was built in 1933 to house the Murray Warner Collection of Oriental Art—more than 3,700 works of art given to the University of Oregon by Gertrude Bass Warner. The award was to be of an intimate scale, and either be hung on a wall or easily tucked into a bookshelf. It was also to incorporate a photo of Gertrude Bass Warner taken on her travels, and text provided by museum staff. They also wanted a logo-like image designed for the museum that was contemporary but evoked the look of an east Asian “chop” or signature. I had 3 weeks to design and execute this award."
+
+  - title: 'Ellis F. Lawrence Award'
+    release: '1998'
+    edition: 100
+    dimensions: '8.25 by 18 inches'
+    image: 'design/aaa/AAA_Folder.jpg'
+    additional_images:
+      - url: 'design/aaa/Lawrence_Award_2.jpg'
+      - url: 'design/aaa/Lawrence_Award_3.jpg'
+    thumbnail: 'design/aaa/AAA_Certificate_and_Folder_TN.jpg'
+
+  - title: 'Presentation Box for Custom Necklace'
+    author: 'Tom McCarthy Jewelry'
+    author_site: 'tommccarthyjewelry.com'
+    release: '1996'
+    description: 'Florida Jeweler Tom McCarthy received a commission for a special necklace in white and yellow gold. The necklace he created was reversible and incorporated a pendant that could be be removed and worn independently on a chain. Tom asked me to create a one-of-a-kind box to house and present the necklace. Since it was not feasible for Tom to ship the necklace across the continent, I was to work from a to-scale drawing.'
+    image: 'design/necklace-box/Necklace_Box.jpg'
+    thumbnail: 'design/necklace-box/Necklace_Box_TN.jpg'
+
+broadsides:
+  - title: 'Prayer'
+    id: '/publications/broadsides/prayer'
+    author: 'Tom Crawford'
+    artist: 'Bob DeVine'
+    description: 'Printed on Kitakata (green) paper, handmade in Japan. A digital scan of the original pencil drawing was used to make a polymer photogravure plate, allowing the image to be reproduced on an etching press. The text types are Optima with Donatello for display types, and printed from polymer plates on a Vandercook 219 proofing press.'
+    release: 'Winter 2012'
+    edition: 79
+    price: 160
+    edition_notes: 'Numbered and signed by both the poet and the artist.'
+    dimensions: '16 by 20 inches'
+    author_site: 'http://www.tomcrawfordpoetry.com'
+    image: 'broadsides/prayer.jpg'
+    thumbnail: 'broadsides/prayer_TN.jpg'
+    available: true
+    poem: true
+
+  - title: 'Our Flag'
+    id: '/publications/broadsides/our-flag'
+    author: 'Carl Adamschick'
+    artist: 'Keith Achepohl'
+    description: 'Printed on the Japanese paper Seikosen, handmade by Shigeru Ozaki in Kochi prefecture from Mitsumata that is cultivated in the local mountains surrounding the Ozaki home. The original artwork consisted on line drawings and etchings. The etchings were scanned and digitally manipulated to create relief plates to render the flag textures. The type is Kabel. Both text and artwork were printed from polymer plates on a Vandercook 219 proofing press.'
+    release: 'Spring 2011'
+    edition: 53
+    price: 135
+    edition_notes: 'Numbered and signed by both the poet and the artist.'
+    dimensions: '8.25 by 25 inches.'
+    image: 'broadsides/our_flag.jpg'
+    thumbnail: 'broadsides/our_flag_TN.jpg'
+    author_site: 'http://carladamshick.wordpress.com/about/'
+    available: true
+    poem: true
+
+  - title: 'Eclipsed'
+    id: '/publications/broadsides/eclipsed'
+    author: 'Dylan Troyer'
+    description: 'Printed on Somerset Velvet Black paper. The type is Stone Sans, printed from polymer plates on a Vandercook 219 proofing press. This is the third in the Cambium* Broadside Series which honors the work of young writers and acknowledges the fresh insights of growing minds.'
+    release: 'Fall 2010'
+    edition: 73
+    price: 25
+    edition_notes: 'Numbered and signed by the author.'
+    dimensions: '10 by 10 inches'
+    image: 'broadsides/eclipsed.jpg'
+    thumbnail: 'broadsides/eclipsed_TN.jpg'
+    available: true
+    poem: true
+
+  - title: 'Mercy, Tear it Down'
+    id: '/publications/broadsides/mercy-tear-it-down'
+    author: 'Michael McGriff'
+    artist: 'Keith Achepohl'
+    description: 'The paper is CanalSlate Gray, from the Saint-Armand mill in Montreal, Québec, Canada and is made using a variety of recycled fibers. The text type is Gill Sans and the display type is Charlemagne Bold. Both the type and images are printed from polymer plates on a Vandercook 219 proofing press.'
+    release: 'Fall 2009'
+    edition: 107
+    price: 135
+    edition_notes: 'Numbered and signed by both the poet and the artist.'
+    dimensions: '13.25 by 19.75 inches'
+    image: 'broadsides/mercy_tear_it_down.jpg'
+    thumbnail: 'broadsides/mercy_tear_it_down_TN.jpg'
+    available: true
+    poem: true
+
+  - title: 'The Tallest Brother'
+    id: '/publications/broadsides/the-tallest-brother'
+    author: 'Zoe Duncan-Doroff'
+    description: 'With artwork derived from a photograph of shattered glass. The type is handset Gill Sans with display type Donatello which is printed from a polymer plate. The types and image were printed using a Vandercook 219 proofing press. This is the third in the Cambium* Broadside Series which honors the work of young writers and acknowledges the fresh insights of growing minds.'
+    release: 'Fall 2009'
+    edition: 97
+    price: 22
+    edition_notes: 'Numbered and signed by the poet'
+    dimensions: '6.5 by 14 inches'
+    image: 'broadsides/tallest_brother.jpg'
+    thumbnail: 'broadsides/tallest_brother_TN.jpg'
+    available: true
+    poem: true
+
+  - title: 'Cross of Iron'
+    id: '/publications/broadsides/cross-of-iron'
+    author: 'Dwight D. Eisenhower'
+    description: 'Excerpted from Eisenhower’s address, “The Chance for Peace” which he delivered before the American Society of Newspaper Editors on April 16, 1953. The type is handset Optima, printed on Somerset Book paper using a Vandercook 219 proofing press.'
+    release: 'Summer 2009'
+    edition: 131
+    price: 28
+    edition_notes: 'Numbered.'
+    dimensions: '7 by 14.25 inches'
+    image: 'broadsides/cross_of_iron.jpg'
+    thumbnail: 'broadsides/cross_of_iron_TN.jpg'
+    available: true
+    poem: true
+
+  - title: 'Evidence Suggests That Dirt Is Beneficial To Your Health'
+    id: '/publications/broadsides/evidence-suggests-that-dirt-is-beneficial-to-your-health'
+    author: 'W. Patrick Tilcock'
+    description: 'Printed on Kitakata, a handmade paper from Japan. The background image was derived from a photograph by the author and printed using an Epson 4880 inkjet printer. The type is Optima, printed from polymer plates on a Vandercook 219 proofing press.'
+    release: 'Fall 2008'
+    edition: 83
+    price: 50
+    edition_notes: 'Numbered and signed by the poet.'
+    dimensions: '7.5 by 16 inches'
+    image: 'broadsides/evidence.jpg'
+    thumbnail: 'broadsides/evidence_TN.jpg'
+    available: true
+    poem: true
+
+  - title: 'Famous'
+    id: '/publications/broadsides/famous'
+    author: 'Naomi Shihab Nye'
+    description: 'With a graphic from the lone goose press archives. The paper is Canal Sisal, from the Saint-Armand mill in Montreal, Québec, Canada and is made using a variety of recycled fibers. The types are Optima for text and Donatello for display, printed from polymer plates on a Vandercook 219 proofing press.'
+    release: 'Fall 2008'
+    edition: 97
+    price: 90
+    edition_notes: 'Numbered and signed by the poet.'
+    dimensions: '10.375 by 17 inches.'
+    image: 'broadsides/famous.jpg'
+    thumbnail: 'broadsides/famous_TN.jpg'
+    available: true
+    poem: true
+
+  - title: 'Perhaps the World Ends Here'
+    id: '/publications/broadsides/perhaps-the-world-ends-here'
+    author: 'Joy Harjo'
+    artist: 'Bob DeVine'
+    description: 'Printed on Rives BFK paper. The original pencil drawing was scanned, reduced and printed digitally with a watercolor element added after printing. The text type is handset Gill Sans. The display type is Charlemagne, printed from a polymer plate. Both were printed using a Vandercook 219 proofing press.'
+    release: 'Summer 2008'
+    edition: 101
+    price: 150
+    edition_notes: 'Numbered and signed by both the poet and the artist.'
+    dimensions: '19.375 by 13 inches.'
+    author_site: 'http://www.joyharjo.com'
+    image: 'broadsides/perhaps_the_world_ends_here.jpg'
+    thumbnail: 'broadsides/perhaps_the_world_ends_here_TN.jpg'
+    available: true
+    poem: true
+
+  - title: 'Dependence Day'
+    id: '/publications/broadsides/dependence-day'
+    author: 'John Daniel'
+    artist: 'Margot Voorhies'
+    description: 'Printed on black Somerset Velvet paper. The text type is handset Perpetua with the display type Charlemagne and printed from a polymer plate. Both the type and graphic were printed on a Vandercook 219 proofing press. The top of the graphic was brushed silver pearl dry pigment as it came off the press.'
+    release: 'Fall 2007'
+    edition: 103
+    price: 105
+    edition_notes: 'Numbered and signed by both the poet and the artist.'
+    dimensions: '11.5 by 18 inches.'
+    author_site: 'http://www.www.johndaniel-author.net'
+    artist_site: 'http://www.margotvoorhiesthompson.com'
+    image: 'broadsides/Dependence_Day.jpg'
+    thumbnail: 'broadsides/Dependence_Day_TN.jpg'
+    available: true
+    poem: true
+
+  - title: 'To the Book'
+    id: '/publications/broadsides/to-the-book'
+    author: 'by W. S. Merwin'
+    description: 'The type is handset Centaur and the collograph is of a historical typographic ornament. Both the type and collograph were printed on Somerset Book paper, using a Vandercook 219 prooﬁng press. This broadside was printed to commemorate the opening of an exhibit celebrating the 35th anniversary of Copper Canyon Press at Multnomah County Library, Portland, Oregon, July 21, 2007.'
+    release: 'Summer 2007'
+    edition: 113
+    price: 60
+    edition_notes: 'Numbered and signed by the poet.'
+    dimensions: '6.5 by 13 inches.'
+    author_site: 'http://www.merwinconservancy.org'
+    image: 'broadsides/To_the_Book.jpg'
+    thumbnail: 'broadsides/To_the_Book_TN.jpg'
+    available: true
+    poem: true
+
+  - title: 'Call and Answer'
+    id: '/publications/broadsides/call-and-answer'
+    author: 'Robert Bly'
+    artist: 'Susan Lowdermilk'
+    description: 'Printed on Somerset Book paper. Type is hand set Gill Sans. Both type and woodcut were printed using a Vandercook 219 proofing press. The broadside was printed to honor the poet’s visit to Eugene, Oregon, October 17, 2006. The press dedicates this broadside to the memory of William Stafford and his advocacy for peace.'
+    release: 'Fall 2006'
+    edition: 97
+    price: 80
+    edition_notes: 'Numbered and signed by both the poet and the artist.'
+    dimensions: '12 by 12 inches.'
+    author_site: 'http://www.robertbly.com'
+    artist_site: 'http://www.susanlowdermilk.com'
+    image: 'broadsides/Call_and_Answer.jpg'
+    thumbnail: 'broadsides/Call_and_Answer_TN.jpg'
+    available: true
+    poem: true
+
+  - title: 'About Ursula'
+    id: '/publications/broadsides/about-ursula'
+    author: 'W. Patrick Tilcock'
+    artist: 'Susan Lowdermilk'
+    description: 'By W. Patrick Tilcock with relief engraving by Susan Lowdermilk. Printed on Mulberry paper from Japan. The type is handset Centaur. Both the type and engraving were printed using a Vandercook 219 proofing press.'
+    release: 'Winter 2005'
+    edition: 110
+    price: 48
+    edition_notes: 'Numbered and signed by both the poet and artist.'
+    dimensions: '12.5 by 6 inches.'
+    artist_site: '"http://www.susanlowdermilk.com"'
+    image: 'broadsides/About_Ursula.jpg'
+    thumbnail: 'broadsides/About_Ursula_TN.jpg'
+    available: true
+    poem: true
+
+  - title: 'We Regard Ourselves as Servants of Memory'
+    id: '/publications/broadsides/we-regard-ourselves-as-servants-of-memory'
+    author: 'Barry Lopez'
+    description: 'by Barry Lopez with a typographic rendering of the Declaration of Independence as the graphic. Printed on Hahnemüle Bugra paper. The types are Gill Sans, printed on a Vandercook 219 proofing press.'
+    release: 'Summer 2005'
+    edition: 100
+    price: 90
+    edition_notes: 'Numbered and signed by the author'
+    dimensions: '10 by 11.5 inches'
+    author_site: 'http://www.barrylopez.com'
+    image: 'broadsides/Servants_of_Memory.jpg'
+    thumbnail: 'broadsides/Servants_of_Memory_TN.jpg'
+    available: true
+    poem: true
+
+  - title: 'Opus From Space'
+    id: '/publications/broadsides/opus-from-space'
+    author: 'Pattiann Rogers'
+    artist: 'Judith Sparks'
+    description: 'Printed  from handset Centaur types on handmade Twinrocker paper using a Vandercook 219 proofing press. The drawing of empress tree seed pods was printed from a magnesium plate.'
+    release: 'Winter 1998'
+    edition: 75
+    price: 125
+    edition_notes: 'Numbered and signed by both the author and poet.'
+    dimensions: '12 by 20 inches.'
+    artist_site: 'http://www.judithsparks.com'
+    image: 'broadsides/Opus_from_Space.jpg'
+    thumbnail: 'broadsides/Opus_from_Space_TN.jpg'
+    available: true
+    poem: true
+
+  - title: 'Eye of Time'
+    id: '/publications/broadsides/eye-of-time'
+    author: 'Ivan Doig'
+    artist: 'Susan Lowdermilk'
+    description: 'The types are handset Perpetua and the paper is grey Rives BFK. Both the type and the woodcut were printed on a Vandercook 219 proofing press.'
+    released: 'Spring 1996'
+    edition: 100
+    price: 70
+    edition_notes: 'Numbered and signed by both the author and the artist.'
+    dimensions: '14.25 by 10 inches.'
+    author_site: 'http://www.ivandoig.com'
+    artist_site: 'http://www.susanlowdermilk.com'
+    image: 'broadsides/eye_of_time.jpg'
+    thumbnail: 'broadsides/eye_of_time_TN.jpg'
+    available: true
+    poem: true

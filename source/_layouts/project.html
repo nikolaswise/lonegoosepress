@@ -1,10 +1,13 @@
-{% extends 'layouts/_layout' %}
-
+{% extends 'layout.html' %}
 {% block content %}
 
-<div class="container leader-3">
+<div class="grid-container leader-3">
   <div class="column-24">
-  {% for item in items %}
+    <h1>{{project}}</h1>
+    {% block project %}{% endblock %}
+
+
+<!--   {% for item in items %}
     {% if item.title == title %}
       <div class="column-12 leader-1 trailer-1 tablet-hide">
         <img class="trailer-1" src="/assets/img/{{item.image}}" alt="{{item.title}}">
@@ -86,7 +89,7 @@
 
     {% endif %}
   {% endfor %}
-  </div>
+  </div> -->
 
 
 </div>
