@@ -1,0 +1,93 @@
+{% extends 'layouts/_layout' %}
+
+{% block content %}
+
+<div class="container leader-3">
+  <div class="column-24">
+  {% for item in items %}
+    {% if item.title == title %}
+      <div class="column-12 leader-1 trailer-1 tablet-hide">
+        <img class="trailer-1" src="/assets/img/{{item.image}}" alt="{{item.title}}">
+
+        {% if item.additional_images %}
+          {% for image in item.additional_images %}
+            <img class="trailer-1" src="/assets/img/{{image.url}}" alt="{{item.title}}">
+          {% endfor %}
+        {% endif %}
+
+      </div>
+
+      <div class="column-10 pre-1 tablet-pre-1">
+        <h2 class="trailer-1 font-size-2 leader-2">{{ item.title }}</h2>
+        {% if item.author %}
+          {% if item.author_site %}
+            <p class="trailer-0">By <a href="{{item.author_site}}">{{ item.author }}</a></p>
+          {% else %}
+            <p class="trailer-0">By {{ item.author }}</p>
+          {% endif %}
+        {% endif %}
+
+        {% if item.artist %}
+          {% if item.artist_site %}
+            <p class="trailer-0">Art by <a href="{{item.artist_site}}">{{ item.artist }}</a></p>
+          {% else %}
+            <p class="trailer-0">Art by {{ item.artist }}</p>
+          {% endif %}
+        {% endif %}
+
+        {% if item.release %}
+          <p class="trailer-0">{{ item.release }}</p>
+        {% endif %}
+
+        {% if item.dimensions %}
+          <p class="trailer-0">{{ item.dimensions }}</p>
+        {% endif %}
+
+        {% if item.edition %}
+          <p>Edition size {{ item.edition }}</p>
+        {% endif %}
+
+        {% if item.edition_notes %}
+          <p>{{ item.edition_notes }}</p>
+        {% endif %}
+
+        {% if item.available %}
+          <p>$ {{ item.price }}</p>
+
+          <div class="leader-1 trailer-1">
+            <a href="#" class="btn" onclick="cart.addItem('{{item.title}}', '{{item.id}}', {{item.price}}, 1);">Add to Cart</a>
+          </div>
+
+        {% endif %}
+
+        {% if item.description %}
+          <p class="leader-1">{{ item.description }}</p>
+        {% endif %}
+
+        {% if item.poem %}
+          <p>
+            <a href="/poems/#{{item.title|lower()|replace(' ','-')|replace(',', '')}}">Read Text</a>
+          </p>
+        {% endif %}
+
+
+        <img class="tablet-show trailer-1" src="/assets/img/{{item.image}}" alt="{{item.title}}">
+
+
+        {% block body %}{% endblock %}
+
+        {% if item.additional_images %}
+          {% for image in item.additional_images %}
+            <img class="trailer-1 tablet-show" src="/assets/img/{{image.url}}" alt="{{item.title}}">
+          {% endfor %}
+        {% endif %}
+    </div>
+
+
+    {% endif %}
+  {% endfor %}
+  </div>
+
+
+</div>
+{% endblock %}
