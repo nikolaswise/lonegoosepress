@@ -16,19 +16,19 @@
     <!-- <link rel="shortcut icon" href="{{relativePath}}assets/img/favicon.ico"> -->
 
     <!-- stylesheets -->
-    <link rel="stylesheet" href="{{relativePath}}assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     {% block head %}{% endblock %}
   </head>
 
-  <body ng-app="myApp">
-    <div class="wrapper" ng-controller="myCtrl">
-      <div class="expanding-nav js-expanding">
-        <section class="expanding-nav-menu js-expanding-nav" data-expanding-nav="menu">
-          <div class="container padding-trailer-half">
+  <body>
+    <div class="wrapper">
+      <div class="expanding js-expanding">
+        <section class="expanding-menu js-expanding" data-expanding="menu">
+          <div class="grid-container padding-trailer-half">
             <div class="column-24 text-center leader-half trailer-1">
-              <a href="#" class="site-nav-toggle js-expanding-toggle" data-expanding-nav="menu">close</a>
+              <a href="#" class="site-nav-toggle js-expanding-toggle" data-expanding="menu">close</a>
             </div>
-            <div class="column-5 pre-9 leader-2">
+            <div class="column-5 pre-9 tablet-pre-3 leader-2 phone-leader-0">
               <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/about/">About the Press</a></li>
@@ -61,9 +61,9 @@
       {% else %}
         <nav class='site-nav trailer-2'>
       {% endif %}
-        <div class="container text-center leader-half trailer-half" >
+        <div class="grid-container text-center leader-half trailer-half" >
           <div class="column-12 pre-6">
-            <a href="#" class="site-nav-toggle js-expanding-toggle" data-expanding-nav="menu">menu</a>
+            <a href="#" class="site-nav-toggle js-expanding-toggle" data-expanding="menu">menu</a>
           </div>
           <div class="column-6 tablet-column-7 phone-column-4 text-right">
             <a href="/cart" class="tinycart-link"></a>
@@ -73,7 +73,7 @@
 
       {% block content %}{% endblock %}
 
-      <div class="container">
+      <div class="grid-container">
         {% include '../_partials/inline-menu.html' %}
       </div>
     </div>
