@@ -1,6 +1,6 @@
 {
   "name": "lone-goose-press",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "",
   "main": "server.js",
   "repository": {
@@ -10,8 +10,6 @@
   "author": "",
   "license": "BSD-2-Clause",
   "devDependencies": {
-    "acetate": "git+ssh://git@github.com:patrickarlt/acetate",
-    "acetate-cli": "0.0.3",
     "babelify": "^5.0.3",
     "browserify": "^9.0.3",
     "calcite-web": "git+ssh://git@github.com/esri/calcite-web.git",
@@ -21,6 +19,7 @@
     "node-sass": "^2.0.0-beta",
     "parallelshell": "^1.0.4",
     "scss-cli": "0.0.4",
+    "static-site": "^1.0.2",
     "tinystore": "git+ssh://git@github.com:ngoldman/tinystore"
   },
   "dependencies": {
@@ -44,7 +43,7 @@
     "predev": "npm run prepublish",
     "prepublish": "npm run compile && npm run sass && npm run build",
     "sass": "scss-cli --include-path bower_components/ 'source/assets/css/style.scss' -o www/assets/css",
-    "build": "acetate build",
+    "build": "static-site -s source  -b www -h source/_helpers/*.js --template layouts/_layout.html --block content ",
     "watch:js": "fsmonitor -d source/assets/js/ npm run compile",
     "watch:form": "fsmonitor -d source/assets/js/form.js npm run form",
     "watch:sass": "fsmonitor -d source/assets/css/ npm run sass ",
