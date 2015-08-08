@@ -1,9 +1,15 @@
 books:
-  - title: 'Grandfather Was a Good Witch; Growing Up Cherokee'
+  - title: 'Grandfather Was a Good Witch: Growing Up Cherokee'
     author: 'Rennard Strickland and Jack Gregory'
     artist: 'Margot Voorhies Thompson'
     description:
     - 'Michael Bixler’s monotype-cast Gill Sans type, then passed through the composing stick for justification; computer-set Neuland for the display type and printed using polymer plates on Nideggen paper.'
+    - 'Sewn binding with a supported paper wrapper made from a handmade pigmented and dyed flax paper (Walnut Red) by Cave Papers. The artist cut the original images large in Rubylith film. Commissioned by Rennard Strickland.'
+    - 'One of my favorite commissions. Rennard Strickland was retiring from teaching and being Dean at the School of Law, University of Oregon. He was marking the end of 40 years of teaching and wished to publish his 40th book in conjunction with his retirement. He commissioned me to do this and I gladly accepted the challenge.'
+    - 'The story grew from what Rennard writes “may be our greatest literary failure.” After the publication of Strickland’s and Gregory’s first book, _Sam Houston with the Cherokees_, in 1966, they received a phone call from an editor at Random House asking if they would do a “children’s book on what it’s like to be an Indian.”'
+    - 'They agreed to undertake the task and took a tape recorder out into the field to gather impressions and experiences. They interviewed more than two dozen Cherokee men who had come of age during the Great Depression. Reels and reels of tape and dozens of letters later, the New York editor decided Strickland’s and Gregory’s Indians did not meet her stereotype of what it was like to be Indian. By mutual agreement, the project was called off.'
+    - 'Strickland and Gregory gathered those stories into one narrative. A slightly different version was published in 1972 by the Indian Heritage Association. This publication was the first printing of the original narrative.'
+    - 'Rennard enjoys the whole process of making a book, from writing to fine-tuning the text, selecting papers (he loved “fondling” paper), typeface, images, etc. He is an absolute joy to work with.'
     release: '2006'
     edition: '101 numbered copies and 10 lettered copies for participants, signed by the authors and the artist.'
     edition_notes: 'Illustrations by Margot Voorhies Thompson reproduced using polymer plates signed by the author and the artist.'
@@ -13,7 +19,8 @@ books:
     - url: 'books/Grandfather_title_page.jpg'
     - url: 'books/Grandfather_strawberry.jpg'
     thumbnail: 'books/Grandfather_strawberry_TN.jpg'
-    available: false
+    price: 350
+    available: true
 
   - title: 'Apologia'
     author: 'Barry Lopez'
@@ -47,10 +54,10 @@ broadsides:
 
   - title: 'Our Flag'
     id: '/publications/broadsides/our-flag'
-    author: 'Carl Adamschick'
+    author: 'Carl Adamshick'
     artist: 'Keith Achepohl'
     description:
-    - 'Printed on the Japanese paper Seikosen, handmade by Shigeru Ozaki in Kochi prefecture from Mitsumata that is cultivated in the local mountains surrounding the Ozaki home. The original artwork consisted on line drawings and etchings. The etchings were scanned and digitally manipulated to create relief plates to render the flag textures. The type is Kabel. Both text and artwork were printed from polymer plates on a Vandercook 219 proofing press.'
+    - 'Printed on the Japanese paper Seikosen, handmade by Shigeru Ozaki in Kochi prefecture from Mitsumata that is cultivated in the local mountains surrounding the Ozaki home. The original artwork consisted of line drawings and etchings. The etchings were scanned and digitally manipulated to create relief plates to render the flag textures. The type is Kabel. Both text and artwork were printed from polymer plates on a Vandercook 219 proofing press.'
     release: 'Spring 2011'
     edition: 53
     price: 135
@@ -82,7 +89,7 @@ broadsides:
     author: 'Michael McGriff'
     artist: 'Keith Achepohl'
     description:
-    - 'The paper is CanalSlate Gray, from the Saint-Armand mill in Montreal, Québec, Canada and is made using a variety of recycled fibers. The text type is Gill Sans and the display type is Charlemagne Bold. Both the type and images are printed from polymer plates on a Vandercook 219 proofing press.'
+    - 'The paper is Canal Slate Gray, from the Saint-Armand mill in Montreal, Québec, Canada and is made using a variety of recycled fibers. The text type is Gill Sans and the display type is Charlemagne Bold. Both the type and images are printed from polymer plates on a Vandercook 219 proofing press.'
     release: 'Fall 2009'
     edition: 107
     price: 135
@@ -175,7 +182,7 @@ broadsides:
     author: 'John Daniel'
     artist: 'Margot Voorhies'
     description:
-    - 'Printed on black Somerset Velvet paper. The text type is handset Perpetua with the display type Charlemagne and printed from a polymer plate. Both the type and graphic were printed on a Vandercook 219 proofing press. The top of the graphic was brushed silver pearl dry pigment as it came off the press.'
+    - 'Printed on black Somerset Velvet paper. The text type is handset Perpetua with the display type Charlemagne and printed from a polymer plate. Both the type and graphic were printed on a Vandercook 219 proofing press. The top of the graphic was brushed with silver pearl dry pigment as it came off the press.'
     release: 'Fall 2007'
     edition: 103
     price: 105
@@ -190,7 +197,7 @@ broadsides:
 
   - title: 'To the Book'
     id: '/publications/broadsides/to-the-book'
-    author: 'by W. S. Merwin'
+    author: 'W. S. Merwin'
     description:
     - 'The type is handset Centaur and the collograph is of a historical typographic ornament. Both the type and collograph were printed on Somerset Book paper, using a Vandercook 219 prooﬁng press. This broadside was printed to commemorate the opening of an exhibit celebrating the 35th anniversary of Copper Canyon Press at Multnomah County Library, Portland, Oregon, July 21, 2007.'
     release: 'Summer 2007'
@@ -243,7 +250,7 @@ broadsides:
     id: '/publications/broadsides/we-regard-ourselves-as-servants-of-memory'
     author: 'Barry Lopez'
     description:
-    - 'by Barry Lopez with a typographic rendering of the Declaration of Independence as the graphic. Printed on Hahnemüle Bugra paper. The types are Gill Sans, printed on a Vandercook 219 proofing press.'
+    - 'Printed on Hahnemüle Bugra paper with a typographic rendering on the Declaration of Independence which was made into a polymer plate. The type is hand-set Gill Sans. Both the type and graphic were printed on a Vandercook 219 proofing press.'
     release: 'Summer 2005'
     edition: 100
     price: 90
@@ -260,7 +267,7 @@ broadsides:
     author: 'Pattiann Rogers'
     artist: 'Judith Sparks'
     description:
-    - 'Printed  from handset Centaur types on handmade Twinrocker paper using a Vandercook 219 proofing press. The drawing of empress tree seed pods was printed from a magnesium plate.'
+    - 'Printed from hand-set Centaur type on handmade Twinrocker paper. A magnesium plate was made of the drawing of the empress tree seed pods. Both the type and plate were printed on a Vandercook 219 proofing press'
     release: 'Winter 1998'
     edition: 75
     price: 125
@@ -318,7 +325,7 @@ design:
     release: '2013'
     image: 'design/obf/Rilling_Box_Cover.jpg'
     description:
-    - 'The director of the Oregon Bach Festival asked me to create a special farewell gift for founding Artistic Director Helmuth Rilling on the occasion of his retirement after 44 years. The Festival had commissioned a choral piece by Scottish composer James MacMillan titled Alleluia dedicated to Mr. Rilling. The request was to create an elegant binding for the score that would allow Mr. Rilling to conduct from it if he so chose. The bound score was to be presented in a box that would also accommodate a CD of the inaugural performance.'
+    - 'The director of the Oregon Bach Festival asked me to create a special farewell gift for founding Artistic Director Helmuth Rilling on the occasion of his retirement after 44 years. The Festival had commissioned a choral piece by Scottish composer James MacMillan titled _Alleluia_ dedicated to Mr. Rilling. The request was to create an elegant binding for the score that would allow Mr. Rilling to conduct from it if he so chose. The bound score was to be presented in a box that would also accommodate a CD of the inaugural performance.'
     - 'To make the book, I created a digital rendering of the score on paper resembling the manuscript paper used by composers, preserving its handwritten impression. I commissioned calligrapher Marilyn Reaves to create gesture drawings based on conducting patterns, which were incorporated into the backing sheets of the score pages. The conducting patterns reflect the 4/4 meter of the work, also referencing Helmuth Rilling’s 44-year tenure with the Festival. The completed accordion-style binding is 17 inches high, and the pages, if fully unfolded, extend 20 feet.'
     - 'The box is a traditional clamshell box in which the upper tray encloses the compact disc in a concentric ring structure resembling an amphitheater. On the exterior, I inlaid three panels of fused glass with a gingko leaf motif, by artist Susan Price. Susan, a longtime friend and supporter of the Bach Festival, wished to honor Helmuth Rilling’s work with an image symbolizing longevity, resilience, hope and peace.'
     additional_images:
@@ -335,7 +342,9 @@ design:
     dimensions: '22.5 by 16 in'
     release: '2010'
     description:
-    - 'I was asked to design a box that houses 5 custom prints which are strings with knots embedded between 2 sheets of handmade abaca paper by the artist, the strings going beyond the edges of the paper at random points. Print a commissioned poem by Carl Adamshick on a sheet of the abaca paper for the colophon page. '
+    - 'I was asked to design a box that houses 5 custom prints which are strings with knots embedded between 2 sheets of handmade abaca paper by the artist, the strings going beyond the edges of the paper at random points. I was also to print a poem by Carl Adamshick on a sheet of the abaca paper for the colophon page.'
+    - 'I started with a standard clamshell box design with narrow walls since only 6 sheets of paper were to be housed. The lower tray was constructed such that the strings are accommodated within the tray. The problem to solve was how to stabilize the sheets of paper. The solution was to fabricate 4 corners which framed the edges of paper but allow the strings to lie outside the edges of the paper. The depth and width of the lower tray was done such that a panel on the spine of the box (spine baffle) would fit snugly inside the open edge to insure no dust could find its way inside, and a panel inside the upper tray would fit snugly inside the tray to gently hold the sheets in place so there is no movement of the artwork.'
+    - 'A window is cut into the upper board of the case which allows the placement of a small "String Theory" label which is mounted on a pedestal yet is below the surface of the board so there is no wear.'
     image: 'design/stronach/Hiebert_Stronach.jpg'
     thumbnail: 'design/stronach/Hiebert_Stronach_TN.jpg'
     author_site: 'helenhiebertstudio.com'

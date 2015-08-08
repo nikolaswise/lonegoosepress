@@ -59,7 +59,7 @@
 
       {% endif %}
 
-      {% if project.description.length < 5 %}
+      {% if project.description.length < 10 %}
         {% for p in project.description %}
           <p class="leader-1">{{ p }}</p>
         {% endfor %}
