@@ -53,13 +53,17 @@
       {% if project.available %}
         <p>$ {{ project.price }}</p>
 
-        <div class="leader-1 trailer-1">
+<!--         <div class="leader-1 trailer-1">
           <a href="#" class="btn" onclick="cart.addItem('{{project.title}}', '{{project.id}}', {{project.price}}, 1);">Add to Cart</a>
-        </div>
+        </div> -->
 
       {% endif %}
 
-      {% if project.description %}
+      {% if project.description.length < 5 %}
+        {% for p in project.description %}
+          <p class="leader-1">{{ p }}</p>
+        {% endfor %}
+      {% else %}
         <p class="leader-1">{{ project.description }}</p>
       {% endif %}
 
@@ -68,10 +72,7 @@
           <a href="/poems/#{{project.title|lower()|replace(' ','-','g')|replace(',', '','g')|replace(';', '','g')}}">Read Text</a>
         </p>
       {% endif %}
-
-
       <img class="tablet-show trailer-1" src="/assets/img/{{project.image}}" alt="{{project.title}}">
-
       {% if project.additional_images %}
         {% for image in project.additional_images %}
           <img class="trailer-1 tablet-show" src="/assets/img/{{image.url}}" alt="{{project.title}}">

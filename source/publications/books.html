@@ -27,12 +27,10 @@ data:
           </a>
         </h5>
 
-        {% if item.commisioned_by %}
-          {% if item.author_site %}
-            <p class="trailer-0">By <a href="{{item.author_site}}">{{ item.commisioned_by }}</a></p>
-          {% else %}
-            <p class="trailer-0">By {{ item.author }}</p>
-          {% endif %}
+        {% if item.author_site %}
+          <p class="trailer-0">By <a href="{{item.author_site}}">{{ item.author }}</a></p>
+        {% else %}
+          <p class="trailer-0">By {{ item.author }}</p>
         {% endif %}
 
         {% if item.artist %}
