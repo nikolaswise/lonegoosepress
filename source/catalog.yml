@@ -1,3 +1,45 @@
+sections:
+  index:
+    title: 'There is magic in the physical presence of books, and the methodical setting of ink on paper.'
+    description:
+    - 'What other technology for communication has persisted and thrived for over 500 years, transforming cultures around the world in countless ways, fostering education and many struggles for freedom and justice? lone goose press is dedicated to keeping that tradition alive in a tangible way.'
+    - 'Since 1989, lone goose press has been publishing limited letterpress works, printed broadsides and hand bound books. With this slow, exacting work, owner Sandy Tilcock continues to honor the highest standards in traditional book arts.'
+    - 'Why engage in letterpress printing at a time when technology allows instantaneous multimedia communication on a mass scale?'
+    - 'Today’s revolutionary innovation is tomorrow’s ordinary convenience that we soon take for granted. While we use and appreciate the wonders of digital media and internet communication, we want to invoke a quieter, more contemplative approach to the sharing of ideas and passions.'
+    - 'The mission of lone goose press is to promote book arts, to celebrate outstanding writing, and to foster conversation about community, social justice and environmental ethics.'
+  commisions:
+    title: 'Commisions'
+    description:
+    - 'lone goose press welcomes commission work. Sandy has over 25 years experience in designing and producing books, broadsides, commemorative awards and other book arts endeavors on commission. These may be editions or one-of-a-kind works. Each project is unique, and the collaborative process with the client often yields unexpected rewards.'
+    - 'Sandy brings an extensive background and experience in typography and book design to each printing project. The means of setting text and imagery on paper may include both letterpress and digital printing techniques.'
+    - 'Grounded in both French and English binding traditions, Sandy takes an eclectic, innovative approach to determine the most appropriate means of bringing the concept to fulfillment. Binding features may include a wide variety of bookcloth and leather, decorated papers, dyed endsheets and hand-sewn headbands, as the project requires. lone goose bindings and enclosures have won awards and are known for their elegance, precision and attention to detail. They reflect the principle that form follows function, and are executed so that books open freely and are easily read.'
+    - 'Sandy relishes the craft of boxmaking. Her innovative designs and impeccable execution of enclosures has earned the respect of collectors, artists, photographers, printmakers and others across the country. She has adapted the basic clamshell box design in a variety of ways. Some of her boxes have included drawers and other additional compartments, special structures to accommodate wedge-shaped books, and to house and display sculptural works and jewelry. Features may include inlaid labels and magnetic closures. Boxes larger than 11" x 14" have a double-wall construction with lapped joints, creating a very strong enclosure.'
+    design:
+      title: 'Design'
+      description: 'The client presents a task/project in which they know what they want to accomplish and the "look" they want. I listen, distill what they have said, research options and pertinent information. Then I present a proposal (possibly two), discuss with them, refine the chosen proposal if necessary and then provide an estimate for the realization of the project. Once the design is settled I gather necessary the materials, select subcontractors such as lettering artists and go into production.'
+    publication:
+      title: 'Publishing'
+      description: 'Recognizing the influx of self-publishing I am prepared to offer my services to those who wish to enter into a self-publishing project. These services may include but are not limited to consultation, design of the work, selection of the best production approach, and other services as needed.'
+    realization:
+      title: 'Realization'
+      description: 'The client presents the project, designed by them. I then determine the best approach to accomplish their project, present them a budget and proceed to perform the tasks involved if approved. This may include letterpress printing, digital printing, binding and other processes as necessary. I may arrange to subcontract for work that is not done in the studio.'
+  publications:
+    title: 'Publications'
+    description: 'The core of the press’s work is rooted in a passion for traditional forms and methods of setting words on paper. It is about creating beautiful, valued artifacts, but always in service of the text. Any imagery is carefully selected and incorporated to honor the author’s words. The goal is to produce a worthy vessel for writings with urgency and relevance for our time. For the most part the texts are contemporary; the techniques are consistent with those common prior to the industrial expansion of the publishing industry.'
+    ephemera:
+      title: 'Chapbooks and Ephemera'
+      description: 'Some lone goose press publications take the form of small booklets or chapbooks. In earlier centuries such inexpensive works, featuring illustrated poems and stories, were sold by itinerant peddlers, outside the mainstream of commercial book production. Keepsakes may be various kinds of small, intimate printed items produced in editions for specific events, or just for the sheer pleasure of setting ink on paper. The press also produces ephemera such as our traditional “Weathergrams” which are shared among friends and may be given to guests at studio events or receptions.'
+    flags:
+      title: 'Poetic Prayer Flags'
+      description: 'This special project of the press brings together brief pieces of writing by various authors in a format inspired by the Tibetan tradition of prayer flags. The writings may be new or excerpted from previous works. We ask the authors to consider themes of hope, peace, reconciliation, and respect for nature. The series is ongoing, each piece having the same format so that several flags may be strung together. This effort springs from a desire to cultivate visions for the future that counterbalance the despair and cynicism that often seem to prevail in our society.'
+    broadsides:
+      title: 'Broadsides'
+      description:
+      - 'From the earliest days of movable type, printers have worked with the limits presented by the size and format of the press, producing a single sheet of printed paper at a time. While this process was quickly adapted for the printing of books, the single­sheet format was often used for official announcements and proclamations. As the technology became more widely available, it also became a vehicle for political agitation. Dissident printers in back­alley shops sometimes cranked out calls for insurrection or reproduced scaffold speeches by condemned prisoners. The term broadside continues to carry the connotation of challenging the prevailing structures of power and ideology.'
+      - 'While lone goose press’s approach to broadsides may be more reflective than inflammatory, we tend to seek poems or short prose essays that challenge us to perceive a deeper understanding of citizenship in this world.'
+    books:
+      title: 'Books'
+      description: 'lone goose press owner Sandy Tilcock achieved recognition as a bookbinder and designer of limited­ edition books prior to her introduction to letterpress printing. Her books reflect her priority for honoring the text. All the elements—typography, design, imagery, materials and binding methods are integrated in service to the author’s words. lone goose press books are conceived as collaborations with authors, and where commissioned artwork is used, with artists. Sandy’s limited edition books have achieved international recognition for their design, creative use of materials, precise typography and attention to detail.'
 books:
   - title: 'Grandfather Was a Good Witch: Growing Up Cherokee'
     author: 'Rennard Strickland and Jack Gregory'
