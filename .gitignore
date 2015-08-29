@@ -11,7 +11,6 @@ lib-cov
 .grunt
 .DS_Store
 
-
 pids
 logs
 results
@@ -23,4 +22,6 @@ Gruntfile.js
 acetate.conf.js
 bower.json
 
-source
+.DS_Store
+
+www

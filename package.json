@@ -1,6 +1,6 @@
 {
   "name": "lone-goose-press",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "",
   "main": "server.js",
   "repository": {
@@ -12,15 +12,22 @@
   "devDependencies": {
     "babelify": "^5.0.3",
     "browserify": "^9.0.3",
-    "calcite-web": "git+ssh://git@github.com:Esri/calcite-web",
+    "calcite-web": "git+ssh://git@github.com/esri/calcite-web.git",
     "fsmonitor": "^0.2.4",
-    "imagemin": "^3.1.0",
-    "node-sass": "^2.0.0-beta",
-    "parallelshell": "^1.0.4",
-    "scss-cli": "0.0.4",
     "glob": "~4.4.1",
+    "imagemin": "^3.1.0",
+    "imagemin-newer": "^1.0.1",
+    "js-yaml": "^3.3.1",
+    "node-sass": "^2.0.0-beta",
+    "npm-run-all": "^1.2.6",
+    "parallelshell": "^1.0.4",
+    "rerun-script": "^0.6.0",
+    "rye": "git://github.com/nikolaswise/rye.git",
+    "scss-cli": "0.0.4",
+    "simplifyify": "^1.3.0",
+    "static-site": "^1.0.2",
     "tinystore": "git+ssh://git@github.com:ngoldman/tinystore",
-    "acetate": "git+ssh://git@github.com:patrickarlt/acetate"
+    "viewport-grid": "git://github.com/esripdx/viewport-grid.git"
   },
   "dependencies": {
     "hapi": "~8.2.0",
@@ -33,20 +40,28 @@
   "browser": {
     "calcite-web": "./node_modules/calcite-web/lib/js/calcite-web.js"
   },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
+  "watches": {
+    "html": [
+      "source/**/*.html",
+      "source/**/*.md"
+    ],
+    "js": "source/_assets/**/*.js",
+    "sass": "source/**/*.scss",
+    "img": "source/"
+  },
   "scripts": {
-    "start": "node server.js"
-    "compile": "browserify -e source/assets/js/index.js -d -t [ babelify --sourceMapRelative .] -o www/assets/js/bundle.js",
-    "form": "browserify -e source/assets/js/form.js -d -t [ babelify --sourceMapRelative .] -o www/assets/js/form.js",
-    "dev": "parallelshell 'node server.js' 'npm run watch:js' 'npm run watch:form' 'npm run watch:sass' 'npm run watch:html'",
+    "start": "node server.js",
+    "predev": "npm-run-all html sass img js",
+    "dev": "parallelshell 'node server.js' 'rerun-script'",
     "fmt": "standard --format",
-    "img": "imageoptim -d source/assets/img/",
-    "predev": "npm run prepublish",
-    "prepublish": "npm run compile && npm run sass && npm run build",
-    "sass": "scss-cli --include-path bower_components/ 'source/assets/css/style.scss' -o www/assets/css",
-    "build": "acetate build",
-    "watch:js": "fsmonitor -d source/assets/js/ npm run compile",
-    "watch:form": "fsmonitor -d source/assets/js/form.js npm run form",
-    "watch:sass": "fsmonitor -d source/assets/css/ npm run sass ",
-    "watch:html": "fsmonitor -d source/ npm run build"
+    "img": "imagemin-newer source/_assets/ www/assets",
+    "js": "simplifyify source/_assets/js/index.js --outfile www/assets/js/bundle.js --debug",
+    "sass": "node-sass source/_assets/css/style.scss -o www/assets/css --include-path node_modules/",
+    "html": "static-site -s source -h source/_helpers/*.js --template _layouts/layout.html --block content -b www"
   }
 }

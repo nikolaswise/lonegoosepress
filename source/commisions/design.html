@@ -1,0 +1,50 @@
+---
+title: Publications | Ephemera
+data:
+  catalog: catalog.yml
+---
+
+<div class="grid-container leader-3">
+  <main class="column-12 pre-6 post-6 trailer-2">
+     <h2 class="text-center trailer-2">Design</h2>
+
+    <p>The client presents a task or project in which they know what they want to accomplish and the "look" they want. I listen, distill what they have said, research options and pertinent information. Then I present a proposal (possibly two), discuss with them, refine the chosen proposal if necessary and then provide an estimate for the realization of the project. Once the design is settled I gather necessary the materials, select subcontractors such as lettering artists and go into production.</p>
+  </main>
+
+  {% for item in data.catalog.design %}
+
+    <section class="column-10 pre-2 trailer-1 phone-trailer-3">
+      <div class="column-6">
+        <a href="/commisions/design/{{item.title|lower()|replace(' ','-','g')|replace(',', '','g')|replace(';', '','g')}}">
+          <img src="/assets/img/{{item.thumbnail}}" alt="{{ item.title }}">
+        </a>
+      </div>
+      <div class="column-4">
+        <h5 class="body-face phone-leader-0">
+          <a href="/commisions/design/{{item.title|lower()|replace(' ','-','g')|replace(',', '','g')|replace(';', '','g')}}">
+            {{ item.title }}
+          </a>
+        </h5>
+
+        {% if item.author %}
+          {% if item.author_site %}
+            <p class="trailer-0">By <a href="{{item.author_site}}">{{ item.author }}</a></p>
+          {% else %}
+            <p class="trailer-0">By {{ item.author }}</p>
+          {% endif %}
+        {% endif %}
+
+        {% if item.artist %}
+          {% if item.artist_site %}
+            <p class="trailer-0">Art by <a href="{{item.artist_site}}">{{ item.artist }}</a></p>
+          {% else %}
+            <p class="trailer-0">Art by {{ item.artist }}</p>
+          {% endif %}
+        {% endif %}
+
+        <p>{{item.release}}</p>
+
+      </div>
+    </section>
+  {% endfor %}
+</div>
