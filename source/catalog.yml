@@ -16,7 +16,8 @@ sections:
     - 'Sandy relishes the craft of boxmaking. Her innovative designs and impeccable execution of enclosures has earned the respect of collectors, artists, photographers, printmakers and others across the country. She has adapted the basic clamshell box design in a variety of ways. Some of her boxes have included drawers and other additional compartments, special structures to accommodate wedge-shaped books, and to house and display sculptural works and jewelry. Features may include inlaid labels and magnetic closures. Boxes larger than 11" x 14" have a double-wall construction with lapped joints, creating a very strong enclosure.'
     design:
       title: 'Design'
-      description: 'The client presents a task/project in which they know what they want to accomplish and the "look" they want. I listen, distill what they have said, research options and pertinent information. Then I present a proposal (possibly two), discuss with them, refine the chosen proposal if necessary and then provide an estimate for the realization of the project. Once the design is settled I gather necessary the materials, select subcontractors such as lettering artists and go into production.'
+      description: 
+      - 'The client presents a task/project in which they know what they want to accomplish and the "look" they want. I listen, distill what they have said, research options and pertinent information. Then I present a proposal (possibly two), discuss with them, refine the chosen proposal if necessary and then provide an estimate for the realization of the project. Once the design is settled I gather necessary the materials, select subcontractors such as lettering artists and go into production.'
     publication:
       title: 'Publishing'
       description: 'Recognizing the influx of self-publishing I am prepared to offer my services to those who wish to enter into a self-publishing project. These services may include but are not limited to consultation, design of the work, selection of the best production approach, and other services as needed.'
@@ -222,7 +223,7 @@ broadsides:
 
   - title: 'Snow'
     id: '/publications/broadsides/snow'
-    author: 'Lucie Carmin'
+    author: 'Lucie Jane Thu Carmin'
     artist: 'Marilyn Reaves'
     description:
     - 'Printed on Somerset Book paper. The type is handset Centaur, and along with a polymer plate of Marilyn Reaves’ brush lettering, was printed using a Vandercook 219 proofing press. This is the first in the Cambium* Broadside Series which honors the work of young writers and acknowledges the fresh insights of growing minds.'
@@ -234,12 +235,12 @@ broadsides:
     image: 'broadsides/Snow.jpg'
     thumbnail: 'broadsides/Snow_TN.jpg'
     available: true
-    poem: false
+    poem: true
 
   - title: 'Dependence Day'
     id: '/publications/broadsides/dependence-day'
     author: 'John Daniel'
-    artist: 'Margot Voorhies'
+    artist: 'Margot Voorhies Thompson'
     description:
     - 'Printed on black Somerset Velvet paper. The text type is handset Perpetua with the display type Charlemagne and printed from a polymer plate. Both the type and graphic were printed on a Vandercook 219 proofing press. The top of the graphic was brushed with silver pearl dry pigment as it came off the press.'
     release: 'Fall 2007'
