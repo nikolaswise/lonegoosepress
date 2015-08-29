@@ -2,6 +2,7 @@ yaml = require('js-yaml');
 fs   = require('fs');
 path = require('path');
 urlify = require('urlify').create({
+  toLower: true,
   spaces:"-",
   nonPrintable:"",
   trim:true
