@@ -10,6 +10,8 @@
   "author": "",
   "license": "BSD-2-Clause",
   "devDependencies": {
+    "babelify": "^6.2.0",
+    "browserify": "^9.0.3",
     "fsmonitor": "^0.2.4",
     "glob": "~4.4.1",
     "imagemin": "^3.2.0",
@@ -36,6 +38,11 @@
     "observable": "~2.1.3",
     "ampersand-events": "~1.0.1",
     "diff-dom": "~1.0.0"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
   },
   "watches": {
     "html": [
