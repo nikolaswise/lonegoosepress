@@ -2024,6 +2024,12 @@ footer {
   .btn-primary:hover {
     background-color: #364559; }
 
+.aoh-cover {
+  width: 100%; }
+
+.aoh-video iframe {
+  max-width: 100%; }
+
 form {
   margin: 0;
   padding: 0; }
