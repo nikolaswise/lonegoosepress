@@ -53,9 +53,9 @@
       {% if project.available %}
         <p>$ {{ project.price }}</p>
 
-<!--         <div class="leader-1 trailer-1">
-          <a href="#" class="btn" onclick="cart.addItem('{{project.title}}', '{{project.id}}', {{project.price}}, 1);">Add to Cart</a>
-        </div> -->
+        <div class="leader-1 trailer-1">
+          <a href="#" class="btn" onclick="cart.addItem('{{project.title}}', 1, {{project.price}}); cart.count()">Add to Cart</a>
+        </div>
 
       {% endif %}
 

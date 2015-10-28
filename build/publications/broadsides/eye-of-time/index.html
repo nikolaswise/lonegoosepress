@@ -21,6 +21,13 @@
   </head>
 
   <body>
+    <div class="js-modal modal-overlay modifier-class" data-modal="cart">
+      <div class="modal-content column-12" role="dialog" aria-labelledby="cart" role="dialog">
+        <h3 class='trailer-half'>Cart</h3>
+        <p>Cool.</p>
+      </div>
+    </div>
+
     <div class="wrapper">
       <div class="expanding js-expanding">
         <section class="expanding-menu js-expanding" data-expanding="menu">
@@ -49,7 +56,6 @@
                 </li>
                 <li><a href="http://blog.lonegoosepress.com/">Blog</a></li>
                 <li><a href="/contact/">Contact</a></li>
-                <!-- <li><a href="/cart/">Cart / Orders</a></li> -->
               </ul>
             </div>
           </div>
@@ -60,12 +66,12 @@
         <nav class='site-nav trailer-2'>
       
         <div class="grid-container text-center leader-half trailer-half" >
-          <div class="column-12 pre-6">
+          <div class="column-12 tablet-column-10 tablet-pre-1 phone-column-4 phone-pre-1 pre-6">
             <a href="#" class="site-nav-toggle js-expanding-toggle" data-expanding="menu">menu</a>
           </div>
-          <div class="column-6 tablet-column-7 phone-column-4 text-right">
-            <a href="/cart" class="tinycart-link"></a>
-          </div>
+        </div>
+        <div class="cart-wrapper">
+          <a href="#" class="js-modal-toggle cart-link" data-modal="cart">Cart&nbsp;(<span class="js-cart-counter"></span>)</a>
         </div>
       </nav>
 
@@ -113,9 +119,9 @@
       
         <p>$ 70</p>
 
-<!--         <div class="leader-1 trailer-1">
-          <a href="#" class="btn" onclick="cart.addItem('Eye of Time', '/publications/broadsides/eye-of-time', 70, 1);">Add to Cart</a>
-        </div> -->
+        <div class="leader-1 trailer-1">
+          <a href="#" class="btn" onclick="cart.addItem('Eye of Time', 1, 70); cart.count()">Add to Cart</a>
+        </div>
 
       
 

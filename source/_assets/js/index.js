@@ -1,4 +1,3 @@
-console.log('yes hello I am a javascript')
 function click () {
   return 'click';
 }
@@ -131,4 +130,165 @@ function expandingNav (domNode) {
   })
 }
 
+function modal (domNode) {
+    var wrapper = document.querySelector('.wrapper');
+    var toggles = findElements('.js-modal-toggle', domNode);
+    var modals = findElements('.js-modal', domNode);
+    var lastOn;
+
+    function fenceModal (e) {
+      if ( !closest('js-modal', e.target)) {
+        modals.forEach(function (modal) {
+          if (hasClass(modal, 'is-active')) {
+            modal.focus();
+          }
+        });
+      }
+    }
+
+    function escapeCloseModal (e) {
+      if (e.keyCode === 27) {
+        modals.forEach(function (modal) {
+          removeClass(modal, 'is-active');
+          modal.removeAttribute('tabindex');
+        });
+        lastOn.focus();
+        removeEvent(document, 'keyup', escapeCloseModal);
+        removeEvent(document, 'focusin', fenceModal);
+      }
+    }
+
+    function bindModalToggle (e) {
+      preventDefault(e);
+      var toggle = e.target;
+      var modal;
+      var modalId = toggle.getAttribute('data-modal');
+      if (modalId) {
+        modal = document.querySelector('.js-modal[data-modal="' + modalId + '"]');
+      } else {
+        modal = closest('js-modal', toggle);
+      }
+
+      var isOpen = hasClass(modal, 'is-active');
+      toggleActive(modals, modal);
+
+      if (isOpen) {
+        removeEvent(document, 'keyup', escapeCloseModal);
+        removeEvent(document, 'focusin', fenceModal);
+        lastOn.focus();
+        modal.removeAttribute('tabindex');
+      } else {
+        addEvent(document, 'keyup', escapeCloseModal);
+        addEvent(document, 'focusin', fenceModal);
+        lastOn = toggle;
+        modal.setAttribute('tabindex', 0);
+        modal.focus();
+      }
+    }
+
+    toggles.forEach(function (toggle) {
+      addEvent(toggle, click(), bindModalToggle);
+    });
+
+    modals.forEach(function (modal) {
+      addEvent(modal, click(), function (e) {
+        if (eventTarget(e) === modal) {
+          toggleActive(modals, modal);
+          removeEvent(document, 'keyup', escapeCloseModal);
+        }
+      });
+    });
+  };
+
+// ┌────────────┐
+// │ Cart Stuff │
+// └────────────┘
+var cart = {
+  clear: function () {
+    var model = {
+      items: [],
+      itemCount: 0,
+      subtotal: 0,
+      shipping: 0,
+      total: 0,
+    }
+    cart.set(model)
+  },
+  get: function () {
+    var cart = JSON.parse(window.sessionStorage.getItem('lgp-cart'))
+    if (!cart) {
+      cart.clear()
+    }
+    cart.itemCount = 0
+
+    cart.items.forEach(function (item){
+      cart.subtotal += (item.price * item.num)
+      cart.itemCount += item.num
+    })
+    // 5 dollars per item on a flat 5
+    cart.shipping = (cart.items.length * 5) + 5
+    cart.total = cart.subtotal + cart.shipping
+    return cart
+  },
+  set: function (cart) {
+    window.sessionStorage.setItem('lgp-cart', JSON.stringify(cart))
+  },
+  getItemIds: function () {
+    var model = cart.get()
+    return model.items.map( function (item){
+      return item.id
+    })
+  },
+  addItem: function (id, num, price) {
+    var model = cart.get()
+    var item = {
+      id: id,
+      price: price,
+      num: num
+    }
+    if (!cart.hasItem(id)) {
+      console.log('new thingy')
+      model.items.push(item)
+    } else {
+      console.log('allready in there')
+      cart.incrementItem(id, num)
+    }
+    cart.set(model)
+  },
+  hasItem: function (id) {
+    var model = cart.get()
+    var itemIds = cart.getItemIds()
+    return itemIds.indexOf(id) > -1
+  },
+  incrementItem: function(id, num) {
+    var model = cart.get()
+    var i = cart.getItemIds().indexOf(id)
+    model.items[i].num += num
+    cart.set(model)
+  },
+  setItemCount: function(id, num) {
+    var model = cart.get()
+    var i = cart.getItemIds().indexOf(id)
+    model.items[i].num = num
+    cart.set(model)
+  },
+  submit: function () {
+    var model = cart.get()
+    console.log('do something salesy with this', model)
+  }
+}
+
+// ┌─────────────────────┐
+// │ Cart Implementation │
+// └─────────────────────┘
+cart.count = function () {
+  var cartCounter = document.querySelector('.js-cart-counter')
+  var myCart = cart.get()
+  cartCounter.innerHTML = myCart.itemCount
+}
+
+window.cart = cart
+
 expandingNav()
+modal()
+cart.count()

@@ -22,19 +22,6 @@
   }
 }
 
-
-.tinycart-link {
-  color: $off-white;
-  padding-top: $baseline/3;
-  text-transform: uppercase;
-  @include tracking(200);
-  @include font-size(-1);
-  line-height: 2rem;
-  &:hover {
-    color: $white;
-  }
-}
-
 .site-nav {
   position: absolute;
   top: 0;
