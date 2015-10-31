@@ -12,6 +12,8 @@
   "devDependencies": {
     "babelify": "^6.2.0",
     "browserify": "^9.0.3",
+    "cart": "git://github.com/nikolaswise/cart.git",
+    "dom": "git://github.com/nikolaswise/js-dom-utils.git",
     "fsmonitor": "^0.2.4",
     "glob": "~4.4.1",
     "imagemin": "^3.2.0",
