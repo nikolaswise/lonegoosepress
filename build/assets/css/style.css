@@ -2182,6 +2182,8 @@ select {
   -ms-transform: translate3d(0, 20px, 0);
   -o-transform: translate3d(0, 20px, 0);
   transform: translate3d(0, 20px, 0); }
+  .modal-content a {
+    color: #fffcf1; }
 
 .link-red a, a.link-red {
   color: #782D20; }

@@ -22,9 +22,7 @@
 
   <body>
     <div class="js-modal modal-overlay modifier-class" data-modal="cart">
-      <div class="modal-content column-12" role="dialog" aria-labelledby="cart" role="dialog">
-        <h3 class='trailer-half'>Cart</h3>
-        <p>Cool.</p>
+      <div class="modal-content column-12 js-cart-content" role="dialog" aria-labelledby="cart" role="dialog">
       </div>
     </div>
 
@@ -122,7 +120,7 @@
         <p>$ 105</p>
 
         <div class="leader-1 trailer-1">
-          <a href="#" class="btn" onclick="cart.addItem('Dependence Day', 1, 105); cart.count()">Add to Cart</a>
+          <a href="#" class="btn js-add-to-cart" data-title=Dependence Day data-price=105>Add to Cart</a>
         </div>
 
       

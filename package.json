@@ -28,6 +28,7 @@
     "scss-cli": "0.0.4",
     "simplifyify": "^1.4.1",
     "static-site": "^1.0.2",
+    "swig": "^1.4.2",
     "tinystore": "git+ssh://git@github.com:ngoldman/tinystore",
     "typecabinet": "nikolaswise/typecabinet",
     "urlify": "^0.3.6",
