@@ -4488,15 +4488,24 @@ var cart = Cart("lgpCart");
 // ┌─────────────────────┐
 // │ Cart Implementation │
 // └─────────────────────┘
+var cartSummary = document.querySelector(".js-cart-summary");
 var cartNode = document.querySelector(".js-cart-content");
 var cartCounter = document.querySelector(".js-cart-counter");
-var cartTemplate = "\n{% if itemCount == 0 %}\n  <p class=\"text-center padding-leader-2 padding-trailer-2\">No items in your cart.</p>\n{% else %}\n  <h3 class=\"pre-1 trailer-half\">Your Cart</h3>\n  {% for item in items %}\n    <div class=\"first-column font-size-1 padding-tailer-half trailer-half column-11 phone-column-5 text-center\">\n      <span class=\"left\">{{item.id}}</span>\n      <a href=\"#\" class=\"js-remove-one gutter-right-1 link-white\" data-id={{item.id}} data-add=\"false\">-</a>\n      <span>{{item.num}}</span>\n      <a href=\"#\" class=\"js-add-one gutter-left-1 link-white\" data-id={{item.id}} data-add=\"true\">+</a>\n      <span class=\"right gutter-right-1\">{{item.price}}</span>\n      <hr />\n    </div>\n  {% endfor %}\n  <div class=\"column-11 phone-column-5\">\n    <p class=\"font-size-1 trailer-half text-right gutter-right-1\">Subtotal: $ {{ subtotal }}</p>\n    <p class=\"font-size-1 trailer-half text-right gutter-right-1\">Shipping: $ {{ shipping }}</p>\n    <p class=\"font-size-1 trailer-half text-right gutter-right-1\">Total: $ {{ total }}</p>\n    <p class=\"leader-1\">\n      <a href=\"#\" class=\"btn right js-checkout\">Checkout</a>\n    </p>\n  </div>\n{% endif %}\n";
+var cartTemplate = "\n{% if itemCount == 0 %}\n  <p class=\"text-center padding-leader-2 padding-trailer-2\">No items in your cart.</p>\n{% else %}\n  <h3 class=\"trailer-1\">Your Cart</h3>\n  {% for item in items %}\n    <div class=\"first-column font-size-1 padding-tailer-half trailer-half column-11 phone-column-5\">\n      <a href=\"#\" class=\"js-remove-one gutter-right-1 link-white\" data-id={{item.id}} data-add=\"false\">-</a>\n      <span>{{item.num}}</span>\n      <a href=\"#\" class=\"js-add-one gutter-left-1 link-white\" data-id={{item.id}} data-add=\"true\">+</a>\n      <span class=\"gutter-left-1\">{{item.id}}</span>\n      <span class=\"right gutter-right-1\">{{item.price}}</span>\n      <hr />\n    </div>\n  {% endfor %}\n  <div class=\"column-11 phone-column-5\">\n    <p class=\"font-size-1 trailer-half text-right gutter-right-1\">Subtotal: $ {{ subtotal }}</p>\n    <p class=\"font-size-1 trailer-half text-right gutter-right-1\">Shipping: $ {{ shipping }}</p>\n    <p class=\"font-size-1 trailer-half text-right gutter-right-1\">Total: $ {{ total }}</p>\n    <p class=\"leader-1\">\n      <a href=\"/checkout\" class=\"btn right\">Checkout</a>\n    </p>\n  </div>\n{% endif %}\n";
 
+var cartSummaryTemplate = "\n{% if itemCount == 0 %}\n  <p class=\"text-center padding-leader-2 padding-trailer-2\">Thanks for your purchase!</p>\n{% else %}\n  <h3 class=\"trailer-1\">Your Cart</h3>\n  {% for item in items %}\n    <div class=\"first-column font-size-1 padding-tailer-half trailer-half column-11 phone-column-5\">\n      <a href=\"#\" class=\"js-remove-one gutter-right-1 link-white\" data-id={{item.id}} data-add=\"false\">-</a>\n      <span>{{item.num}}</span>\n      <a href=\"#\" class=\"js-add-one gutter-left-1 link-white\" data-id={{item.id}} data-add=\"true\">+</a>\n      <span class=\"gutter-left-1\">{{item.id}}</span>\n      <span class=\"right gutter-right-1\">{{item.price}}</span>\n      <hr />\n    </div>\n  {% endfor %}\n  <div class=\"column-11 phone-column-5\">\n    <p class=\"font-size-1 trailer-half text-right gutter-right-1\">Subtotal: $ {{ subtotal }}</p>\n    <p class=\"font-size-1 trailer-half text-right gutter-right-1\">Shipping: $ {{ shipping }}</p>\n    <p class=\"font-size-1 trailer-half text-right gutter-right-1\">Total: $ {{ total }}</p>\n  </div>\n{% endif %}\n";
 cart.count = function () {
   var myCart = cart.get();
-  console.log(myCart);
-  cartCounter.innerHTML = myCart.itemCount;
-  cartNode.innerHTML = swig.render(cartTemplate, { locals: myCart });
+  if (cartCounter) {
+    cartCounter.innerHTML = myCart.itemCount;
+  }
+  if (cartNode) {
+    cartNode.innerHTML = swig.render(cartTemplate, { locals: myCart });
+  }
+  if (cartSummary) {
+    cartSummary.innerHTML = swig.render(cartSummaryTemplate, { locals: myCart });
+    window.myCart = myCart;
+  }
 
   var addItemButtons = document.querySelectorAll(".js-add-one");
   var minusItemButtons = document.querySelectorAll(".js-remove-one");
@@ -4505,6 +4514,12 @@ cart.count = function () {
     var mnsBtns = dom.nodeListToArray(minusItemButtons);
     bindButtons(addBtns);
     bindButtons(mnsBtns);
+  }
+
+  var checkoutBtn = document.querySelector(".js-checkout");
+  if (checkoutBtn) {
+    console.log(checkoutBtn);
+    dom.addEvent(checkoutBtn, dom.click(), checkout);
   }
 };
 
@@ -4537,6 +4552,7 @@ var bindButtons = function bindButtons(btns) {
 };
 
 var incrementItem = function incrementItem(e) {
+  e.preventDefault();
   var id = e.target.getAttribute("data-id");
   var addOne = e.target.getAttribute("data-add");
   if (addOne == "true") {
@@ -4547,7 +4563,55 @@ var incrementItem = function incrementItem(e) {
   cart.count();
 };
 
+var checkout = function checkout(e) {
+  e.preventDefault();
+  var purchase = cart.get();
+};
+
 window.cart = cart;
+
+// payments
+var payBtn = document.querySelector(".js-stripe-pay");
+if (payBtn) {
+  var handler = StripeCheckout.configure({
+    key: "pk_test_6chGmDIc3ftpiOH7C5bQl6pW",
+    locale: "auto",
+    token: (function (_token) {
+      var _tokenWrapper = function token(_x) {
+        return _token.apply(this, arguments);
+      };
+
+      _tokenWrapper.toString = function () {
+        return _token.toString();
+      };
+
+      return _tokenWrapper;
+    })(function (token) {
+      // Use the token to create the charge with a server-side script.
+      // You can access the token ID with `token.id`
+      console.log(token);
+      cart.clear();
+      cart.count();
+      dom.addClass(payBtn, "hide");
+    })
+  });
+
+  var submitCheckout = function submitCheckout(e) {
+    // e.preventDefault();
+    var purchase = cart.get();
+    handler.open({
+      name: "Secure Checkout",
+      description: "" + purchase.itemCount + " items",
+      billingAddress: true,
+      shippingAddress: true,
+      zipCode: true,
+      allowRememberMe: false,
+      amount: purchase.total * 100
+    });
+  };
+
+  dom.addEvent(payBtn, dom.click(), submitCheckout);
+}
 
 expandingNav();
 modal();
@@ -4679,18 +4743,12 @@ var cart = function (options) {
     total: 0,
   }
 
-  var current = JSON.parse(window.sessionStorage.getItem(name))
-  console.log(current)
-  if (!current) {
-    set(emptyModel)
-  }
-
   var set = function (model) {
-    window.sessionStorage.setItem(name, JSON.stringify(model))
+    window.localStorage.setItem(name, JSON.stringify(model))
   }
 
   var get = function () {
-    var model = JSON.parse(window.sessionStorage.getItem(name))
+    var model = JSON.parse(window.localStorage.getItem(name))
     model.itemCount = 0
     model.subtotal = 0
     model.items.forEach(function (item){
@@ -4754,10 +4812,14 @@ var cart = function (options) {
     set(model)
   }
 
-
   var submit = function (cb) {
     var model = get()
     cb(model)
+  }
+
+  var current = JSON.parse(window.localStorage.getItem(name))
+  if (!current) {
+    set(emptyModel)
   }
 
   return {

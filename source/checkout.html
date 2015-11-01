@@ -1,0 +1,138 @@
+---
+title: Checkout
+template: _layouts/_checkout.html
+description: Buy some sweet stuff
+---
+
+
+
+<form action="/charge" method="POST" id="payment-form">
+
+  <h6>Shipping Information</h6>
+
+  <label>
+    <span>First Name</span>
+    <input type="text" name="first" required />
+  </label>
+  <label>
+    <span>Last Name </span>
+    <input type="text" name="last" required />
+  </label>
+
+  <label>
+    <span>Street Address</span>
+    <input type="text" name="street1" placeholder="Street Address 1" required />
+    <input type="text" name="street2" placeholder="Street Address 2" />
+  </label>
+
+  <label>
+    <span>City</span>
+    <input type="text" name="city" required/>
+  </label>
+
+  <label>
+    <span>State</span>
+    <select name="state">
+      <option value="AL">Alabama</option>
+      <option value="AK">Alaska</option>
+      <option value="AZ">Arizona</option>
+      <option value="AR">Arkansas</option>
+      <option value="CA">California</option>
+      <option value="CO">Colorado</option>
+      <option value="CT">Connecticut</option>
+      <option value="DE">Delaware</option>
+      <option value="DC">District Of Columbia</option>
+      <option value="FL">Florida</option>
+      <option value="GA">Georgia</option>
+      <option value="HI">Hawaii</option>
+      <option value="ID">Idaho</option>
+      <option value="IL">Illinois</option>
+      <option value="IN">Indiana</option>
+      <option value="IA">Iowa</option>
+      <option value="KS">Kansas</option>
+      <option value="KY">Kentucky</option>
+      <option value="LA">Louisiana</option>
+      <option value="ME">Maine</option>
+      <option value="MD">Maryland</option>
+      <option value="MA">Massachusetts</option>
+      <option value="MI">Michigan</option>
+      <option value="MN">Minnesota</option>
+      <option value="MS">Mississippi</option>
+      <option value="MO">Missouri</option>
+      <option value="MT">Montana</option>
+      <option value="NE">Nebraska</option>
+      <option value="NV">Nevada</option>
+      <option value="NH">New Hampshire</option>
+      <option value="NJ">New Jersey</option>
+      <option value="NM">New Mexico</option>
+      <option value="NY">New York</option>
+      <option value="NC">North Carolina</option>
+      <option value="ND">North Dakota</option>
+      <option value="OH">Ohio</option>
+      <option value="OK">Oklahoma</option>
+      <option value="OR">Oregon</option>
+      <option value="PA">Pennsylvania</option>
+      <option value="RI">Rhode Island</option>
+      <option value="SC">South Carolina</option>
+      <option value="SD">South Dakota</option>
+      <option value="TN">Tennessee</option>
+      <option value="TX">Texas</option>
+      <option value="UT">Utah</option>
+      <option value="VT">Vermont</option>
+      <option value="VA">Virginia</option>
+      <option value="WA">Washington</option>
+      <option value="WV">West Virginia</option>
+      <option value="WI">Wisconsin</option>
+      <option value="WY">Wyoming</option>
+    </select>
+  </label>
+
+  <label>
+    <span>ZIP / Postal</span>
+    <input id="postcode" name="postcode" type="number" maxlength="4" required />
+  </label>
+
+  <label>
+    <span>Email Address</span>
+    <input type="email" name="email" placeholder="Enter a valid email address" required / >
+  </label>
+
+  <small>Receipts and notifications will be sent to this email address.</small>
+
+  <h6>Billing Information</h6>
+
+  <form action="" method="POST" id="payment-form">
+  <span class="payment-errors"></span>
+
+  <div class="form-row">
+    <label>
+      <span>Card Number</span>
+      <input type="text" size="20" data-stripe="number"/>
+    </label>
+  </div>
+
+  <div class="form-row">
+    <label>
+      <span>CVC</span>
+      <input type="text" size="4" data-stripe="cvc"/>
+    </label>
+  </div>
+
+  <div class="form-row">
+    <label>
+      <span>Expiration (MM/YYYY)</span>
+      <input type="text" size="2" data-stripe="exp-month"/>
+    </label>
+    <span> / </span>
+    <input type="text" size="4" data-stripe="exp-year"/>
+  </div>
+
+  <button type="submit">Submit Payment</button>
+</form>
+
+  <button type="submit">
+</form>
+
+<p class="padding-leader-1">All transactions are secure and encrypted, and we never store your credit card information. Payments are processed through Stripe. Payment information is also governed by Stripe's <a href="https://stripe.com/us/privacy">privacy policy.</a></p>
+
+

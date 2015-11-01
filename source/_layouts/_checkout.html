@@ -10,24 +10,18 @@
     <meta name="viewport" content="width=device-width, user-scalable=no">
 
     <!-- Use title from page frontmatter -->
-    <title>Apologia | lone goose press</title>
+    <title>{{title}} | lone goose press</title>
 
     <!-- Link to favicon -->
-    <!-- <link rel="shortcut icon" href="assets/img/favicon.ico"> -->
+    <!-- <link rel="shortcut icon" href="{{relativePath}}assets/img/favicon.ico"> -->
 
     <!-- stylesheets -->
     <link rel="stylesheet" href="/assets/css/style.css">
     <script src="https://checkout.stripe.com/checkout.js"></script>
-
-    
+    {% block head %}{% endblock %}
   </head>
 
   <body>
-    <div class="js-modal modal-overlay modifier-class" data-modal="cart">
-      <div class="modal-content column-12 js-cart-content" role="dialog" aria-labelledby="cart" role="dialog">
-      </div>
-    </div>
-
     <div class="wrapper">
       <div class="expanding js-expanding">
         <section class="expanding-menu js-expanding" data-expanding="menu">
@@ -62,110 +56,37 @@
         </section>
       </div>
 
-      
+      {% if homepage %}
+        <nav class='site-nav site-nav-homepage'>
+      {% else %}
         <nav class='site-nav trailer-2'>
-      
+      {% endif %}
         <div class="grid-container text-center leader-half trailer-half" >
           <div class="column-12 tablet-column-10 tablet-pre-1 phone-column-4 phone-pre-1 pre-6">
             <a href="#" class="site-nav-toggle js-expanding-toggle" data-expanding="menu">menu</a>
           </div>
         </div>
-        <div class="cart-wrapper">
-          <a href="#" class="js-modal-toggle cart-link" data-modal="cart">Cart&nbsp;(<span class="js-cart-counter"></span>)</a>
-        </div>
       </nav>
-
-      
-
-<div class="grid-container leader-3">
-  <div class="column-24">
-    
-
-    <div class="column-12 leader-1 trailer-1 tablet-hide">
-      <img class="trailer-1" src="/assets/img/books/Lopez_Apologia.jpg" alt="Apologia">
-
-      
-    </div>
-
-    <div class="column-10 pre-1 tablet-pre-1">
-      <h2 class="trailer-1 font-size-2 leader-2">Apologia</h2>
-
-      
-        
-          <p class="trailer-0">By Barry Lopez</p>
-        
-      
-
-      
-        
-          <p class="trailer-0">Art by Robin Eschner</p>
-        
-      
-
-      
-        <p class="trailer-0">1997</p>
-      
-
-      
-        <p class="trailer-0">11.8 by 11 inches, 24 pages</p>
-      
-
-      
-
-      
-        <p>50 numbered copies and 16 lettered copies for the participants and those who supported the publication, signed by the author and the artist.</p>
-      
-
-      
-        <p>$ 2500</p>
-
-        <div class="leader-1 trailer-1">
-          <a href="#" class="btn js-add-to-cart" data-title=Apologia data-price=2500>Add to Cart</a>
+      <div class="grid-container">
+        <div class="column-12 pre-6 leader-3">
+          <div class="js-cart-summary"></div>
+          <div class="column-11 phone-column-5">
+            <p class="leader-1 font-size-2">
+              <a href="#" class="btn right js-stripe-pay">Pay with Card</a>
+            </p>
+          </div>
+          <!-- {% block content %}{% endblock %} -->
         </div>
+      </div>
 
-      
-
-      
-        
-          <p class="leader-1">Computer-set Poppi Laudatio Regular and Trajan, printed using polymer plates on Stonehenge paper.</p>
-        
-      
-
-      
-      <img class="tablet-show trailer-1" src="/assets/img/books/Lopez_Apologia.jpg" alt="Apologia">
-      
-    </div>
-  </div>
-</div>
 
 
       <div class="grid-container">
-        <div class="column-24 leader-1 trailer-1">
-  <p class='text-center'>
-    <a class='inline-menu-link link-red' href="/">Home</a>
-    <a class='inline-menu-link link-red' href="/about/"> About the Press</a>
-    <a class='inline-menu-link link-red' href="/publications/"> Publications</a>
-    <a class='inline-menu-link link-red' href="/commisions/"> Commissions</a>
-    <a class='inline-menu-link link-red' href="http://blog.lonegoosepress.com/"> Blog</a>
-    <a class='inline-menu-link link-red' href="/contact/"> Contact</a>
-  </p>
-</div>
+        {% include '../_partials/inline-menu.html' %}
       </div>
     </div>
 
-    <footer>
-  <div class="container">
-    <div class="column-14 pre-5 text-center trailer-4">
-      <p class='trailer-0'>2580 Augusta Street</p>
-      <p class='trailer-0'>Eugene, OR 97403</p>
-      <p class='trailer-0'>541-465-9079</p>
-      <p><a href="mailto:info@lonegoosepress.com">info@lonegoosepress.com</a></p>
-      <p class='font-size-1'>lone goose press is dedicated to excellence in the crafts of typographic design, letterpress printing and bookbinding.</p>
-
-      <p class="font-size--1 leader-1">Cover photo by George Filgate.</p>
-    </div>
-  </div>
-</footer>
+    {% include '../_partials/footer.html' %}
 
     <script src="/assets/js/bundle.js"></script>
     <script>
