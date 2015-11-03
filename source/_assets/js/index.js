@@ -177,8 +177,6 @@ if (payBtn) {
         addresse: JSON.stringify(addresses)
       }
       post('/charge', charge)
-      cart.clear()
-      cart.count()
       dom.addClass(payBtn, 'hide')
     }
   })
