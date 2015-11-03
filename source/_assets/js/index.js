@@ -136,16 +136,47 @@ var checkout = function (e) {
 window.cart = cart
 
 
+function post(path, params, method) {
+  method = method || "post"; // Set method to post by default if not specified.
+
+  // The rest of this code assumes you are not using a library.
+  // It can be made less wordy if you use one.
+  var form = document.createElement("form");
+  form.setAttribute("method", method);
+  form.setAttribute("action", path);
+
+  for(var key in params) {
+      if(params.hasOwnProperty(key)) {
+          var hiddenField = document.createElement("input");
+          hiddenField.setAttribute("type", "hidden");
+          hiddenField.setAttribute("name", key);
+          hiddenField.setAttribute("value", params[key]);
+
+          form.appendChild(hiddenField);
+       }
+  }
+
+  document.body.appendChild(form);
+  form.submit();
+}
+
 // payments
+var purchase
+
 var payBtn = document.querySelector('.js-stripe-pay')
 if (payBtn) {
   var handler = StripeCheckout.configure({
     key: 'pk_test_6chGmDIc3ftpiOH7C5bQl6pW',
     locale: 'auto',
-    token: function(token) {
+    token: function(token, addresses) {
       // Use the token to create the charge with a server-side script.
       // You can access the token ID with `token.id`
-      console.log(token)
+      var charge = {
+        token: JSON.stringify(token),
+        details: JSON.stringify(purchase),
+        addresse: JSON.stringify(addresses)
+      }
+      post('/charge', charge)
       cart.clear()
       cart.count()
       dom.addClass(payBtn, 'hide')
@@ -154,7 +185,7 @@ if (payBtn) {
 
   var submitCheckout = function (e) {
     // e.preventDefault();
-    let purchase = cart.get()
+    purchase = cart.get()
     handler.open({
       name: 'Secure Checkout',
       description: `${purchase.itemCount} items`,
