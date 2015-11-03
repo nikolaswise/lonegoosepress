@@ -2013,6 +2013,12 @@ footer {
   .btn-primary:hover {
     background-color: #364559; }
 
+.btn-clear {
+  background-color: transparent;
+  border-color: transparent; }
+  .btn-clear:hover {
+    background-color: transparent; }
+
 .aoh-cover {
   width: 100%; }
 

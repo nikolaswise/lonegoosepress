@@ -47,3 +47,4 @@
 
 .btn {@include btn();}
 .btn-primary {@include btn-color($maroon, $blue-gray);}
+.btn-clear {@include btn-color(transparent, transparent);}

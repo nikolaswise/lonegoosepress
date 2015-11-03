@@ -18,6 +18,7 @@ var cartCounter = document.querySelector('.js-cart-counter')
 var cartTemplate = `
 {% if itemCount == 0 %}
   <p class="text-center padding-leader-2 padding-trailer-2">No items in your cart.</p>
+  <a href="#" class="btn right js-modal-toggle" data-modal="cart">Keep Shopping</a>
 {% else %}
   <h3 class="trailer-1">Your Cart</h3>
   {% for item in items %}
@@ -34,8 +35,9 @@ var cartTemplate = `
     <p class="font-size-1 trailer-half text-right gutter-right-1">Subtotal: $ {{ subtotal }}</p>
     <p class="font-size-1 trailer-half text-right gutter-right-1">Shipping: $ {{ shipping }}</p>
     <p class="font-size-1 trailer-half text-right gutter-right-1">Total: $ {{ total }}</p>
-    <p class="leader-1">
-      <a href="/checkout" class="btn right">Checkout</a>
+    <p class="leader-1 text-right">
+      <a href="#" class="btn btn-clear js-modal-toggle gutter-right-1" data-modal="cart">Keep Shopping</a>
+      <a href="/checkout" class="btn">Checkout</a>
     </p>
   </div>
 {% endif %}
