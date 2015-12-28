@@ -4643,8 +4643,8 @@ if (payBtn) {
 }
 
 expandingNav();
-modal();
 initCart();
+modal();
 
 },{"./modal":32,"./navigation":33,"cart":34,"dom":1,"swig":5}],32:[function(require,module,exports){
 "use strict";

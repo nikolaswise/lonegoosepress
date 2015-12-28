@@ -201,5 +201,5 @@ if (payBtn) {
 }
 
 expandingNav()
-modal()
 initCart()
+modal()
