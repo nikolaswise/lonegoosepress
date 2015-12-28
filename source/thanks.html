@@ -3,4 +3,21 @@ title: Home
 description: Index homepage for lone goose press
 ---
 
-<h1>Thanks!</h1>
+<div class="grid-container leader-4">
+  <div class="column-10 pre-7">
+    <h1 class="font-size-2">Thanks for your order</h1>
+    <p>We successfully recevived your order information, and will be shipping your order right away. We'll contact you if anything comes up.</p>
+    <p>- lone goose press</p>
+  </div>
+</div>
+
+<script>
+  var emptyModel = {
+    items: [],
+    itemCount: 0,
+    subtotal: 0,
+    shipping: 0,
+    total: 0,
+  }
+  window.localStorage.setItem('lgpCart', JSON.stringify(emptyModel))
+</script>

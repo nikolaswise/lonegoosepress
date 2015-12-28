@@ -7,7 +7,7 @@ var modal = require('./modal')
 
 
 
-var cart = Cart('lgpCart')
+var cart = Cart({name: 'lgpCart'})
 
 // ┌─────────────────────┐
 // │ Cart Implementation │
@@ -67,7 +67,6 @@ var cartSummaryTemplate = `
 `
 cart.count = function () {
   var myCart = cart.get()
-  console.log(myCart)
   if (cartCounter) {
     cartCounter.innerHTML = myCart.itemCount
   }
