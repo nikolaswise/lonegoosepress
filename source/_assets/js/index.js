@@ -100,6 +100,7 @@ var initCart = function () {
 
   if (addToCartBtn) {
     let title = addToCartBtn.getAttribute('data-title')
+    console.log(title)
     let price = addToCartBtn.getAttribute('data-price')
     var addItemToCart = function () {
       cart.addItem(title, 1, price)

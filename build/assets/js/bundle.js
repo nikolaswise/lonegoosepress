@@ -4531,6 +4531,7 @@ var initCart = function initCart() {
 
     (function () {
       var title = addToCartBtn.getAttribute("data-title");
+      console.log(title);
       var price = addToCartBtn.getAttribute("data-price");
 
       addItemToCart = function addItemToCart() {
