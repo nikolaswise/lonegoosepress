@@ -176,7 +176,7 @@ if (payBtn) {
       var charge = {
         token: JSON.stringify(token),
         details: JSON.stringify(purchase),
-        addresse: JSON.stringify(addresses)
+        addresses: JSON.stringify(addresses)
       }
       post('/charge', charge)
       dom.addClass(payBtn, 'hide')
@@ -198,7 +198,6 @@ if (payBtn) {
   }
 
   dom.addEvent(payBtn, dom.click(), submitCheckout)
-
 }
 
 expandingNav()
