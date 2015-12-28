@@ -4496,6 +4496,10 @@ var cartTemplate = "\n{% if itemCount == 0 %}\n  <p class=\"text-center padding-
 var cartSummaryTemplate = "\n{% if itemCount == 0 %}\n  <p class=\"text-center padding-leader-2 padding-trailer-2\">Thanks for your purchase!</p>\n{% else %}\n  <h3 class=\"trailer-1\">Your Cart</h3>\n  {% for item in items %}\n    <div class=\"first-column font-size-1 padding-tailer-half trailer-half column-11 phone-column-5\">\n      <a href=\"#\" class=\"js-remove-one gutter-right-1 link-white\" data-id={{item.id|url_encode}} data-add=\"false\">-</a>\n      <span>{{item.num}}</span>\n      <a href=\"#\" class=\"js-add-one gutter-left-1 link-white\" data-id={{item.id|url_encode}} data-add=\"true\">+</a>\n      <span class=\"gutter-left-1\">{{item.id}}</span>\n      <span class=\"right gutter-right-1\">{{item.price}}</span>\n      <hr />\n    </div>\n  {% endfor %}\n  <div class=\"column-11 phone-column-5\">\n    <p class=\"font-size-1 trailer-half text-right gutter-right-1\">Subtotal: $ {{ subtotal }}</p>\n    <p class=\"font-size-1 trailer-half text-right gutter-right-1\">Shipping: $ {{ shipping }}</p>\n    <p class=\"font-size-1 trailer-half text-right gutter-right-1\">Total: $ {{ total }}</p>\n  </div>\n{% endif %}\n";
 cart.count = function () {
   var myCart = cart.get();
+  myCart.shipping = myCart.itemCount * 5 + 7;
+  myCart.total = myCart.subtotal + myCart.shipping;
+  cart.set(myCart);
+
   if (cartCounter) {
     cartCounter.innerHTML = myCart.itemCount;
   }

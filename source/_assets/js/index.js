@@ -67,6 +67,10 @@ var cartSummaryTemplate = `
 `
 cart.count = function () {
   var myCart = cart.get()
+  myCart.shipping = (myCart.itemCount*5) + 7
+  myCart.total = myCart.subtotal + myCart.shipping
+  cart.set(myCart)
+
   if (cartCounter) {
     cartCounter.innerHTML = myCart.itemCount
   }
@@ -76,7 +80,6 @@ cart.count = function () {
   if (cartSummary) {
     cartSummary.innerHTML = swig.render(cartSummaryTemplate, {locals: myCart})
     window.myCart = myCart
-
   }
 
   var addItemButtons = document.querySelectorAll('.js-add-one')
