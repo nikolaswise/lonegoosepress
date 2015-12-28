@@ -23,9 +23,9 @@ var cartTemplate = `
   <h3 class="trailer-1">Your Cart</h3>
   {% for item in items %}
     <div class="first-column font-size-1 padding-tailer-half trailer-half column-11 phone-column-5">
-      <a href="#" class="js-remove-one gutter-right-1 link-white" data-id={{item.id}} data-add="false">-</a>
+      <a href="#" class="js-remove-one gutter-right-1 link-white" data-id="{{item.id|url_encode}}"" data-add="false">-</a>
       <span>{{item.num}}</span>
-      <a href="#" class="js-add-one gutter-left-1 link-white" data-id={{item.id}} data-add="true">+</a>
+      <a href="#" class="js-add-one gutter-left-1 link-white" data-id="{{item.id|url_encode}}" data-add="true">+</a>
       <span class="gutter-left-1">{{item.id}}</span>
       <span class="right gutter-right-1">{{item.price}}</span>
       <hr />
@@ -50,9 +50,9 @@ var cartSummaryTemplate = `
   <h3 class="trailer-1">Your Cart</h3>
   {% for item in items %}
     <div class="first-column font-size-1 padding-tailer-half trailer-half column-11 phone-column-5">
-      <a href="#" class="js-remove-one gutter-right-1 link-white" data-id={{item.id}} data-add="false">-</a>
+      <a href="#" class="js-remove-one gutter-right-1 link-white" data-id={{item.id|url_encode}} data-add="false">-</a>
       <span>{{item.num}}</span>
-      <a href="#" class="js-add-one gutter-left-1 link-white" data-id={{item.id}} data-add="true">+</a>
+      <a href="#" class="js-add-one gutter-left-1 link-white" data-id={{item.id|url_encode}} data-add="true">+</a>
       <span class="gutter-left-1">{{item.id}}</span>
       <span class="right gutter-right-1">{{item.price}}</span>
       <hr />
@@ -67,6 +67,7 @@ var cartSummaryTemplate = `
 `
 cart.count = function () {
   var myCart = cart.get()
+  console.log(myCart)
   if (cartCounter) {
     cartCounter.innerHTML = myCart.itemCount
   }
@@ -121,7 +122,9 @@ var bindButtons = function (btns) {
 
 var incrementItem = function(e) {
   e.preventDefault()
-  let id = e.target.getAttribute('data-id')
+  let encodedId = e.target.getAttribute('data-id')
+  let id = unescape(encodedId)
+  console.log(id)
   let addOne = e.target.getAttribute('data-add')
   if (addOne == 'true') {
     cart.incrementItem(id, 1)
