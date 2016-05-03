@@ -40,7 +40,13 @@ data:
             <p class="trailer-0">Art by {{ item.artist }}</p>
           {% endif %}
         {% endif %}
-
+        {% if item.photographer %}
+          {% if item.photographer_site %}
+            <p class="trailer-0">Photographs by <a href="{{item.photographer_site}}">{{ item.photographer }}</a></p>
+          {% else %}
+            <p class="trailer-0">Photographs by {{ item.photographer }}</p>
+          {% endif %}
+        {% endif %}
       </div>
     </section>
   {% endfor %}

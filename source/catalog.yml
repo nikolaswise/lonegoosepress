@@ -42,18 +42,43 @@ sections:
       title: 'Books'
       description: 'lone goose press owner Sandy Tilcock achieved recognition as a bookbinder and designer of limited­ edition books prior to her introduction to letterpress printing. Her books reflect her priority for honoring the text. All the elements—typography, design, imagery, materials and binding methods are integrated in service to the author’s words. lone goose press books are conceived as collaborations with authors, and where commissioned artwork is used, with artists. Sandy’s limited edition books have achieved international recognition for their design, creative use of materials, precise typography and attention to detail.'
 books:
-  - title: 'All of Him'
-    author: 'Matthew Dickman and Michael Dickman'
-    artist: 'Keith Achepoh'
+
+  - title: 'Poking Around'
+    author: 'Kathleen Dean Moore'
+    artist: 'Margot Voorhies Thompson'
+    release: 'Fall 2015'
+    dimensions: '8 x 8 inches, 22 pages'
+    edition: 53
+    edition_notes: 'Numbered and signed by the author and artist'
+    price: 250
+    available: true
     description:
-    - 'The limited edition, letterpress book All of Him was a true collaboration, evolving over a period of four years. The intense, intimate poems deal with Michael and Matthew Dickman&#39;s loss of their older brother to a drug overdose. In this video, the poets read excerpts from the work, and artist Keith Achepohl and designer/printer Sandy Tilcock talk about the genesis and development of this unique publication.'
+    - 'Dealer Discount Available. Contact lone goose press for further information or to place an order.'
+    - 'In April 2015, Sandy Tilcock and Portland artist Margot Thompson used a 2-week residency at PLAYA, on Summer Lake in central Oregon to develop Poking Around. This limited-edition artist’s book is based on an essay by Kathleen Dean Moore on the value of wandering with curiosity.'
+    - 'This book is imbued with the Playa landscape both physically and conceptually. Sandy and Margot walked the lake shore and hiked the nearby forests, observing, photographing and collecting, practicing the kind of mindful exploration the essay celebrates. Back in their studios, they developed the images and design ideas for the book. Margot’s drawings embrace the patterns of the lake bed and objects found on their daily forays. They used crushed sandstone from Winter Ridge to create a slurry which was brushed on paper to create the earthy background for the pages. This texture was reproduced digitally to produce the edition.'
+    - 'The text type is Gill Sans and the display type is Castellar. An Epson 4880 ink jet printer was used to print the page backgrounds. The type and drawings were printed from photopolymer relief plates on a Vandercook 219 proof press. Papeterie Saint-Armand of Montréal, Québec, Canada, made the paper, Canal white. The cover paper, Red Walnut, is a handmade paper from Cave Papers of Minneapolis, Minnesota. Sandy Tilcock hand-colored the title and paragraph breaks. Margot Voorhies Thompson decorated the covers and Sandy Tilcock executed the binding.'
+    thumbnail: 'books/Poking Around_TN.jpg'
+    image: 'books/Poking Around_A.jpg'
+    additional_images:
+    - url: 'books/Poking Around_B.jpg'
+    - url: 'books/Poking Around_C.jpg'
+    - url: 'books/Poking Around_D.jpg'
+    - url: 'books/Poking Around_E.jpg'
+
+  - title: 'All of Him'
+    author: '<a href="http://matthewdickmanpoetry.com/">Matthew Dickman</a> and <a href="https://www.poets.org/poetsorg/poet/michael-dickman">Michael Dickman</a>'
+    artist: 'Keith Achepoh'
+    dimensions: 'Individual tri-folds 13.375 x 8.75 inches, closed, opening out to 13.375 x 26 inches. Clamshell box: 14.375 x 9.5 x 1.5 inches closed.'
+    description:
+    - 'Dealer Discount Available. Contact lone goose press for further information or to place an order.'
+    - 'The limited edition, letterpress book <em>All of Him</em> was a true collaboration, evolving over a period of four years. The intense, intimate poems deal with Michael and Matthew Dickman&#39;s loss of their older brother to a drug overdose. In this video, the poets read excerpts from the work, and artist Keith Achepohl and designer/printer Sandy Tilcock talk about the genesis and development of this unique publication.'
     - 'The types used are handset Gill Sans for the poems and colophon. Computer generated Beata and Gill Sans Light were used for the display types and printed from polymer plates. The types, handset and polymer, were printed on a Vandercook 219 proofing press. Sandy Tilcock, lone goose press proprietor designed, printed and “bound” the book.'
     - 'Papers used are Rives BFK, off-white, for the text pages and Saint-Armand’s Black Denim Canal made from clothing industry offcuts for the chemise. The cloth for the box is Duo Graphite from Bamberger Kaliko Textiles in Germany.'
     - 'The original images are individual trace monotypes which were scanned and adjusted in Photoshop so they would be suitable for the making of polymer photogravure plates. Many images were made for each poem. Sandy Tilcock, selected the final images used and laid them out on the page for each poem. Once the layout was finalized the adjusted image file was sent to Intaglio Editions of Boulder, Colorado where the polymer plates were made by Jon Lybrook. The plates were editioned by Sandy Tilcock and Nikolas Wise in the lone goose press studio.'
     - 'lone goose press thanks all those who guided and assisted the press in the production of the book: Keith Achepohl for his wonderful, thoughtful images; Jon Lybrook for his teaching the press how to prepare the files for the images; Russ Dodd of Portland, Oregon for providing a tutorial in printing and editioning photopolymer photogravures; and Nikolas Wise for his amazing skill at wiping plates such that there was no plate tone. And, many thanks to Michael and Matthew Dickman for entrusting lone goose press with the manuscript.'
     - 'In memory of Darin Hull.'
     release: '2015'
-    edition: 'All of Him was produced in an edition of 43 numbered copies with 10 additional lettered copies reserved for the participants. All copies are signed by the authors and artist.'
+    edition: '<em>All of Him</em> was produced in an edition of 43 numbered copies with 10 additional lettered copies reserved for the participants. All copies are signed by the authors and artist.'
     image: 'books/AOH_Website-Opener.jpg'
     thumbnail: 'books/AOH_TN.jpg'
     additional_images:
@@ -90,7 +115,7 @@ books:
     - 'Michael Bixler’s monotype-cast Gill Sans type, then passed through the composing stick for justification; computer-set Neuland for the display type and printed using polymer plates on Nideggen paper.'
     - 'Sewn binding with a supported paper wrapper made from a handmade pigmented and dyed flax paper (Walnut Red) by Cave Papers. The artist cut the original images large in Rubylith film. Commissioned by Rennard Strickland.'
     - 'One of my favorite commissions. Rennard Strickland was retiring from teaching and being Dean at the School of Law, University of Oregon. He was marking the end of 40 years of teaching and wished to publish his 40th book in conjunction with his retirement. He commissioned me to do this and I gladly accepted the challenge.'
-    - 'The story grew from what Rennard writes “may be our greatest literary failure.” After the publication of Strickland’s and Gregory’s first book, _Sam Houston with the Cherokees_, in 1966, they received a phone call from an editor at Random House asking if they would do a “children’s book on what it’s like to be an Indian.”'
+    - 'The story grew from what Rennard writes “may be our greatest literary failure.” After the publication of Strickland’s and Gregory’s first book, <em>Sam Houston with the Cherokees</em>, in 1966, they received a phone call from an editor at Random House asking if they would do a “children’s book on what it’s like to be an Indian.”'
     - 'They agreed to undertake the task and took a tape recorder out into the field to gather impressions and experiences. They interviewed more than two dozen Cherokee men who had come of age during the Great Depression. Reels and reels of tape and dozens of letters later, the New York editor decided Strickland’s and Gregory’s Indians did not meet her stereotype of what it was like to be Indian. By mutual agreement, the project was called off.'
     - 'Strickland and Gregory gathered those stories into one narrative. A slightly different version was published in 1972 by the Indian Heritage Association. This publication was the first printing of the original narrative.'
     - 'Rennard enjoys the whole process of making a book, from writing to fine-tuning the text, selecting papers (he loved “fondling” paper), typeface, images, etc. He is an absolute joy to work with.'
@@ -111,6 +136,11 @@ books:
     artist: 'Robin Eschner'
     description:
     - 'Computer-set Poppi Laudatio Regular and Trajan, printed using polymer plates on Stonehenge paper.'
+    - 'Individual folios were hinged together to form a more than 20-foot-long continuous image; bound in boards using Lama Li handmade paper and original USGS topographic maps of the State of Wyoming.    '
+    - 'Enclosed in a folder on the back cover, on an original USGS topographic map of Wyoming, is a tire-tread print made by Barry Lopez with the assistance of Sandy Tilcock, using the inked tire of Barry’s Toyota 4-Runner, the vehicle driven on the journey from Oregon to Indiana that is chronicled in the essay.'
+    - 'The book is housed in a clamshell box covered with black Canapetta book cloth, with a paper label on the spine'
+    - 'Robin Eschner, of Forestville, California, carved the twenty-three woodblocks on poplar over a period of six years. Charles Hobson, of San Francisco, designed and organized the edition, which was printed by Susan Acker at Feathered Serpent Press, Novato, California. Nora Pauwels at the Kala Art Institute in Berkeley, California made the woodblocks into an edition. John DeMerritt, of Emeryville, California, hinged the text pages and bound the book. Sandy Tilcock of lone goose press, Eugene, Oregon, produced the boxes.'
+    - 'This was an unusual project, in that I, Sandy Tilcock, did not have responsibility for all the production work but oversaw those who did the work and published it under the lone goose press imprint. It came about because the original publisher was unable to follow through due to illness. Robin was anxious to see the book completed and be included in a large exhibition based on Barry Lopez’s writings scheduled at a gallery in San Francisco. Barry approached me and asked if I would become the publisher and shepherd the project to completion. We had only three months to produce the book, so no one person would be able to do all the work. It became a team approach. As the publisher, my role was to assure that everyone was on task so we could meet the deadline. '
     release: '1997'
     edition_notes: '50 numbered copies and 16 lettered copies for the participants and those who supported the publication, signed by the author and the artist.'
     dimensions: '11.8 by 11 inches, 24 pages'
@@ -158,7 +188,7 @@ broadsides:
     id: '/publications/broadsides/eclipsed'
     author: 'Dylan Troyer'
     description:
-    - 'Printed on Somerset Velvet Black paper. The type is Stone Sans, printed from polymer plates on a Vandercook 219 proofing press. This is the third in the Cambium* Broadside Series which honors the work of young writers and acknowledges the fresh insights of growing minds.'
+    - 'Printed on Somerset Velvet Black paper. The type is Stone Sans, printed from polymer plates on a Vandercook 219 proofing press. This is the third in the <a href="/poems#cambium-footnote">Cambium*</a> Broadside Series which honors the work of young writers and acknowledges the fresh insights of growing minds.'
     release: 'Fall 2010'
     edition: 73
     price: 25
@@ -168,6 +198,32 @@ broadsides:
     thumbnail: 'broadsides/eclipsed_TN.jpg'
     available: true
     poem: true
+
+  - title: 'We Belong to a Mystery'
+    id: '/publications/broadsides/we-belong-to-a-mystery'
+    author: 'John Daniel'
+    author_site: 'http://www.johndaniel-author.net'
+    release: 'Summer 2010'
+    dimensions: '8 by 8 inches'
+    edition: 97
+    edition_notes: 'Numbered and signed by the author'
+    price: 75
+    poem: true
+    description:
+    - 'The design is inspired by the Tibetan tradition of prayer flags with the text chosen from a desire to cultivate visions for the future that counterbalance the despair and cynicism that often seem to prevail in our society.'
+    - 'Computer-set Albertus MT Pro type printed on a Vandercook 219 proofing press using polymer plates. The paper is handmade from Thailand with a lotus leaf watermark. The background cloth is custom-batiked with an enso image. The cloth is hemmed to form a loop at the top edge to accommodate a string to be used for hanging.'
+
+  - title: 'All Rights Reserved'
+    author: 'W. Patrick Tilcock'
+    release: 'Winter 2010'
+    dimensions: '8 by 8 inches'
+    edition: 83
+    edition_notes: 'Numbered and signed by the poet'
+    price: 75
+    poem: true
+    description:
+    - 'The design is inspired by the Tibetan tradition of prayer flags with the text chosen from a desire to cultivate visions for the future that counterbalance the despair and cynicism that often seem to prevail in our society.'
+    - 'Computer-set Optima types, Beata for the display type and printed on a Vandercook 219 proofing press using polymer plates. The paper is Yatsuo from Japan. The background cloth is custom-batiked with an enso image. The cloth is hemmed to form a loop at the top edge to accommodate a string to be used for hanging.'
 
   - title: 'Mercy, Tear it Down'
     id: '/publications/broadsides/mercy-tear-it-down'
@@ -189,7 +245,7 @@ broadsides:
     id: '/publications/broadsides/the-tallest-brother'
     author: 'Zoe Duncan-Doroff'
     description:
-    - 'With artwork derived from a photograph of shattered glass. The type is handset Gill Sans with display type Donatello which is printed from a polymer plate. The types and image were printed using a Vandercook 219 proofing press. This is the third in the Cambium* Broadside Series which honors the work of young writers and acknowledges the fresh insights of growing minds.'
+    - 'With artwork derived from a photograph of shattered glass. The type is handset Gill Sans with display type Donatello which is printed from a polymer plate. The types and image were printed using a Vandercook 219 proofing press. This is the third in the <a href="/poems#cambium-footnote">Cambium*</a> Broadside Series which honors the work of young writers and acknowledges the fresh insights of growing minds.'
     release: 'Fall 2009'
     edition: 97
     price: 22
@@ -267,7 +323,7 @@ broadsides:
     author: 'Lucie Jane Thu Carmin'
     artist: 'Marilyn Reaves'
     description:
-    - 'Printed on Somerset Book paper. The type is handset Centaur, and along with a polymer plate of Marilyn Reaves’ brush lettering, was printed using a Vandercook 219 proofing press. This is the first in the Cambium* Broadside Series which honors the work of young writers and acknowledges the fresh insights of growing minds.'
+    - 'Printed on Somerset Book paper. The type is handset Centaur, and along with a polymer plate of Marilyn Reaves’ brush lettering, was printed using a Vandercook 219 proofing press. This is the first in the <a href="/poems#cambium-footnote">Cambium*</a> Broadside Series which honors the work of young writers and acknowledges the fresh insights of growing minds.'
     release: 'Summer 2008'
     edition: 71
     price: 18
@@ -289,7 +345,7 @@ broadsides:
     price: 105
     edition_notes: 'Numbered and signed by both the poet and the artist.'
     dimensions: '11.5 by 18 inches.'
-    author_site: 'http://www.www.johndaniel-author.net'
+    author_site: 'http://www.johndaniel-author.net'
     artist_site: 'http://www.margotvoorhiesthompson.com'
     image: 'broadsides/Dependence_Day.jpg'
     thumbnail: 'broadsides/Dependence_Day_TN.jpg'
@@ -317,7 +373,7 @@ broadsides:
     author: 'Robert Bly'
     artist: 'Susan Lowdermilk'
     description:
-    - 'Printed on Somerset Book paper. Type is hand set Gill Sans. Both type and woodcut were printed using a Vandercook 219 proofing press. The broadside was printed to honor the poet’s visit to Eugene, Oregon, October 17, 2006. The press dedicates this broadside to the memory of William Stafford and his advocacy for peace.'
+    - 'Printed on Somerset Book paper. Type is handset Gill Sans. Both type and Susan Lowdermilk’s woodcut were printed using a Vandercook 219 proofing press. The broadside was printed to honor the poet’s visit to Eugene, Oregon, October 17, 2006. The press dedicates this broadside to the memory of William Stafford and his advocacy for peace.'
     release: 'Fall 2006'
     edition: 97
     price: 80
@@ -335,7 +391,7 @@ broadsides:
     author: 'W. Patrick Tilcock'
     artist: 'Susan Lowdermilk'
     description:
-    - 'By W. Patrick Tilcock with relief engraving by Susan Lowdermilk. Printed on Mulberry paper from Japan. The type is handset Centaur. Both the type and engraving were printed using a Vandercook 219 proofing press.'
+    - 'By W. Patrick Tilcock with relief engraving by Susan Lowdermilk. Printed on Mulberry paper from Japan. The type is handset Centaur. Both the type and engraving were printed using a Vandercook 219 proofing press. The eyes were hand-colored by the printer.'
     release: 'Winter 2005'
     edition: 110
     price: 48
@@ -351,7 +407,7 @@ broadsides:
     id: '/publications/broadsides/we-regard-ourselves-as-servants-of-memory'
     author: 'Barry Lopez'
     description:
-    - 'Printed on Hahnemüle Bugra paper with a typographic rendering on the Declaration of Independence which was made into a polymer plate. The type is hand-set Gill Sans. Both the type and graphic were printed on a Vandercook 219 proofing press.'
+    - 'Printed on Hahnemüle Bugra paper with a typographic rendering on the Declaration of Independence which was made into a polymer plate. The type is handset Gill Sans. Both the type and graphic were printed on a Vandercook 219 proofing press.'
     release: 'Summer 2005'
     edition: 100
     price: 90
@@ -368,7 +424,7 @@ broadsides:
     author: 'Pattiann Rogers'
     artist: 'Judith Sparks'
     description:
-    - 'Printed from hand-set Centaur type on handmade Twinrocker paper. A magnesium plate was made of the drawing of the empress tree seed pods. Both the type and plate were printed on a Vandercook 219 proofing press'
+    - 'Printed from handset Centaur type on handmade Twinrocker paper. A magnesium plate was made of the drawing of the empress tree seed pods. Both the type and plate were printed on a Vandercook 219 proofing press'
     release: 'Winter 1998'
     edition: 75
     price: 125
