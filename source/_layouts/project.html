@@ -34,6 +34,14 @@
         {% endif %}
       {% endif %}
 
+      {% if project.photographer %}
+        {% if project.photographer_site %}
+          <p class="trailer-0">Photographs by <a href="{{project.photographer_site}}">{{ project.photographer }}</a></p>
+        {% else %}
+          <p class="trailer-0">Photographs by {{ project.photographer }}</p>
+        {% endif %}
+      {% endif %}
+
       {% if project.release %}
         <p class="trailer-0">{{ project.release }}</p>
       {% endif %}

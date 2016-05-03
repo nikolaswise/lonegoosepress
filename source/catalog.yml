@@ -66,7 +66,7 @@ books:
 
   - title: 'Invitation'
     author: 'Patrick Tilcock'
-    artist: 'Photographs by Patrick Tilcock'
+    photographer: 'Patrick Tilcock'
     release: 'Fall, 2014'
     dimensions: '3 x 6 inches closed, 3 x 84 inches extended'
     edition: '29'
@@ -78,7 +78,7 @@ books:
     image: 'books/Invitation-A.jpg'
     additional_images:
     - url: 'books/Invitation-B.jpg'
-    - url: 'books/Invitation-C.jpg'
+    - url: 'books/Invitation_C.jpg'
     - url: 'books/Invitation-D.jpg'
     price: 97
     available: true
