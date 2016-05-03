@@ -1,4 +1,112 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+// ┌────────────┐
+// │ Cart Stuff │
+// └────────────┘
+
+var cart = function (options) {
+  var name = options.name
+  var emptyModel = {
+    items: [],
+    itemCount: 0,
+    subtotal: 0,
+    shipping: 0,
+    total: 0,
+  }
+
+  var set = function (model) {
+    window.localStorage.setItem(name, JSON.stringify(model))
+  }
+
+  var get = function () {
+    var model = JSON.parse(window.localStorage.getItem(name))
+    model.itemCount = 0
+    model.subtotal = 0
+    model.items.forEach(function (item){
+      model.subtotal += (item.price * item.num)
+      model.itemCount += item.num
+    })
+    model.total = model.subtotal + model.shipping
+    return model
+  }
+
+  var clear = function () {
+    set(emptyModel)
+  }
+
+  var getItemIds = function () {
+    var model = get()
+    return model.items.map( function (item){
+      return item.id
+    })
+  }
+
+  var addItem = function (id, num, price) {
+    var model = get()
+    var item = {
+      id: id,
+      price: price,
+      num: num
+    }
+    if (!hasItem(id)) {
+      model.items.push(item)
+    } else {
+      var i = getItemIds().indexOf(id)
+      model.items[i].num += num
+    }
+    set(model)
+  }
+
+  var hasItem = function (id) {
+    var model = get()
+    var itemIds = getItemIds()
+    return itemIds.indexOf(id) > -1
+  }
+
+  var incrementItem = function(id, num) {
+    var model = get()
+    var i = getItemIds().indexOf(id)
+    model.items[i].num += num
+    if (model.items[i].num == 0) {
+      model.items.splice(i, 1)
+    }
+    set(model)
+  }
+
+  var setItemCount = function(id, num) {
+    var model = get()
+    var i = getItemIds().indexOf(id)
+    model.items[i].num = num
+    if (model.items[i].num == 0) {
+      model.items.splice(i, 1)
+    }
+    set(model)
+  }
+
+  var submit = function (cb) {
+    var model = get()
+    cb(model)
+  }
+
+  var current = JSON.parse(window.localStorage.getItem(name))
+  if (!current) {
+    set(emptyModel)
+  }
+
+  return {
+    set: set,
+    get: get,
+    clear: clear,
+    getItemIds: getItemIds,
+    addItem: addItem,
+    hasItem: hasItem,
+    incrementItem: incrementItem,
+    setItemCount: setItemCount,
+    submit: submit
+  }
+}
+
+module.exports = cart
+},{}],2:[function(require,module,exports){
 var dom = {
   version: 'v1.0.0',
   click: click,
@@ -187,8 +295,6 @@ function nodeListToArray (domNodeList) {
 }
 
 module.exports = dom
-
-},{}],2:[function(require,module,exports){
 
 },{}],3:[function(require,module,exports){
 (function (process){
@@ -419,7 +525,9 @@ var substr = 'ab'.substr(-1) === 'b'
 
 }).call(this,require('_process'))
 
-},{"_process":4}],4:[function(require,module,exports){
+},{"_process":5}],4:[function(require,module,exports){
+
+},{}],5:[function(require,module,exports){
 // shim for using process in browser
 
 var process = module.exports = {};
@@ -452,7 +560,9 @@ function drainQueue() {
         currentQueue = queue;
         queue = [];
         while (++queueIndex < len) {
-            currentQueue[queueIndex].run();
+            if (currentQueue) {
+                currentQueue[queueIndex].run();
+            }
         }
         queueIndex = -1;
         len = queue.length;
@@ -504,17 +614,16 @@ process.binding = function (name) {
     throw new Error('process.binding is not supported');
 };
 
-// TODO(shtylman)
 process.cwd = function () { return '/' };
 process.chdir = function (dir) {
     throw new Error('process.chdir is not supported');
 };
 process.umask = function() { return 0; };
 
-},{}],5:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 module.exports = require('./lib/swig');
 
-},{"./lib/swig":13}],6:[function(require,module,exports){
+},{"./lib/swig":14}],7:[function(require,module,exports){
 var utils = require('./utils');
 
 var _months = {
@@ -714,7 +823,7 @@ exports.U = function (input) {
   return input.getTime() / 1000;
 };
 
-},{"./utils":30}],7:[function(require,module,exports){
+},{"./utils":31}],8:[function(require,module,exports){
 var utils = require('./utils'),
   dateFormatter = require('./dateformatter');
 
@@ -1346,7 +1455,7 @@ exports.url_decode = function (input) {
   return decodeURIComponent(input);
 };
 
-},{"./dateformatter":6,"./utils":30}],8:[function(require,module,exports){
+},{"./dateformatter":7,"./utils":31}],9:[function(require,module,exports){
 var utils = require('./utils');
 
 /**
@@ -1654,7 +1763,7 @@ exports.read = function (str) {
   return tokens;
 };
 
-},{"./utils":30}],9:[function(require,module,exports){
+},{"./utils":31}],10:[function(require,module,exports){
 (function (process){
 var fs = require('fs'),
   path = require('path');
@@ -1718,7 +1827,7 @@ module.exports = function (basepath, encoding) {
 
 }).call(this,require('_process'))
 
-},{"_process":4,"fs":2,"path":3}],10:[function(require,module,exports){
+},{"_process":5,"fs":4,"path":3}],11:[function(require,module,exports){
 /**
  * @namespace TemplateLoader
  * @description Swig is able to accept custom template loaders written by you, so that your templates can come from your favorite storage medium without needing to be part of the core library.
@@ -1773,7 +1882,7 @@ module.exports = function (basepath, encoding) {
 exports.fs = require('./filesystem');
 exports.memory = require('./memory');
 
-},{"./filesystem":9,"./memory":11}],11:[function(require,module,exports){
+},{"./filesystem":10,"./memory":12}],12:[function(require,module,exports){
 var path = require('path'),
   utils = require('../utils');
 
@@ -1838,7 +1947,7 @@ module.exports = function (mapping, basepath) {
   return ret;
 };
 
-},{"../utils":30,"path":3}],12:[function(require,module,exports){
+},{"../utils":31,"path":3}],13:[function(require,module,exports){
 var utils = require('./utils'),
   lexer = require('./lexer');
 
@@ -2584,7 +2693,7 @@ exports.compile = function (template, parents, options, blockName) {
   return out;
 };
 
-},{"./lexer":8,"./utils":30}],13:[function(require,module,exports){
+},{"./lexer":9,"./utils":31}],14:[function(require,module,exports){
 var utils = require('./utils'),
   _tags = require('./tags'),
   _filters = require('./filters'),
@@ -3326,7 +3435,7 @@ exports.run = defaultInstance.run;
 exports.invalidateCache = defaultInstance.invalidateCache;
 exports.loaders = loaders;
 
-},{"./dateformatter":6,"./filters":7,"./loaders":10,"./parser":12,"./tags":24,"./utils":30}],14:[function(require,module,exports){
+},{"./dateformatter":7,"./filters":8,"./loaders":11,"./parser":13,"./tags":25,"./utils":31}],15:[function(require,module,exports){
 var utils = require('../utils'),
   strings = ['html', 'js'];
 
@@ -3365,7 +3474,7 @@ exports.parse = function (str, line, parser, types, stack, opts) {
 };
 exports.ends = true;
 
-},{"../utils":30}],15:[function(require,module,exports){
+},{"../utils":31}],16:[function(require,module,exports){
 /**
  * Defines a block in a template that can be overridden by a template extending this one and/or will override the current template's parent template block of the same name.
  *
@@ -3392,7 +3501,7 @@ exports.parse = function (str, line, parser) {
 exports.ends = true;
 exports.block = true;
 
-},{}],16:[function(require,module,exports){
+},{}],17:[function(require,module,exports){
 /**
  * Used within an <code data-language="swig">{% if %}</code> tag, the code block following this tag up until <code data-language="swig">{% endif %}</code> will be rendered if the <i>if</i> statement returns false.
  *
@@ -3419,7 +3528,7 @@ exports.parse = function (str, line, parser, types, stack) {
   return (stack.length && stack[stack.length - 1].name === 'if');
 };
 
-},{}],17:[function(require,module,exports){
+},{}],18:[function(require,module,exports){
 var ifparser = require('./if').parse;
 
 /**
@@ -3449,7 +3558,7 @@ exports.parse = function (str, line, parser, types, stack) {
   return okay && (stack.length && stack[stack.length - 1].name === 'if');
 };
 
-},{"./if":21}],18:[function(require,module,exports){
+},{"./if":22}],19:[function(require,module,exports){
 /**
  * Makes the current template extend a parent template. This tag must be the first item in your template.
  *
@@ -3470,7 +3579,7 @@ exports.parse = function () {
 
 exports.ends = false;
 
-},{}],19:[function(require,module,exports){
+},{}],20:[function(require,module,exports){
 var filters = require('../filters');
 
 /**
@@ -3540,7 +3649,7 @@ exports.parse = function (str, line, parser, types) {
 
 exports.ends = true;
 
-},{"../filters":7}],20:[function(require,module,exports){
+},{"../filters":8}],21:[function(require,module,exports){
 var ctx = '_ctx.',
   ctxloop = ctx + 'loop';
 
@@ -3672,7 +3781,7 @@ exports.parse = function (str, line, parser, types) {
 
 exports.ends = true;
 
-},{}],21:[function(require,module,exports){
+},{}],22:[function(require,module,exports){
 /**
  * Used to create conditional statements in templates. Accepts most JavaScript valid comparisons.
  *
@@ -3760,7 +3869,7 @@ exports.parse = function (str, line, parser, types) {
 
 exports.ends = true;
 
-},{}],22:[function(require,module,exports){
+},{}],23:[function(require,module,exports){
 var utils = require('../utils');
 
 /**
@@ -3853,7 +3962,7 @@ exports.parse = function (str, line, parser, types, stack, opts, swig) {
 
 exports.block = true;
 
-},{"../parser":12,"../utils":30}],23:[function(require,module,exports){
+},{"../parser":13,"../utils":31}],24:[function(require,module,exports){
 var ignore = 'ignore',
   missing = 'missing',
   only = 'only';
@@ -3955,7 +4064,7 @@ exports.parse = function (str, line, parser, types, stack, opts) {
   return true;
 };
 
-},{}],24:[function(require,module,exports){
+},{}],25:[function(require,module,exports){
 exports.autoescape = require('./autoescape');
 exports.block = require('./block');
 exports["else"] = require('./else');
@@ -3973,7 +4082,7 @@ exports.raw = require('./raw');
 exports.set = require('./set');
 exports.spaceless = require('./spaceless');
 
-},{"./autoescape":14,"./block":15,"./else":16,"./elseif":17,"./extends":18,"./filter":19,"./for":20,"./if":21,"./import":22,"./include":23,"./macro":25,"./parent":26,"./raw":27,"./set":28,"./spaceless":29}],25:[function(require,module,exports){
+},{"./autoescape":15,"./block":16,"./else":17,"./elseif":18,"./extends":19,"./filter":20,"./for":21,"./if":22,"./import":23,"./include":24,"./macro":26,"./parent":27,"./raw":28,"./set":29,"./spaceless":30}],26:[function(require,module,exports){
 /**
  * Create custom, reusable snippets within your templates.
  * Can be imported from one template to another using the <a href="#import"><code data-language="swig">{% import ... %}</code></a> tag.
@@ -4054,7 +4163,7 @@ exports.parse = function (str, line, parser, types) {
 exports.ends = true;
 exports.block = true;
 
-},{}],26:[function(require,module,exports){
+},{}],27:[function(require,module,exports){
 /**
  * Inject the content from the parent template's block of the same name into the current block.
  *
@@ -4107,7 +4216,7 @@ exports.parse = function (str, line, parser, types, stack, opts) {
   return true;
 };
 
-},{}],27:[function(require,module,exports){
+},{}],28:[function(require,module,exports){
 // Magic tag, hardcoded into parser
 
 /**
@@ -4132,7 +4241,7 @@ exports.parse = function (str, line, parser) {
 };
 exports.ends = true;
 
-},{}],28:[function(require,module,exports){
+},{}],29:[function(require,module,exports){
 /**
  * Set a variable for re-use in the current context. This will over-write any value already set to the context for the given <var>varname</var>.
  *
@@ -4243,7 +4352,7 @@ exports.parse = function (str, line, parser, types) {
 
 exports.block = true;
 
-},{}],29:[function(require,module,exports){
+},{}],30:[function(require,module,exports){
 var utils = require('../utils');
 
 /**
@@ -4287,7 +4396,7 @@ exports.parse = function (str, line, parser) {
 
 exports.ends = true;
 
-},{"../utils":30}],30:[function(require,module,exports){
+},{"../utils":31}],31:[function(require,module,exports){
 var isArray;
 
 /**
@@ -4473,27 +4582,27 @@ exports.throwError = function (message, line, file) {
   throw new Error(message + '.');
 };
 
-},{}],31:[function(require,module,exports){
-"use strict";
+},{}],32:[function(require,module,exports){
+'use strict';
 
-var dom = require("dom");
-var Cart = require("cart");
-var swig = require("swig");
+var dom = require('dom');
+var Cart = require('cart');
+var swig = require('swig');
 
-var expandingNav = require("./navigation");
-var modal = require("./modal");
+var expandingNav = require('./navigation');
+var modal = require('./modal');
 
-var cart = Cart({ name: "lgpCart" });
+var cart = Cart({ name: 'lgpCart' });
 
 // ┌─────────────────────┐
 // │ Cart Implementation │
 // └─────────────────────┘
-var cartSummary = document.querySelector(".js-cart-summary");
-var cartNode = document.querySelector(".js-cart-content");
-var cartCounter = document.querySelector(".js-cart-counter");
-var cartTemplate = "\n{% if itemCount == 0 %}\n  <p class=\"text-center padding-leader-2 padding-trailer-2\">No items in your cart.</p>\n  <a href=\"#\" class=\"btn right js-modal-toggle\" data-modal=\"cart\">Keep Shopping</a>\n{% else %}\n  <h3 class=\"trailer-1\">Your Cart</h3>\n  {% for item in items %}\n    <div class=\"first-column font-size-1 padding-tailer-half trailer-half column-11 phone-column-5\">\n      <a href=\"#\" class=\"js-remove-one gutter-right-1 link-white\" data-id=\"{{item.id|url_encode}}\"\" data-add=\"false\">-</a>\n      <span>{{item.num}}</span>\n      <a href=\"#\" class=\"js-add-one gutter-left-1 link-white\" data-id=\"{{item.id|url_encode}}\" data-add=\"true\">+</a>\n      <span class=\"gutter-left-1\">{{item.id}}</span>\n      <span class=\"right gutter-right-1\">{{item.price}}</span>\n      <hr />\n    </div>\n  {% endfor %}\n  <div class=\"column-11 phone-column-5\">\n    <p class=\"font-size-1 trailer-half text-right gutter-right-1\">Subtotal: $ {{ subtotal }}</p>\n    <p class=\"font-size-1 trailer-half text-right gutter-right-1\">Shipping: $ {{ shipping }}</p>\n    <p class=\"font-size-1 trailer-half text-right gutter-right-1\">Total: $ {{ total }}</p>\n    <p class=\"leader-1 text-right\">\n      <a href=\"#\" class=\"btn btn-clear js-modal-toggle gutter-right-1\" data-modal=\"cart\">Keep Shopping</a>\n      <a href=\"/checkout\" class=\"btn\">Checkout</a>\n    </p>\n  </div>\n{% endif %}\n";
+var cartSummary = document.querySelector('.js-cart-summary');
+var cartNode = document.querySelector('.js-cart-content');
+var cartCounter = document.querySelector('.js-cart-counter');
+var cartTemplate = '\n{% if itemCount == 0 %}\n  <p class="text-center padding-leader-2 padding-trailer-2">No items in your cart.</p>\n  <a href="#" class="btn right js-modal-toggle" data-modal="cart">Keep Shopping</a>\n{% else %}\n  <h3 class="trailer-1">Your Cart</h3>\n  {% for item in items %}\n    <div class="first-column font-size-1 padding-tailer-half trailer-half column-11 phone-column-5">\n      <a href="#" class="js-remove-one gutter-right-1 link-white" data-id="{{item.id|url_encode}}"" data-add="false">-</a>\n      <span>{{item.num}}</span>\n      <a href="#" class="js-add-one gutter-left-1 link-white" data-id="{{item.id|url_encode}}" data-add="true">+</a>\n      <span class="gutter-left-1">{{item.id}}</span>\n      <span class="right gutter-right-1">{{item.price}}</span>\n      <hr />\n    </div>\n  {% endfor %}\n  <div class="column-11 phone-column-5">\n    <p class="font-size-1 trailer-half text-right gutter-right-1">Subtotal: $ {{ subtotal }}</p>\n    <p class="font-size-1 trailer-half text-right gutter-right-1">Shipping: $ {{ shipping }}</p>\n    <p class="font-size-1 trailer-half text-right gutter-right-1">Total: $ {{ total }}</p>\n    <p class="leader-1 text-right">\n      <a href="#" class="btn btn-clear js-modal-toggle gutter-right-1" data-modal="cart">Keep Shopping</a>\n      <a href="/checkout" class="btn">Checkout</a>\n    </p>\n  </div>\n{% endif %}\n';
 
-var cartSummaryTemplate = "\n{% if itemCount == 0 %}\n  <p class=\"text-center padding-leader-2 padding-trailer-2\">Thanks for your purchase!</p>\n{% else %}\n  <h3 class=\"trailer-1\">Your Cart</h3>\n  {% for item in items %}\n    <div class=\"first-column font-size-1 padding-tailer-half trailer-half column-11 phone-column-5\">\n      <a href=\"#\" class=\"js-remove-one gutter-right-1 link-white\" data-id={{item.id|url_encode}} data-add=\"false\">-</a>\n      <span>{{item.num}}</span>\n      <a href=\"#\" class=\"js-add-one gutter-left-1 link-white\" data-id={{item.id|url_encode}} data-add=\"true\">+</a>\n      <span class=\"gutter-left-1\">{{item.id}}</span>\n      <span class=\"right gutter-right-1\">{{item.price}}</span>\n      <hr />\n    </div>\n  {% endfor %}\n  <div class=\"column-11 phone-column-5\">\n    <p class=\"font-size-1 trailer-half text-right gutter-right-1\">Subtotal: $ {{ subtotal }}</p>\n    <p class=\"font-size-1 trailer-half text-right gutter-right-1\">Shipping: $ {{ shipping }}</p>\n    <p class=\"font-size-1 trailer-half text-right gutter-right-1\">Total: $ {{ total }}</p>\n  </div>\n{% endif %}\n";
+var cartSummaryTemplate = '\n{% if itemCount == 0 %}\n  <p class="text-center padding-leader-2 padding-trailer-2">Thanks for your purchase!</p>\n{% else %}\n  <h3 class="trailer-1">Your Cart</h3>\n  {% for item in items %}\n    <div class="first-column font-size-1 padding-tailer-half trailer-half column-11 phone-column-5">\n      <a href="#" class="js-remove-one gutter-right-1 link-white" data-id={{item.id|url_encode}} data-add="false">-</a>\n      <span>{{item.num}}</span>\n      <a href="#" class="js-add-one gutter-left-1 link-white" data-id={{item.id|url_encode}} data-add="true">+</a>\n      <span class="gutter-left-1">{{item.id}}</span>\n      <span class="right gutter-right-1">{{item.price}}</span>\n      <hr />\n    </div>\n  {% endfor %}\n  <div class="column-11 phone-column-5">\n    <p class="font-size-1 trailer-half text-right gutter-right-1">Subtotal: $ {{ subtotal }}</p>\n    <p class="font-size-1 trailer-half text-right gutter-right-1">Shipping: $ {{ shipping }}</p>\n    <p class="font-size-1 trailer-half text-right gutter-right-1">Total: $ {{ total }}</p>\n  </div>\n{% endif %}\n';
 cart.count = function () {
   var myCart = cart.get();
   myCart.shipping = myCart.itemCount * 5 + 7;
@@ -4511,8 +4620,8 @@ cart.count = function () {
     window.myCart = myCart;
   }
 
-  var addItemButtons = document.querySelectorAll(".js-add-one");
-  var minusItemButtons = document.querySelectorAll(".js-remove-one");
+  var addItemButtons = document.querySelectorAll('.js-add-one');
+  var minusItemButtons = document.querySelectorAll('.js-remove-one');
   if (addItemButtons.length > 0) {
     var addBtns = dom.nodeListToArray(addItemButtons);
     var mnsBtns = dom.nodeListToArray(minusItemButtons);
@@ -4520,7 +4629,7 @@ cart.count = function () {
     bindButtons(mnsBtns);
   }
 
-  var checkoutBtn = document.querySelector(".js-checkout");
+  var checkoutBtn = document.querySelector('.js-checkout');
   if (checkoutBtn) {
     console.log(checkoutBtn);
     dom.addEvent(checkoutBtn, dom.click(), checkout);
@@ -4528,15 +4637,15 @@ cart.count = function () {
 };
 
 var initCart = function initCart() {
-  var addToCartBtn = document.querySelector(".js-add-to-cart");
+  var addToCartBtn = document.querySelector('.js-add-to-cart');
 
   if (addToCartBtn) {
     var addItemToCart;
 
     (function () {
-      var title = addToCartBtn.getAttribute("data-title");
+      var title = addToCartBtn.getAttribute('data-title');
       console.log(title);
-      var price = addToCartBtn.getAttribute("data-price");
+      var price = addToCartBtn.getAttribute('data-price');
 
       addItemToCart = function addItemToCart() {
         cart.addItem(title, 1, price);
@@ -4551,18 +4660,18 @@ var initCart = function initCart() {
 
 var bindButtons = function bindButtons(btns) {
   btns.forEach(function (btn) {
-    var id = btn.getAttribute("data-id");
+    var id = btn.getAttribute('data-id');
     dom.addEvent(btn, dom.click(), incrementItem);
   });
 };
 
 var incrementItem = function incrementItem(e) {
   e.preventDefault();
-  var encodedId = e.target.getAttribute("data-id");
+  var encodedId = e.target.getAttribute('data-id');
   var id = unescape(encodedId);
   console.log(id);
-  var addOne = e.target.getAttribute("data-add");
-  if (addOne == "true") {
+  var addOne = e.target.getAttribute('data-add');
+  if (addOne == 'true') {
     cart.incrementItem(id, 1);
   } else {
     cart.incrementItem(id, -1);
@@ -4604,40 +4713,30 @@ function post(path, params, method) {
 // payments
 var purchase;
 
-var payBtn = document.querySelector(".js-stripe-pay");
+var payBtn = document.querySelector('.js-stripe-pay');
 if (payBtn) {
   var handler = StripeCheckout.configure({
-    key: "pk_test_6chGmDIc3ftpiOH7C5bQl6pW",
-    locale: "auto",
-    token: (function (_token) {
-      var _tokenWrapper = function token(_x, _x2) {
-        return _token.apply(this, arguments);
-      };
-
-      _tokenWrapper.toString = function () {
-        return _token.toString();
-      };
-
-      return _tokenWrapper;
-    })(function (token, addresses) {
+    key: 'pk_test_6chGmDIc3ftpiOH7C5bQl6pW',
+    locale: 'auto',
+    token: function token(_token, addresses) {
       // Use the token to create the charge with a server-side script.
       // You can access the token ID with `token.id`
       var charge = {
-        token: JSON.stringify(token),
+        token: JSON.stringify(_token),
         details: JSON.stringify(purchase),
         addresses: JSON.stringify(addresses)
       };
-      post("/charge", charge);
-      dom.addClass(payBtn, "hide");
-    })
+      post('/charge', charge);
+      dom.addClass(payBtn, 'hide');
+    }
   });
 
   var submitCheckout = function submitCheckout(e) {
     // e.preventDefault();
     purchase = cart.get();
     handler.open({
-      name: "Secure Checkout",
-      description: "" + purchase.itemCount + " items",
+      name: 'Secure Checkout',
+      description: purchase.itemCount + ' items',
       billingAddress: true,
       shippingAddress: true,
       zipCode: true,
@@ -4653,21 +4752,21 @@ expandingNav();
 initCart();
 modal();
 
-},{"./modal":32,"./navigation":33,"cart":34,"dom":1,"swig":5}],32:[function(require,module,exports){
-"use strict";
+},{"./modal":33,"./navigation":34,"cart":1,"dom":2,"swig":6}],33:[function(require,module,exports){
+'use strict';
 
-var dom = require("dom");
+var dom = require('dom');
 
 function modal(domNode) {
-  var wrapper = document.querySelector(".wrapper");
-  var toggles = dom.findElements(".js-modal-toggle", domNode);
-  var modals = dom.findElements(".js-modal", domNode);
+  var wrapper = document.querySelector('.wrapper');
+  var toggles = dom.findElements('.js-modal-toggle', domNode);
+  var modals = dom.findElements('.js-modal', domNode);
   var lastOn;
 
   function fenceModal(e) {
-    if (!dom.closest("js-modal", e.target)) {
+    if (!dom.closest('js-modal', e.target)) {
       modals.forEach(function (modal) {
-        if (dom.hasClass(modal, "is-active")) {
+        if (dom.hasClass(modal, 'is-active')) {
           modal.focus();
         }
       });
@@ -4677,12 +4776,12 @@ function modal(domNode) {
   function escapeCloseModal(e) {
     if (e.keyCode === 27) {
       modals.forEach(function (modal) {
-        dom.removeClass(modal, "is-active");
-        modal.removeAttribute("tabindex");
+        dom.removeClass(modal, 'is-active');
+        modal.removeAttribute('tabindex');
       });
       lastOn.focus();
-      dom.removeEvent(document, "keyup", escapeCloseModal);
-      dom.removeEvent(document, "focusin", fenceModal);
+      dom.removeEvent(document, 'keyup', escapeCloseModal);
+      dom.removeEvent(document, 'focusin', fenceModal);
     }
   }
 
@@ -4690,26 +4789,26 @@ function modal(domNode) {
     dom.preventDefault(e);
     var toggle = e.target;
     var modal;
-    var modalId = toggle.getAttribute("data-modal");
+    var modalId = toggle.getAttribute('data-modal');
     if (modalId) {
-      modal = document.querySelector(".js-modal[data-modal=\"" + modalId + "\"]");
+      modal = document.querySelector('.js-modal[data-modal="' + modalId + '"]');
     } else {
-      modal = dom.closest("js-modal", toggle);
+      modal = dom.closest('js-modal', toggle);
     }
 
-    var isOpen = dom.hasClass(modal, "is-active");
+    var isOpen = dom.hasClass(modal, 'is-active');
     dom.toggleActive(modals, modal);
 
     if (isOpen) {
-      dom.removeEvent(document, "keyup", escapeCloseModal);
-      dom.removeEvent(document, "focusin", fenceModal);
+      dom.removeEvent(document, 'keyup', escapeCloseModal);
+      dom.removeEvent(document, 'focusin', fenceModal);
       lastOn.focus();
-      modal.removeAttribute("tabindex");
+      modal.removeAttribute('tabindex');
     } else {
-      dom.addEvent(document, "keyup", escapeCloseModal);
-      dom.addEvent(document, "focusin", fenceModal);
+      dom.addEvent(document, 'keyup', escapeCloseModal);
+      dom.addEvent(document, 'focusin', fenceModal);
       lastOn = toggle;
-      modal.setAttribute("tabindex", 0);
+      modal.setAttribute('tabindex', 0);
       modal.focus();
     }
   }
@@ -4722,7 +4821,7 @@ function modal(domNode) {
     dom.addEvent(modal, dom.click(), function (e) {
       if (dom.eventTarget(e) === modal) {
         dom.toggleActive(modals, modal);
-        dom.removeEvent(document, "keyup", escapeCloseModal);
+        dom.removeEvent(document, 'keyup', escapeCloseModal);
       }
     });
   });
@@ -4730,33 +4829,33 @@ function modal(domNode) {
 
 module.exports = modal;
 
-},{"dom":1}],33:[function(require,module,exports){
-"use strict";
+},{"dom":2}],34:[function(require,module,exports){
+'use strict';
 
-var dom = require("dom");
+var dom = require('dom');
 
 // ┌────────────┐
 // │ Navigation │
 // └────────────┘
 function expandingNav(domNode) {
-  var toggles = dom.findElements(".js-expanding-toggle", domNode);
-  var sections = document.querySelectorAll(".js-expanding");
+  var toggles = dom.findElements('.js-expanding-toggle', domNode);
+  var sections = document.querySelectorAll('.js-expanding');
 
   toggles.forEach(function (toggle) {
     dom.addEvent(toggle, dom.click(), function (e) {
       dom.preventDefault(e);
 
-      var sectionId = toggle.getAttribute("data-expanding");
-      var section = document.querySelector(".js-expanding[data-expanding=\"" + sectionId + "\"]");
-      var isOpen = dom.hasClass(section, "is-active");
-      var shouldClose = dom.hasClass(section, "is-active");
+      var sectionId = toggle.getAttribute('data-expanding');
+      var section = document.querySelector('.js-expanding[data-expanding="' + sectionId + '"]');
+      var isOpen = dom.hasClass(section, 'is-active');
+      var shouldClose = dom.hasClass(section, 'is-active');
 
       dom.toggleActive(sections, section);
 
       if (isOpen && shouldClose) {
-        dom.removeClass(section, "is-active");
+        dom.removeClass(section, 'is-active');
       } else {
-        dom.addClass(section, "is-active");
+        dom.addClass(section, 'is-active');
       }
     });
   });
@@ -4764,113 +4863,5 @@ function expandingNav(domNode) {
 
 module.exports = expandingNav;
 
-},{"dom":1}],34:[function(require,module,exports){
-// ┌────────────┐
-// │ Cart Stuff │
-// └────────────┘
-
-var cart = function (options) {
-  var name = options.name
-  var emptyModel = {
-    items: [],
-    itemCount: 0,
-    subtotal: 0,
-    shipping: 0,
-    total: 0,
-  }
-
-  var set = function (model) {
-    window.localStorage.setItem(name, JSON.stringify(model))
-  }
-
-  var get = function () {
-    var model = JSON.parse(window.localStorage.getItem(name))
-    model.itemCount = 0
-    model.subtotal = 0
-    model.items.forEach(function (item){
-      model.subtotal += (item.price * item.num)
-      model.itemCount += item.num
-    })
-    model.total = model.subtotal + model.shipping
-    return model
-  }
-
-  var clear = function () {
-    set(emptyModel)
-  }
-
-  var getItemIds = function () {
-    var model = get()
-    return model.items.map( function (item){
-      return item.id
-    })
-  }
-
-  var addItem = function (id, num, price) {
-    var model = get()
-    var item = {
-      id: id,
-      price: price,
-      num: num
-    }
-    if (!hasItem(id)) {
-      model.items.push(item)
-    } else {
-      var i = getItemIds().indexOf(id)
-      model.items[i].num += num
-    }
-    set(model)
-  }
-
-  var hasItem = function (id) {
-    var model = get()
-    var itemIds = getItemIds()
-    return itemIds.indexOf(id) > -1
-  }
-
-  var incrementItem = function(id, num) {
-    var model = get()
-    var i = getItemIds().indexOf(id)
-    model.items[i].num += num
-    if (model.items[i].num == 0) {
-      model.items.splice(i, 1)
-    }
-    set(model)
-  }
-
-  var setItemCount = function(id, num) {
-    var model = get()
-    var i = getItemIds().indexOf(id)
-    model.items[i].num = num
-    if (model.items[i].num == 0) {
-      model.items.splice(i, 1)
-    }
-    set(model)
-  }
-
-  var submit = function (cb) {
-    var model = get()
-    cb(model)
-  }
-
-  var current = JSON.parse(window.localStorage.getItem(name))
-  if (!current) {
-    set(emptyModel)
-  }
-
-  return {
-    set: set,
-    get: get,
-    clear: clear,
-    getItemIds: getItemIds,
-    addItem: addItem,
-    hasItem: hasItem,
-    incrementItem: incrementItem,
-    setItemCount: setItemCount,
-    submit: submit
-  }
-}
-
-module.exports = cart
-},{}]},{},[31])
+},{"dom":2}]},{},[32])
 //# sourceMappingURL=bundle.js.map

@@ -20,7 +20,7 @@
     "imagemin-newer": "^1.0.1",
     "js-yaml": "^3.3.1",
     "lodash": "^3.10.1",
-    "node-sass": "^2.0.0-beta",
+    "node-sass": "^3.4.2",
     "npm-run-all": "^1.2.6",
     "parallelshell": "^1.0.4",
     "rerun-script": "^0.6.0",

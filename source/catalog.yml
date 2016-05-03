@@ -16,7 +16,7 @@ sections:
     - 'Sandy relishes the craft of boxmaking. Her innovative designs and impeccable execution of enclosures has earned the respect of collectors, artists, photographers, printmakers and others across the country. She has adapted the basic clamshell box design in a variety of ways. Some of her boxes have included drawers and other additional compartments, special structures to accommodate wedge-shaped books, and to house and display sculptural works and jewelry. Features may include inlaid labels and magnetic closures. Boxes larger than 11" x 14" have a double-wall construction with lapped joints, creating a very strong enclosure.'
     design:
       title: 'Design'
-      description: 
+      description:
       - 'The client presents a task/project in which they know what they want to accomplish and the "look" they want. I listen, distill what they have said, research options and pertinent information. Then I present a proposal (possibly two), discuss with them, refine the chosen proposal if necessary and then provide an estimate for the realization of the project. Once the design is settled I gather necessary the materials, select subcontractors such as lettering artists and go into production.'
     publication:
       title: 'Publishing'
@@ -42,6 +42,27 @@ sections:
       title: 'Books'
       description: 'lone goose press owner Sandy Tilcock achieved recognition as a bookbinder and designer of limited­ edition books prior to her introduction to letterpress printing. Her books reflect her priority for honoring the text. All the elements—typography, design, imagery, materials and binding methods are integrated in service to the author’s words. lone goose press books are conceived as collaborations with authors, and where commissioned artwork is used, with artists. Sandy’s limited edition books have achieved international recognition for their design, creative use of materials, precise typography and attention to detail.'
 books:
+  - title: 'All of Him'
+    author: 'Matthew Dickman and Michael Dickman'
+    artist: 'Keith Achepoh'
+    description:
+    - 'The limited edition, letterpress book All of Him was a true collaboration, evolving over a period of four years. The intense, intimate poems deal with Michael and Matthew Dickman&#39;s loss of their older brother to a drug overdose. In this video, the poets read excerpts from the work, and artist Keith Achepohl and designer/printer Sandy Tilcock talk about the genesis and development of this unique publication.'
+    - 'The types used are handset Gill Sans for the poems and colophon. Computer generated Beata and Gill Sans Light were used for the display types and printed from polymer plates. The types, handset and polymer, were printed on a Vandercook 219 proofing press. Sandy Tilcock, lone goose press proprietor designed, printed and “bound” the book.'
+    - 'Papers used are Rives BFK, off-white, for the text pages and Saint-Armand’s Black Denim Canal made from clothing industry offcuts for the chemise. The cloth for the box is Duo Graphite from Bamberger Kaliko Textiles in Germany.'
+    - 'The original images are individual trace monotypes which were scanned and adjusted in Photoshop so they would be suitable for the making of polymer photogravure plates. Many images were made for each poem. Sandy Tilcock, selected the final images used and laid them out on the page for each poem. Once the layout was finalized the adjusted image file was sent to Intaglio Editions of Boulder, Colorado where the polymer plates were made by Jon Lybrook. The plates were editioned by Sandy Tilcock and Nikolas Wise in the lone goose press studio.'
+    - 'lone goose press thanks all those who guided and assisted the press in the production of the book: Keith Achepohl for his wonderful, thoughtful images; Jon Lybrook for his teaching the press how to prepare the files for the images; Russ Dodd of Portland, Oregon for providing a tutorial in printing and editioning photopolymer photogravures; and Nikolas Wise for his amazing skill at wiping plates such that there was no plate tone. And, many thanks to Michael and Matthew Dickman for entrusting lone goose press with the manuscript.'
+    - 'In memory of Darin Hull.'
+    release: '2015'
+    edition: 'All of Him was produced in an edition of 43 numbered copies with 10 additional lettered copies reserved for the participants. All copies are signed by the authors and artist.'
+    image: 'books/AOH_Website-Opener.jpg'
+    thumbnail: 'books/AOH_TN.jpg'
+    additional_images:
+    - url: 'books/AllOfHim-The-New-Green.jpg'
+    - url: 'books/Coffee_Matthew.jpg'
+    - url: 'books/Killing-Flies_Michael.jpg'
+    - url: 'books/Pants_Matthew.jpg'
+    price: 3000
+    available: true
   - title: 'Grandfather Was a Good Witch: Growing Up Cherokee'
     author: 'Rennard Strickland and Jack Gregory'
     artist: 'Margot Voorhies Thompson'
