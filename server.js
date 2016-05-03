@@ -23,14 +23,6 @@ server.route({
 });
 
 server.route({
-  method: 'GET',
-  path:'/',
-  handler: function(request, reply) {
-    reply().redirect('/all-of-him');
-  }
-});
-
-server.route({
   method: 'POST',
   path: '/charge',
   handler: function (request, reply) {
