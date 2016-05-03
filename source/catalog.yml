@@ -71,7 +71,7 @@ books:
     dimensions: 'Individual tri-folds 13.375 x 8.75 inches, closed, opening out to 13.375 x 26 inches. Clamshell box: 14.375 x 9.5 x 1.5 inches closed.'
     description:
     - 'Dealer Discount Available. Contact lone goose press for further information or to place an order.'
-    - 'The limited edition, letterpress book <em>All of Him</em> was a true collaboration, evolving over a period of four years. The intense, intimate poems deal with Michael and Matthew Dickman&#39;s loss of their older brother to a drug overdose. In this video, the poets read excerpts from the work, and artist Keith Achepohl and designer/printer Sandy Tilcock talk about the genesis and development of this unique publication.'
+    - 'The limited edition, letterpress book <em>All of Him</em> was a true collaboration, evolving over a period of four years. The intense, intimate poems deal with Michael and Matthew Dickman’s loss of their older brother to a drug overdose. In this video, the poets read excerpts from the work, and artist Keith Achepohl and designer/printer Sandy Tilcock talk about the genesis and development of this unique publication.'
     - 'The types used are handset Gill Sans for the poems and colophon. Computer generated Beata and Gill Sans Light were used for the display types and printed from polymer plates. The types, handset and polymer, were printed on a Vandercook 219 proofing press. Sandy Tilcock, lone goose press proprietor designed, printed and “bound” the book.'
     - 'Papers used are Rives BFK, off-white, for the text pages and Saint-Armand’s Black Denim Canal made from clothing industry offcuts for the chemise. The cloth for the box is Duo Graphite from Bamberger Kaliko Textiles in Germany.'
     - 'The original images are individual trace monotypes which were scanned and adjusted in Photoshop so they would be suitable for the making of polymer photogravure plates. Many images were made for each poem. Sandy Tilcock, selected the final images used and laid them out on the page for each poem. Once the layout was finalized the adjusted image file was sent to Intaglio Editions of Boulder, Colorado where the polymer plates were made by Jon Lybrook. The plates were editioned by Sandy Tilcock and Nikolas Wise in the lone goose press studio.'
@@ -200,6 +200,8 @@ broadsides:
     poem: true
 
   - title: 'We Belong to a Mystery'
+    thumbnail: 'broadsides/Prayer-Flag_Daniel_TN.jpg'
+    image: 'poetic-prayer-flags/Prayer_Flag_Daniel.jpg'
     id: '/publications/broadsides/we-belong-to-a-mystery'
     author: 'John Daniel'
     author_site: 'http://www.johndaniel-author.net'
@@ -214,6 +216,9 @@ broadsides:
     - 'Computer-set Albertus MT Pro type printed on a Vandercook 219 proofing press using polymer plates. The paper is handmade from Thailand with a lotus leaf watermark. The background cloth is custom-batiked with an enso image. The cloth is hemmed to form a loop at the top edge to accommodate a string to be used for hanging.'
 
   - title: 'All Rights Reserved'
+    id: '/publications/broadsides/all-rights-reserved'
+    thumbnail: 'broadsides/Prayer-Flag_Tilcock_TN.jpg'
+    image: 'poetic-prayer-flags/Prayer_Flag_Tilcock.jpg'
     author: 'W. Patrick Tilcock'
     release: 'Winter 2010'
     dimensions: '8 by 8 inches'
@@ -323,7 +328,7 @@ broadsides:
     author: 'Lucie Jane Thu Carmin'
     artist: 'Marilyn Reaves'
     description:
-    - 'Printed on Somerset Book paper. The type is handset Centaur, and along with a polymer plate of Marilyn Reaves’ brush lettering, was printed using a Vandercook 219 proofing press. This is the first in the <a href="/poems#cambium-footnote">Cambium*</a> Broadside Series which honors the work of young writers and acknowledges the fresh insights of growing minds.'
+    - 'Printed on Somerset Book paper. The type is handset Centaur, and along with a polymer plate of Marilyn Reaves’brush lettering, was printed using a Vandercook 219 proofing press. This is the first in the <a href="/poems#cambium-footnote">Cambium*</a> Broadside Series which honors the work of young writers and acknowledges the fresh insights of growing minds.'
     release: 'Summer 2008'
     edition: 71
     price: 18
@@ -470,6 +475,10 @@ ephemera:
     release: 'Ongoing'
     thumbnail: 'ephemera/weathergrams/Weathergram_2010_TN.png'
     image: 'ephemera/weathergrams/Weathergram_2014.jpg'
+    description:
+    - 'Calligrapher and teacher Lloyd Reynolds developed the practice of “Weathergrams” in the early 1970s. It relates to a Japanese tradition of short informal poems exchanged among friends. A weathergram is a poem of ten words or less written on a strip of paper, then hung outdoors on a branch or bough to weather over a season, between solstice and equinox, or equinox to solstice. The poems are simple, spontaneous, and often refer to aspects of nature or the season.'
+    - 'lone goose press began the tradition of the yearly weathergram in 2003.'
+    two_up_additionals: true
     additional_images:
     - url: 'ephemera/weathergrams/Weathergram_2013.jpg'
     - url: 'ephemera/weathergrams/Weathergram_2011.jpg'
@@ -482,7 +491,7 @@ design:
     release: '2013'
     image: 'design/obf/Rilling_Box_Cover.jpg'
     description:
-    - 'The director of the Oregon Bach Festival asked me to create a special farewell gift for founding Artistic Director Helmuth Rilling on the occasion of his retirement after 44 years. The Festival had commissioned a choral piece by Scottish composer James MacMillan titled _Alleluia_ dedicated to Mr. Rilling. The request was to create an elegant binding for the score that would allow Mr. Rilling to conduct from it if he so chose. The bound score was to be presented in a box that would also accommodate a CD of the inaugural performance.'
+    - 'The director of the Oregon Bach Festival asked me to create a special farewell gift for founding Artistic Director Helmuth Rilling on the occasion of his retirement after 44 years. The Festival had commissioned a choral piece by Scottish composer James MacMillan titled "Alleluia" dedicated to Mr. Rilling. The request was to create an elegant binding for the score that would allow Mr. Rilling to conduct from it if he so chose. The bound score was to be presented in a box that would also accommodate a CD of the inaugural performance.'
     - 'To make the book, I created a digital rendering of the score on paper resembling the manuscript paper used by composers, preserving its handwritten impression. I commissioned calligrapher Marilyn Reaves to create gesture drawings based on conducting patterns, which were incorporated into the backing sheets of the score pages. The conducting patterns reflect the 4/4 meter of the work, also referencing Helmuth Rilling’s 44-year tenure with the Festival. The completed accordion-style binding is 17 inches high, and the pages, if fully unfolded, extend 20 feet.'
     - 'The box is a traditional clamshell box in which the upper tray encloses the compact disc in a concentric ring structure resembling an amphitheater. On the exterior, I inlaid three panels of fused glass with a gingko leaf motif, by artist Susan Price. Susan, a longtime friend and supporter of the Bach Festival, wished to honor Helmuth Rilling’s work with an image symbolizing longevity, resilience, hope and peace.'
     additional_images:
@@ -525,6 +534,12 @@ design:
     - url: 'design/aaa/Lawrence_Award_2.jpg'
     - url: 'design/aaa/Lawrence_Award_3.jpg'
     thumbnail: 'design/aaa/AAA_Certificate_and_Folder_TN.jpg'
+    description:
+    - 'The University of Oregon School of Architecture and Allied Arts commissioned me to design and print a "certificate" that the School would award to a distinguished alumnus each year at graduation. A lettering artist would add the recipient’s name and accomplishments each year. Design elements and a quote by Professor Lawrence were to be determined by me, with the approval of University staff. Later in the process they requested that a presentation folder be made each year using colors customized for each recipient.'
+    - 'My first task was to learn more about Ellis Fuller Lawrence (1879-1946). Lawrence was an American architect who worked primarily in the state of Oregon. In 1914, he helped found and was the first dean of the University of Oregon’s School of Architecture and Allied Arts, a position he held until his death. Lawrence concurrently served as campus architect for the University of Oregon and designed many campus buildings, including Knight Library and the Jordan Schnitzer Museum of Art. '
+    - 'Looking for a design element, I toured Lawrence’s buildings looking for distinguishing visual features. I decided to use the design of a concrete frieze that surrounds the entry door of the Museum of Art. I obtained high-resolution photos of the panel, and from these commissioned Judith Sparks to produce and ink drawing of the design which could be reproduced using relief plates. The client was so pleased with this selection that they chose to use this as the branding element of the award and all that went with it. This design was also used for a bronze medal that was designed and cast for the recipient.'
+    - 'In search of a text I could use for the certificate, I spent several afternoons in the reading room of the University’s Special Collections and Archives reading through the personal writings and journals of Lawrence. I gained a deep appreciation for the man, his work and his belief in education. The quote used was taken from one of his personal journals.'
+    - 'To integrate these elements, I chose a wide format and enhanced the "landscape" quality of this shape by hand tearing the top edge of the certificate to evoke a mountain range, suggesting the Oregon environment. I created a template, registered it to the rectangular print, and traced the mountain edge using a water charged brush to soften the fibers of the paper, allowing the top section to separate easily.'
 
   - title: 'Presentation Box for Custom Necklace'
     author: 'Tom McCarthy Jewelry'
@@ -532,5 +547,8 @@ design:
     release: '1996'
     description:
     - 'Florida Jeweler Tom McCarthy received a commission for a special necklace in white and yellow gold. The necklace he created was reversible and incorporated a pendant that could be be removed and worn independently on a chain. Tom asked me to create a one-of-a-kind box to house and present the necklace. Since it was not feasible for Tom to ship the necklace across the continent, I was to work from a to-scale drawing.'
+    - 'I designed a modified clamshell box which would allow storage of the pendant chain when not in use. The necklace is displayed on a riser with shapes cut to accommodate the necklace components. Within that structure is a lidded compartment for the chain. These components are flush, so that when the box is closed, the necklace is held securely in place. The top panel is held closed using a bone clasp which slips into a loop.'
+    - 'Tom’s client was delighted with the necklace and the box, so much so she felt it needed to be shared with more than her circle of friends, and so decided to donate it to the Mint Museum in Charlotte, NC where it is a part of the Craft + Design Collection.'
+
     image: 'design/necklace-box/Necklace_Box.jpg'
     thumbnail: 'design/necklace-box/Necklace_Box_TN.jpg'

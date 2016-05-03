@@ -60,11 +60,9 @@
 
       {% if project.available %}
         <p>$ {{ project.price }}</p>
-
         <div class="leader-1 trailer-1">
           <a href="#" class="btn js-add-to-cart js-modal-toggle" data-modal="cart" data-title="{{project.title}}" data-price={{project.price}}>Add to Cart</a>
         </div>
-
       {% endif %}
 
       {% if project.description.length < 10 %}
