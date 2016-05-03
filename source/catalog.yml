@@ -63,6 +63,26 @@ books:
     - url: 'books/Pants_Matthew.jpg'
     price: 3000
     available: true
+
+  - title: 'Invitation'
+    author: 'Patrick Tilcock'
+    artist: 'Photographs by Patrick Tilcock'
+    release: 'Fall, 2014'
+    dimensions: '3 x 6 inches closed, 3 x 84 inches extended'
+    edition: '29'
+    edition_notes: 'Numbered and signed by the poet/photographer'
+    description:
+    - '“Invitation” by Patrick Tilcock, © 2013 was designed, printed and bound by Sandy Tilcock. Computer-set Optima types were printed from polymer plates on Zerkall Earth Ingres paper using lone goose press’s Vandercook 219 proofing press. The backing paper used to form the concertina is St. Armand Canal, Blue Denim. The imagery for the poem and backing paper was derived from photos taken by Patrick on his daily bicycle commute to work, and were printed with an Epson 4880 inkjet printer.'
+    - 'Patrick and I have lived within a mile of the Willamette River in Eugene, Oregon for over forty years. Constant but ever-changing, the river is a daily presence in our lives. Although we are urban dwellers, we cherish this channel of wildness in our community.'
+    thumbnail: 'books/Invitation-TN.jpg'
+    image: 'books/Invitation-A.jpg'
+    additional_images:
+    - url: 'books/Invitation-B.jpg'
+    - url: 'books/Invitation-C.jpg'
+    - url: 'books/Invitation-D.jpg'
+    price: 97
+    available: true
+
   - title: 'Grandfather Was a Good Witch: Growing Up Cherokee'
     author: 'Rennard Strickland and Jack Gregory'
     artist: 'Margot Voorhies Thompson'
