@@ -1,6 +1,6 @@
 {% extends 'layout.html' %}
 {% block content %}
-
+{% autoescape false %}
 <div class="grid-container leader-3">
   <div class="column-24">
     {% block project %}{% endblock %}
@@ -87,4 +87,5 @@
     </div>
   </div>
 </div>
+{% endautoescape %}
 {% endblock %}
