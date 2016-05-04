@@ -21,9 +21,15 @@ data:
       </div>
       <div class="column-4">
         <h5 class="body-face phone-leader-0">
-          <a href="/publications/ephemera/{{item.title|lower()|replace(' ','-','g')|replace(',', '','g')|replace(';', '','g')}}">
-            {{ item.title }}
-          </a>
+          {% if item.title == 'Weathergrams' %}
+            <a href="/publications/weathergrams">
+              {{ item.title }}
+            </a>
+          {% else %}
+            <a href="/publications/ephemera/{{item.title|lower()|replace(' ','-','g')|replace(',', '','g')|replace(';', '','g')}}">
+              {{ item.title }}
+            </a>
+          {% endif %}
         </h5>
 
 
