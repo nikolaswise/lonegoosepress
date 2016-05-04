@@ -10,7 +10,10 @@
 
       {% if project.additional_images %}
         {% for image in project.additional_images %}
-          <img class="trailer-1" src="/assets/img/{{image.url}}" alt="{{project.title}}">
+          <img src="/assets/img/{{image.url}}" alt="{{project.title}}">
+          {% if image.caption %}
+            <p class="font-size--1 leader-0">{{image.caption}}</p>
+          {% endif %}
         {% endfor %}
       {% endif %}
     </div>
@@ -81,7 +84,10 @@
       <img class="tablet-show trailer-1" src="/assets/img/{{project.image}}" alt="{{project.title}}">
       {% if project.additional_images %}
         {% for image in project.additional_images %}
-          <img class="trailer-1 tablet-show" src="/assets/img/{{image.url}}" alt="{{project.title}}">
+          <img class="tablet-show" src="/assets/img/{{image.url}}" alt="{{project.title}}">
+          {% if image.caption %}
+            <p class="font-size--1 tablet-show">{{image.caption}}</p>
+          {% endif %}
         {% endfor %}
       {% endif %}
     </div>
