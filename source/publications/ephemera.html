@@ -15,9 +15,15 @@ data:
 
     <section class="column-10 pre-2 trailer-1 phone-trailer-3">
       <div class="column-6">
-        <a href="/publications/ephemera/{{item.title|lower()|replace(' ','-','g')|replace(',', '','g')|replace(';', '','g')}}">
-          <img src="/assets/img/{{item.thumbnail}}" alt="{{ item.title }}">
-        </a>
+        {% if item.title == 'Weathergrams' %}
+          <a href="/publications/weathergrams">
+            <img src="/assets/img/{{item.thumbnail}}" alt="{{ item.title }}">
+          </a>
+        {% else %}
+          <a href="/publications/ephemera/{{item.title|lower()|replace(' ','-','g')|replace(',', '','g')|replace(';', '','g')}}">
+            <img src="/assets/img/{{item.thumbnail}}" alt="{{ item.title }}">
+          </a>
+        {% endif %}
       </div>
       <div class="column-4">
         <h5 class="body-face phone-leader-0">

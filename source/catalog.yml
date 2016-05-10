@@ -36,7 +36,7 @@ sections:
     broadsides:
       title: 'Broadsides'
       description:
-      - 'From the earliest days of movable type, printers have worked with the limits presented by the size and format of the press, producing a single sheet of printed paper at a time. While this process was quickly adapted for the printing of books, the single­sheet format was often used for official announcements and proclamations. As the technology became more widely available, it also became a vehicle for political agitation. Dissident printers in back­alley shops sometimes cranked out calls for insurrection or reproduced scaffold speeches by condemned prisoners. The term broadside continues to carry the connotation of challenging the prevailing structures of power and ideology.'
+      - 'From the earliest days of movable type, printers have worked with the limits presented by the size and format of the press, producing a single sheet of printed paper at a time. While this process was quickly adapted for the printing of books, the single­sheet format was often used for official announcements and proclamations. As the technology became more widely available, it also became a vehicle for political agitation. Dissident printers in back­ alley shops sometimes cranked out calls for insurrection or reproduced scaffold speeches by condemned prisoners. The term broadside continues to carry the connotation of challenging the prevailing structures of power and ideology.'
       - 'While lone goose press’s approach to broadsides may be more reflective than inflammatory, we tend to seek poems or short prose essays that challenge us to perceive a deeper understanding of citizenship in this world.'
     books:
       title: 'Books'
@@ -78,7 +78,7 @@ books:
     - 'lone goose press thanks all those who guided and assisted the press in the production of the book: Keith Achepohl for his wonderful, thoughtful images; Jon Lybrook for his teaching the press how to prepare the files for the images; Russ Dodd of Portland, Oregon for providing a tutorial in printing and editioning photopolymer photogravures; and Nikolas Wise for his amazing skill at wiping plates such that there was no plate tone. And, many thanks to Michael and Matthew Dickman for entrusting lone goose press with the manuscript.'
     - 'In memory of Darin Hull.'
     release: '2015'
-    edition: '<em>All of Him</em> was produced in an edition of 43 numbered copies with 10 additional lettered copies reserved for the participants. All copies are signed by the authors and artist.'
+    edition: '43 numbered copies with 10 additional lettered copies reserved for the participants. All copies are signed by the authors and artist.'
     image: 'books/AOH_Website-Opener.jpg'
     thumbnail: 'books/AOH_TN.jpg'
     additional_images:
@@ -192,7 +192,8 @@ broadsides:
     id: '/publications/broadsides/eclipsed'
     author: 'Dylan Troyer'
     description:
-    - 'Printed on Somerset Velvet Black paper. The type is Stone Sans, printed from polymer plates on a Vandercook 219 proofing press. This is the third in the <a href="/poems#cambium-footnote">Cambium*</a> Broadside Series which honors the work of young writers and acknowledges the fresh insights of growing minds.'
+    - 'Printed on Somerset Velvet Black paper. The type is Stone Sans, printed from polymer plates on a Vandercook 219 proofing press. This is the third in the Cambium* Broadside Series which honors the work of young writers and acknowledges the fresh insights of growing minds.'
+    - '*Cambium is a layer of formative cells between the bark and the hardwood. Each year the cambium produces additional wood and bark cells. This layer holds the potential for the future growth of the tree.'
     release: 'Fall 2010'
     edition: 73
     price: 25
@@ -215,6 +216,7 @@ broadsides:
     edition_notes: 'Numbered and signed by the author'
     price: 75
     poem: true
+    available: true
     description:
     - 'The design is inspired by the Tibetan tradition of prayer flags with the text chosen from a desire to cultivate visions for the future that counterbalance the despair and cynicism that often seem to prevail in our society.'
     - 'Computer-set Albertus MT Pro type printed on a Vandercook 219 proofing press using polymer plates. The paper is handmade from Thailand with a lotus leaf watermark. The background cloth is custom-batiked with an enso image. The cloth is hemmed to form a loop at the top edge to accommodate a string to be used for hanging.'
@@ -230,6 +232,7 @@ broadsides:
     edition_notes: 'Numbered and signed by the poet'
     price: 75
     poem: true
+    available: true
     description:
     - 'The design is inspired by the Tibetan tradition of prayer flags with the text chosen from a desire to cultivate visions for the future that counterbalance the despair and cynicism that often seem to prevail in our society.'
     - 'Computer-set Optima types, Beata for the display type and printed on a Vandercook 219 proofing press using polymer plates. The paper is Yatsuo from Japan. The background cloth is custom-batiked with an enso image. The cloth is hemmed to form a loop at the top edge to accommodate a string to be used for hanging.'
@@ -254,7 +257,8 @@ broadsides:
     id: '/publications/broadsides/the-tallest-brother'
     author: 'Zoe Duncan-Doroff'
     description:
-    - 'With artwork derived from a photograph of shattered glass. The type is handset Gill Sans with display type Donatello which is printed from a polymer plate. The types and image were printed using a Vandercook 219 proofing press. This is the third in the <a href="/poems#cambium-footnote">Cambium*</a> Broadside Series which honors the work of young writers and acknowledges the fresh insights of growing minds.'
+    - 'With artwork derived from a photograph of shattered glass. The type is handset Gill Sans with display type Donatello which is printed from a polymer plate. The types and image were printed using a Vandercook 219 proofing press. This is the third in the Cambium* Broadside Series which honors the work of young writers and acknowledges the fresh insights of growing minds.'
+    - '*Cambium is a layer of formative cells between the bark and the hardwood. Each year the cambium produces additional wood and bark cells. This layer holds the potential for the future growth of the tree.'
     release: 'Fall 2009'
     edition: 97
     price: 22
@@ -332,7 +336,8 @@ broadsides:
     author: 'Lucie Jane Thu Carmin'
     artist: 'Marilyn Reaves'
     description:
-    - 'Printed on Somerset Book paper. The type is handset Centaur, and along with a polymer plate of Marilyn Reaves’brush lettering, was printed using a Vandercook 219 proofing press. This is the first in the <a href="/poems#cambium-footnote">Cambium*</a> Broadside Series which honors the work of young writers and acknowledges the fresh insights of growing minds.'
+    - 'Printed on Somerset Book paper. The type is handset Centaur, and along with a polymer plate of Marilyn Reaves’brush lettering, was printed using a Vandercook 219 proofing press. This is the first in the Cambium* Broadside Series which honors the work of young writers and acknowledges the fresh insights of growing minds.'
+    - '*Cambium is a layer of formative cells between the bark and the hardwood. Each year the cambium produces additional wood and bark cells. This layer holds the potential for the future growth of the tree.'
     release: 'Summer 2008'
     edition: 71
     price: 18
