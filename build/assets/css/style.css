@@ -1540,19 +1540,19 @@ img {
 .gutter-right-4 {
   padding-right: 4rem; }
 
-.header-light, .list-numbered > li:before, .header-light-italic, .header-face, h1,
+.header-light, .header-light-italic, .header-face, h1,
 h2,
 h3,
 h4,
 h5,
-h6, .header-italic, .header-bold, .header-bold-italic {
+h6, .header-italic, .header-bold, .header-bold-italic, .list-numbered > li:before {
   letter-spacing: 0em; }
 
-.header-light, .list-numbered > li:before {
+.header-light {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
   font-weight: 300;
   font-style: normal; }
-  .header-light b, .list-numbered > li:before b, .header-light strong, .list-numbered > li:before strong {
+  .header-light b, .header-light strong {
     font-weight: 400; }
 
 .header-light-italic {
@@ -1819,6 +1819,9 @@ pre {
     position: relative;
     margin-bottom: 0.75em; }
     .list-numbered > li:before {
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+      font-weight: 300;
+      font-style: normal;
       content: counter(li);
       counter-increment: li;
       position: absolute;
@@ -1831,6 +1834,8 @@ pre {
       line-height: 1.5rem;
       line-height: 2.25rem;
       text-align: right; }
+      .list-numbered > li:before b, .list-numbered > li:before strong {
+        font-weight: 400; }
     .list-numbered > li:after {
       content: ".";
       display: block;

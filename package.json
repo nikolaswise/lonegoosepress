@@ -1,6 +1,6 @@
 {
   "name": "lone-goose-press",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "description": "",
   "main": "server.js",
   "repository": {
@@ -30,7 +30,7 @@
     "static-site": "^1.0.2",
     "swig": "^1.4.2",
     "tinystore": "git+ssh://git@github.com:ngoldman/tinystore",
-    "typecabinet": "nikolaswise/typecabinet",
+    "typecabinet": "nikolaswise/typecabinet#1.0.1",
     "urlify": "^0.3.6",
     "viewport-grid": "git://github.com/esripdx/viewport-grid.git"
   },
