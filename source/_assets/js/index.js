@@ -174,7 +174,7 @@ var purchase
 var payBtn = document.querySelector('.js-stripe-pay')
 if (payBtn) {
   var handler = StripeCheckout.configure({
-    key: 'pk_test_6chGmDIc3ftpiOH7C5bQl6pW',
+    key: 'pk_live_wLZlZRJUMFZTeyK5tab54l8X',
     locale: 'auto',
     token: function(token, addresses) {
       // Use the token to create the charge with a server-side script.
