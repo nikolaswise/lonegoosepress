@@ -19,8 +19,10 @@ sections:
       description:
       - 'The client presents a task/project in which they know what they want to accomplish and the "look" they want. I listen, distill what they have said, research options and pertinent information. Then I present a proposal (possibly two), discuss with them, refine the chosen proposal if necessary and then provide an estimate for the realization of the project. Once the design is settled I gather necessary the materials, select subcontractors such as lettering artists and go into production.'
     publication:
-      title: 'Publishing'
-      description: 'Recognizing the influx of self-publishing I am prepared to offer my services to those who wish to enter into a self-publishing project. These services may include but are not limited to consultation, design of the work, selection of the best production approach, and other services as needed.'
+      title: 'Publishing Support'
+      description:
+      - 'lone goose press provides quality self-publishing support drawing on decades of experience as a publisher. A wide range of services are available and pricing is determined on a project by project basis. References are available upon request.'
+      - 'The process begins with an extensive interview with the client regarding goals, expectations and the project’s support needs. Services can include: production facility selection, project management, cover design, text layout, proofreading, ISBN and Library of Congress registration, as well as professional recommendations regarding marketing and distribution options.'
     realization:
       title: 'Realization'
       description: 'The client presents the project, designed by them. I then determine the best approach to accomplish their project, present them a budget and proceed to perform the tasks involved if approved. This may include letterpress printing, digital printing, binding and other processes as necessary. I may arrange to subcontract for work that is not done in the studio.'
@@ -78,6 +80,7 @@ books:
     - 'Papers used are Rives BFK, off-white, for the text pages and Saint-Armand’s Black Denim Canal made from clothing industry offcuts for the chemise. The cloth for the box is Duo Graphite from Bamberger Kaliko Textiles in Germany.'
     - 'The original images are individual trace monotypes which were scanned and adjusted in Photoshop so they would be suitable for the making of polymer photogravure plates. Many images were made for each poem. Sandy Tilcock, selected the final images used and laid them out on the page for each poem. Once the layout was finalized the adjusted image file was sent to Intaglio Editions of Boulder, Colorado where the polymer plates were made by Jon Lybrook. The plates were editioned by Sandy Tilcock and Nikolas Wise in the lone goose press studio.'
     - 'lone goose press thanks all those who guided and assisted the press in the production of the book: Keith Achepohl for his wonderful, thoughtful images; Jon Lybrook for his teaching the press how to prepare the files for the images; Russ Dodd of Portland, Oregon for providing a tutorial in printing and editioning photopolymer photogravures; and Nikolas Wise for his amazing skill at wiping plates such that there was no plate tone. And, many thanks to Michael and Matthew Dickman for entrusting lone goose press with the manuscript.'
+    - 'View the video <a href="https://vimeo.com/137712703">All of Him 720</a> to learn more about the 4+ year journey in the making of the book.'
     - 'In memory of Darin Hull.'
     release: '2015'
     edition: '43 numbered copies with 10 additional lettered copies reserved for the participants. All copies are signed by the authors and artist.'
@@ -510,8 +513,11 @@ design:
     - 'I was asked to design a box that houses 5 custom prints which are strings with knots embedded between 2 sheets of handmade abaca paper by the artist, the strings going beyond the edges of the paper at random points. I was also to print a poem by Carl Adamshick on a sheet of the abaca paper for the colophon page.'
     - 'I started with a standard clamshell box design with narrow walls since only 6 sheets of paper were to be housed. The lower tray was constructed such that the strings are accommodated within the tray. The problem to solve was how to stabilize the sheets of paper. The solution was to fabricate 4 corners which framed the edges of paper but allow the strings to lie outside the edges of the paper. The depth and width of the lower tray was done such that a panel on the spine of the box (spine baffle) would fit snugly inside the open edge to insure no dust could find its way inside, and a panel inside the upper tray would fit snugly inside the tray to gently hold the sheets in place so there is no movement of the artwork.'
     - 'A window is cut into the upper board of the case which allows the placement of a small "String Theory" label which is mounted on a pedestal yet is below the surface of the board so there is no wear.'
-    image: 'design/stronach/Hiebert_Stronach.jpg'
-    thumbnail: 'design/stronach/Hiebert_Stronach_TN.jpg'
+    image: 'design/stronach/String_Theory_1.jpg'
+    thumbnail: 'design/stronach/String_Theory_TN.jpg'
+    additional_images:
+    - url: 'design/stronach/String_Theory 2.jpg'
+    - url: 'design/stronach/String_Theory_3.jpg'
     author_site: 'helenhiebertstudio.com'
 
   - title: 'Jordan Schnitzer Museum of Art'

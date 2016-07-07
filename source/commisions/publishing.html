@@ -1,11 +1,14 @@
 ---
 title: publishing
+data:
+  catalog: catalog.yml
 ---
 
 <div class="grid-container leader-3">
   <main class="column-12 pre-6 post-6 trailer-2">
-    <h2 class="text-center trailer-2">Publishing</h2>
-
-    <p>Recognizing the influx of self-publishing I am prepared to offer my services to those who wish to enter into a self-publishing project. These services may include but are not limited to consultation, design of the work, selection of the best production approach, and other services as needed.</p>
+    <h2 class="text-center trailer-2">{{data.catalog.sections.commisions.publication.title}}</h2>
+    {% for p in data.catalog.sections.commisions.publication.description %}
+      <p>{{p}}</p>
+    {% endfor %}
   </main>
 </div>

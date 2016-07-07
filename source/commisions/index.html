@@ -74,7 +74,9 @@ data:
       <p class="font-size--2">Photograph by Petar Iliav</p>
     </div>
     <div class="column-11 tablet-column-10 tablet-pre-1 leader-1">
-      <p>{{data.catalog.sections.commisions.publication.description}}</p>
+      {% for p in data.catalog.sections.commisions.publication.description %}
+        <p>{{p}}</p>
+      {% endfor %}
     </div>
     <div class="column-24 trailer-2">
       <h6 class="text-center body-face leader-half">
