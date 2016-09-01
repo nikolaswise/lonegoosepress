@@ -81,11 +81,27 @@ module.exports = function (site, cb) {
     })
   }
 
+  function buildSupport (project) {
+    site.push({
+      title: project.title,
+      template: '_layouts/project.html',
+      block: 'project',
+      content: '',
+      file: '/Users/nwiselocal/Personal/lonegoosepress/source/' + urlify(project.title),
+      dest: '/Users/nwiselocal/Personal/lonegoosepress/build/commisions/publishing/' + urlify(project.title) + '/index.html',
+      url: '/' + urlify(project.title) + '/',
+      root: '../..',
+      isMarkdown: false,
+      project: project,
+      data: {project: project}
+    })
+  }
 
   catalog.books.map(buildBook)
   catalog.broadsides.map(buildBroadside)
   catalog.ephemera.map(buildEphemera)
   catalog.design.map(buildDesign)
+  catalog.publishing.map(buildSupport)
 
   cb(null, site)
 }
