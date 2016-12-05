@@ -25,7 +25,8 @@ sections:
       - 'The process begins with an extensive interview with the client regarding goals, expectations and the project’s support needs. Services can include: production facility selection, project management, cover design, text layout, proofreading, ISBN and Library of Congress registration, as well as professional recommendations regarding marketing and distribution options.'
     realization:
       title: 'Realization'
-      description: 'The client presents the project, designed by them. I then determine the best approach to accomplish their project, present them a budget and proceed to perform the tasks involved if approved. This may include letterpress printing, digital printing, binding and other processes as necessary. I may arrange to subcontract for work that is not done in the studio.'
+      description:
+      - 'The client presents the project, designed by them. I then determine the best approach to accomplish their project, present them a budget and proceed to perform the tasks involved if approved. This may include letterpress printing, digital printing, binding and other processes as necessary. I may arrange to subcontract for work that is not done in the studio.'
   publications:
     title: 'Publications'
     description: 'The core of the press’s work is rooted in a passion for traditional forms and methods of setting words on paper. It is about creating beautiful, valued artifacts, but always in service of the text. Any imagery is carefully selected and incorporated to honor the author’s words. The goal is to produce a worthy vessel for writings with urgency and relevance for our time. For the most part the texts are contemporary; the techniques are consistent with those common prior to the industrial expansion of the publishing industry.'
@@ -584,3 +585,29 @@ publishing:
     additional_images:
     - url: 'publishing/lodewick/lodewick-title-page-spread.jpg'
     - url: 'publishing/lodewick/lodewick-page-sample.jpg'
+
+realization:
+  - title: 'Tuolumne Meadows Poetry Festival Broadsides'
+    id: '/commisions/realization/toulumne-meadows-poetry-festival-broadsides'
+    author: 'Jim Cokas'
+    description:
+    - 'Jim Cokas has been designing and commissioning the printing of poetry broadsides for the <a href="https://www.nps.gov/yose/planyourvisit/upload/parsonspoetry.pdf">Tuolumne Meadows Poetry Festival in Yosemite National Park</a> since 2003. Jim and Sandy met in 2011 at the CODEX Book Fair in Berkeley, CA. The lone goose press broadside series resonated with Jim at the time he was looking for a new letterpress printer for his broadsides. After contacting Sandy in the spring of 2012 they agreed to collaborate on the 2012 poetry broadsides which included 4 broadsides and have been working together each year since. Typically there are 3 broadsides a year. lone goose press provides the option of digital as well as letterpress printing, allowing a wider range of imagery. Jim and Sandy discuss paper options and select a high quality printmaking paper that is appropriate for the broadside under consideration.'
+    - 'The broadsides are printed in a limited edition and signed by the poet. They are all 10 x 14 inches and may have a vertical or horizontal format. The series is truly a collector’s edition produced to commemorate the Tuolumne Meadows Poetry Festival. All profits from the sale of the prints are donated to support this ongoing event.'
+    - 'One may purchase the broadsides on <a href="https:www.etsy.com/shop/jcokas">Jim’s Etsy site.</a>'
+    - 'Since starting this collaboration Jim and Sandy have combined their talents producing broadsides commissioned by poets and other entities.'
+    - '<h3>Broadsides shown here are:</h3>'
+    - '<h6><b>Untitled poem</b> by Gary Young</h6>'
+    - 'The original art/illustration was created using a sumi brush for the legs and feet and some torn paper which were scanned and combined with some renderings of bird tracks. The text is printed in a dark blue with the artwork being printed in an opaque white. The paper is a beautiful lightly textured sheet, mouldmade in Germany by Hahnemühle (Ingres).'
+    - '<h6><b>"Tablet"</b> by Chris Dombrowski</h6>'
+    - 'Jim was particularly struck by Dombrowski’s imagery of water and the "blue sky no one built", which find a symbolic reference in the arching blue brush stroke. The "emergent mayfly shaking his wings dry" is rendered graphically with a hint of vibration in the rendering. A metallic silver ink dusted with pearlescent dry pigment adds a subtle shimmer.'
+    - '<h6><b>"River"</b> by Jay Leeming</h6>'
+    - 'This is a hybrid print that combines letterpress printing with archival digital printing. The vibrant willow leaf and the blue brush strokes were printed digitally. The remaining graphics and typography were printed letterpress. The paper, Canal, was made by Saint Armand, a small mill in Montréal, Québec.'
+    image: 'realization/toulumne/TM-Broadsides_2015.jpg'
+    thumbnail: 'realization/toulumne/TM-Broadsides_2015.jpg'
+    additional_images:
+    - url: 'realization/toulumne/Young-Untitled_2012.jpg'
+      caption: '<b>Untitled poem</b> by Gary Young'
+    - url: 'realization/toulumne/Dombrowski-Tablet.jpg'
+      caption: '<b>"Tablet"</b> by Chris Dombrowski'
+    - url: 'realization/toulumne/Leeming-River.jpg'
+      caption: '<b>"River"</b> by Jay Leeming'
