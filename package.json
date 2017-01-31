@@ -16,6 +16,7 @@
     "dom": "git://github.com/nikolaswise/js-dom-utils.git",
     "fsmonitor": "^0.2.4",
     "glob": "~4.4.1",
+    "http-server": "^0.9.0",
     "imagemin": "^3.2.0",
     "imagemin-newer": "^1.0.1",
     "js-yaml": "^3.3.1",
@@ -57,9 +58,9 @@
     "img": "source/"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "npm run dev",
     "predev": "npm-run-all html sass img js",
-    "dev": "parallelshell 'node server.js' 'rerun-script'",
+    "dev": "parallelshell 'http-server build/' 'rerun-script'",
     "fmt": "standard --format",
     "img": "imagemin-newer source/_assets/ build/assets",
     "js": "simplifyify source/_assets/js/index.js --outfile build/assets/js/bundle.js --debug",

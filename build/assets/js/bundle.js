@@ -4632,6 +4632,7 @@ var swig = require('swig');
 
 var expandingNav = require('./navigation');
 var modal = require('./modal');
+var rq = require('./rq');
 
 var cart = Cart({ name: 'lgpCart' });
 
@@ -4753,47 +4754,110 @@ function post(path, params, method) {
 
 // payments
 var purchase;
+var handler = StripeCheckout.configure({
+  key: 'pk_live_wLZlZRJUMFZTeyK5tab54l8X', //lgp live key
+  // key: 'pk_test_t47yPEUuI5OJSNGqqkpjV1tO', //department test key
+  locale: 'auto',
+  billingAddress: true,
+  shippingAddress: true,
+  token: function token(_token, addresses) {
+    console.log(_token);
+    console.log(addresses);
+    var order = cart.get();
+    var obj = { order: [] };
+    order.items.forEach(function (item) {
+      obj.order.push({
+        quantity: item.num,
+        description: item.id
+      });
+    });
+    var form = Object.assign(_token, addresses);
+    form.amount = order.total * 100;
+    form.description = order.itemCount + ' items';
+    form.order = JSON.stringify(obj);
+    console.log(form);
+    rq.post('http://api.nikolas.ws/lone-goose-press/charge', form).then(function (response) {
+      console.log(response);
+      window.location.assign('/thanks');
+    })['catch'](function (err) {
+      window.location.assign('/problem');
+    });
+  }
+});
+
+function submitCheckout() {
+  var order = cart.get();
+  var charge = {
+    name: 'Secure Checkout',
+    description: order.itemCount + ' items',
+    amount: order.total * 100
+  };
+  handler.open(charge);
+}
 
 var payBtn = document.querySelector('.js-stripe-pay');
 if (payBtn) {
-  var handler = StripeCheckout.configure({
-    key: 'pk_live_wLZlZRJUMFZTeyK5tab54l8X',
-    locale: 'auto',
-    token: function token(_token, addresses) {
-      // Use the token to create the charge with a server-side script.
-      // You can access the token ID with `token.id`
-      var charge = {
-        token: JSON.stringify(_token),
-        details: JSON.stringify(purchase),
-        addresses: JSON.stringify(addresses)
-      };
-      post('/charge', charge);
-      dom.addClass(payBtn, 'hide');
-    }
-  });
-
-  var submitCheckout = function submitCheckout(e) {
-    // e.preventDefault();
-    purchase = cart.get();
-    handler.open({
-      name: 'Secure Checkout',
-      description: purchase.itemCount + ' items',
-      billingAddress: true,
-      shippingAddress: true,
-      zipCode: true,
-      allowRememberMe: false,
-      amount: purchase.total * 100
-    });
-  };
-
   dom.addEvent(payBtn, dom.click(), submitCheckout);
 }
+
+// var handler = StripeCheckout.configure({
+//   key: 'pk_live_wLZlZRJUMFZTeyK5tab54l8X',
+//   locale: 'auto',
+//   token: function(token, addresses) {
+//     // Use the token to create the charge with a server-side script.
+//     // You can access the token ID with `token.id`
+//     var charge = {
+//       token: JSON.stringify(token),
+//       details: JSON.stringify(purchase),
+//       addresses: JSON.stringify(addresses)
+//     }
+//     post('/charge', charge)
+//     dom.addClass(payBtn, 'hide')
+//   }
+// })
+
+// var submitCheckout = function (e) {
+//   // e.preventDefault();
+//   purchase = cart.get()
+//   handler.open({
+//     name: 'Secure Checkout',
+//     description: `${purchase.itemCount} items`,
+//     billingAddress: true,
+//     shippingAddress: true,
+//     zipCode: true,
+//     allowRememberMe: false,
+//     amount: purchase.total * 100
+//   });
+// }
+
+// const handler = StripeCheckout.configure({
+//   key: 'pk_test_t47yPEUuI5OJSNGqqkpjV1tO',
+//   image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
+//   locale: 'auto',
+//   billingAddress: true,
+//   shippingAddress: true,
+//   token: function(token, addresses) {
+//     let form = Object.assign(parseForm(), token, addresses)
+//     form.order = JSON.stringify(order)
+//     console.log(form)
+//     rq.post('http://localhost:3000/charge', form)
+//     .then((response) => {
+//       console.log(`here is your response: ${response}`)
+//     }).catch((err) => {
+//       console.log(`there was an error: ${err}`)
+//     })
+//   }
+// });
+// handler.open(form);
+
+//   dom.addEvent(payBtn, dom.click(), submitCheckout)
+// }
 
 expandingNav();
 initCart();
 modal();
 
-},{"./modal":33,"./navigation":34,"cart":1,"dom":2,"swig":6}],33:[function(require,module,exports){
+},{"./modal":33,"./navigation":34,"./rq":35,"cart":1,"dom":2,"swig":6}],33:[function(require,module,exports){
 'use strict';
 
 var dom = require('dom');
@@ -4904,5 +4968,82 @@ function expandingNav(domNode) {
 
 module.exports = expandingNav;
 
-},{"dom":2}]},{},[32])
+},{"dom":2}],35:[function(require,module,exports){
+/**
+ * Simple request module
+ */
+'use strict';
+
+var rq = {
+  /**
+   * Builds a URI-encoded query string from an object
+   * @param {Object} form Formatted `{field: value}`
+   * @returns {String} Concatenated and URI endoded string of paramenters
+   */
+  encodeForm: function encodeForm() {
+    var form = arguments.length <= 0 || arguments[0] === undefined ? {} : arguments[0];
+
+    return Object.keys(form).map(function (key) {
+      return [key, form[key]].map(encodeURIComponent).join('=');
+    }).join('&');
+  },
+  /**
+   * Simple GET request to url, returns a promise
+   * @param {String} url
+   * @param {Object} form Form data appended to url as form encoded query strings
+   * @returns {Promise} Response body (parsed as JSON if application/json content-type detected)
+   */
+  get: function get(url, form) {
+    return new Promise(function (resolve, reject) {
+      var xhr = new window.XMLHttpRequest();
+      form = rq.encodeForm(form);
+      xhr.open('get', url + '?' + form, true);
+      xhr.responseType = 'json';
+
+      xhr.onload = function () {
+        if (xhr.status === 200 || xhr.status === 304) {
+          resolve(xhr.response);
+        } else {
+          reject(new Error(xhr.status));
+        }
+      };
+      xhr.onerror = function () {
+        return reject(new Error('XMLHttpRequest Error: ' + xhr.statusText));
+      };
+      xhr.send();
+    });
+  },
+  /**
+   * Simple POST request to url, returns a promise
+   * @param {String} url
+   * @param {Object} form Form data appended to url as form encoded query strings
+   * @returns {Promise} Response body (parsed as JSON if application/json content-type detected)
+   */
+  post: function post(url, form) {
+    return new Promise(function (resolve, reject) {
+      var xhr = new window.XMLHttpRequest();
+      form = rq.encodeForm(form);
+      xhr.open('POST', url, true);
+
+      xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+
+      xhr.onload = function () {
+        if (xhr.status === 200 || xhr.status === 304) {
+          resolve(xhr.response);
+        } else {
+          reject(new Error(xhr.status));
+        }
+      };
+      xhr.onerror = function () {
+        return reject(new Error('XMLHttpRequest Error: ' + xhr.statusText));
+      };
+
+      xhr.send(form);
+    });
+  }
+};
+
+module.exports = rq;
+
+},{}]},{},[32])
 //# sourceMappingURL=bundle.js.map

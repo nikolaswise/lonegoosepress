@@ -4,8 +4,7 @@ var swig = require('swig')
 
 var expandingNav = require('./navigation')
 var modal = require('./modal')
-
-
+var rq = require('./rq');
 
 var cart = Cart({name: 'lgpCart'})
 
@@ -170,41 +169,107 @@ function post(path, params, method) {
 
 // payments
 var purchase
+var handler = StripeCheckout.configure({
+  key: 'pk_live_wLZlZRJUMFZTeyK5tab54l8X', //lgp live key
+  // key: 'pk_test_t47yPEUuI5OJSNGqqkpjV1tO', //department test key
+  locale: 'auto',
+  billingAddress: true,
+  shippingAddress: true,
+  token: function(token, addresses) {
+    console.log(token)
+    console.log(addresses)
+    let order = cart.get();
+    let obj = {order: []};
+    order.items.forEach(function (item) {
+      obj.order.push({
+        quantity: item.num,
+        description: item.id
+      })
+    })
+    let form = Object.assign(token, addresses);
+    form.amount = order.total * 100;
+    form.description = `${order.itemCount} items`;
+    form.order = JSON.stringify(obj);
+    console.log(form)
+    rq.post('http://api.nikolas.ws/lone-goose-press/charge', form)
+    .then((response) => {
+      console.log(response);
+      window.location.assign('/thanks');
+    }).catch((err) => {
+      window.location.assign('/problem');
+    })
+  }
+});
+
+function submitCheckout () {
+  let order = cart.get();
+  var charge = {
+    name: 'Secure Checkout',
+    description: `${order.itemCount} items`,
+    amount: order.total * 100
+  }
+  handler.open(charge);
+}
 
 var payBtn = document.querySelector('.js-stripe-pay')
 if (payBtn) {
-  var handler = StripeCheckout.configure({
-    key: 'pk_live_wLZlZRJUMFZTeyK5tab54l8X',
-    locale: 'auto',
-    token: function(token, addresses) {
-      // Use the token to create the charge with a server-side script.
-      // You can access the token ID with `token.id`
-      var charge = {
-        token: JSON.stringify(token),
-        details: JSON.stringify(purchase),
-        addresses: JSON.stringify(addresses)
-      }
-      post('/charge', charge)
-      dom.addClass(payBtn, 'hide')
-    }
-  })
-
-  var submitCheckout = function (e) {
-    // e.preventDefault();
-    purchase = cart.get()
-    handler.open({
-      name: 'Secure Checkout',
-      description: `${purchase.itemCount} items`,
-      billingAddress: true,
-      shippingAddress: true,
-      zipCode: true,
-      allowRememberMe: false,
-      amount: purchase.total * 100
-    });
-  }
-
   dom.addEvent(payBtn, dom.click(), submitCheckout)
 }
+
+
+  // var handler = StripeCheckout.configure({
+  //   key: 'pk_live_wLZlZRJUMFZTeyK5tab54l8X',
+  //   locale: 'auto',
+  //   token: function(token, addresses) {
+  //     // Use the token to create the charge with a server-side script.
+  //     // You can access the token ID with `token.id`
+  //     var charge = {
+  //       token: JSON.stringify(token),
+  //       details: JSON.stringify(purchase),
+  //       addresses: JSON.stringify(addresses)
+  //     }
+  //     post('/charge', charge)
+  //     dom.addClass(payBtn, 'hide')
+  //   }
+  // })
+
+  // var submitCheckout = function (e) {
+  //   // e.preventDefault();
+  //   purchase = cart.get()
+  //   handler.open({
+  //     name: 'Secure Checkout',
+  //     description: `${purchase.itemCount} items`,
+  //     billingAddress: true,
+  //     shippingAddress: true,
+  //     zipCode: true,
+  //     allowRememberMe: false,
+  //     amount: purchase.total * 100
+  //   });
+  // }
+
+  // const handler = StripeCheckout.configure({
+  //   key: 'pk_test_t47yPEUuI5OJSNGqqkpjV1tO',
+  //   image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
+  //   locale: 'auto',
+  //   billingAddress: true,
+  //   shippingAddress: true,
+  //   token: function(token, addresses) {
+  //     let form = Object.assign(parseForm(), token, addresses)
+  //     form.order = JSON.stringify(order)
+  //     console.log(form)
+  //     rq.post('http://localhost:3000/charge', form)
+  //     .then((response) => {
+  //       console.log(`here is your response: ${response}`)
+  //     }).catch((err) => {
+  //       console.log(`there was an error: ${err}`)
+  //     })
+  //   }
+  // });
+  // handler.open(form);
+
+
+//   dom.addEvent(payBtn, dom.click(), submitCheckout)
+// }
 
 expandingNav()
 initCart()
