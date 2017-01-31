@@ -170,8 +170,7 @@ function post(path, params, method) {
 // payments
 var purchase
 var handler = StripeCheckout.configure({
-  key: 'pk_live_wLZlZRJUMFZTeyK5tab54l8X', //lgp live key
-  // key: 'pk_test_t47yPEUuI5OJSNGqqkpjV1tO', //department test key
+  key: 'pk_live_wLZlZRJUMFZTeyK5tab54l8X',
   locale: 'auto',
   billingAddress: true,
   shippingAddress: true,
