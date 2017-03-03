@@ -66,8 +66,8 @@
     "js": "simplifyify source/_assets/js/index.js --outfile build/assets/js/bundle.js --debug",
     "sass": "node-sass source/_assets/css/style.scss -o build/assets/css --include-path node_modules/",
     "html": "static-site -s source -h source/_helpers/*.js --template _layouts/layout.html --block content -b build",
-    "prepreview": "npm run predev",
-    "preview": "surge build --domain lone-goose-preview.nikolas.ws/",
+    "prestage": "npm run predev",
+    "stage": "surge build --domain lone-goose-preview.nikolas.ws/",
     "predeploy": "npm run predev",
     "deploy": "git push deploy master"
   }
