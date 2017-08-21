@@ -1,57 +1,27 @@
 {
-  "name": "lone-goose-press",
-  "version": "1.0.1",
-  "description": "",
-  "main": "server.js",
+  "name": "netifly-test",
+  "version": "1.0.0",
+  "description": "testing netiflys weird cms thing",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run html && npm run img",
+    "html": "static-site -s source -h source/_helpers/*.js --template _templates/layout.html --block content -b build",
+    "posthtml": "cp source/admin/config.yml build/admin/config.yml",
+    "img": "imagemin-newer source/_assets/ build/assets",
+    "test": "test"
+  },
   "repository": {
     "type": "git",
-    "url": "git://github.com/nikolaswise/lone-goose-press.git"
+    "url": "git+https://github.com/nikolaswise/netifly-test.git"
   },
-  "author": "",
-  "license": "BSD-2-Clause",
+  "author": "Department",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikolaswise/netifly-test/issues"
+  },
+  "homepage": "https://github.com/nikolaswise/netifly-test#readme",
   "devDependencies": {
     "imagemin-newer": "^1.0.2",
-    "npm-run-all": "^4.0.2",
     "static-site": "^1.3.1"
-  },
-  "dependencies": {
-    "ampersand-events": "~1.0.1",
-    "diff-dom": "~1.0.0",
-    "hapi": "~8.2.0",
-    "observable": "~2.1.3",
-    "request": "~2.53.0",
-    "static-site": "^1.3.1",
-    "stripe": "~3.3.2",
-    "urlify": "^0.3.6"
-  },
-  "browserify": {
-    "transform": [
-      "babelify"
-    ]
-  },
-  "watches": {
-    "html": [
-      "source/**/*.html",
-      "source/**/*.md"
-    ],
-    "js": "source/_assets/**/*.js",
-    "sass": "source/**/*.scss",
-    "img": "source/"
-  },
-  "scripts": {
-    "start": "npm run dev",
-    "build": "npm-run-all html img",
-    "predev": "npm-run-all html sass img js",
-    "dev": "parallelshell 'http-server build/' 'rerun-script'",
-    "fmt": "standard --format",
-    "img": "imagemin-newer source/_assets/ build/assets",
-    "js": "simplifyify source/_assets/js/index.js --outfile build/assets/js/bundle.js --debug",
-    "sass": "node-sass source/_assets/css/style.scss -o build/assets/css --include-path node_modules/",
-    "html": "static-site -s source -h source/_helpers/*.js --template _layouts/layout.html --block content -b build",
-    "posthtml": "cp source/admin/config.yml build/admin/config.yml",
-    "prestage": "npm run predev",
-    "stage": "surge build --domain lone-goose-preview.nikolas.ws/",
-    "predeploy": "npm run predev",
-    "deploy": "git push deploy master"
   }
 }
