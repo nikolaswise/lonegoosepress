@@ -39,6 +39,7 @@
   },
   "scripts": {
     "start": "npm run dev",
+    "build": "npm-run-all html img",
     "predev": "npm-run-all html sass img js",
     "dev": "parallelshell 'http-server build/' 'rerun-script'",
     "fmt": "standard --format",
