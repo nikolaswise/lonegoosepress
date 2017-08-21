@@ -22,7 +22,7 @@ module.exports = function (site, cb) {
   function buildBook (project) {
     site.push({
       title: project.title,
-      template: '_layouts/project.html',
+      template: '_templates/project.html',
       block: 'project',
       content: '',
       file: '/Users/nwiselocal/Personal/lonegoosepress/source/' + urlify(project.title),
@@ -37,7 +37,7 @@ module.exports = function (site, cb) {
   function buildBroadside (project) {
     site.push({
       title: project.title,
-      template: '_layouts/project.html',
+      template: '_templates/project.html',
       block: 'project',
       content: '',
       file: '/Users/nwiselocal/Personal/lonegoosepress/source/' + urlify(project.title),
@@ -52,7 +52,7 @@ module.exports = function (site, cb) {
   function buildEphemera (project) {
     site.push({
       title: project.title,
-      template: '_layouts/project.html',
+      template: '_templates/project.html',
       block: 'project',
       content: '',
       file: '/Users/nwiselocal/Personal/lonegoosepress/source/' + urlify(project.title),
@@ -68,7 +68,7 @@ module.exports = function (site, cb) {
   function buildDesign (project) {
     site.push({
       title: project.title,
-      template: '_layouts/project.html',
+      template: '_templates/project.html',
       block: 'project',
       content: '',
       file: '/Users/nwiselocal/Personal/lonegoosepress/source/' + urlify(project.title),
@@ -84,7 +84,7 @@ module.exports = function (site, cb) {
   function buildSupport (project) {
     site.push({
       title: project.title,
-      template: '_layouts/project.html',
+      template: '_templates/project.html',
       block: 'project',
       content: '',
       file: '/Users/nwiselocal/Personal/lonegoosepress/source/' + urlify(project.title),
@@ -100,7 +100,7 @@ module.exports = function (site, cb) {
   function buildRealization (project) {
     site.push({
       title: project.title,
-      template: '_layouts/project.html',
+      template: '_templates/project.html',
       block: 'project',
       content: '',
       file: '/Users/nwiselocal/Personal/lonegoosepress/source/' + urlify(project.title),
