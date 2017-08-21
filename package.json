@@ -11,6 +11,7 @@
   "license": "BSD-2-Clause",
   "devDependencies": {
     "imagemin-newer": "^1.0.2",
+    "npm-run-all": "^4.0.2",
     "static-site": "^1.3.1"
   },
   "dependencies": {
