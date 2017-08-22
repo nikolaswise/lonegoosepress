@@ -1,8 +1,9 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-<div class="container">
-  <main class="column-12 pre-6 post-6 leader-2">
+<div class="grid-container leader-4">
+  <main class="column-12 pre-6">
+    <h1 class="text-center trailer-4">{{title}}</h1>
     {% block body %}{% endblock %}
   </main>
 </div>
