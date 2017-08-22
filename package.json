@@ -7,7 +7,7 @@
     "start": "npm run dev",
     "predev": "npm-run-all html sass img js",
     "dev": "parallelshell 'http-server build/' 'rerun-script'",
-    "build": "npm run html && npm run img",
+    "build": "npm run html && npm run img && npm run sass",
     "html": "static-site -s source -h source/_helpers/*.js --template _templates/layout.html --block content -b build",
     "posthtml": "cp source/admin/config.yml build/admin/config.yml",
     "img": "imagemin-newer source/_assets/ build/assets",
