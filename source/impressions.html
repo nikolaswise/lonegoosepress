@@ -1,9 +1,14 @@
 ---
 title: Contact the Press
+collections:
+  articles: /impressions/*
 ---
 
 <div class="grid-container leader-2">
   <main class="column-12 pre-6">
     <h1 class="text-center">Impressions</h1>
+    {% for article in collections.articles %}
+      <h3>{{article.title}}</h3>
+    {% endfor %}
   </main>
 </div>
