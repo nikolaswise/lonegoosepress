@@ -9,7 +9,7 @@
     "dev": "parallelshell 'http-server build/' 'rerun-script'",
     "build": "npm run html && npm run img && npm run sass",
     "html": "static-site -s source -h source/_helpers/*.js --template _templates/layout.html --block content -b build",
-    "posthtml": "cp source/admin/config.yml build/admin/config.yml",
+    "posthtml": "cp -r source/_admin/ build/admin/",
     "img": "imagemin-newer source/_assets/ build/assets",
     "sass": "node-sass source/_assets/css/style.scss -o build/assets/css --include-path node_modules/",
     "js": "simplifyify source/_assets/js/index.js --outfile build/assets/js/bundle.js --debug",
