@@ -2,6 +2,7 @@
 title: Why the Goose?
 date: 2017-05-16T08:13:43-07:00
 author: Sandy Tilcock
+template: _templates/post.html
 ---
 
 Why have I chosen the Canada Goose as my totem? After living in the Willamette Valley for a few years, I became more aware of the way migrating geese marked our seasons. They passed over our city, Eugene, and often roosted at night west of town at Fern Ridge Reservoir. I heard their calls as they passed over. Sometimes, after a hard rain, they would circle all night, mistaking wet streets for the lake.

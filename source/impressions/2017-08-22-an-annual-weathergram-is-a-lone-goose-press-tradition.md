@@ -2,6 +2,7 @@
 title: An annual weathergram is a lone goose press tradition.
 date: 2016-12-22T08:15:47-08:00
 author: Sandy Tilcock
+template: _templates/post.html
 ---
 As the year drew to a close, we were still casting about for a text. Then an unexpected freezing rain ice storm arrived on Dec 14, the ice persisting over five days.
 

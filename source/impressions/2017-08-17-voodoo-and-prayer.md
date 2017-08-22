@@ -2,7 +2,8 @@
 layout: blog
 title: Voodoo and Prayer
 date: 2017-06-30T08:37:15-07:00
-thumbnail: /assets/img/uploads/Stack_of_Prints.jpg
+author: Catherine Woodard
+template: _templates/post.html
 ---
 
 Watching Nikolas Wise, 28, assist Sandy Tilcock, 67, in the lone goose press studio, you’d think they’ve been working together for decades instead of six years.
