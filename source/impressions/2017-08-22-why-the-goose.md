@@ -1,7 +1,9 @@
 ---
 title: Why the Goose?
 date: 2017-05-16T08:13:43-07:00
+author: Sandy Tilcock
 ---
+
 Why have I chosen the Canada Goose as my totem? After living in the Willamette Valley for a few years, I became more aware of the way migrating geese marked our seasons. They passed over our city, Eugene, and often roosted at night west of town at Fern Ridge Reservoir. I heard their calls as they passed over. Sometimes, after a hard rain, they would circle all night, mistaking wet streets for the lake.
 
 During this time, I read Aldo Leopold's Sand County Almanac. The book resonated with my lifelong love of the outdoors and my increasing concern for our fragile environment. Concerned for the Minnesota landscape he loved, Leopold wrote: "What...if there be no more deer in the hills, and no more quail in the coverts? No more snipe whistling in the meadow, no more piping of widgeons and chattering of teal as darkness cores the marsh; no more whistling of swift wings when the morning star pales in the east? And when the dawn-wind stirs through the ancient cottonwoods, and the gray light steals down from the hills over the old river sliding softly past its wide brown sandbars—what if there be no more goose music?"

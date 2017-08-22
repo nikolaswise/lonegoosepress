@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run dev",
-    "predev": "npm-run-all html sass img js",
-    "dev": "parallelshell 'http-server build/' 'rerun-script'",
+    "predev": "npm-run-all html sass img",
+    "dev": "http-server build/",
     "build": "npm run html && npm run img && npm run sass",
     "html": "static-site -s source -h source/_helpers/*.js --template _templates/layout.html --block content -b build",
     "posthtml": "cp -r source/_admin/ build/admin/",

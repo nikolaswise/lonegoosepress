@@ -4,11 +4,21 @@ collections:
   articles: /impressions/*
 ---
 
-<div class="grid-container leader-2">
+<div class="grid-container leader-4">
   <main class="column-12 pre-6">
-    <h1 class="text-center">Impressions</h1>
+    <h1 class="text-center trailer-4">Impressions</h1>
     {% for article in collections.articles %}
-      <h3>{{article.title}}</h3>
+      <article class="trailer-4">
+        <h3>
+          <a href="{{article.url}}">{{article.title}}</a>
+        </h3>
+        <p class="trailer-0">{{article.author}}</p>
+        <p>{{article.date | date('F jS\, Y')  }}</p>
+{% markdown %}
+{{article.content}}
+{%endmarkdown%}
+      </article>
+      <hr class="trailer-4">
     {% endfor %}
   </main>
 </div>
