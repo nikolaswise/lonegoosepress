@@ -1,7 +1,7 @@
 backend:
   name: github
-  repo: nikolaswise/netifly-test
-  branch: master
+  repo: nikolaswise/lonegoosepress
+  branch: wtf
 
 media_folder: "source/_assets/img/uploads"
 public_folder: "assets/img/uploads"
