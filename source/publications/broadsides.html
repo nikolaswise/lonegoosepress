@@ -1,0 +1,51 @@
+---
+title: Publications | Broadsides
+data:
+  catalog: catalog.yml
+---
+
+<div class="grid-container leader-3">
+  <main class="column-12 pre-6 post-6 trailer-2">
+    <h2 class="text-center trailer-2">Broadsides</h2>
+
+    <p>From the earliest days of movable type, printers have worked with the limits presented by the size and format of the press, producing a single sheet of printed paper at a time.While this process was quickly adapted for the printing of books, the single ­sheet format was often used for official announcements and proclamations. As the technology became more widely available, it also became a vehicle for political agitation. Dissident printers in back­ alley shops sometimes cranked out calls for insurrection or reproduced scaffold speeches by condemned prisoners. The term broadside continues to carry the connotation of challenging the prevailing structures of power and ideology.</p>
+
+    <p>While lone goose press’s approach to broadsides may be more reflective than inflammatory, we tend to seek poems or short prose essays that challenge us to perceive a deeper understanding of citizenship in this world.</p>
+  </main>
+
+
+  {% for item in data.catalog.broadsides %}
+
+    <section class="column-10 pre-2 trailer-1 phone-trailer-3">
+      <div class="column-6">
+        <a href="/publications/broadsides/{{item.title|lower()|replace(' ','-','g')|replace(',', '','g')|replace(';', '','g')}}">
+          <img src="/assets/img/{{item.thumbnail}}" alt="{{ item.title }}">
+        </a>
+      </div>
+      <div class="column-4">
+        <h5 class="body-face phone-leader-0">
+          <a href="/publications/broadsides/{{item.title|lower()|replace(' ','-','g')|replace(',', '','g')|replace(';', '','g')}}">
+            {{ item.title }}
+          </a>
+        </h5>
+
+
+          {% if item.author_site %}
+            <p class="trailer-0">By <a href="{{item.author_site}}">{{ item.author }}</a></p>
+          {% else %}
+            <p class="trailer-0">By {{ item.author }}</p>
+          {% endif %}
+
+
+        {% if item.artist %}
+          {% if item.artist_site %}
+            <p class="trailer-0">Art by <a href="{{item.artist_site}}">{{ item.artist }}</a></p>
+          {% else %}
+            <p class="trailer-0">Art by {{ item.artist }}</p>
+          {% endif %}
+        {% endif %}
+
+      </div>
+    </section>
+  {% endfor %}
+</div>
