@@ -33,6 +33,7 @@ module.exports = function (site, cb) {
       data: {project: project}
     })
   }
+  catalog.books.map(buildBook)
   cb(null, site)
 }
 
