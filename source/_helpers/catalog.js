@@ -18,7 +18,21 @@ module.exports = function (site, cb) {
   } catch (e) {
     console.error(e);
   }
-  console.log(catalog)
+  function buildBook (project) {
+    site.push({
+      title: project.title,
+      template: '_templates/project.html',
+      block: 'project',
+      content: '',
+      file: source + urlify(project.title),
+      dest: './build/publications/books/' + urlify(project.title) + '/index.html',
+      url: '/' + urlify(project.title) + '/',
+      root: '../..',
+      isMarkdown: false,
+      project: project,
+      data: {project: project}
+    })
+  }
   cb(null, site)
 }
 
