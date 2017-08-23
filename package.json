@@ -27,11 +27,6 @@
   "homepage": "https://github.com/nikolaswise/netifly-test#readme",
   "devDependencies": {
     "imagemin-newer": "^1.0.2",
-    "modular-bus": "github:nikolaswise/modular-bus",
-    "modular-class": "github:nikolaswise/modular-class",
-    "modular-dom": "github:nikolaswise/modular-dom",
-    "modular-event": "github:nikolaswise/modular-event",
-    "modular-request": "github:nikolaswise/modular-request",
     "node-sass": "^4.5.3",
     "npm-run-all": "^4.0.2",
     "rollup": "^0.48.2",
