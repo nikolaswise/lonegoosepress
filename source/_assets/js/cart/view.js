@@ -77,11 +77,13 @@ export default function (cart) {
   const setActions = setSetActions(cart)
   const toggleCartToggle = setToggleCartToggle(cart)
   const bind = () => {
+    bus.emit('modal:bind')
     setActions();
   }
   bus.on('cart:updated', renderCart)
   bus.on('cart:updated', setActions)
   bus.on('cart:updated', toggleCartToggle)
+  bus.on('cart:bind', bind)
 
   renderCart()
   setActions()

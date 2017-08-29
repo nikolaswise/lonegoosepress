@@ -26,10 +26,6 @@ const render = cart => {
       <p class="font-size-1 trailer-half text-right gutter-right-1">Subtotal: $ ${ cart.subtotal }</p>
       <p class="font-size-1 trailer-half text-right gutter-right-1">Shipping: $ ${ cart.shipping }</p>
       <p class="font-size-1 trailer-half text-right gutter-right-1">Total: $ ${ cart.total }</p>
-      <p class="leader-1 text-right">
-        <a href="#" class="btn btn-clear js-modal-toggle gutter-right-1" data-modal="cart">Keep Shopping</a>
-        <a href="/checkout" class="btn">Checkout</a>
-      </p>
     </div>
   `
 }
