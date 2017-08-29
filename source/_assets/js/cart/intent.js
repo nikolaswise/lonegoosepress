@@ -1,7 +1,8 @@
-import bus from './helpers/bus'
-import * as classy from './helpers/classy'
-import * as dom from './helpers/dom'
-import * as event from './helpers/event'
+import bus from 'modular-bus'
+import * as classy from 'modular-class'
+import * as aria from 'modular-aria'
+import * as dom from 'modular-dom'
+import * as event from 'modular-event'
 
 const bind = () => {
   let incrementItemButtons = dom.findElements('.js-add-one')
@@ -28,15 +29,16 @@ const bind = () => {
 }
 
 const addToCartClick = (e) => {
-  let id = e.target.getAttribute('data-artist')
-  bus.emit('cart:add', id)
+  let id = e.target.getAttribute('data-id')
+  let price = e.target.getAttribute('data-price')
+  bus.emit('cart:add', id, price)
 }
 const deincrementItemClick = (e) => {
-  let id = e.target.getAttribute('data-artist')
+  let id = e.target.getAttribute('data-id')
   bus.emit('cart:adjust', id, -1)
 }
 const incrementItemClick = (e) => {
-  let id = e.target.getAttribute('data-artist')
+  let id = e.target.getAttribute('data-id')
   bus.emit('cart:adjust', id, 1)
 }
 const updatePrice = (e) => {

@@ -1,5 +1,13 @@
+import bus from 'modular-bus'
+import * as classy from 'modular-class'
+import * as aria from 'modular-aria'
+import * as dom from 'modular-dom'
+import * as event from 'modular-event'
+import intent from './intent'
+import model from './model'
+import view from './view'
+
 var cart = function (options) {
-  console.log(options)
   var name = options.name
   var emptyModel = {
     items: [],
@@ -34,7 +42,7 @@ var cart = function (options) {
 
   var getItemIds = function () {
     var model = get()
-    return model.items.map( function (item){
+    return model.items.map(function (item){
       return item.id
     })
   }
@@ -94,7 +102,9 @@ var cart = function (options) {
   if (!current) {
     set(emptyModel)
   }
-  return {
+
+
+  const Cart = {
     set: set,
     get: get,
     clear: clear,
@@ -105,6 +115,10 @@ var cart = function (options) {
     setItemCount: setItemCount,
     submit: submit
   }
+  intent()
+  model(Cart)
+  view(Cart)
+  return Cart
 }
 
 export default cart

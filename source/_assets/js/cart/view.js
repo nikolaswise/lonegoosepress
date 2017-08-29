@@ -1,8 +1,9 @@
 import bus from 'modular-bus'
-import * as classy from 'modular-classy'
+import * as classy from 'modular-class'
+import * as aria from 'modular-aria'
 import * as dom from 'modular-dom'
-import cartTemplate from './cart-template'
-var swig = require('swig')
+import * as event from 'modular-event'
+import render from './template'
 
 const setToggleCartToggle = (cart) => {
   return function () {
@@ -31,7 +32,7 @@ const setSetActions = (cart) => {
     itemActions.forEach((item) => {
       let btn = item.querySelector('.js-add-to-cart')
       let num = item.querySelector('.js-action-current')
-      let artist = btn.getAttribute('data-artist')
+      let artist = btn.getAttribute('data-id')
       if (artistsInCart.includes(artist)) {
         classy.add(item, 'is-in-cart')
         data.items.forEach((item) => {
@@ -50,16 +51,14 @@ const setCart = (cart) => {
   return function () {
     let data = cart.get()
     let cartOverviewSections = dom.findElements('.js-cart-overview')
-
     cartOverviewSections.forEach((section) => {
       let subTotal = section.querySelector('.js-purchase-amount')
       if (subTotal && parseInt(subTotal.value) > data.subtotal) {
         data.subtotal = parseInt(subTotal.value)
         data.total = data.shipping + data.subtotal
       }
-      section.innerHTML = swig.render(cartTemplate, {locals: data})
+      section.innerHTML = render(data)
     })
-
     if (data.itemCount > 0) {
       let body = document.querySelector('body')
       classy.add(body, 'is-cart')
@@ -78,7 +77,6 @@ export default function (cart) {
   const setActions = setSetActions(cart)
   const toggleCartToggle = setToggleCartToggle(cart)
   const bind = () => {
-    console.log('bind')
     setActions();
   }
   bus.on('cart:updated', renderCart)
