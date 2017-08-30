@@ -32,3 +32,10 @@ navToggles.forEach(toggle => {
   event.add(toggle, 'click', toggleMenu)
 })
 
+const paySQR = () => {
+  console.log('payment time')
+}
+let payBtns = dom.findElements('.js-sqr-pay')
+payBtns.forEach(button => {
+  event.add(button, 'click', paySQR)
+})
