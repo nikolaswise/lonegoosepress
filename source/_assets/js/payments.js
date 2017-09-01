@@ -52,7 +52,7 @@ const setup = cart => () => {
   const data = cart.get()
   const order = buildOrder(data)
   const body = JSON.stringify(order)
-  req('http://api.nikolas.ws/lone-goose-press/square/payment', {
+  req('https://api.nikolas.ws/lone-goose-press/square/payment', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
