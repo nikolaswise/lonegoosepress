@@ -6,6 +6,9 @@ import * as event from 'modular-event'
 import modal from 'modular-modal'
 
 import Cart from './cart/app'
+import nav from './nav'
+import payment from './payments'
+
 
 const cart = Cart({name: 'lonegoosepress'})
 const setCartCounter = () => {
@@ -18,24 +21,5 @@ const setCartCounter = () => {
 bus.on('cart:updated', setCartCounter)
 setCartCounter()
 modal()
-
-
-let navToggles = dom.findElements('.js-expanding-toggle')
-let menus = dom.findElements('.js-expanding')
-const toggleMenu = () => {
-  console.log('tog tog tog')
-  menus.forEach(menu => {
-    classy.toggle(menu, 'is-active')
-  })
-}
-navToggles.forEach(toggle => {
-  event.add(toggle, 'click', toggleMenu)
-})
-
-const paySQR = () => {
-  console.log('payment time')
-}
-let payBtns = dom.findElements('.js-sqr-pay')
-payBtns.forEach(button => {
-  event.add(button, 'click', paySQR)
-})
+nav()
+payment(cart)

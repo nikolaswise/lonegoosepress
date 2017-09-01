@@ -2,7 +2,6 @@ import bus from 'modular-bus'
 
 export default function (cart) {
   const addToCart = (id, price) => {
-    console.log(id)
     cart.addItem(id, 1, price)
     bus.emit('cart:updated')
   }

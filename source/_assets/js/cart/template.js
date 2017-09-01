@@ -12,7 +12,6 @@ const lineItem = item => {
 }
 
 const render = cart => {
-  console.log(cart)
   if (cart.items.length == 0) {
     return `
       <p class="text-center padding-leader-2 padding-trailer-2">No items in your cart.</p>
