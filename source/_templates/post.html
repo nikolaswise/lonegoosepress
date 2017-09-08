@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="grid-container leader-4">
+  <main class="column-12 pre-6">
+    <h1 class="text-center trailer-2">{{title}}</h1>
+    <h4 class="text-center trailer-0">{{author}}</h4>
+    <h5 class="text-center trailer-4">{{date | date('F jS\, Y') }}</h5>
+    {% block body %}{% endblock %}
+  </main>
+</div>
+
+{% endblock %}

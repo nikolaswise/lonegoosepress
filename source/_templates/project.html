@@ -1,0 +1,97 @@
+{% extends 'layout.html' %}
+{% block content %}
+{% autoescape false %}
+<div class="grid-container leader-3">
+  <div class="column-24">
+    {% block project %}{% endblock %}
+
+    <div class="column-12 leader-1 trailer-1 tablet-hide">
+      <img class="trailer-1" src="/assets/img/{{project.image}}" alt="{{project.title}}">
+
+      {% if project.additional_images %}
+        {% for image in project.additional_images %}
+          <img src="/assets/img/{{image.url}}" alt="{{project.title}}">
+          {% if image.caption %}
+            <p class="font-size--1 leader-0">{{image.caption}}</p>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    </div>
+
+    <div class="column-10 pre-1 tablet-pre-1">
+      <h2 class="trailer-1 font-size-2 leader-2">{{ project.title }}</h2>
+
+      {% if project.author %}
+        {% if project.author_site %}
+          <p class="trailer-0">By <a href="{{project.author_site}}">{{ project.author }}</a></p>
+        {% else %}
+          <p class="trailer-0">By {{ project.author }}</p>
+        {% endif %}
+      {% endif %}
+
+      {% if project.artist %}
+        {% if project.artist_site %}
+          <p class="trailer-0">Art by <a href="{{project.artist_site}}">{{ project.artist }}</a></p>
+        {% else %}
+          <p class="trailer-0">Art by {{ project.artist }}</p>
+        {% endif %}
+      {% endif %}
+
+      {% if project.photographer %}
+        {% if project.photographer_site %}
+          <p class="trailer-0">Photographs by <a href="{{project.photographer_site}}">{{ project.photographer }}</a></p>
+        {% else %}
+          <p class="trailer-0">Photographs by {{ project.photographer }}</p>
+        {% endif %}
+      {% endif %}
+
+      {% if project.release %}
+        <p class="trailer-0">{{ project.release }}</p>
+      {% endif %}
+
+      {% if project.dimensions %}
+        <p class="trailer-0">{{ project.dimensions }}</p>
+      {% endif %}
+
+      {% if project.edition %}
+        <p>Edition size {{ project.edition }}</p>
+      {% endif %}
+
+      {% if project.edition_notes %}
+        <p>{{ project.edition_notes }}</p>
+      {% endif %}
+
+      {% if project.available %}
+        <p>$ {{ project.price }}</p>
+        <div class="leader-1 trailer-1">
+          <a href="#" class="btn js-add-to-cart js-modal-toggle" data-modal="cart" data-id="{{project.title}}" data-price={{project.price}}>Add to Cart</a>
+        </div>
+      {% endif %}
+
+      {% if project.description.length < 12 %}
+        {% for p in project.description %}
+          <p class="leader-1">{{ p }}</p>
+        {% endfor %}
+      {% else %}
+        <p class="leader-1">{{ project.description }}</p>
+      {% endif %}
+
+      {% if project.poem %}
+        <p>
+          <a href="/poems/#{{project.title|lower()|replace(' ','-','g')|replace(',', '','g')|replace(';', '','g')}}">Read Text</a>
+        </p>
+      {% endif %}
+      <img class="tablet-show trailer-1" src="/assets/img/{{project.image}}" alt="{{project.title}}">
+      {% if project.additional_images %}
+        {% for image in project.additional_images %}
+          <img class="tablet-show" src="/assets/img/{{image.url}}" alt="{{project.title}}">
+          {% if image.caption %}
+            <p class="font-size--1 tablet-show">{{image.caption}}</p>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endautoescape %}
+{% endblock %}

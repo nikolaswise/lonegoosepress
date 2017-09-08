@@ -9,24 +9,23 @@ urlify = require('urlify').create({
 });
 
 module.exports = function (site, cb) {
+  console.log('this is the site')
   var source = path.resolve('./', 'source')
   var target = path.join(source, 'catalog.yml')
   var catalog
-
   try {
     catalog = yaml.safeLoad(fs.readFileSync(target, 'utf8'));
   } catch (e) {
     console.error(e);
   }
-
   function buildBook (project) {
     site.push({
       title: project.title,
-      template: '_layouts/project.html',
+      template: '_templates/project.html',
       block: 'project',
       content: '',
-      file: '/Users/nwiselocal/Personal/lonegoosepress/source/' + urlify(project.title),
-      dest: '/Users/nwiselocal/Personal/lonegoosepress/build/publications/books/' + urlify(project.title) + '/index.html',
+      file: source + urlify(project.title),
+      dest: './build/publications/books/' + urlify(project.title) + '/index.html',
       url: '/' + urlify(project.title) + '/',
       root: '../..',
       isMarkdown: false,
@@ -37,11 +36,11 @@ module.exports = function (site, cb) {
   function buildBroadside (project) {
     site.push({
       title: project.title,
-      template: '_layouts/project.html',
+      template: '_templates/project.html',
       block: 'project',
       content: '',
-      file: '/Users/nwiselocal/Personal/lonegoosepress/source/' + urlify(project.title),
-      dest: '/Users/nwiselocal/Personal/lonegoosepress/build/publications/broadsides/' + urlify(project.title) + '/index.html',
+      file: source + urlify(project.title),
+      dest: './build/publications/broadsides/' + urlify(project.title) + '/index.html',
       url: '/' + urlify(project.title) + '/',
       root: '../..',
       isMarkdown: false,
@@ -52,11 +51,11 @@ module.exports = function (site, cb) {
   function buildEphemera (project) {
     site.push({
       title: project.title,
-      template: '_layouts/project.html',
+      template: '_templates/project.html',
       block: 'project',
       content: '',
-      file: '/Users/nwiselocal/Personal/lonegoosepress/source/' + urlify(project.title),
-      dest: '/Users/nwiselocal/Personal/lonegoosepress/build/publications/ephemera/' + urlify(project.title) + '/index.html',
+      file: source + urlify(project.title),
+      dest: './build/publications/ephemera/' + urlify(project.title) + '/index.html',
       url: '/' + urlify(project.title) + '/',
       root: '../..',
       isMarkdown: false,
@@ -68,11 +67,11 @@ module.exports = function (site, cb) {
   function buildDesign (project) {
     site.push({
       title: project.title,
-      template: '_layouts/project.html',
+      template: '_templates/project.html',
       block: 'project',
       content: '',
-      file: '/Users/nwiselocal/Personal/lonegoosepress/source/' + urlify(project.title),
-      dest: '/Users/nwiselocal/Personal/lonegoosepress/build/commisions/design/' + urlify(project.title) + '/index.html',
+      file: source + urlify(project.title),
+      dest: './build/commisions/design/' + urlify(project.title) + '/index.html',
       url: '/' + urlify(project.title) + '/',
       root: '../..',
       isMarkdown: false,
@@ -84,11 +83,11 @@ module.exports = function (site, cb) {
   function buildSupport (project) {
     site.push({
       title: project.title,
-      template: '_layouts/project.html',
+      template: '_templates/project.html',
       block: 'project',
       content: '',
-      file: '/Users/nwiselocal/Personal/lonegoosepress/source/' + urlify(project.title),
-      dest: '/Users/nwiselocal/Personal/lonegoosepress/build/commisions/publishing/' + urlify(project.title) + '/index.html',
+      file: source + urlify(project.title),
+      dest: './build/commisions/publishing/' + urlify(project.title) + '/index.html',
       url: '/' + urlify(project.title) + '/',
       root: '../..',
       isMarkdown: false,
@@ -100,11 +99,11 @@ module.exports = function (site, cb) {
   function buildRealization (project) {
     site.push({
       title: project.title,
-      template: '_layouts/project.html',
+      template: '_templates/project.html',
       block: 'project',
       content: '',
-      file: '/Users/nwiselocal/Personal/lonegoosepress/source/' + urlify(project.title),
-      dest: '/Users/nwiselocal/Personal/lonegoosepress/build/commisions/realization/' + urlify(project.title) + '/index.html',
+      file: source + urlify(project.title),
+      dest: './build/commisions/realization/' + urlify(project.title) + '/index.html',
       url: '/' + urlify(project.title) + '/',
       root: '../..',
       isMarkdown: false,
@@ -112,7 +111,6 @@ module.exports = function (site, cb) {
       data: {project: project}
     })
   }
-
   catalog.books.map(buildBook)
   catalog.broadsides.map(buildBroadside)
   catalog.ephemera.map(buildEphemera)

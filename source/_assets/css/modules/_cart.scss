@@ -75,3 +75,17 @@ $easing-function: cubic-bezier(0.215, 0.440, 0.420, 0.880);
 
 .modal-overlay { @include modal-overlay() ;}
 .modal-content { @include modal-content() ;}
+
+.pre-checkout {
+  display: none;
+  &.is-active {
+    display: block;
+  }
+}
+
+.checkout {
+  display: none;
+  &.is-active {
+    display: block;
+  }
+}
