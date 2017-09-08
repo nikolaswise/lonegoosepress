@@ -159,6 +159,41 @@ books:
     available: true
 
 broadsides:
+  - title: 'The Journey'
+    id: '/publications/broadsides/the-journey'
+    author: 'David Whyte'
+    description:
+    - 'Graphic by Sandy Tilcock'
+    - 'Printed with permission. The graphic was adapted from a stock photo of Canada geese flying in the sky. The types are Optima and along with the graphic are printed on a Vandercook 219 using photopolymer plates. The paper is Magnani Pescia, gray.'
+    release: 'Fall 2016'
+    edition: 59
+    price: 75
+    edition_notes: 'Numbered and signed by the author'
+    dimensions: '12.625 by 15 inches'
+    author_site: 'http://www.davidwhyte.com/'
+    image: 'broadsides/prayer.jpg'
+    thumbnail: 'broadsides/prayer_TN.jpg'
+    available: true
+    poem: true
+
+  - title: 'Could a national park be seen as a place of poetry?'
+    id: '/publications/broadsides/the-journey'
+    author: 'Terry Tempest Williams'
+    description:
+    - 'Illustration by Robert Chipman'
+    - 'Brush lettering by Marilyn Reaves'
+    - 'Printed to commemorate the Centennial of the National Park Service and the 25th  Annual Parsons Memorial Lodge Summer Series, Tuolumne Meadows, Yosemite National Park. Collaboratively designed by Jim Cokas and Sandy Tilcock. Printed at lone goose press in Rives BFK off-white.'
+    release: 'Summer 2016'
+    edition: 123
+    price: 75
+    edition_notes: 'Numbered and signed by the author'
+    dimensions: '11 by 17 inches'
+    author_site: 'http://www.coyoteclan.com/'
+    image: 'broadsides/prayer.jpg'
+    thumbnail: 'broadsides/prayer_TN.jpg'
+    available: true
+    poem: true
+
   - title: 'Prayer'
     id: '/publications/broadsides/prayer'
     author: 'Tom Crawford'
