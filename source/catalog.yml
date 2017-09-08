@@ -189,8 +189,8 @@ broadsides:
     edition_notes: 'Numbered and signed by the author'
     dimensions: '11 by 17 inches'
     author_site: 'http://www.coyoteclan.com/'
-    image: 'broadsides/Williams_TN.jpg'
-    thumbnail: 'broadsides/Website_Williams.jpg'
+    image: 'broadsides/Website_Williams.jpg'
+    thumbnail: 'broadsides/Williams_TN.jpg'
     available: true
     poem: true
 
