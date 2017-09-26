@@ -53,6 +53,7 @@ books:
     edition: 53
     edition_notes: 'Numbered and signed by the author and artist'
     price: 250
+    shipping: 25
     available: true
     description:
     - 'Dealer Discount Available. Contact lone goose press for further information or to place an order.'
@@ -96,6 +97,7 @@ books:
     - url: 'books/Pants_Matthew.jpg'
       caption: '“Pants” by Matthew Dickman'
     price: 3000
+    shipping: 25
     available: true
 
   - title: 'Invitation'
@@ -115,6 +117,7 @@ books:
     - url: 'books/Invitation_C.jpg'
     - url: 'books/Invitation-D.jpg'
     price: 97
+    shipping: 25
     available: true
 
   - title: 'Grandfather Was a Good Witch: Growing Up Cherokee'
@@ -138,6 +141,7 @@ books:
     - url: 'books/Grandfather_strawberry.jpg'
     thumbnail: 'books/Grandfather_strawberry_TN.jpg'
     price: 350
+    shipping: 25
     available: true
 
   - title: 'Apologia'
@@ -154,6 +158,7 @@ books:
     edition_notes: '50 numbered copies and 16 lettered copies for the participants and those who supported the publication, signed by the author and the artist.'
     dimensions: '11.8 by 11 inches, 24 pages'
     price: 2500
+    shipping: 25
     image: 'books/Lopez_Apologia.jpg'
     thumbnail: 'books/Lopez_Apologia_TN.jpg'
     available: true
@@ -168,6 +173,7 @@ broadsides:
     release: 'Fall 2016'
     edition: 59
     price: 75
+    shipping: 10
     edition_notes: 'Numbered and signed by the author'
     dimensions: '12.625 by 15 inches'
     author_site: 'http://www.davidwhyte.com/'
@@ -186,6 +192,7 @@ broadsides:
     release: 'Summer 2016'
     edition: 123
     price: 75
+    shipping: 10
     edition_notes: 'Numbered and signed by the author'
     dimensions: '11 by 17 inches'
     author_site: 'http://www.coyoteclan.com/'
@@ -203,6 +210,7 @@ broadsides:
     release: 'Winter 2012'
     edition: 79
     price: 160
+    shipping: 10
     edition_notes: 'Numbered and signed by both the poet and the artist.'
     dimensions: '16 by 20 inches'
     author_site: 'http://www.tomcrawfordpoetry.com'
@@ -220,6 +228,7 @@ broadsides:
     release: 'Spring 2011'
     edition: 53
     price: 135
+    shipping: 10
     edition_notes: 'Numbered and signed by both the poet and the artist.'
     dimensions: '8.25 by 25 inches.'
     image: 'broadsides/our_flag.jpg'
@@ -237,6 +246,7 @@ broadsides:
     release: 'Fall 2010'
     edition: 73
     price: 25
+    shipping: 10
     edition_notes: 'Numbered and signed by the author.'
     dimensions: '10 by 10 inches'
     image: 'broadsides/eclipsed.jpg'
@@ -255,6 +265,7 @@ broadsides:
     edition: 97
     edition_notes: 'Numbered and signed by the author'
     price: 75
+    shipping: 10
     poem: true
     available: true
     description:
@@ -271,6 +282,7 @@ broadsides:
     edition: 83
     edition_notes: 'Numbered and signed by the poet'
     price: 75
+    shipping: 10
     poem: true
     available: true
     description:
@@ -286,6 +298,7 @@ broadsides:
     release: 'Fall 2009'
     edition: 107
     price: 135
+    shipping: 10
     edition_notes: 'Numbered and signed by both the poet and the artist.'
     dimensions: '13.25 by 19.75 inches'
     image: 'broadsides/mercy_tear_it_down.jpg'
@@ -302,6 +315,7 @@ broadsides:
     release: 'Fall 2009'
     edition: 97
     price: 22
+    shipping: 10
     edition_notes: 'Numbered and signed by the poet'
     dimensions: '6.5 by 14 inches'
     image: 'broadsides/tallest_brother.jpg'
@@ -317,6 +331,7 @@ broadsides:
     release: 'Summer 2009'
     edition: 131
     price: 28
+    shipping: 10
     edition_notes: 'Numbered.'
     dimensions: '7 by 14.25 inches'
     image: 'broadsides/cross_of_iron.jpg'
@@ -332,6 +347,7 @@ broadsides:
     release: 'Fall 2008'
     edition: 83
     price: 50
+    shipping: 10
     edition_notes: 'Numbered and signed by the poet.'
     dimensions: '7.5 by 16 inches'
     image: 'broadsides/evidence.jpg'
@@ -347,6 +363,7 @@ broadsides:
     release: 'Fall 2008'
     edition: 97
     price: 90
+    shipping: 10
     edition_notes: 'Numbered and signed by the poet.'
     dimensions: '10.375 by 17 inches.'
     image: 'broadsides/famous.jpg'
@@ -363,6 +380,7 @@ broadsides:
     release: 'Summer 2008'
     edition: 101
     price: 150
+    shipping: 10
     edition_notes: 'Numbered and signed by both the poet and the artist.'
     dimensions: '19.375 by 13 inches.'
     author_site: 'http://www.joyharjo.com'
@@ -381,6 +399,7 @@ broadsides:
     release: 'Summer 2008'
     edition: 71
     price: 18
+    shipping: 10
     edition_notes: 'Numbered and signed by the poet.'
     dimensions: '8.5 by 8.5 inches.'
     image: 'broadsides/Snow.jpg'
@@ -397,6 +416,7 @@ broadsides:
     release: 'Fall 2007'
     edition: 103
     price: 105
+    shipping: 10
     edition_notes: 'Numbered and signed by both the poet and the artist.'
     dimensions: '11.5 by 18 inches.'
     author_site: 'http://www.johndaniel-author.net'
@@ -414,6 +434,7 @@ broadsides:
     release: 'Summer 2007'
     edition: 113
     price: 60
+    shipping: 10
     edition_notes: 'Numbered and signed by the poet.'
     dimensions: '6.5 by 13 inches.'
     author_site: 'http://www.merwinconservancy.org'
@@ -431,6 +452,7 @@ broadsides:
     release: 'Fall 2006'
     edition: 97
     price: 80
+    shipping: 10
     edition_notes: 'Numbered and signed by both the poet and the artist.'
     dimensions: '12 by 12 inches.'
     author_site: 'http://www.robertbly.com'
@@ -449,6 +471,7 @@ broadsides:
     release: 'Winter 2005'
     edition: 110
     price: 48
+    shipping: 10
     edition_notes: 'Numbered and signed by both the poet and artist.'
     dimensions: '12.5 by 6 inches.'
     artist_site: '"http://www.susanlowdermilk.com"'
@@ -465,6 +488,7 @@ broadsides:
     release: 'Summer 2005'
     edition: 100
     price: 90
+    shipping: 10
     edition_notes: 'Numbered and signed by the author'
     dimensions: '10 by 11.5 inches'
     author_site: 'http://www.barrylopez.com'
@@ -482,6 +506,7 @@ broadsides:
     release: 'Winter 1998'
     edition: 75
     price: 125
+    shipping: 10
     edition_notes: 'Numbered and signed by both the author and poet.'
     dimensions: '12 by 20 inches.'
     artist_site: 'http://www.judithsparks.com'
@@ -499,6 +524,7 @@ broadsides:
     released: 'Spring 1996'
     edition: 100
     price: 70
+    shipping: 10
     edition_notes: 'Numbered and signed by both the author and the artist.'
     dimensions: '14.25 by 10 inches.'
     author_site: 'http://www.ivandoig.com'

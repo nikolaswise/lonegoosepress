@@ -1,8 +1,8 @@
 import bus from 'modular-bus'
 
 export default function (cart) {
-  const addToCart = (id, price) => {
-    cart.addItem(id, 1, price)
+  const addToCart = (id, price, shipping) => {
+    cart.addItem(id, 1, price, shipping)
     bus.emit('cart:updated')
   }
   const adjustItemCount = (id, count) => {

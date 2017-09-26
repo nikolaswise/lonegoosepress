@@ -31,7 +31,8 @@ const bind = () => {
 const addToCartClick = (e) => {
   let id = e.target.getAttribute('data-id')
   let price = e.target.getAttribute('data-price')
-  bus.emit('cart:add', id, price)
+  let shipping = e.target.getAttribute('data-shipping')
+  bus.emit('cart:add', id, price, shipping)
 }
 const deincrementItemClick = (e) => {
   let id = e.target.getAttribute('data-id')

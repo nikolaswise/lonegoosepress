@@ -26,11 +26,12 @@ var cart = function (options) {
     var model = JSON.parse(window.localStorage.getItem(name))
     model.itemCount = 0
     model.subtotal = 0
-    model.shipping = 7
+    model.shipping = 0
     model.items.forEach(function (item){
+      console.log(item)
       model.subtotal += (item.price * item.num)
       model.itemCount += item.num
-      model.shipping += (5 * item.num)
+      model.shipping += (item.shipping * item.num)
     })
     model.total = model.subtotal + model.shipping
     return model
@@ -48,11 +49,12 @@ var cart = function (options) {
     })
   }
 
-  var addItem = function (id, num, price) {
+  var addItem = function (id, num, price, shipping) {
     var model = get()
     var item = {
       id: id,
       price: price,
+      shipping: shipping,
       num: num
     }
     if (!hasItem(id)) {
