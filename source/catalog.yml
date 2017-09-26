@@ -255,7 +255,7 @@ broadsides:
     poem: true
 
   - title: 'We Belong to a Mystery'
-    thumbnail: 'broadsides/Prayer-Flag_Daniel_TN.jpg'
+    thumbnail: 'poetic-prayer-flags/Prayer_Flag_Daniel.jpg'
     image: 'poetic-prayer-flags/Prayer_Flag_Daniel.jpg'
     id: '/publications/broadsides/we-belong-to-a-mystery'
     author: 'John Daniel'
@@ -274,7 +274,7 @@ broadsides:
 
   - title: 'All Rights Reserved'
     id: '/publications/broadsides/all-rights-reserved'
-    thumbnail: 'broadsides/Prayer-Flag_Tilcock_TN.jpg'
+    thumbnail: 'poetic-prayer-flags/Prayer_Flag_Tilcock.jpg'
     image: 'poetic-prayer-flags/Prayer_Flag_Tilcock.jpg'
     author: 'W. Patrick Tilcock'
     release: 'Winter 2010'
