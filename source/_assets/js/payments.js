@@ -33,7 +33,7 @@ const buildItems = (items, shipping) => {
       "name": item.id,
       "quantity": item.num.toString(),
       "base_price_money": {
-        "amount": parseInt(item.price),
+        "amount": parseInt(item.price * 100),
         "currency": "USD"
       }
     }
@@ -51,6 +51,7 @@ const bind = () => {
 const setup = cart => () => {
   const data = cart.get()
   const order = buildOrder(data)
+  console.log(order)
   const body = JSON.stringify(order)
   req('https://api.nikolas.ws/lone-goose-press/square/payment', {
     method: 'POST',
@@ -63,6 +64,7 @@ const setup = cart => () => {
     return res.json();
   })
   .then(function(data){
+    console.log(data)
     bus.emit('checkout:new', data)
   })
 }
