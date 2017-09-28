@@ -1,12 +1,11 @@
 ---
 layout: blog
 title: Voodoo and Prayer
-date: 2017-06-30T08:37:15-07:00
 author: Catherine Woodard
+date: 2017-06-30T15:37:15.000Z
 template: _templates/post.html
 block: body
 ---
-
 Watching Nikolas Wise, 28, assist Sandy Tilcock, 67, in the lone goose press studio, you’d think they’ve been working together for decades instead of six years.
 
 “We click,” Sandy says. “Nik works hard. He is very into the process as well as the result, and we have fun at the same time.”
@@ -22,7 +21,6 @@ Nik agrees as he leans over to study an abstracted eye print. “I basically don
 They choreograph two plates at a time. Nik wipes one while Sandy cranks the press on the other. Their focus is sharp, their banter playful. And so it goes, except for morning and afternoon breaks and lunch. Those breaks on the patio outside the studio are as integral to the process as the work within, Sandy says.
 
 They met in 2011 when Nik called Sandy in his senior year in fine art printmaking at the University of Oregon with a technical question about making wood type from scratch. And he jumped at the chance Sandy offered to ink the plates for All of Him, a four-year, limited-edition collaboration with poets Michael and Matthew Dickman and artist Keith Achepohl.
-
 
 Nik lives in Portland where he designs and produces specialized web applications and owns Department Press, a publishing house and design studio. Department offers both traditional techniques and creative and affordable approaches to artists. Recently he’s pleased with a re-purposed Japanese copier. “Good results; capital and time greatly lowered,” he says. “$200 bucks and ready in a week.”
 
@@ -47,4 +45,7 @@ Nine hours, 70 pulls. Seven to nine more days likely needed. This before the poe
 “You show up and do the work and do the best you can,” Nik says during an end-of-the-day beer with Sandy and me. “And then you are done.”
 
 On cue, Rosie, Sam and Cali, surround Nik with sticks and toys. Lone goose’s canine assistants are certain that Nik drives from Portland to play with them, not Sandy.
+
+![Nik & Girls](/assets/img/uploads/Nik and Girls.JPG)
+
 
