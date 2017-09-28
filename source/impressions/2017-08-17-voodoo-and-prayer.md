@@ -49,3 +49,5 @@ Nine hours, 70 pulls. Seven to nine more days likely needed. This before the poe
 “You show up and do the work and do the best you can,” Nik says during an end-of-the-day beer with Sandy and me. “And then you are done.”
 
 On cue, Rosie, Sam and Cali, surround Nik with sticks and toys. Lone goose’s canine assistants are certain that Nik drives from Portland to play with them, not Sandy.
+
+![null](/assets/img/uploads/nik-and-girls.jpg)
