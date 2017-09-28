@@ -7,6 +7,8 @@ template: _templates/post.html
 block: body
 ---
 
+[Watch _Voodoo and Prayer_ on Vimeo](https://vimeo.com/235837372).
+
 Watching Nikolas Wise, 28, assist Sandy Tilcock, 67, in the lone goose press studio, you’d think they’ve been working together for decades instead of six years.
 
 “We click,” Sandy says. “Nik works hard. He is very into the process as well as the result, and we have fun at the same time.”
