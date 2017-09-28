@@ -46,6 +46,6 @@ Nine hours, 70 pulls. Seven to nine more days likely needed. This before the poe
 
 On cue, Rosie, Sam and Cali, surround Nik with sticks and toys. Lone goose’s canine assistants are certain that Nik drives from Portland to play with them, not Sandy.
 
-![Nik & Girls](/assets/img/uploads/Nik and Girls.JPG)
+![null](/assets/img/uploads/Nik and Girls.JPG)
 
 
